@@ -1,0 +1,1549 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix : <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void_ext: <http://ldf.fi/void-ext#> .
+@prefix formats: <http://www.w3.org/ns/formats/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://triplestore:8890/sparql> a :Service;
+  :defaultDataset <http://triplestore:8890/sparql#sparql-default-dataset>;
+  :endpoint <http://triplestore:8890/sparql>;
+  :resultFormat formats:SPARQL_Results_CSV, formats:SPARQL_Results_JSON, formats:N-Triples,
+    formats:RDF_XML, formats:SPARQL_Results_TSV, formats:Turtle, formats:SPARQL_Results_XML;
+  :supportedLanguage :SPARQL11Query;
+  :feature :UnionDefaultGraph, :BasicFederatedQuery;
+  :availableGraphs <http://example.com/void-description/mandaten#sparql-graph-collection> .
+
+<http://triplestore:8890/sparql#sparql-default-dataset> a :Dataset;
+  :defaultGraph <http://example.com/void-description/mandaten#sparql-default-graph>;
+  :namedGraph <http://example.com/graphs/mandaten> .
+
+<http://example.com/void-description/mandaten#sparql-default-graph> a :Graph;
+  void:triples "1604895"^^xsd:long;
+  void:distinctObjects "6509805"^^xsd:long;
+  void_ext:distinctLiterals "2521521"^^xsd:long;
+  void_ext:distinctIRIReferenceObjects "3988281"^^xsd:long;
+  void_ext:distinctBlankNodeObjects "3"^^xsd:long;
+  void:distinctSubjects "2258311"^^xsd:long;
+  void_ext:distinctIRIReferenceSubjects "2258308"^^xsd:long;
+  void_ext:distinctBlankNodeSubjects "3"^^xsd:long .
+
+<http://example.com/void-description/mandaten#sparql-graph-collection> :namedGraph
+    <http://example.com/graphs/mandaten> .
+
+<http://example.com/graphs/mandaten> a :NamedGraph;
+  :name <http://example.com/graphs/mandaten>;
+  :graph <http://example.com/void-description/mandaten#_graph_mandaten!c73c3932> .
+
+<http://example.com/void-description/mandaten#_graph_mandaten!c73c3932> a :Graph;
+  void:triples "1604895"^^xsd:long;
+  void:classes "25"^^xsd:long;
+  void:classPartition <http://example.com/void-description/mandaten#mandaten!8ea37759!AgentInPositie>,
+    <http://example.com/void-description/mandaten#mandaten!e966f5cc!BestuurVanDeEredienst>,
+    <http://example.com/void-description/mandaten#mandaten!9ef745f0!CentraalBestuurVanDeEredienst>,
+    <http://example.com/void-description/mandaten#mandaten!1342bd92!Bestuurseenheid>,
+    <http://example.com/void-description/mandaten#mandaten!87d817a7!Bestuursorgaan>, <http://example.com/void-description/mandaten#mandaten!c1ba63f0!Fractie>,
+    <http://example.com/void-description/mandaten#mandaten!4d1b0421!Mandaat>, <http://example.com/void-description/mandaten#mandaten!c7cd54e2!Mandataris>,
+    <http://example.com/void-description/mandaten#mandaten!dcca233f!BestuurseenheidClassificatieCode>,
+    <http://example.com/void-description/mandaten#mandaten!5528b71c!BestuursfunctieCode>,
+    <http://example.com/void-description/mandaten#mandaten!fb42d2c8!BestuursorgaanClassificatieCode>,
+    <http://example.com/void-description/mandaten#mandaten!e1cc6ad1!MandatarisStatusCode>,
+    <http://example.com/void-description/mandaten#mandaten!0a4b2124!BeleidsdomeinCode>,
+    <http://example.com/void-description/mandaten#mandaten!283510a1!BestuurseenheidClassificatieCode>,
+    <http://example.com/void-description/mandaten#mandaten!6c448a03!BestuursfunctieCode>,
+    <http://example.com/void-description/mandaten#mandaten!a1db5024!BestuursorgaanClassificatieCode>,
+    <http://example.com/void-description/mandaten#mandaten!84bd4c74!MandatarisStatusCode>,
+    <http://example.com/void-description/mandaten#mandaten!63f54df3!OrganizationClassificationCode>,
+    <http://example.com/void-description/mandaten#mandaten!62864638!RepresentatiefOrgaanClassificatieCode>,
+    <http://example.com/void-description/mandaten#mandaten!ffeaf0d3!Concept>, <http://example.com/void-description/mandaten#mandaten!bacefa82!Tombstone>,
+    <http://example.com/void-description/mandaten#mandaten!41ba1eda!Membership>, <http://example.com/void-description/mandaten#mandaten!758ff8c4!Post>,
+    <http://example.com/void-description/mandaten#mandaten!1a1881ca!Person>, <http://example.com/void-description/mandaten#mandaten!02c25713!Location>;
+  void:propertyPartition <http://example.com/void-description/mandaten#mandaten!adaed4a1!bestuurt>,
+    <http://example.com/void-description/mandaten#mandaten!f0c1b8ae!classificatie>, <http://example.com/void-description/mandaten#mandaten!b18fb08f!werkingsgebied>,
+    <http://example.com/void-description/mandaten#mandaten!8662b7be!beleidsdomein>, <http://example.com/void-description/mandaten#mandaten!7490f92f!bindingEinde>,
+    <http://example.com/void-description/mandaten#mandaten!22887a68!bindingStart>, <http://example.com/void-description/mandaten#mandaten!1a14adf3!einde>,
+    <http://example.com/void-description/mandaten#mandaten!ad507940!isBestuurlijkeAliasVan>,
+    <http://example.com/void-description/mandaten#mandaten!c9b2eb8b!isTijdelijkVervangenDoor>,
+    <http://example.com/void-description/mandaten#mandaten!e693532e!isTijdspecialisatieVan>,
+    <http://example.com/void-description/mandaten#mandaten!0264eb00!rangorde>, <http://example.com/void-description/mandaten#mandaten!5fea08e6!start>,
+    <http://example.com/void-description/mandaten#mandaten!291806bd!status>, <http://example.com/void-description/mandaten#mandaten!974873bd!gebruikteVoornaam>,
+    <http://example.com/void-description/mandaten#mandaten!5b0e5a85!uuid>, <http://example.com/void-description/mandaten#mandaten!3b1be8df!werkingsgebiedNiveau>,
+    <http://example.com/void-description/mandaten#mandaten!c74e2b73!type>, <http://example.com/void-description/mandaten#mandaten!4f75ce12!label>,
+    <http://example.com/void-description/mandaten#mandaten!4534900f!sameAs>, <http://example.com/void-description/mandaten#mandaten!07d92ae6!altLabel>,
+    <http://example.com/void-description/mandaten#mandaten!8d3b7b43!prefLabel>, <http://example.com/void-description/mandaten#mandaten!207158e7!hasMembership>,
+    <http://example.com/void-description/mandaten#mandaten!a1b04521!hasPost>, <http://example.com/void-description/mandaten#mandaten!49b28c75!hasPrimarySite>,
+    <http://example.com/void-description/mandaten#mandaten!ebf52e4a!holds>, <http://example.com/void-description/mandaten#mandaten!7590a0a7!linkedTo>,
+    <http://example.com/void-description/mandaten#mandaten!8a8aecac!memberOf>, <http://example.com/void-description/mandaten#mandaten!0ad37f12!organisation>,
+    <http://example.com/void-description/mandaten#mandaten!a7076748!role>, <http://example.com/void-description/mandaten#mandaten!20562318!familyName>,
+    <http://example.com/void-description/mandaten#mandaten!893797ba!name>, <http://example.com/void-description/mandaten#mandaten!4b35e1bd!legalName>;
+  void:distinctObjects "904085"^^xsd:long;
+  void_ext:distinctLiterals "370245"^^xsd:long;
+  void_ext:distinctIRIReferenceObjects "533840"^^xsd:long;
+  void:distinctSubjects "313287"^^xsd:long;
+  void_ext:distinctIRIReferenceSubjects "313287"^^xsd:long;
+  void:subset <http://example.com/void-description/mandaten#linkset_0135d416>, <http://example.com/void-description/mandaten#linkset_92788230>,
+    <http://example.com/void-description/mandaten#linkset_e19ede67>, <http://example.com/void-description/mandaten#linkset_d70e7985>,
+    <http://example.com/void-description/mandaten#linkset_8f312035>, <http://example.com/void-description/mandaten#linkset_8efb8eb5>,
+    <http://example.com/void-description/mandaten#linkset_5444c52e>, <http://example.com/void-description/mandaten#linkset_c760f12b>,
+    <http://example.com/void-description/mandaten#linkset_531541fb>, <http://example.com/void-description/mandaten#linkset_ae90c924>,
+    <http://example.com/void-description/mandaten#linkset_7f53050e>, <http://example.com/void-description/mandaten#linkset_7c71691b>,
+    <http://example.com/void-description/mandaten#linkset_26947e05>, <http://example.com/void-description/mandaten#linkset_7460f5c2>,
+    <http://example.com/void-description/mandaten#linkset_6448a5a0>, <http://example.com/void-description/mandaten#linkset_6d09ed8f>,
+    <http://example.com/void-description/mandaten#linkset_3fafa707>, <http://example.com/void-description/mandaten#linkset_0dd4abcc>,
+    <http://example.com/void-description/mandaten#linkset_0354011e>, <http://example.com/void-description/mandaten#linkset_66a2d847>,
+    <http://example.com/void-description/mandaten#linkset_c629293a>, <http://example.com/void-description/mandaten#linkset_ea6e6902>,
+    <http://example.com/void-description/mandaten#linkset_7f2c9dba>, <http://example.com/void-description/mandaten#linkset_084ee39b>,
+    <http://example.com/void-description/mandaten#linkset_f1ebf1b8>, <http://example.com/void-description/mandaten#linkset_b1e83625>,
+    <http://example.com/void-description/mandaten#linkset_d9346834>, <http://example.com/void-description/mandaten#linkset_15a1c3e9>,
+    <http://example.com/void-description/mandaten#linkset_029427d6>, <http://example.com/void-description/mandaten#linkset_ebaeb184>,
+    <http://example.com/void-description/mandaten#linkset_1efd9619>, <http://example.com/void-description/mandaten#linkset_a293c755>,
+    <http://example.com/void-description/mandaten#linkset_5b966289>, <http://example.com/void-description/mandaten#linkset_e5c7a9e0>,
+    <http://example.com/void-description/mandaten#linkset_9dba95f3>, <http://example.com/void-description/mandaten#linkset_0faeca09>,
+    <http://example.com/void-description/mandaten#linkset_a1f65a4f>, <http://example.com/void-description/mandaten#linkset_f843084d>,
+    <http://example.com/void-description/mandaten#linkset_550bd5d4>, <http://example.com/void-description/mandaten#linkset_6a9df5c2>,
+    <http://example.com/void-description/mandaten#linkset_3d1300e0>, <http://example.com/void-description/mandaten#linkset_5e35f193> .
+
+<http://example.com/void-description/mandaten#mandaten!8ea37759!AgentInPositie> a
+    void:Dataset;
+  void:class <http://data.lblod.info/vocabularies/contacthub/AgentInPositie>;
+  void:entities "3169"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!398d9aac!-AgentInPositie-beleidsdomein>,
+    <http://example.com/void-description/mandatenmandaten!57256cc6!-AgentInPositie-einde>,
+    <http://example.com/void-description/mandatenmandaten!1200fc43!-AgentInPositie-isBestuurlijkeAliasVan>,
+    <http://example.com/void-description/mandatenmandaten!861674fa!-AgentInPositie-rangorde>,
+    <http://example.com/void-description/mandatenmandaten!b4786b14!-AgentInPositie-start>,
+    <http://example.com/void-description/mandatenmandaten!011e802a!-AgentInPositie-status>,
+    <http://example.com/void-description/mandatenmandaten!5a422708!-AgentInPositie-uuid>,
+    <http://example.com/void-description/mandatenmandaten!d8e32603!-AgentInPositie-hasMembership>,
+    <http://example.com/void-description/mandatenmandaten!85fa4526!-AgentInPositie-holds> .
+
+<http://example.com/void-description/mandatenmandaten!398d9aac!-AgentInPositie-beleidsdomein>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#beleidsdomein>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!d3fa8b90!-AgentInPositie-beleidsdomein-BeleidsdomeinCode>,
+    <http://example.com/void-description/mandatenmandaten!c7e59a77!-AgentInPositie-beleidsdomein-Concept>;
+  void:triples "1634"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!d3fa8b90!-AgentInPositie-beleidsdomein-BeleidsdomeinCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode>;
+  void:triples "1634"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!c7e59a77!-AgentInPositie-beleidsdomein-Concept>
+  a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:triples "328"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_0135d416> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/mandaat#beleidsdomein>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!8ea37759!AgentInPositie>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!0a4b2124!BeleidsdomeinCode> .
+
+<http://example.com/void-description/mandaten#linkset_92788230> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/mandaat#beleidsdomein>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!8ea37759!AgentInPositie>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!ffeaf0d3!Concept> .
+
+<http://example.com/void-description/mandatenmandaten!57256cc6!-AgentInPositie-einde>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#einde>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!b859eb71!-einde-dateTime>;
+  void:triples "1809"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!b859eb71!-einde-dateTime> a
+    void:Dataset;
+  void_ext:datatype xsd:dateTime .
+
+<http://example.com/void-description/mandatenmandaten!1200fc43!-AgentInPositie-isBestuurlijkeAliasVan>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#isBestuurlijkeAliasVan>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!3a0b49bd!-AgentInPositie-isBestuurlijkeAliasVan-Person>;
+  void:triples "3171"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!3a0b49bd!-AgentInPositie-isBestuurlijkeAliasVan-Person>
+  a void:Dataset;
+  void:class <http://www.w3.org/ns/person#Person>;
+  void:triples "3169"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_e19ede67> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/mandaat#isBestuurlijkeAliasVan>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!8ea37759!AgentInPositie>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!1a1881ca!Person> .
+
+<http://example.com/void-description/mandatenmandaten!861674fa!-AgentInPositie-rangorde>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#rangorde>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!a81b7b44!-rangorde-string>;
+  void:triples "480"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!a81b7b44!-rangorde-string> a
+    void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandatenmandaten!b4786b14!-AgentInPositie-start>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#start>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!a96930a2!-start-dateTime>;
+  void:triples "3146"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!a96930a2!-start-dateTime> a
+    void:Dataset;
+  void_ext:datatype xsd:dateTime .
+
+<http://example.com/void-description/mandatenmandaten!011e802a!-AgentInPositie-status>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#status>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!69b5a0b0!-AgentInPositie-status-MandatarisStatusCode>,
+    <http://example.com/void-description/mandatenmandaten!8d491d6c!-AgentInPositie-status-MandatarisStatusCode>,
+    <http://example.com/void-description/mandatenmandaten!ecb20249!-AgentInPositie-status-Concept>;
+  void:triples "3169"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!69b5a0b0!-AgentInPositie-status-MandatarisStatusCode>
+  a void:Dataset;
+  void:class <http://lblod.data.gift/vocabularies/organisatie/MandatarisStatusCode>;
+  void:triples "3169"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!8d491d6c!-AgentInPositie-status-MandatarisStatusCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/MandatarisStatusCode>;
+  void:triples "3169"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!ecb20249!-AgentInPositie-status-Concept>
+  a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:triples "3169"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_d70e7985> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/mandaat#status>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!8ea37759!AgentInPositie>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!e1cc6ad1!MandatarisStatusCode>,
+    <http://example.com/void-description/mandaten#mandaten!84bd4c74!MandatarisStatusCode> .
+
+<http://example.com/void-description/mandaten#linkset_8f312035> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/mandaat#status>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!8ea37759!AgentInPositie>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!ffeaf0d3!Concept> .
+
+<http://example.com/void-description/mandatenmandaten!5a422708!-AgentInPositie-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "3169"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string> a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandatenmandaten!d8e32603!-AgentInPositie-hasMembership>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#hasMembership>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!8a7a5f2e!-AgentInPositie-hasMembership-Membership>;
+  void:triples "2519"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!8a7a5f2e!-AgentInPositie-hasMembership-Membership>
+  a void:Dataset;
+  void:class <http://www.w3.org/ns/org#Membership>;
+  void:triples "2518"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_8efb8eb5> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#hasMembership>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!8ea37759!AgentInPositie>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!41ba1eda!Membership> .
+
+<http://example.com/void-description/mandatenmandaten!85fa4526!-AgentInPositie-holds>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#holds>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!ddc9713e!-AgentInPositie-holds-Mandaat>,
+    <http://example.com/void-description/mandatenmandaten!05ad1b1e!-AgentInPositie-holds-Post>;
+  void:triples "3169"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!ddc9713e!-AgentInPositie-holds-Mandaat>
+  a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/mandaat#Mandaat>;
+  void:triples "3169"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!05ad1b1e!-AgentInPositie-holds-Post>
+  a void:Dataset;
+  void:class <http://www.w3.org/ns/org#Post>;
+  void:triples "3169"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_5444c52e> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#holds>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!8ea37759!AgentInPositie>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!4d1b0421!Mandaat> .
+
+<http://example.com/void-description/mandaten#linkset_c760f12b> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#holds>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!8ea37759!AgentInPositie>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!758ff8c4!Post> .
+
+<http://example.com/void-description/mandaten#mandaten!e966f5cc!BestuurVanDeEredienst>
+  a void:Dataset;
+  void:class <http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst>;
+  void:entities "2008"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!03c828cd!-BestuurVanDeEredienst-classificatie>,
+    <http://example.com/void-description/mandatenmandaten!853a1b7e!-BestuurVanDeEredienst-uuid>,
+    <http://example.com/void-description/mandatenmandaten!25d2c682!-BestuurVanDeEredienst-altLabel>,
+    <http://example.com/void-description/mandatenmandaten!f421df57!-BestuurVanDeEredienst-prefLabel>,
+    <http://example.com/void-description/mandatenmandaten!0a4e145f!-BestuurVanDeEredienst-hasPrimarySite> .
+
+<http://example.com/void-description/mandatenmandaten!03c828cd!-BestuurVanDeEredienst-classificatie>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!095c88c2!-BestuurVanDeEredienst-classificatie-BestuurseenheidClassificatieCode>,
+    <http://example.com/void-description/mandatenmandaten!bac4e834!-BestuurVanDeEredienst-classificatie-BestuurseenheidClassificatieCode>,
+    <http://example.com/void-description/mandatenmandaten!d24af434!-BestuurVanDeEredienst-classificatie-OrganizationClassificationCode>;
+  void:triples "2008"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!095c88c2!-BestuurVanDeEredienst-classificatie-BestuurseenheidClassificatieCode>
+  a void:Dataset;
+  void:class <http://lblod.data.gift/vocabularies/organisatie/BestuurseenheidClassificatieCode>;
+  void:triples "2008"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!bac4e834!-BestuurVanDeEredienst-classificatie-BestuurseenheidClassificatieCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/BestuurseenheidClassificatieCode>;
+  void:triples "2008"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!d24af434!-BestuurVanDeEredienst-classificatie-OrganizationClassificationCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/OrganizationClassificationCode>;
+  void:triples "2008"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_531541fb> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!e966f5cc!BestuurVanDeEredienst>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!dcca233f!BestuurseenheidClassificatieCode>,
+    <http://example.com/void-description/mandaten#mandaten!283510a1!BestuurseenheidClassificatieCode> .
+
+<http://example.com/void-description/mandaten#linkset_ae90c924> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!e966f5cc!BestuurVanDeEredienst>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!63f54df3!OrganizationClassificationCode> .
+
+<http://example.com/void-description/mandatenmandaten!853a1b7e!-BestuurVanDeEredienst-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "2008"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!25d2c682!-BestuurVanDeEredienst-altLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#altLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!43c53f0e!-altLabel-string>;
+  void:triples "1573"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!43c53f0e!-altLabel-string> a
+    void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandatenmandaten!f421df57!-BestuurVanDeEredienst-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "2008"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandatenmandaten!0a4e145f!-BestuurVanDeEredienst-hasPrimarySite>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#hasPrimarySite>;
+  void:triples "2008"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!9ef745f0!CentraalBestuurVanDeEredienst>
+  a void:Dataset;
+  void:class <http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst>;
+  void:entities "316"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!44908d25!-CentraalBestuurVanDeEredienst-classificatie>,
+    <http://example.com/void-description/mandatenmandaten!f66cd906!-CentraalBestuurVanDeEredienst-uuid>,
+    <http://example.com/void-description/mandatenmandaten!a50869a0!-CentraalBestuurVanDeEredienst-prefLabel>,
+    <http://example.com/void-description/mandatenmandaten!4ed8fade!-CentraalBestuurVanDeEredienst-hasPrimarySite> .
+
+<http://example.com/void-description/mandatenmandaten!44908d25!-CentraalBestuurVanDeEredienst-classificatie>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!13abb2e9!-CentraalBestuurVanDeEredienst-classificatie-BestuurseenheidClassificatieCode>,
+    <http://example.com/void-description/mandatenmandaten!6ce4e4ca!-CentraalBestuurVanDeEredienst-classificatie-BestuurseenheidClassificatieCode>,
+    <http://example.com/void-description/mandatenmandaten!1e4e550d!-CentraalBestuurVanDeEredienst-classificatie-OrganizationClassificationCode>;
+  void:triples "316"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!13abb2e9!-CentraalBestuurVanDeEredienst-classificatie-BestuurseenheidClassificatieCode>
+  a void:Dataset;
+  void:class <http://lblod.data.gift/vocabularies/organisatie/BestuurseenheidClassificatieCode>;
+  void:triples "316"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!6ce4e4ca!-CentraalBestuurVanDeEredienst-classificatie-BestuurseenheidClassificatieCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/BestuurseenheidClassificatieCode>;
+  void:triples "316"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!1e4e550d!-CentraalBestuurVanDeEredienst-classificatie-OrganizationClassificationCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/OrganizationClassificationCode>;
+  void:triples "316"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_7f53050e> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!9ef745f0!CentraalBestuurVanDeEredienst>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!dcca233f!BestuurseenheidClassificatieCode>,
+    <http://example.com/void-description/mandaten#mandaten!283510a1!BestuurseenheidClassificatieCode> .
+
+<http://example.com/void-description/mandaten#linkset_7c71691b> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!9ef745f0!CentraalBestuurVanDeEredienst>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!63f54df3!OrganizationClassificationCode> .
+
+<http://example.com/void-description/mandatenmandaten!f66cd906!-CentraalBestuurVanDeEredienst-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "316"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!a50869a0!-CentraalBestuurVanDeEredienst-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "316"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!4ed8fade!-CentraalBestuurVanDeEredienst-hasPrimarySite>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#hasPrimarySite>;
+  void:triples "316"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!1342bd92!Bestuurseenheid> a
+    void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/besluit#Bestuurseenheid>;
+  void:entities "3692"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!2665e4ce!-Bestuurseenheid-classificatie>,
+    <http://example.com/void-description/mandatenmandaten!bb2694f4!-Bestuurseenheid-werkingsgebied>,
+    <http://example.com/void-description/mandatenmandaten!2c993d43!-Bestuurseenheid-uuid>,
+    <http://example.com/void-description/mandatenmandaten!80463fdb!-Bestuurseenheid-altLabel>,
+    <http://example.com/void-description/mandatenmandaten!51040e04!-Bestuurseenheid-prefLabel>,
+    <http://example.com/void-description/mandatenmandaten!f8dfeb3e!-Bestuurseenheid-hasPrimarySite>,
+    <http://example.com/void-description/mandatenmandaten!4b4c5422!-Bestuurseenheid-linkedTo> .
+
+<http://example.com/void-description/mandatenmandaten!2665e4ce!-Bestuurseenheid-classificatie>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!71d8ab26!-Bestuurseenheid-classificatie-BestuurseenheidClassificatieCode>,
+    <http://example.com/void-description/mandatenmandaten!2c2833e1!-Bestuurseenheid-classificatie-BestuurseenheidClassificatieCode>,
+    <http://example.com/void-description/mandatenmandaten!b11f4ee5!-Bestuurseenheid-classificatie-OrganizationClassificationCode>,
+    <http://example.com/void-description/mandatenmandaten!1983faf3!-Bestuurseenheid-classificatie-Concept>;
+  void:triples "3692"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!71d8ab26!-Bestuurseenheid-classificatie-BestuurseenheidClassificatieCode>
+  a void:Dataset;
+  void:class <http://lblod.data.gift/vocabularies/organisatie/BestuurseenheidClassificatieCode>;
+  void:triples "3692"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!2c2833e1!-Bestuurseenheid-classificatie-BestuurseenheidClassificatieCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/BestuurseenheidClassificatieCode>;
+  void:triples "3692"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!b11f4ee5!-Bestuurseenheid-classificatie-OrganizationClassificationCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/OrganizationClassificationCode>;
+  void:triples "3692"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!1983faf3!-Bestuurseenheid-classificatie-Concept>
+  a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:triples "283"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_26947e05> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!1342bd92!Bestuurseenheid>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!dcca233f!BestuurseenheidClassificatieCode>,
+    <http://example.com/void-description/mandaten#mandaten!283510a1!BestuurseenheidClassificatieCode> .
+
+<http://example.com/void-description/mandaten#linkset_7460f5c2> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!1342bd92!Bestuurseenheid>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!63f54df3!OrganizationClassificationCode> .
+
+<http://example.com/void-description/mandaten#linkset_6448a5a0> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!1342bd92!Bestuurseenheid>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!ffeaf0d3!Concept> .
+
+<http://example.com/void-description/mandatenmandaten!bb2694f4!-Bestuurseenheid-werkingsgebied>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/besluit#werkingsgebied>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!4ecd0a2d!-Bestuurseenheid-werkingsgebied-Concept>,
+    <http://example.com/void-description/mandatenmandaten!a6ac5f90!-Bestuurseenheid-werkingsgebied-Location>;
+  void:triples "1073"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!4ecd0a2d!-Bestuurseenheid-werkingsgebied-Concept>
+  a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:triples "37"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!a6ac5f90!-Bestuurseenheid-werkingsgebied-Location>
+  a void:Dataset;
+  void:class <http://www.w3.org/ns/prov#Location>;
+  void:triples "1003"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_6d09ed8f> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#werkingsgebied>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!1342bd92!Bestuurseenheid>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!ffeaf0d3!Concept> .
+
+<http://example.com/void-description/mandaten#linkset_3fafa707> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#werkingsgebied>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!1342bd92!Bestuurseenheid>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!02c25713!Location> .
+
+<http://example.com/void-description/mandatenmandaten!2c993d43!-Bestuurseenheid-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "3692"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!80463fdb!-Bestuurseenheid-altLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#altLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!43c53f0e!-altLabel-string>;
+  void:triples "1894"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!51040e04!-Bestuurseenheid-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "3692"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!f8dfeb3e!-Bestuurseenheid-hasPrimarySite>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#hasPrimarySite>;
+  void:triples "3689"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!4b4c5422!-Bestuurseenheid-linkedTo>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#linkedTo>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!f43a1b12!-Bestuurseenheid-linkedTo-Bestuurseenheid>;
+  void:triples "639"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!f43a1b12!-Bestuurseenheid-linkedTo-Bestuurseenheid>
+  a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/besluit#Bestuurseenheid>;
+  void:triples "639"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_0dd4abcc> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#linkedTo>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!1342bd92!Bestuurseenheid>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!1342bd92!Bestuurseenheid> .
+
+<http://example.com/void-description/mandaten#mandaten!87d817a7!Bestuursorgaan> a
+    void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/besluit#Bestuursorgaan>;
+  void:entities "29994"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!9215c301!-Bestuursorgaan-bestuurt>,
+    <http://example.com/void-description/mandatenmandaten!d933096c!-Bestuursorgaan-classificatie>,
+    <http://example.com/void-description/mandatenmandaten!28771e73!-Bestuursorgaan-bindingEinde>,
+    <http://example.com/void-description/mandatenmandaten!3973a332!-Bestuursorgaan-bindingStart>,
+    <http://example.com/void-description/mandatenmandaten!c7eae5a5!-Bestuursorgaan-isTijdspecialisatieVan>,
+    <http://example.com/void-description/mandatenmandaten!4979662c!-Bestuursorgaan-uuid>,
+    <http://example.com/void-description/mandatenmandaten!f9ab97cf!-Bestuursorgaan-prefLabel>,
+    <http://example.com/void-description/mandatenmandaten!44b48458!-Bestuursorgaan-hasPost> .
+
+<http://example.com/void-description/mandatenmandaten!9215c301!-Bestuursorgaan-bestuurt>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/besluit#bestuurt>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!ef2dc73d!-Bestuursorgaan-bestuurt-BestuurVanDeEredienst>,
+    <http://example.com/void-description/mandatenmandaten!f15813f5!-Bestuursorgaan-bestuurt-CentraalBestuurVanDeEredienst>,
+    <http://example.com/void-description/mandatenmandaten!e4cd17b1!-Bestuursorgaan-bestuurt-Bestuurseenheid>;
+  void:triples "9725"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!ef2dc73d!-Bestuursorgaan-bestuurt-BestuurVanDeEredienst>
+  a void:Dataset;
+  void:class <http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst>;
+  void:triples "2003"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!f15813f5!-Bestuursorgaan-bestuurt-CentraalBestuurVanDeEredienst>
+  a void:Dataset;
+  void:class <http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst>;
+  void:triples "316"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!e4cd17b1!-Bestuursorgaan-bestuurt-Bestuurseenheid>
+  a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/besluit#Bestuurseenheid>;
+  void:triples "9649"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_0354011e> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#bestuurt>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!87d817a7!Bestuursorgaan>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!e966f5cc!BestuurVanDeEredienst> .
+
+<http://example.com/void-description/mandaten#linkset_66a2d847> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#bestuurt>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!87d817a7!Bestuursorgaan>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!9ef745f0!CentraalBestuurVanDeEredienst> .
+
+<http://example.com/void-description/mandaten#linkset_c629293a> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#bestuurt>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!87d817a7!Bestuursorgaan>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!1342bd92!Bestuurseenheid> .
+
+<http://example.com/void-description/mandatenmandaten!d933096c!-Bestuursorgaan-classificatie>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!d833ead9!-Bestuursorgaan-classificatie-BestuursorgaanClassificatieCode>,
+    <http://example.com/void-description/mandatenmandaten!532605ea!-Bestuursorgaan-classificatie-BestuursorgaanClassificatieCode>,
+    <http://example.com/void-description/mandatenmandaten!13025c79!-Bestuursorgaan-classificatie-Concept>;
+  void:triples "9731"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!d833ead9!-Bestuursorgaan-classificatie-BestuursorgaanClassificatieCode>
+  a void:Dataset;
+  void:class <http://lblod.data.gift/vocabularies/organisatie/BestuursorgaanClassificatieCode>;
+  void:triples "9731"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!532605ea!-Bestuursorgaan-classificatie-BestuursorgaanClassificatieCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/BestuursorgaanClassificatieCode>;
+  void:triples "9731"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!13025c79!-Bestuursorgaan-classificatie-Concept>
+  a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:triples "7398"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_ea6e6902> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!87d817a7!Bestuursorgaan>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!fb42d2c8!BestuursorgaanClassificatieCode>,
+    <http://example.com/void-description/mandaten#mandaten!a1db5024!BestuursorgaanClassificatieCode> .
+
+<http://example.com/void-description/mandaten#linkset_7f2c9dba> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!87d817a7!Bestuursorgaan>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!ffeaf0d3!Concept> .
+
+<http://example.com/void-description/mandatenmandaten!28771e73!-Bestuursorgaan-bindingEinde>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#bindingEinde>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!8adc9cea!-bindingEinde-dateTime>;
+  void:triples "13528"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!8adc9cea!-bindingEinde-dateTime>
+  a void:Dataset;
+  void_ext:datatype xsd:dateTime .
+
+<http://example.com/void-description/mandatenmandaten!3973a332!-Bestuursorgaan-bindingStart>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#bindingStart>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!4cc6450b!-bindingStart-dateTime>;
+  void:triples "20119"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!4cc6450b!-bindingStart-dateTime>
+  a void:Dataset;
+  void_ext:datatype xsd:dateTime .
+
+<http://example.com/void-description/mandatenmandaten!c7eae5a5!-Bestuursorgaan-isTijdspecialisatieVan>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#isTijdspecialisatieVan>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!5bbf72a7!-Bestuursorgaan-isTijdspecialisatieVan-Bestuursorgaan>;
+  void:triples "20263"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!5bbf72a7!-Bestuursorgaan-isTijdspecialisatieVan-Bestuursorgaan>
+  a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/besluit#Bestuursorgaan>;
+  void:triples "20263"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_084ee39b> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/mandaat#isTijdspecialisatieVan>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!87d817a7!Bestuursorgaan>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!87d817a7!Bestuursorgaan> .
+
+<http://example.com/void-description/mandatenmandaten!4979662c!-Bestuursorgaan-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "29994"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!f9ab97cf!-Bestuursorgaan-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "9679"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!44b48458!-Bestuursorgaan-hasPost>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#hasPost>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!6a875d61!-Bestuursorgaan-hasPost-Mandaat>,
+    <http://example.com/void-description/mandatenmandaten!2cbdc88f!-Bestuursorgaan-hasPost-Post>;
+  void:triples "64997"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!6a875d61!-Bestuursorgaan-hasPost-Mandaat>
+  a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/mandaat#Mandaat>;
+  void:triples "64790"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!2cbdc88f!-Bestuursorgaan-hasPost-Post>
+  a void:Dataset;
+  void:class <http://www.w3.org/ns/org#Post>;
+  void:triples "64735"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_f1ebf1b8> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#hasPost>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!87d817a7!Bestuursorgaan>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!4d1b0421!Mandaat> .
+
+<http://example.com/void-description/mandaten#linkset_b1e83625> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#hasPost>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!87d817a7!Bestuursorgaan>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!758ff8c4!Post> .
+
+<http://example.com/void-description/mandaten#mandaten!c1ba63f0!Fractie> a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/mandaat#Fractie>;
+  void:entities "7567"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!6c758b66!-Fractie-uuid>,
+    <http://example.com/void-description/mandatenmandaten!c340f025!-Fractie-linkedTo>,
+    <http://example.com/void-description/mandatenmandaten!10b3afac!-Fractie-memberOf>,
+    <http://example.com/void-description/mandatenmandaten!2c757d37!-Fractie-legalName> .
+
+<http://example.com/void-description/mandatenmandaten!6c758b66!-Fractie-uuid> a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "7567"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!c340f025!-Fractie-linkedTo>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#linkedTo>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!e422866d!-Fractie-linkedTo-Bestuurseenheid>;
+  void:triples "7503"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!e422866d!-Fractie-linkedTo-Bestuurseenheid>
+  a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/besluit#Bestuurseenheid>;
+  void:triples "7503"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_d9346834> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#linkedTo>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!c1ba63f0!Fractie>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!1342bd92!Bestuurseenheid> .
+
+<http://example.com/void-description/mandatenmandaten!10b3afac!-Fractie-memberOf>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#memberOf>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!4d83089f!-Fractie-memberOf-Bestuursorgaan>;
+  void:triples "21391"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!4d83089f!-Fractie-memberOf-Bestuursorgaan>
+  a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/besluit#Bestuursorgaan>;
+  void:triples "21168"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_15a1c3e9> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#memberOf>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!c1ba63f0!Fractie>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!87d817a7!Bestuursorgaan> .
+
+<http://example.com/void-description/mandatenmandaten!2c757d37!-Fractie-legalName>
+  a void:Dataset;
+  void:property <https://www.w3.org/ns/regorg#legalName>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!68367669!-legalName-string>;
+  void:triples "7569"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!68367669!-legalName-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandaten#mandaten!4d1b0421!Mandaat> a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/mandaat#Mandaat>;
+  void:entities "52244"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!4cdc09fa!-Mandaat-uuid>,
+    <http://example.com/void-description/mandatenmandaten!bf5e50f5!-Mandaat-role> .
+
+<http://example.com/void-description/mandatenmandaten!4cdc09fa!-Mandaat-uuid> a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "52244"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!bf5e50f5!-Mandaat-role> a void:Dataset;
+  void:property <http://www.w3.org/ns/org#role>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!ea356267!-Mandaat-role-BestuursfunctieCode>,
+    <http://example.com/void-description/mandatenmandaten!bc7b479e!-Mandaat-role-BestuursfunctieCode>;
+  void:triples "52549"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!ea356267!-Mandaat-role-BestuursfunctieCode>
+  a void:Dataset;
+  void:class <http://lblod.data.gift/vocabularies/organisatie/BestuursfunctieCode>;
+  void:triples "51927"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!bc7b479e!-Mandaat-role-BestuursfunctieCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/BestuursfunctieCode>;
+  void:triples "51927"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_029427d6> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#role>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!4d1b0421!Mandaat>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!5528b71c!BestuursfunctieCode>,
+    <http://example.com/void-description/mandaten#mandaten!6c448a03!BestuursfunctieCode> .
+
+<http://example.com/void-description/mandaten#mandaten!c7cd54e2!Mandataris> a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/mandaat#Mandataris>;
+  void:entities "73688"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!89ea9a75!-Mandataris-beleidsdomein>,
+    <http://example.com/void-description/mandatenmandaten!7dc44b67!-Mandataris-einde>,
+    <http://example.com/void-description/mandatenmandaten!7adc8cf7!-Mandataris-isBestuurlijkeAliasVan>,
+    <http://example.com/void-description/mandatenmandaten!f4af6e2d!-Mandataris-isTijdelijkVervangenDoor>,
+    <http://example.com/void-description/mandatenmandaten!3ba65f55!-Mandataris-rangorde>,
+    <http://example.com/void-description/mandatenmandaten!869b2a2b!-Mandataris-start>,
+    <http://example.com/void-description/mandatenmandaten!fdb5108b!-Mandataris-status>,
+    <http://example.com/void-description/mandatenmandaten!6933bef9!-Mandataris-uuid>,
+    <http://example.com/void-description/mandatenmandaten!60258df5!-Mandataris-hasMembership>,
+    <http://example.com/void-description/mandatenmandaten!bd665eea!-Mandataris-holds> .
+
+<http://example.com/void-description/mandatenmandaten!89ea9a75!-Mandataris-beleidsdomein>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#beleidsdomein>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!fb9b3d57!-Mandataris-beleidsdomein-BeleidsdomeinCode>,
+    <http://example.com/void-description/mandatenmandaten!aa935bdd!-Mandataris-beleidsdomein-Concept>;
+  void:triples "38168"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!fb9b3d57!-Mandataris-beleidsdomein-BeleidsdomeinCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode>;
+  void:triples "38164"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!aa935bdd!-Mandataris-beleidsdomein-Concept>
+  a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:triples "24363"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_ebaeb184> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/mandaat#beleidsdomein>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!c7cd54e2!Mandataris>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!0a4b2124!BeleidsdomeinCode> .
+
+<http://example.com/void-description/mandaten#linkset_1efd9619> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/mandaat#beleidsdomein>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!c7cd54e2!Mandataris>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!ffeaf0d3!Concept> .
+
+<http://example.com/void-description/mandatenmandaten!7dc44b67!-Mandataris-einde>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#einde>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!b6084fc1!-einde-date>,
+    <http://example.com/void-description/mandatenmandaten!b859eb71!-einde-dateTime>;
+  void:triples "51653"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!b6084fc1!-einde-date> a void:Dataset;
+  void_ext:datatype xsd:date .
+
+<http://example.com/void-description/mandatenmandaten!7adc8cf7!-Mandataris-isBestuurlijkeAliasVan>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#isBestuurlijkeAliasVan>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!1c7a5685!-Mandataris-isBestuurlijkeAliasVan-Person>;
+  void:triples "73688"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!1c7a5685!-Mandataris-isBestuurlijkeAliasVan-Person>
+  a void:Dataset;
+  void:class <http://www.w3.org/ns/person#Person>;
+  void:triples "73684"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_a293c755> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/mandaat#isBestuurlijkeAliasVan>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!c7cd54e2!Mandataris>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!1a1881ca!Person> .
+
+<http://example.com/void-description/mandatenmandaten!f4af6e2d!-Mandataris-isTijdelijkVervangenDoor>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#isTijdelijkVervangenDoor>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!ca101c0a!-Mandataris-isTijdelijkVervangenDoor-Mandataris>;
+  void:triples "100"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!ca101c0a!-Mandataris-isTijdelijkVervangenDoor-Mandataris>
+  a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/mandaat#Mandataris>;
+  void:triples "96"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_5b966289> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/mandaat#isTijdelijkVervangenDoor>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!c7cd54e2!Mandataris>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!c7cd54e2!Mandataris> .
+
+<http://example.com/void-description/mandatenmandaten!3ba65f55!-Mandataris-rangorde>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#rangorde>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!a81b7b44!-rangorde-string>;
+  void:triples "13367"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!869b2a2b!-Mandataris-start>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#start>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!50688426!-start-date>,
+    <http://example.com/void-description/mandatenmandaten!a96930a2!-start-dateTime>, <http://example.com/void-description/mandatenmandaten!c0aec8c9!-start-string>;
+  void:triples "73663"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!50688426!-start-date> a void:Dataset;
+  void_ext:datatype xsd:date .
+
+<http://example.com/void-description/mandatenmandaten!c0aec8c9!-start-string> a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandatenmandaten!fdb5108b!-Mandataris-status>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/mandaat#status>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!191e2800!-Mandataris-status-MandatarisStatusCode>,
+    <http://example.com/void-description/mandatenmandaten!fbe1eae3!-Mandataris-status-MandatarisStatusCode>,
+    <http://example.com/void-description/mandatenmandaten!812fac73!-Mandataris-status-Concept>;
+  void:triples "50249"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!191e2800!-Mandataris-status-MandatarisStatusCode>
+  a void:Dataset;
+  void:class <http://lblod.data.gift/vocabularies/organisatie/MandatarisStatusCode>;
+  void:triples "50249"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!fbe1eae3!-Mandataris-status-MandatarisStatusCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/MandatarisStatusCode>;
+  void:triples "50249"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!812fac73!-Mandataris-status-Concept>
+  a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:triples "50249"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_e5c7a9e0> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/mandaat#status>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!c7cd54e2!Mandataris>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!e1cc6ad1!MandatarisStatusCode>,
+    <http://example.com/void-description/mandaten#mandaten!84bd4c74!MandatarisStatusCode> .
+
+<http://example.com/void-description/mandaten#linkset_9dba95f3> a void:Linkset;
+  void:linkPredicate <http://data.vlaanderen.be/ns/mandaat#status>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!c7cd54e2!Mandataris>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!ffeaf0d3!Concept> .
+
+<http://example.com/void-description/mandatenmandaten!6933bef9!-Mandataris-uuid> a
+    void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "73688"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!60258df5!-Mandataris-hasMembership>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#hasMembership>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!16c82eef!-Mandataris-hasMembership-Membership>;
+  void:triples "54320"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!16c82eef!-Mandataris-hasMembership-Membership>
+  a void:Dataset;
+  void:class <http://www.w3.org/ns/org#Membership>;
+  void:triples "54219"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_0faeca09> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#hasMembership>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!c7cd54e2!Mandataris>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!41ba1eda!Membership> .
+
+<http://example.com/void-description/mandatenmandaten!bd665eea!-Mandataris-holds>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#holds>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!a303669b!-Mandataris-holds-Mandaat>,
+    <http://example.com/void-description/mandatenmandaten!e44caa50!-Mandataris-holds-Post>;
+  void:triples "73690"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!a303669b!-Mandataris-holds-Mandaat>
+  a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/mandaat#Mandaat>;
+  void:triples "73690"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!e44caa50!-Mandataris-holds-Post>
+  a void:Dataset;
+  void:class <http://www.w3.org/ns/org#Post>;
+  void:triples "73690"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_a1f65a4f> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#holds>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!c7cd54e2!Mandataris>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!4d1b0421!Mandaat> .
+
+<http://example.com/void-description/mandaten#linkset_f843084d> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#holds>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!c7cd54e2!Mandataris>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!758ff8c4!Post> .
+
+<http://example.com/void-description/mandaten#mandaten!dcca233f!BestuurseenheidClassificatieCode>
+  a void:Dataset;
+  void:class <http://lblod.data.gift/vocabularies/organisatie/BestuurseenheidClassificatieCode>;
+  void:entities "23"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!521aa9d0!-BestuurseenheidClassificatieCode-uuid>,
+    <http://example.com/void-description/mandatenmandaten!23d7d6c3!-BestuurseenheidClassificatieCode-prefLabel> .
+
+<http://example.com/void-description/mandatenmandaten!521aa9d0!-BestuurseenheidClassificatieCode-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "23"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!23d7d6c3!-BestuurseenheidClassificatieCode-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "23"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!5528b71c!BestuursfunctieCode>
+  a void:Dataset;
+  void:class <http://lblod.data.gift/vocabularies/organisatie/BestuursfunctieCode>;
+  void:entities "43"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!69fcf712!-BestuursfunctieCode-uuid>,
+    <http://example.com/void-description/mandatenmandaten!bb66ea6e!-BestuursfunctieCode-prefLabel> .
+
+<http://example.com/void-description/mandatenmandaten!69fcf712!-BestuursfunctieCode-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "43"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!bb66ea6e!-BestuursfunctieCode-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "43"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!fb42d2c8!BestuursorgaanClassificatieCode>
+  a void:Dataset;
+  void:class <http://lblod.data.gift/vocabularies/organisatie/BestuursorgaanClassificatieCode>;
+  void:entities "36"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!a9fedc65!-BestuursorgaanClassificatieCode-uuid>,
+    <http://example.com/void-description/mandatenmandaten!98c71b72!-BestuursorgaanClassificatieCode-prefLabel> .
+
+<http://example.com/void-description/mandatenmandaten!a9fedc65!-BestuursorgaanClassificatieCode-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "36"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!98c71b72!-BestuursorgaanClassificatieCode-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "36"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!e1cc6ad1!MandatarisStatusCode>
+  a void:Dataset;
+  void:class <http://lblod.data.gift/vocabularies/organisatie/MandatarisStatusCode>;
+  void:entities "4"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!f40055c4!-MandatarisStatusCode-uuid>,
+    <http://example.com/void-description/mandatenmandaten!c545cd9d!-MandatarisStatusCode-prefLabel> .
+
+<http://example.com/void-description/mandatenmandaten!f40055c4!-MandatarisStatusCode-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "4"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!c545cd9d!-MandatarisStatusCode-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "4"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!0a4b2124!BeleidsdomeinCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode>;
+  void:entities "6826"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!e75e13eb!-BeleidsdomeinCode-uuid>,
+    <http://example.com/void-description/mandatenmandaten!013dd419!-BeleidsdomeinCode-prefLabel> .
+
+<http://example.com/void-description/mandatenmandaten!e75e13eb!-BeleidsdomeinCode-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "6826"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!013dd419!-BeleidsdomeinCode-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "6826"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!283510a1!BestuurseenheidClassificatieCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/BestuurseenheidClassificatieCode>;
+  void:entities "23"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!d6ae8ffe!-BestuurseenheidClassificatieCode-uuid>,
+    <http://example.com/void-description/mandatenmandaten!87b5bfff!-BestuurseenheidClassificatieCode-prefLabel> .
+
+<http://example.com/void-description/mandatenmandaten!d6ae8ffe!-BestuurseenheidClassificatieCode-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "23"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!87b5bfff!-BestuurseenheidClassificatieCode-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "23"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!6c448a03!BestuursfunctieCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/BestuursfunctieCode>;
+  void:entities "43"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!47f389c4!-BestuursfunctieCode-uuid>,
+    <http://example.com/void-description/mandatenmandaten!f966b004!-BestuursfunctieCode-prefLabel> .
+
+<http://example.com/void-description/mandatenmandaten!47f389c4!-BestuursfunctieCode-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "43"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!f966b004!-BestuursfunctieCode-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "43"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!a1db5024!BestuursorgaanClassificatieCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/BestuursorgaanClassificatieCode>;
+  void:entities "36"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!1e93aa42!-BestuursorgaanClassificatieCode-uuid>,
+    <http://example.com/void-description/mandatenmandaten!c30b46b0!-BestuursorgaanClassificatieCode-prefLabel> .
+
+<http://example.com/void-description/mandatenmandaten!1e93aa42!-BestuursorgaanClassificatieCode-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "36"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!c30b46b0!-BestuursorgaanClassificatieCode-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "36"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!84bd4c74!MandatarisStatusCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/MandatarisStatusCode>;
+  void:entities "4"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!7e18f951!-MandatarisStatusCode-uuid>,
+    <http://example.com/void-description/mandatenmandaten!e45b7a0d!-MandatarisStatusCode-prefLabel> .
+
+<http://example.com/void-description/mandatenmandaten!7e18f951!-MandatarisStatusCode-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "4"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!e45b7a0d!-MandatarisStatusCode-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "4"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!63f54df3!OrganizationClassificationCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/OrganizationClassificationCode>;
+  void:entities "24"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!5a36723d!-OrganizationClassificationCode-uuid>,
+    <http://example.com/void-description/mandatenmandaten!edc6568f!-OrganizationClassificationCode-prefLabel> .
+
+<http://example.com/void-description/mandatenmandaten!5a36723d!-OrganizationClassificationCode-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "24"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!edc6568f!-OrganizationClassificationCode-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "24"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!62864638!RepresentatiefOrgaanClassificatieCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/RepresentatiefOrgaanClassificatieCode>;
+  void:entities "1"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!ee2da69a!-RepresentatiefOrgaanClassificatieCode-uuid>,
+    <http://example.com/void-description/mandatenmandaten!c1adadb5!-RepresentatiefOrgaanClassificatieCode-prefLabel> .
+
+<http://example.com/void-description/mandatenmandaten!ee2da69a!-RepresentatiefOrgaanClassificatieCode-uuid>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "1"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!c1adadb5!-RepresentatiefOrgaanClassificatieCode-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "1"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!ffeaf0d3!Concept> a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:entities "4662"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!9e0f2dcc!-Concept-uuid>,
+    <http://example.com/void-description/mandatenmandaten!99b857c4!-Concept-werkingsgebiedNiveau>,
+    <http://example.com/void-description/mandatenmandaten!c0e6e447!-Concept-label>, <http://example.com/void-description/mandatenmandaten!dacb8419!-Concept-prefLabel> .
+
+<http://example.com/void-description/mandatenmandaten!9e0f2dcc!-Concept-uuid> a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "4662"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!99b857c4!-Concept-werkingsgebiedNiveau>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/ext/werkingsgebiedNiveau>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!a2b98625!-werkingsgebiedNiveau-string>;
+  void:triples "5"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!a2b98625!-werkingsgebiedNiveau-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandatenmandaten!c0e6e447!-Concept-label> a void:Dataset;
+  void:property <http://www.w3.org/2000/01/rdf-schema#label>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!a63c75bb!-label-string>;
+  void:triples "5"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!a63c75bb!-label-string> a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandatenmandaten!dacb8419!-Concept-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!232fa0a0!-prefLabel-string>;
+  void:triples "7181"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!bacefa82!Tombstone> a void:Dataset;
+  void:class <http://www.w3.org/ns/activitystreams#Tombstone>;
+  void:entities "5"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!7f8cb79a!-Tombstone-uuid>,
+    <http://example.com/void-description/mandatenmandaten!629e9f0e!-Tombstone-linkedTo>,
+    <http://example.com/void-description/mandatenmandaten!133d0672!-Tombstone-memberOf>,
+    <http://example.com/void-description/mandatenmandaten!bba05c10!-Tombstone-legalName> .
+
+<http://example.com/void-description/mandatenmandaten!7f8cb79a!-Tombstone-uuid> a
+    void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "5"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!629e9f0e!-Tombstone-linkedTo>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#linkedTo>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!1bcd67c8!-Tombstone-linkedTo-Bestuurseenheid>;
+  void:triples "5"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!1bcd67c8!-Tombstone-linkedTo-Bestuurseenheid>
+  a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/besluit#Bestuurseenheid>;
+  void:triples "5"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_550bd5d4> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#linkedTo>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!bacefa82!Tombstone>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!1342bd92!Bestuurseenheid> .
+
+<http://example.com/void-description/mandatenmandaten!133d0672!-Tombstone-memberOf>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#memberOf>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!0e96830d!-Tombstone-memberOf-Bestuursorgaan>;
+  void:triples "45"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!0e96830d!-Tombstone-memberOf-Bestuursorgaan>
+  a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/besluit#Bestuursorgaan>;
+  void:triples "30"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_6a9df5c2> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#memberOf>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!bacefa82!Tombstone>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!87d817a7!Bestuursorgaan> .
+
+<http://example.com/void-description/mandatenmandaten!bba05c10!-Tombstone-legalName>
+  a void:Dataset;
+  void:property <https://www.w3.org/ns/regorg#legalName>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!68367669!-legalName-string>;
+  void:triples "5"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!41ba1eda!Membership> a void:Dataset;
+  void:class <http://www.w3.org/ns/org#Membership>;
+  void:entities "57578"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!fd0b80be!-Membership-uuid>,
+    <http://example.com/void-description/mandatenmandaten!2f5dfa1c!-Membership-organisation> .
+
+<http://example.com/void-description/mandatenmandaten!fd0b80be!-Membership-uuid> a
+    void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "57579"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!2f5dfa1c!-Membership-organisation>
+  a void:Dataset;
+  void:property <http://www.w3.org/ns/org#organisation>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!df8b988c!-Membership-organisation-Fractie>;
+  void:triples "64709"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!df8b988c!-Membership-organisation-Fractie>
+  a void:Dataset;
+  void:class <http://data.vlaanderen.be/ns/mandaat#Fractie>;
+  void:triples "57541"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_3d1300e0> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#organisation>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!41ba1eda!Membership>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!c1ba63f0!Fractie> .
+
+<http://example.com/void-description/mandaten#mandaten!758ff8c4!Post> a void:Dataset;
+  void:class <http://www.w3.org/ns/org#Post>;
+  void:entities "52189"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!e5f0d630!-Post-uuid>,
+    <http://example.com/void-description/mandatenmandaten!4ce2777a!-Post-role> .
+
+<http://example.com/void-description/mandatenmandaten!e5f0d630!-Post-uuid> a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "52189"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!4ce2777a!-Post-role> a void:Dataset;
+  void:property <http://www.w3.org/ns/org#role>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!23f4956b!-Post-role-BestuursfunctieCode>,
+    <http://example.com/void-description/mandatenmandaten!05eec3bf!-Post-role-BestuursfunctieCode>;
+  void:triples "52494"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!23f4956b!-Post-role-BestuursfunctieCode>
+  a void:Dataset;
+  void:class <http://lblod.data.gift/vocabularies/organisatie/BestuursfunctieCode>;
+  void:triples "51872"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!05eec3bf!-Post-role-BestuursfunctieCode>
+  a void:Dataset;
+  void:class <http://mu.semte.ch/vocabularies/ext/BestuursfunctieCode>;
+  void:triples "51872"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_5e35f193> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/ns/org#role>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!758ff8c4!Post>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!5528b71c!BestuursfunctieCode>,
+    <http://example.com/void-description/mandaten#mandaten!6c448a03!BestuursfunctieCode> .
+
+<http://example.com/void-description/mandaten#mandaten!1a1881ca!Person> a void:Dataset;
+  void:class <http://www.w3.org/ns/person#Person>;
+  void:entities "79980"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!5dcf9b49!-Person-gebruikteVoornaam>,
+    <http://example.com/void-description/mandatenmandaten!cc3d9943!-Person-uuid>, <http://example.com/void-description/mandatenmandaten!d19f647a!-Person-sameAs>,
+    <http://example.com/void-description/mandatenmandaten!daa88ec5!-Person-familyName>,
+    <http://example.com/void-description/mandatenmandaten!273223d6!-Person-name> .
+
+<http://example.com/void-description/mandatenmandaten!5dcf9b49!-Person-gebruikteVoornaam>
+  a void:Dataset;
+  void:property <http://data.vlaanderen.be/ns/persoon#gebruikteVoornaam>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!fb187c64!-gebruikteVoornaam-string>;
+  void:triples "79976"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!fb187c64!-gebruikteVoornaam-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandatenmandaten!cc3d9943!-Person-uuid> a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "79981"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string> a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandatenmandaten!d19f647a!-Person-sameAs> a void:Dataset;
+  void:property <http://www.w3.org/2002/07/owl#sameAs>;
+  void:classPartition <http://example.com/void-description/mandatenmandaten!7b7c99a8!-Person-sameAs-Person>;
+  void:triples "55"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!7b7c99a8!-Person-sameAs-Person>
+  a void:Dataset;
+  void:class <http://www.w3.org/ns/person#Person>;
+  void:triples "43"^^xsd:long .
+
+<http://example.com/void-description/mandaten#linkset_21b0afa3> a void:Linkset;
+  void:linkPredicate <http://www.w3.org/2002/07/owl#sameAs>;
+  void:subjectsTarget <http://example.com/void-description/mandaten#mandaten!1a1881ca!Person>;
+  void:objectsTarget <http://example.com/void-description/mandaten#mandaten!1a1881ca!Person> .
+
+<http://example.com/void-description/mandaten#_graph_mandaten!c73c3932> void:subset
+    <http://example.com/void-description/mandaten#linkset_21b0afa3> .
+
+<http://example.com/void-description/mandatenmandaten!daa88ec5!-Person-familyName>
+  a void:Dataset;
+  void:property <http://xmlns.com/foaf/0.1/familyName>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!56d72054!-familyName-string>;
+  void:triples "79980"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!56d72054!-familyName-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandatenmandaten!273223d6!-Person-name> a void:Dataset;
+  void:property <http://xmlns.com/foaf/0.1/name>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!b40f4a5a!-name-string>;
+  void:triples "334"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!b40f4a5a!-name-string> a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandaten#mandaten!02c25713!Location> a void:Dataset;
+  void:class <http://www.w3.org/ns/prov#Location>;
+  void:entities "349"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/mandatenmandaten!c0066e55!-Location-uuid>,
+    <http://example.com/void-description/mandatenmandaten!23bbc2cc!-Location-werkingsgebiedNiveau>,
+    <http://example.com/void-description/mandatenmandaten!1e69274d!-Location-label> .
+
+<http://example.com/void-description/mandatenmandaten!c0066e55!-Location-uuid> a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/core/uuid>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!057ed18f!-uuid-string>;
+  void:triples "349"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!23bbc2cc!-Location-werkingsgebiedNiveau>
+  a void:Dataset;
+  void:property <http://mu.semte.ch/vocabularies/ext/werkingsgebiedNiveau>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!a2b98625!-werkingsgebiedNiveau-string>;
+  void:triples "349"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!a2b98625!-werkingsgebiedNiveau-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandatenmandaten!1e69274d!-Location-label> a
+    void:Dataset;
+  void:property <http://www.w3.org/2000/01/rdf-schema#label>;
+  void_ext:datatypePartition <http://example.com/void-description/mandatenmandaten!a63c75bb!-label-string>;
+  void:triples "349"^^xsd:long .
+
+<http://example.com/void-description/mandatenmandaten!a63c75bb!-label-string> a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/mandaten#mandaten!adaed4a1!bestuurt> void:property
+    <http://data.vlaanderen.be/ns/besluit#bestuurt>;
+  void:triples "9725"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!f0c1b8ae!classificatie> void:property
+    <http://data.vlaanderen.be/ns/besluit#classificatie>;
+  void:triples "13423"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!b18fb08f!werkingsgebied> void:property
+    <http://data.vlaanderen.be/ns/besluit#werkingsgebied>;
+  void:triples "1073"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!8662b7be!beleidsdomein> void:property
+    <http://data.vlaanderen.be/ns/mandaat#beleidsdomein>;
+  void:triples "38168"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!7490f92f!bindingEinde> void:property
+    <http://data.vlaanderen.be/ns/mandaat#bindingEinde>;
+  void:triples "13528"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!22887a68!bindingStart> void:property
+    <http://data.vlaanderen.be/ns/mandaat#bindingStart>;
+  void:triples "20119"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!1a14adf3!einde> void:property
+    <http://data.vlaanderen.be/ns/mandaat#einde>;
+  void:triples "51653"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!ad507940!isBestuurlijkeAliasVan>
+  void:property <http://data.vlaanderen.be/ns/mandaat#isBestuurlijkeAliasVan>;
+  void:triples "73688"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!c9b2eb8b!isTijdelijkVervangenDoor>
+  void:property <http://data.vlaanderen.be/ns/mandaat#isTijdelijkVervangenDoor>;
+  void:triples "100"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!e693532e!isTijdspecialisatieVan>
+  void:property <http://data.vlaanderen.be/ns/mandaat#isTijdspecialisatieVan>;
+  void:triples "20263"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!0264eb00!rangorde> void:property
+    <http://data.vlaanderen.be/ns/mandaat#rangorde>;
+  void:triples "13367"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!5fea08e6!start> void:property
+    <http://data.vlaanderen.be/ns/mandaat#start>;
+  void:triples "73663"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!291806bd!status> void:property
+    <http://data.vlaanderen.be/ns/mandaat#status>;
+  void:triples "50249"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!974873bd!gebruikteVoornaam>
+  void:property <http://data.vlaanderen.be/ns/persoon#gebruikteVoornaam>;
+  void:triples "79976"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!5b0e5a85!uuid> void:property
+    <http://mu.semte.ch/vocabularies/core/uuid>;
+  void:triples "313289"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!3b1be8df!werkingsgebiedNiveau>
+  void:property <http://mu.semte.ch/vocabularies/ext/werkingsgebiedNiveau>;
+  void:triples "349"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!c74e2b73!type> void:property
+    rdf:type;
+  void:triples "374504"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!4f75ce12!label> void:property
+    <http://www.w3.org/2000/01/rdf-schema#label>;
+  void:triples "349"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!4534900f!sameAs> void:property
+    <http://www.w3.org/2002/07/owl#sameAs>;
+  void:triples "55"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!07d92ae6!altLabel> void:property
+    <http://www.w3.org/2004/02/skos/core#altLabel>;
+  void:triples "1894"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!8d3b7b43!prefLabel> void:property
+    <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void:triples "24090"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!207158e7!hasMembership> void:property
+    <http://www.w3.org/ns/org#hasMembership>;
+  void:triples "54320"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!a1b04521!hasPost> void:property
+    <http://www.w3.org/ns/org#hasPost>;
+  void:triples "64997"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!49b28c75!hasPrimarySite> void:property
+    <http://www.w3.org/ns/org#hasPrimarySite>;
+  void:triples "3689"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!ebf52e4a!holds> void:property
+    <http://www.w3.org/ns/org#holds>;
+  void:triples "73690"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!7590a0a7!linkedTo> void:property
+    <http://www.w3.org/ns/org#linkedTo>;
+  void:triples "8142"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!8a8aecac!memberOf> void:property
+    <http://www.w3.org/ns/org#memberOf>;
+  void:triples "21391"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!0ad37f12!organisation> void:property
+    <http://www.w3.org/ns/org#organisation>;
+  void:triples "64709"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!a7076748!role> void:property
+    <http://www.w3.org/ns/org#role>;
+  void:triples "52549"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!20562318!familyName> void:property
+    <http://xmlns.com/foaf/0.1/familyName>;
+  void:triples "79980"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!893797ba!name> void:property
+    <http://xmlns.com/foaf/0.1/name>;
+  void:triples "334"^^xsd:long .
+
+<http://example.com/void-description/mandaten#mandaten!4b35e1bd!legalName> void:property
+    <https://www.w3.org/ns/regorg#legalName>;
+  void:triples "7569"^^xsd:long .

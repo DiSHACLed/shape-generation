@@ -1,0 +1,283 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://example.com/shape#http://www.w3.org/2004/02/skos/core#> .
+@prefix ns2:	<http://www.w3.org/ns/shacl#> .
+@prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
+@prefix ns4:	<http://example.com/shape#http://data.vlaanderen.be/ns/mandaat#> .
+@prefix ns5:	<http://data.vlaanderen.be/ns/mandaat#> .
+@prefix ns6:	<http://example.com/shape#http://data.vlaanderen.be/ns/besluit#> .
+@prefix ns7:	<http://data.vlaanderen.be/ns/besluit#> .
+@prefix ns8:	<http://example.com/shape#http://data.lblod.info/vocabularies/erediensten/> .
+@prefix ns9:	<http://data.lblod.info/vocabularies/erediensten/> .
+@prefix ns10:	<http://example.com/shape#http://lblod.data.gift/vocabularies/organisatie/> .
+@prefix ns11:	<http://lblod.data.gift/vocabularies/organisatie/> .
+@prefix ns12:	<http://example.com/shape#http://data.lblod.info/vocabularies/contacthub/> .
+@prefix ns13:	<http://data.lblod.info/vocabularies/contacthub/> .
+@prefix ns14:	<http://example.com/shape#http://www.w3.org/ns/person#> .
+@prefix ns15:	<http://www.w3.org/ns/person#> .
+@prefix ns16:	<http://example.com/shape#http://mu.semte.ch/vocabularies/ext/> .
+@prefix ns17:	<http://mu.semte.ch/vocabularies/ext/> .
+@prefix ns18:	<http://example.com/shape#http://www.w3.org/ns/prov#> .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+@prefix ns20:	<http://example.com/shape#http://www.w3.org/ns/org#> .
+@prefix ns21:	<http://www.w3.org/ns/org#> .
+@prefix ns22:	<http://example.com/shape#http://www.w3.org/ns/activitystreams#> .
+@prefix ns23:	<http://www.w3.org/ns/activitystreams#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix ns25:	<http://data.vlaanderen.be/ns/persoon#> .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns28:	<https://www.w3.org/ns/regorg#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix ns30:	<http://mu.semte.ch/vocabularies/core/> .
+
+ns1:Concept
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	skos:Concept ;
+	ns2:property	[	ns2:path	rdfs:label ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	skos:prefLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns17:werkingsgebiedNiveau ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns4:Mandataris
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns5:Mandataris ;
+	ns2:property	[	ns2:path	ns21:holds ;
+				ns2:maxCount	2 ;
+				ns2:class	ns5:Mandaat ] , [	ns2:path	ns21:hasMembership ;
+				ns2:maxCount	2 ;
+				ns2:class	ns21:Membership ] , [	ns2:path	ns5:beleidsdomein ;
+				ns2:maxCount	40 ;
+				ns2:class	ns17:BeleidsdomeinCode ] , [	ns2:path	ns5:isBestuurlijkeAliasVan ;
+				ns2:maxCount	2 ;
+				ns2:class	ns15:Person ] , [	ns2:path	ns5:beleidsdomein ;
+				ns2:maxCount	40 ;
+				ns2:class	skos:Concept ] , [	ns2:path	ns5:isTijdelijkVervangenDoor ;
+				ns2:maxCount	6 ;
+				ns2:class	ns5:Mandataris ] , [	ns2:path	ns5:rangorde ;
+				ns2:maxCount	3 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns5:einde ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:date ] , [	ns2:path	ns5:status ;
+				ns2:maxCount	2 ;
+				ns2:class	skos:Concept ] , [	ns2:path	ns5:einde ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:dateTime ] , [	ns2:path	ns21:holds ;
+				ns2:maxCount	2 ;
+				ns2:class	ns21:Post ] , [	ns2:path	ns5:start ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns5:start ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:date ] , [	ns2:path	ns5:start ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:dateTime ] , [	ns2:path	ns5:status ;
+				ns2:maxCount	2 ;
+				ns2:class	ns11:MandatarisStatusCode ] , [	ns2:path	ns5:status ;
+				ns2:maxCount	2 ;
+				ns2:class	ns17:MandatarisStatusCode ] .
+ns6:Bestuursorgaan
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:Bestuursorgaan ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns7:classificatie ;
+				ns2:maxCount	2 ;
+				ns2:class	ns11:BestuursorgaanClassificatieCode ] , [	ns2:path	ns7:bestuurt ;
+				ns2:maxCount	2 ;
+				ns2:class	ns9:BestuurVanDeEredienst ] , [	ns2:path	ns5:bindingStart ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:dateTime ] , [	ns2:path	ns7:classificatie ;
+				ns2:maxCount	2 ;
+				ns2:class	ns17:BestuursorgaanClassificatieCode ] , [	ns2:path	ns21:hasPost ;
+				ns2:maxCount	14 ;
+				ns2:class	ns5:Mandaat ] , [	ns2:path	ns7:classificatie ;
+				ns2:maxCount	2 ;
+				ns2:class	skos:Concept ] , [	ns2:path	ns5:bindingEinde ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:dateTime ] , [	ns2:path	ns21:hasPost ;
+				ns2:maxCount	14 ;
+				ns2:class	ns21:Post ] , [	ns2:path	ns7:bestuurt ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:Bestuurseenheid ] , [	ns2:path	ns7:bestuurt ;
+				ns2:maxCount	1 ;
+				ns2:class	ns9:CentraalBestuurVanDeEredienst ] , [	ns2:path	ns5:isTijdspecialisatieVan ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:Bestuursorgaan ] .
+ns8:CentraalBestuurVanDeEredienst
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns9:CentraalBestuurVanDeEredienst ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns7:classificatie ;
+				ns2:maxCount	2 ;
+				ns2:class	ns17:OrganizationClassificationCode ] , [	ns2:path	ns7:classificatie ;
+				ns2:maxCount	2 ;
+				ns2:class	ns17:BestuurseenheidClassificatieCode ] , [	ns2:path	ns7:classificatie ;
+				ns2:maxCount	2 ;
+				ns2:class	ns11:BestuurseenheidClassificatieCode ] , [	ns2:path	ns21:hasPrimarySite ;
+				ns2:maxCount	1 ] .
+ns10:BestuursorgaanClassificatieCode
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns11:BestuursorgaanClassificatieCode ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns8:BestuurVanDeEredienst
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns9:BestuurVanDeEredienst ;
+	ns2:property	[	ns2:path	ns7:classificatie ;
+				ns2:maxCount	2 ;
+				ns2:class	ns17:OrganizationClassificationCode ] , [	ns2:path	skos:prefLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns7:classificatie ;
+				ns2:maxCount	2 ;
+				ns2:class	ns11:BestuurseenheidClassificatieCode ] , [	ns2:path	ns7:classificatie ;
+				ns2:maxCount	2 ;
+				ns2:class	ns17:BestuurseenheidClassificatieCode ] , [	ns2:path	skos:altLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns21:hasPrimarySite ;
+				ns2:maxCount	1 ] .
+ns12:AgentInPositie
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns13:AgentInPositie ;
+	ns2:property	[	ns2:path	ns5:rangorde ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns5:status ;
+				ns2:maxCount	2 ;
+				ns2:class	ns17:MandatarisStatusCode ] , [	ns2:path	ns5:beleidsdomein ;
+				ns2:maxCount	36 ;
+				ns2:class	ns17:BeleidsdomeinCode ] , [	ns2:path	ns5:status ;
+				ns2:maxCount	2 ;
+				ns2:class	ns11:MandatarisStatusCode ] , [	ns2:path	ns5:status ;
+				ns2:maxCount	2 ;
+				ns2:class	skos:Concept ] , [	ns2:path	ns5:beleidsdomein ;
+				ns2:maxCount	36 ;
+				ns2:class	skos:Concept ] .
+ns14:Person
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns15:Person ;
+	ns2:property	[	ns2:path	ns25:gebruikteVoornaam ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	foaf:familyName ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	foaf:name ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	owl:sameAs ;
+				ns2:maxCount	4 ;
+				ns2:class	ns15:Person ] , [	ns2:path	ns30:uuid ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns10:BestuurseenheidClassificatieCode
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns11:BestuurseenheidClassificatieCode ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns16:BestuurseenheidClassificatieCode
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns17:BestuurseenheidClassificatieCode ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns6:Bestuurseenheid
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:Bestuurseenheid ;
+	ns2:property	[	ns2:path	ns7:werkingsgebied ;
+				ns2:maxCount	2 ;
+				ns2:class	prov:Location ] , [	ns2:path	ns21:linkedTo ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:Bestuurseenheid ] , [	ns2:path	ns21:hasPrimarySite ;
+				ns2:maxCount	1 ] , [	ns2:path	ns7:classificatie ;
+				ns2:maxCount	2 ;
+				ns2:class	skos:Concept ] , [	ns2:path	ns7:werkingsgebied ;
+				ns2:maxCount	2 ;
+				ns2:class	skos:Concept ] , [	ns2:path	ns7:classificatie ;
+				ns2:maxCount	2 ;
+				ns2:class	ns11:BestuurseenheidClassificatieCode ] , [	ns2:path	skos:altLabel ;
+				ns2:maxCount	2 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	skos:prefLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns7:classificatie ;
+				ns2:maxCount	2 ;
+				ns2:class	ns17:OrganizationClassificationCode ] , [	ns2:path	ns7:classificatie ;
+				ns2:maxCount	2 ;
+				ns2:class	ns17:BestuurseenheidClassificatieCode ] .
+ns16:BestuursfunctieCode
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns17:BestuursfunctieCode ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns18:Location
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	prov:Location ;
+	ns2:property	[	ns2:path	ns17:werkingsgebiedNiveau ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	rdfs:label ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns4:Fractie
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns5:Fractie ;
+	ns2:property	[	ns2:path	ns21:memberOf ;
+				ns2:maxCount	18 ;
+				ns2:class	ns7:Bestuursorgaan ] , [	ns2:path	ns21:linkedTo ;
+				ns2:maxCount	4 ;
+				ns2:class	ns7:Bestuurseenheid ] , [	ns2:path	ns28:legalName ;
+				ns2:maxCount	2 ;
+				ns2:datatype	xsd:string ] .
+ns10:BestuursfunctieCode
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns11:BestuursfunctieCode ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns16:OrganizationClassificationCode
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns17:OrganizationClassificationCode ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns4:Mandaat
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns5:Mandaat ;
+	ns2:property	[	ns2:path	ns21:role ;
+				ns2:maxCount	4 ;
+				ns2:class	ns11:BestuursfunctieCode ] , [	ns2:path	ns21:role ;
+				ns2:maxCount	4 ;
+				ns2:class	ns17:BestuursfunctieCode ] .
+ns20:Membership
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns21:Membership ;
+	ns2:property	[	ns2:path	ns21:organisation ;
+				ns2:maxCount	4 ;
+				ns2:class	ns5:Fractie ] .
+ns20:Post
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns21:Post ;
+	ns2:property	[	ns2:path	ns21:role ;
+				ns2:maxCount	4 ;
+				ns2:class	ns11:BestuursfunctieCode ] , [	ns2:path	ns21:role ;
+				ns2:maxCount	4 ;
+				ns2:class	ns17:BestuursfunctieCode ] .
+ns16:BeleidsdomeinCode
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns17:BeleidsdomeinCode ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns16:BestuursorgaanClassificatieCode
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns17:BestuursorgaanClassificatieCode ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns22:Tombstone
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns23:Tombstone ;
+	ns2:property	[	ns2:path	ns28:legalName ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns21:linkedTo ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:Bestuurseenheid ] .

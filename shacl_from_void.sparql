@@ -1,0 +1,60 @@
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX void-ext: <http://ldf.fi/void-ext#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+CONSTRUCT {
+  ?nodeShape a sh:NodeShape ;
+  sh:targetClass ?subjectClass ;
+  sh:property [
+		                        sh:path ?prop ;
+		                        sh:maxCount ?maxO ;
+		                        sh:datatype ?objectDatatype ;
+                                sh:class ?objectClass ;
+		                        # sh:pattern "^\\d{3}-\\d{2}-\\d{4}$" ;
+	          ]
+}
+WHERE {
+  {
+    SELECT DISTINCT ?subjectClass ?prop ?objectClass ?objectDatatype (MAX(?countO) AS ?maxO)
+    WHERE {
+      {
+        SELECT DISTINCT ?s ?subjectClass ?prop ?objectClass ?objectDatatype (COUNT(?o) AS ?countO)
+        WHERE {
+          GRAPH <http://example.com/graphs/rijksmuseum> {
+            ?s a ?subjectClass ;
+                ?prop ?o .
+            {
+              SELECT DISTINCT ?subjectsCount ?subjectClass ?prop ?objectClass ?objectsCount ?objectDatatype
+              WHERE {
+                GRAPH <http://example.com/graphs/void/rijksmuseum> {
+                  {
+                    ?cp void:class ?subjectClass ;
+                    void:entities ?subjectsCount ;
+                    void:propertyPartition ?pp .
+                    ?pp void:property ?prop .
+                    OPTIONAL {
+                      {
+                        ?pp  void:classPartition [ void:class ?objectClass ; void:triples ?objectsCount ] .
+
+                      } UNION {
+                        ?pp void-ext:datatypePartition [ void-ext:datatype ?objectDatatype ] .
+                      }
+                    }
+                  } UNION {
+                    ?linkset void:subjectsTarget [ void:class ?subjectClass ; void:entities ?subjectsCount ] ;
+                    void:linkPredicate ?prop ;
+                    void:objectsTarget [ void:class ?objectClass ; void:entities ?objectsCount ] .
+                  }
+                }
+              }
+            }
+          }
+        }
+        GROUP BY ?s ?subjectClass ?prop ?objectClass ?objectDatatype
+      }
+    }
+    GROUP BY ?subjectClass ?prop ?objectClass ?objectDatatype
+  }
+  BIND (IRI(CONCAT("http://example.com/shape#", ?subjectClass)) AS ?nodeShape)
+}

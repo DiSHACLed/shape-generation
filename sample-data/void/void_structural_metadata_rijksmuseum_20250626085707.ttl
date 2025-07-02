@@ -1,0 +1,1865 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix : <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void_ext: <http://ldf.fi/void-ext#> .
+@prefix formats: <http://www.w3.org/ns/formats/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://triplestore:8890/sparql> a :Service;
+  :defaultDataset <http://triplestore:8890/sparql#sparql-default-dataset>;
+  :endpoint <http://triplestore:8890/sparql>;
+  :resultFormat formats:SPARQL_Results_CSV, formats:SPARQL_Results_JSON, formats:N-Triples,
+    formats:RDF_XML, formats:SPARQL_Results_TSV, formats:Turtle, formats:SPARQL_Results_XML;
+  :supportedLanguage :SPARQL11Query;
+  :feature :UnionDefaultGraph, :BasicFederatedQuery;
+  :availableGraphs <http://example.com/void-description/rijksmuseum#sparql-graph-collection> .
+
+<http://triplestore:8890/sparql#sparql-default-dataset> a :Dataset;
+  :defaultGraph <http://example.com/void-description/rijksmuseum#sparql-default-graph>;
+  :namedGraph <http://example.com/graphs/rijksmuseum> .
+
+<http://example.com/void-description/rijksmuseum#sparql-default-graph> a :Graph;
+  void:triples "25952298"^^xsd:long;
+  void:distinctObjects "6509805"^^xsd:long;
+  void_ext:distinctLiterals "2521521"^^xsd:long;
+  void_ext:distinctIRIReferenceObjects "3988281"^^xsd:long;
+  void_ext:distinctBlankNodeObjects "3"^^xsd:long;
+  void:distinctSubjects "2258311"^^xsd:long;
+  void_ext:distinctIRIReferenceSubjects "2258308"^^xsd:long;
+  void_ext:distinctBlankNodeSubjects "3"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#sparql-graph-collection> :namedGraph
+    <http://example.com/graphs/rijksmuseum> .
+
+<http://example.com/graphs/rijksmuseum> a :NamedGraph;
+  :name <http://example.com/graphs/rijksmuseum>;
+  :graph <http://example.com/void-description/rijksmuseum#_graph_rijksmuseum!95fc1609> .
+
+<http://example.com/void-description/rijksmuseum#_graph_rijksmuseum!95fc1609> a :Graph;
+  void:triples "25952298"^^xsd:long;
+  void:classes "23"^^xsd:long;
+  void:classPartition <http://example.com/void-description/rijksmuseum#rijksmuseum!fc98fdb0!ReviewNewsArticle>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!bfcba7a7!E12_Production>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!d81ec0e2!E22_Human-Made_Object>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!a84d575e!E33_E41_Linguistic_Appellation>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!3a4115a1!E33_Linguistic_Object>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!bf34fa6c!E36_Visual_Item>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!08bffd3b!E39_Actor>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!565ad2db!E41_Appellation>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!4111624a!E42_Identifier>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!96549030!E52_Time-Span>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!27cda6f5!E54_Dimension>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!9a19a9b5!E65_Creation>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!1c76822e!E67_Birth>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!88d6f3ae!E69_Death>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!d966b7ea!E73_Information_Object>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!3968899b!E7_Activity>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!08265ff5!Agent>, <http://example.com/void-description/rijksmuseum#rijksmuseum!0a363030!Place>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!237312e4!TimeSpan>, <http://example.com/void-description/rijksmuseum#rijksmuseum!00ee0736!WebResource>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!f815437a!Aggregation>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!ffeaf0d3!Concept>;
+  void:propertyPartition <http://example.com/void-description/rijksmuseum#rijksmuseum!85e1ede4!spn>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!5e23481d!contributor>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!d8448f7d!creator>, <http://example.com/void-description/rijksmuseum#rijksmuseum!38e1536b!description>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!3c3cd391!format>, <http://example.com/void-description/rijksmuseum#rijksmuseum!bee9e5e3!identifier>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!276ec96e!language>, <http://example.com/void-description/rijksmuseum#rijksmuseum!b70aed1c!publisher>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!9b00e028!relation>, <http://example.com/void-description/rijksmuseum#rijksmuseum!cfac1f9e!rights>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!78b01b16!subject>, <http://example.com/void-description/rijksmuseum#rijksmuseum!10a2b68e!title>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!6a062186!type>, <http://example.com/void-description/rijksmuseum#rijksmuseum!f31288f4!created>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!f9bd646e!extent>, <http://example.com/void-description/rijksmuseum#rijksmuseum!394eb5dd!hasPart>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!cf78d212!isPartOf>, <http://example.com/void-description/rijksmuseum#rijksmuseum!e3da73e1!isReferencedBy>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!5002f799!provenance>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!c6e46bff!spatial>, <http://example.com/void-description/rijksmuseum#rijksmuseum!74d2396c!temporal>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!4fe63fba!dateOfBirth>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!d7e3ee65!dateOfDeath>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!22447630!gender>, <http://example.com/void-description/rijksmuseum#rijksmuseum!ac296786!placeOfBirth>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!eeee42d3!placeOfDeath>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!eeeb5570!professionOrOccupation>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!240277ef!datePublished>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!44801ca2!headline>, <http://example.com/void-description/rijksmuseum#rijksmuseum!0b6c7899!itemReviewed>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!dc02b2d1!publisher>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!890c1d35!P100i_died_in>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!244037f0!P108i_was_produced_by>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!4360eb94!P129_is_about>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!d36f4a3b!P129i_is_subject_of>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!d4c56896!P138_represents>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!43693f3f!P14_carried_out_by>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!53f72e91!P16_used_specific_object>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!50bfbae1!P190_has_symbolic_content>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!569c870e!P1_is_identified_by>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!d8bae48c!P2_has_type>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!4229e2aa!P43_has_dimension>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!734bfcae!P4_has_time-span>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!03ad33f2!P4_has_timespan>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!62fe6460!P50_has_current_keeper>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!8635e517!P65_shows_visual_item>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!b002e175!P65i_is_shown_by>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!80008085!P67i_is_referred_to_by>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!9ba60f37!P72_has_language>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!45eee039!P7_took_place_at>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!a2021591!P82a_begin_of_the_begin>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!bfc6c9d1!P82b_end_of_the_end>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!ebf04fbd!P90_has_value>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!39cf6675!P91_has_unit>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!9a255169!P94i_was_created_by>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!59bf5831!P98i_was_brought_into_life>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!26daa8f3!P9_consists_of>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!f6f31221!aggregatedCHO>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!5b602c69!dataProvider>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!8eabbebd!isShownAt>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!b23eb52b!isShownBy>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!31d40a5f!object>, <http://example.com/void-description/rijksmuseum#rijksmuseum!5cb029d6!provider>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!fed54c43!rights>, <http://example.com/void-description/rijksmuseum#rijksmuseum!878ed38a!type>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!50207345!nationality>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!1469cb16!technique>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!ea758cf9!asWKT>, <http://example.com/void-description/rijksmuseum#rijksmuseum!3348f96c!hasGeometry>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!c74e2b73!type>, <http://example.com/void-description/rijksmuseum#rijksmuseum!4f75ce12!label>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!172382a0!lat>, <http://example.com/void-description/rijksmuseum#rijksmuseum!e7990c6d!long>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!93e393b7!closeMatch>,
+    <http://example.com/void-description/rijksmuseum#rijksmuseum!8d3b7b43!prefLabel>;
+  void:distinctObjects "5603975"^^xsd:long;
+  void_ext:distinctLiterals "2150575"^^xsd:long;
+  void_ext:distinctIRIReferenceObjects "3453400"^^xsd:long;
+  void:distinctSubjects "1943908"^^xsd:long;
+  void_ext:distinctIRIReferenceSubjects "1943908"^^xsd:long;
+  void:subset <http://example.com/void-description/rijksmuseum#linkset_4b0c5d8c>, <http://example.com/void-description/rijksmuseum#linkset_4c84018e>,
+    <http://example.com/void-description/rijksmuseum#linkset_c0763c39>, <http://example.com/void-description/rijksmuseum#linkset_d0415af4>,
+    <http://example.com/void-description/rijksmuseum#linkset_2a9e0b39>, <http://example.com/void-description/rijksmuseum#linkset_9e92f476>,
+    <http://example.com/void-description/rijksmuseum#linkset_94385c6d>, <http://example.com/void-description/rijksmuseum#linkset_136fa5b5>,
+    <http://example.com/void-description/rijksmuseum#linkset_d653e80b>, <http://example.com/void-description/rijksmuseum#linkset_1b9420a4>,
+    <http://example.com/void-description/rijksmuseum#linkset_56dca2bd>, <http://example.com/void-description/rijksmuseum#linkset_6f90f7ba>,
+    <http://example.com/void-description/rijksmuseum#linkset_18f3b6ae>, <http://example.com/void-description/rijksmuseum#linkset_8643c0bc>,
+    <http://example.com/void-description/rijksmuseum#linkset_1cab9a50>, <http://example.com/void-description/rijksmuseum#linkset_19ea2b8e>,
+    <http://example.com/void-description/rijksmuseum#linkset_f657729c>, <http://example.com/void-description/rijksmuseum#linkset_bb307bde>,
+    <http://example.com/void-description/rijksmuseum#linkset_cdf78d8f>, <http://example.com/void-description/rijksmuseum#linkset_b89277f4>,
+    <http://example.com/void-description/rijksmuseum#linkset_4c6cbd3b>, <http://example.com/void-description/rijksmuseum#linkset_7aca172a>,
+    <http://example.com/void-description/rijksmuseum#linkset_b4fe495d>, <http://example.com/void-description/rijksmuseum#linkset_99769489>,
+    <http://example.com/void-description/rijksmuseum#linkset_cc421bb1>, <http://example.com/void-description/rijksmuseum#linkset_0a8bbc67>,
+    <http://example.com/void-description/rijksmuseum#linkset_4c481d81>, <http://example.com/void-description/rijksmuseum#linkset_8b267607>,
+    <http://example.com/void-description/rijksmuseum#linkset_e1e118f2>, <http://example.com/void-description/rijksmuseum#linkset_e7b4bf72>,
+    <http://example.com/void-description/rijksmuseum#linkset_f37f1c5c>, <http://example.com/void-description/rijksmuseum#linkset_aa64d30d>,
+    <http://example.com/void-description/rijksmuseum#linkset_54fdbd0c>, <http://example.com/void-description/rijksmuseum#linkset_e2094c67>,
+    <http://example.com/void-description/rijksmuseum#linkset_00d1f03e>, <http://example.com/void-description/rijksmuseum#linkset_0dfdf65b>,
+    <http://example.com/void-description/rijksmuseum#linkset_e2b5affc>, <http://example.com/void-description/rijksmuseum#linkset_1f252436>,
+    <http://example.com/void-description/rijksmuseum#linkset_cee20524>, <http://example.com/void-description/rijksmuseum#linkset_7646023d>,
+    <http://example.com/void-description/rijksmuseum#linkset_5528fb1a>, <http://example.com/void-description/rijksmuseum#linkset_a54bb6bc>,
+    <http://example.com/void-description/rijksmuseum#linkset_9628f333> .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!fc98fdb0!ReviewNewsArticle>
+  a void:Dataset;
+  void:class <http://schema.org/ReviewNewsArticle>;
+  void:entities "44"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!e1d9bb1e!-ReviewNewsArticle-datePublished>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!10282297!-ReviewNewsArticle-headline>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!4b7023d7!-ReviewNewsArticle-itemReviewed>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!fc7dd001!-ReviewNewsArticle-publisher> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!e1d9bb1e!-ReviewNewsArticle-datePublished>
+  a void:Dataset;
+  void:property <http://schema.org/datePublished>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!0c5303a8!-datePublished-date>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!62b2124f!-datePublished-string>;
+  void:triples "44"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!0c5303a8!-datePublished-date>
+  a void:Dataset;
+  void_ext:datatype xsd:date .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!62b2124f!-datePublished-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!10282297!-ReviewNewsArticle-headline>
+  a void:Dataset;
+  void:property <http://schema.org/headline>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!7361b642!-headline-string>;
+  void:triples "44"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!7361b642!-headline-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!4b7023d7!-ReviewNewsArticle-itemReviewed>
+  a void:Dataset;
+  void:property <http://schema.org/itemReviewed>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!bc838379!-ReviewNewsArticle-itemReviewed-E7_Activity>;
+  void:triples "44"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!bc838379!-ReviewNewsArticle-itemReviewed-E7_Activity>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E7_Activity>;
+  void:triples "44"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_4b0c5d8c> a void:Linkset;
+  void:linkPredicate <http://schema.org/itemReviewed>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!fc98fdb0!ReviewNewsArticle>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!3968899b!E7_Activity> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!fc7dd001!-ReviewNewsArticle-publisher>
+  a void:Dataset;
+  void:property <http://schema.org/publisher>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!abc654fe!-publisher-string>;
+  void:triples "44"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!abc654fe!-publisher-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!bfcba7a7!E12_Production>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E12_Production>;
+  void:entities "3644"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!51e8b347!-E12_Production-P4_has_time-span> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!51e8b347!-E12_Production-P4_has_time-span>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!68032023!-E12_Production-P4_has_time-span-E52_Time-Span>;
+  void:triples "3644"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!68032023!-E12_Production-P4_has_time-span-E52_Time-Span>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+  void:triples "3644"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_4c84018e> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!bfcba7a7!E12_Production>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!96549030!E52_Time-Span> .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!d81ec0e2!E22_Human-Made_Object>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>;
+  void:entities "8055"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!4f44def6!-E22_Human-Made_Object-P108i_was_produced_by>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!66d64725!-E22_Human-Made_Object-P1_is_identified_by>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!cc5cb3ad!-E22_Human-Made_Object-P2_has_type>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!76c4393c!-E22_Human-Made_Object-P43_has_dimension>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!521549bf!-E22_Human-Made_Object-P50_has_current_keeper>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!8fcc4aa4!-E22_Human-Made_Object-P65_shows_visual_item>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!c4b4c325!-E22_Human-Made_Object-P67i_is_referred_to_by> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!4f44def6!-E22_Human-Made_Object-P108i_was_produced_by>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!043ae0bc!-E22_Human-Made_Object-P108i_was_produced_by-E12_Production>;
+  void:triples "3644"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!043ae0bc!-E22_Human-Made_Object-P108i_was_produced_by-E12_Production>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E12_Production>;
+  void:triples "3644"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_c0763c39> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!d81ec0e2!E22_Human-Made_Object>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!bfcba7a7!E12_Production> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!66d64725!-E22_Human-Made_Object-P1_is_identified_by>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!3e4ccdbc!-E22_Human-Made_Object-P1_is_identified_by-E33_E41_Linguistic_Appellation>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!ad8f3347!-E22_Human-Made_Object-P1_is_identified_by-E41_Appellation>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!54e01959!-E22_Human-Made_Object-P1_is_identified_by-E42_Identifier>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!8e2d9a81!-E22_Human-Made_Object-P1_is_identified_by-ProvidedCHO>;
+  void:triples "14493"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!3e4ccdbc!-E22_Human-Made_Object-P1_is_identified_by-E33_E41_Linguistic_Appellation>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation>;
+  void:triples "7111"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!ad8f3347!-E22_Human-Made_Object-P1_is_identified_by-E41_Appellation>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>;
+  void:triples "47"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!54e01959!-E22_Human-Made_Object-P1_is_identified_by-E42_Identifier>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier>;
+  void:triples "3691"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!8e2d9a81!-E22_Human-Made_Object-P1_is_identified_by-ProvidedCHO>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/ProvidedCHO>;
+  void:triples "3644"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_d0415af4> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!d81ec0e2!E22_Human-Made_Object>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!a84d575e!E33_E41_Linguistic_Appellation> .
+
+<http://example.com/void-description/rijksmuseum#linkset_2a9e0b39> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!d81ec0e2!E22_Human-Made_Object>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!565ad2db!E41_Appellation> .
+
+<http://example.com/void-description/rijksmuseum#linkset_9e92f476> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!d81ec0e2!E22_Human-Made_Object>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!4111624a!E42_Identifier> .
+
+<http://example.com/void-description/rijksmuseum#linkset_94385c6d> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!d81ec0e2!E22_Human-Made_Object>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!cc5cb3ad!-E22_Human-Made_Object-P2_has_type>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>;
+  void:triples "47"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!76c4393c!-E22_Human-Made_Object-P43_has_dimension>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!e87a6003!-E22_Human-Made_Object-P43_has_dimension-E54_Dimension>;
+  void:triples "234"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!e87a6003!-E22_Human-Made_Object-P43_has_dimension-E54_Dimension>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension>;
+  void:triples "234"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_136fa5b5> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!d81ec0e2!E22_Human-Made_Object>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!27cda6f5!E54_Dimension> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!521549bf!-E22_Human-Made_Object-P50_has_current_keeper>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P50_has_current_keeper>;
+  void:triples "47"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!8fcc4aa4!-E22_Human-Made_Object-P65_shows_visual_item>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P65_shows_visual_item>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!55c85a45!-E22_Human-Made_Object-P65_shows_visual_item-E36_Visual_Item>;
+  void:triples "7733"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!55c85a45!-E22_Human-Made_Object-P65_shows_visual_item-E36_Visual_Item>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item>;
+  void:triples "7733"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_d653e80b> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P65_shows_visual_item>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!d81ec0e2!E22_Human-Made_Object>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!bf34fa6c!E36_Visual_Item> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!c4b4c325!-E22_Human-Made_Object-P67i_is_referred_to_by>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!f6182850!-E22_Human-Made_Object-P67i_is_referred_to_by-E33_Linguistic_Object>;
+  void:triples "1147"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!f6182850!-E22_Human-Made_Object-P67i_is_referred_to_by-E33_Linguistic_Object>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object>;
+  void:triples "1147"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_1b9420a4> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!d81ec0e2!E22_Human-Made_Object>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!3a4115a1!E33_Linguistic_Object> .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!a84d575e!E33_E41_Linguistic_Appellation>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation>;
+  void:entities "8247"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!2331ac8a!-E33_E41_Linguistic_Appellation-P190_has_symbolic_content>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!f7538204!-E33_E41_Linguistic_Appellation-P2_has_type>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!4dc994c7!-E33_E41_Linguistic_Appellation-P72_has_language> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!2331ac8a!-E33_E41_Linguistic_Appellation-P190_has_symbolic_content>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!8a7980d2!-P190_has_symbolic_content-string>;
+  void:triples "8247"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!8a7980d2!-P190_has_symbolic_content-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!f7538204!-E33_E41_Linguistic_Appellation-P2_has_type>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>;
+  void:triples "7111"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!4dc994c7!-E33_E41_Linguistic_Appellation-P72_has_language>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P72_has_language>;
+  void:triples "7111"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!3a4115a1!E33_Linguistic_Object>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object>;
+  void:entities "1147"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!6adeaa4a!-E33_Linguistic_Object-P190_has_symbolic_content>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!1e335d35!-E33_Linguistic_Object-P2_has_type> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!6adeaa4a!-E33_Linguistic_Object-P190_has_symbolic_content>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!8a7980d2!-P190_has_symbolic_content-string>;
+  void:triples "1147"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!1e335d35!-E33_Linguistic_Object-P2_has_type>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>;
+  void:triples "1147"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!bf34fa6c!E36_Visual_Item>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item>;
+  void:entities "7748"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!cf2c0ccf!-E36_Visual_Item-P129_is_about>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!cf147e47!-E36_Visual_Item-P138_represents>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!8ed32d12!-E36_Visual_Item-P65i_is_shown_by> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!cf2c0ccf!-E36_Visual_Item-P129_is_about>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P129_is_about>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!9b51b086!-E36_Visual_Item-P129_is_about-E7_Activity>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!9b51b086!-E36_Visual_Item-P129_is_about-E7_Activity>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E7_Activity>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_56dca2bd> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P129_is_about>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!bf34fa6c!E36_Visual_Item>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!3968899b!E7_Activity> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!cf147e47!-E36_Visual_Item-P138_represents>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P138_represents>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!0abab52c!-E36_Visual_Item-P138_represents-E7_Activity>;
+  void:triples "7812"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!0abab52c!-E36_Visual_Item-P138_represents-E7_Activity>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E7_Activity>;
+  void:triples "7417"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_6f90f7ba> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P138_represents>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!bf34fa6c!E36_Visual_Item>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!3968899b!E7_Activity> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!8ed32d12!-E36_Visual_Item-P65i_is_shown_by>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P65i_is_shown_by>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!08bffd3b!E39_Actor> a
+    void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>;
+  void:entities "38837"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!bb47a206!-E39_Actor-P100i_died_in>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!a77db3c4!-E39_Actor-P1_is_identified_by>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!decf3b04!-E39_Actor-P2_has_type>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!14f4fa88!-E39_Actor-P98i_was_brought_into_life> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!bb47a206!-E39_Actor-P100i_died_in>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P100i_died_in>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!5196ac66!-E39_Actor-P100i_died_in-E69_Death>;
+  void:triples "946"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!5196ac66!-E39_Actor-P100i_died_in-E69_Death>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E69_Death>;
+  void:triples "945"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_18f3b6ae> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P100i_died_in>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!08bffd3b!E39_Actor>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!88d6f3ae!E69_Death> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!a77db3c4!-E39_Actor-P1_is_identified_by>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!097a1341!-E39_Actor-P1_is_identified_by-E41_Appellation>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!e8856d2b!-E39_Actor-P1_is_identified_by-Agent>;
+  void:triples "73238"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!097a1341!-E39_Actor-P1_is_identified_by-E41_Appellation>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>;
+  void:triples "1559"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!e8856d2b!-E39_Actor-P1_is_identified_by-Agent>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/Agent>;
+  void:triples "1553"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_8643c0bc> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!08bffd3b!E39_Actor>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!565ad2db!E41_Appellation> .
+
+<http://example.com/void-description/rijksmuseum#linkset_1cab9a50> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!08bffd3b!E39_Actor>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!08265ff5!Agent> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!decf3b04!-E39_Actor-P2_has_type>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>;
+  void:triples "905"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!14f4fa88!-E39_Actor-P98i_was_brought_into_life>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P98i_was_brought_into_life>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!d8e02366!-E39_Actor-P98i_was_brought_into_life-E67_Birth>;
+  void:triples "941"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!d8e02366!-E39_Actor-P98i_was_brought_into_life-E67_Birth>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E67_Birth>;
+  void:triples "941"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_19ea2b8e> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P98i_was_brought_into_life>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!08bffd3b!E39_Actor>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!1c76822e!E67_Birth> .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!565ad2db!E41_Appellation>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>;
+  void:entities "1622"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!0860fe43!-E41_Appellation-P190_has_symbolic_content> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!0860fe43!-E41_Appellation-P190_has_symbolic_content>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!8a7980d2!-P190_has_symbolic_content-string>;
+  void:triples "1622"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!4111624a!E42_Identifier>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier>;
+  void:entities "3691"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!bd9908df!-E42_Identifier-P190_has_symbolic_content>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!e0b85a28!-E42_Identifier-P2_has_type> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!bd9908df!-E42_Identifier-P190_has_symbolic_content>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!8a7980d2!-P190_has_symbolic_content-string>;
+  void:triples "3691"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!e0b85a28!-E42_Identifier-P2_has_type>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>;
+  void:triples "3644"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!96549030!E52_Time-Span>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+  void:entities "6675"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!aa07bfa6!-E52_Time-Span-P82a_begin_of_the_begin>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!1b52b4bb!-E52_Time-Span-P82b_end_of_the_end> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!aa07bfa6!-E52_Time-Span-P82a_begin_of_the_begin>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!d9324a2e!-P82a_begin_of_the_begin-date>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!45891721!-P82a_begin_of_the_begin-gYear>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!0af9706e!-P82a_begin_of_the_begin-string>;
+  void:triples "6668"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!d9324a2e!-P82a_begin_of_the_begin-date>
+  a void:Dataset;
+  void_ext:datatype xsd:date .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!45891721!-P82a_begin_of_the_begin-gYear>
+  a void:Dataset;
+  void_ext:datatype xsd:gYear .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!0af9706e!-P82a_begin_of_the_begin-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!1b52b4bb!-E52_Time-Span-P82b_end_of_the_end>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!d41714dc!-P82b_end_of_the_end-date>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!2957ba98!-P82b_end_of_the_end-gYear>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!ae99faa0!-P82b_end_of_the_end-string>;
+  void:triples "6655"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!d41714dc!-P82b_end_of_the_end-date>
+  a void:Dataset;
+  void_ext:datatype xsd:date .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!2957ba98!-P82b_end_of_the_end-gYear>
+  a void:Dataset;
+  void_ext:datatype xsd:gYear .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!ae99faa0!-P82b_end_of_the_end-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!27cda6f5!E54_Dimension>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension>;
+  void:entities "234"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!318bf0bc!-E54_Dimension-P2_has_type>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!72067105!-E54_Dimension-P90_has_value>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!4da9e215!-E54_Dimension-P91_has_unit> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!318bf0bc!-E54_Dimension-P2_has_type>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>;
+  void:triples "234"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!72067105!-E54_Dimension-P90_has_value>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P90_has_value>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!a9094b8b!-P90_has_value-decimal>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!cdd058f2!-P90_has_value-string>;
+  void:triples "234"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!a9094b8b!-P90_has_value-decimal>
+  a void:Dataset;
+  void_ext:datatype xsd:decimal .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!cdd058f2!-P90_has_value-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!4da9e215!-E54_Dimension-P91_has_unit>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P91_has_unit>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!d8cf424f!-P91_has_unit-string>;
+  void:triples "234"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!d8cf424f!-P91_has_unit-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!9a19a9b5!E65_Creation>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E65_Creation>;
+  void:entities "15"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!83c66b7d!-E65_Creation-P14_carried_out_by>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!ec156264!-E65_Creation-P4_has_time-span> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!83c66b7d!-E65_Creation-P14_carried_out_by>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!ec156264!-E65_Creation-P4_has_time-span>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!2c97e3f8!-E65_Creation-P4_has_time-span-E52_Time-Span>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!2c97e3f8!-E65_Creation-P4_has_time-span-E52_Time-Span>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_f657729c> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!9a19a9b5!E65_Creation>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!96549030!E52_Time-Span> .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!1c76822e!E67_Birth> a
+    void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E67_Birth>;
+  void:entities "942"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!fd11260f!-E67_Birth-P4_has_timespan>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!530c0dba!-E67_Birth-P7_took_place_at> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!fd11260f!-E67_Birth-P4_has_timespan>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P4_has_timespan>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!8985b985!-E67_Birth-P4_has_timespan-E52_Time-Span>;
+  void:triples "934"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!8985b985!-E67_Birth-P4_has_timespan-E52_Time-Span>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+  void:triples "934"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_bb307bde> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P4_has_timespan>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!1c76822e!E67_Birth>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!96549030!E52_Time-Span> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!530c0dba!-E67_Birth-P7_took_place_at>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!a0a53e62!-E67_Birth-P7_took_place_at-Place>;
+  void:triples "739"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!a0a53e62!-E67_Birth-P7_took_place_at-Place>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/Place>;
+  void:triples "412"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_cdf78d8f> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!1c76822e!E67_Birth>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!0a363030!Place> .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!88d6f3ae!E69_Death> a
+    void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E69_Death>;
+  void:entities "946"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!b6e99bad!-E69_Death-P4_has_timespan>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!084a8f18!-E69_Death-P7_took_place_at> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!b6e99bad!-E69_Death-P4_has_timespan>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P4_has_timespan>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!29729ec5!-E69_Death-P4_has_timespan-E52_Time-Span>;
+  void:triples "941"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!29729ec5!-E69_Death-P4_has_timespan-E52_Time-Span>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+  void:triples "941"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_b89277f4> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P4_has_timespan>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!88d6f3ae!E69_Death>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!96549030!E52_Time-Span> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!084a8f18!-E69_Death-P7_took_place_at>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!898bd155!-E69_Death-P7_took_place_at-Place>;
+  void:triples "701"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!898bd155!-E69_Death-P7_took_place_at-Place>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/Place>;
+  void:triples "422"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_4c6cbd3b> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!88d6f3ae!E69_Death>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!0a363030!Place> .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!d966b7ea!E73_Information_Object>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>;
+  void:entities "15"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!895fc8fd!-E73_Information_Object-P1_is_identified_by>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!f6d08ef9!-E73_Information_Object-P2_has_type>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!c6b8c9bc!-E73_Information_Object-P65_shows_visual_item>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!826828ec!-E73_Information_Object-P94i_was_created_by> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!895fc8fd!-E73_Information_Object-P1_is_identified_by>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!01390dd2!-E73_Information_Object-P1_is_identified_by-E41_Appellation>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!01390dd2!-E73_Information_Object-P1_is_identified_by-E41_Appellation>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_7aca172a> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!d966b7ea!E73_Information_Object>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!565ad2db!E41_Appellation> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!f6d08ef9!-E73_Information_Object-P2_has_type>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!c6b8c9bc!-E73_Information_Object-P65_shows_visual_item>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P65_shows_visual_item>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!23c1e75a!-E73_Information_Object-P65_shows_visual_item-E36_Visual_Item>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!23c1e75a!-E73_Information_Object-P65_shows_visual_item-E36_Visual_Item>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_b4fe495d> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P65_shows_visual_item>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!d966b7ea!E73_Information_Object>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!bf34fa6c!E36_Visual_Item> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!826828ec!-E73_Information_Object-P94i_was_created_by>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!e405e29a!-E73_Information_Object-P94i_was_created_by-E65_Creation>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!e405e29a!-E73_Information_Object-P94i_was_created_by-E65_Creation>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E65_Creation>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_99769489> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!d966b7ea!E73_Information_Object>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!9a19a9b5!E65_Creation> .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!3968899b!E7_Activity>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E7_Activity>;
+  void:entities "1140"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!67bdd598!-E7_Activity-P129i_is_subject_of>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!95290d4c!-E7_Activity-P14_carried_out_by>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!0bacbbd5!-E7_Activity-P16_used_specific_object>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!25a17c1d!-E7_Activity-P1_is_identified_by>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!baa5fa6a!-E7_Activity-P2_has_type>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!050feb64!-E7_Activity-P4_has_time-span>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!da6de798!-E7_Activity-P67i_is_referred_to_by>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!1d2ca4a4!-E7_Activity-P7_took_place_at>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!9137c68c!-E7_Activity-P9_consists_of>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!f2262a2d!-E7_Activity-closeMatch> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!67bdd598!-E7_Activity-P129i_is_subject_of>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of>;
+  void:triples "414"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!95290d4c!-E7_Activity-P14_carried_out_by>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!e46f6e9d!-E7_Activity-P14_carried_out_by-E39_Actor>;
+  void:triples "1042"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!e46f6e9d!-E7_Activity-P14_carried_out_by-E39_Actor>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>;
+  void:triples "1023"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_cc421bb1> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!3968899b!E7_Activity>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!08bffd3b!E39_Actor> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!0bacbbd5!-E7_Activity-P16_used_specific_object>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!d39bf390!-E7_Activity-P16_used_specific_object-ProvidedCHO>;
+  void:triples "9343"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!d39bf390!-E7_Activity-P16_used_specific_object-ProvidedCHO>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/ProvidedCHO>;
+  void:triples "7646"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_0a8bbc67> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!3968899b!E7_Activity>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!25a17c1d!-E7_Activity-P1_is_identified_by>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!18155885!-E7_Activity-P1_is_identified_by-E33_E41_Linguistic_Appellation>;
+  void:triples "1136"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!18155885!-E7_Activity-P1_is_identified_by-E33_E41_Linguistic_Appellation>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation>;
+  void:triples "1136"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_4c481d81> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!3968899b!E7_Activity>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!a84d575e!E33_E41_Linguistic_Appellation> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!baa5fa6a!-E7_Activity-P2_has_type>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>;
+  void:triples "1140"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!050feb64!-E7_Activity-P4_has_time-span>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!ddada854!-E7_Activity-P4_has_time-span-E52_Time-Span>;
+  void:triples "1139"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!ddada854!-E7_Activity-P4_has_time-span-E52_Time-Span>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>;
+  void:triples "1139"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_8b267607> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!3968899b!E7_Activity>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!96549030!E52_Time-Span> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!da6de798!-E7_Activity-P67i_is_referred_to_by>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!75eebeae!-E7_Activity-P67i_is_referred_to_by-E22_Human-Made_Object>;
+  void:triples "47"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!75eebeae!-E7_Activity-P67i_is_referred_to_by-E22_Human-Made_Object>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>;
+  void:triples "47"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_e1e118f2> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!3968899b!E7_Activity>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!d81ec0e2!E22_Human-Made_Object> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!1d2ca4a4!-E7_Activity-P7_took_place_at>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at>;
+  void:triples "1137"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!9137c68c!-E7_Activity-P9_consists_of>
+  a void:Dataset;
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P9_consists_of>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!5e0dd6f6!-E7_Activity-P9_consists_of-E7_Activity>;
+  void:triples "6"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!5e0dd6f6!-E7_Activity-P9_consists_of-E7_Activity>
+  a void:Dataset;
+  void:class <http://www.cidoc-crm.org/cidoc-crm/E7_Activity>;
+  void:triples "6"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_e7b4bf72> a void:Linkset;
+  void:linkPredicate <http://www.cidoc-crm.org/cidoc-crm/P9_consists_of>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!3968899b!E7_Activity>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!3968899b!E7_Activity> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!f2262a2d!-E7_Activity-closeMatch>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#closeMatch>;
+  void:triples "16"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!08265ff5!Agent> a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/Agent>;
+  void:entities "62897"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!048e46f9!-Agent-dateOfBirth>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!c6af0803!-Agent-dateOfDeath>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!a156b41f!-Agent-gender>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!53c4e032!-Agent-placeOfBirth>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!ad8cb28c!-Agent-placeOfDeath>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!ebb771b7!-Agent-professionOrOccupation>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!2f0e3cf7!-Agent-nationality>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!e4686133!-Agent-prefLabel> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!048e46f9!-Agent-dateOfBirth>
+  a void:Dataset;
+  void:property <http://rdvocab.info/ElementsGr2/dateOfBirth>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!c91862d5!-dateOfBirth-string>;
+  void:triples "41770"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!c91862d5!-dateOfBirth-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!c6af0803!-Agent-dateOfDeath>
+  a void:Dataset;
+  void:property <http://rdvocab.info/ElementsGr2/dateOfDeath>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!9151b33f!-dateOfDeath-string>;
+  void:triples "40571"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!9151b33f!-dateOfDeath-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!a156b41f!-Agent-gender>
+  a void:Dataset;
+  void:property <http://rdvocab.info/ElementsGr2/gender>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!1633a4f0!-gender-string>;
+  void:triples "26074"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!1633a4f0!-gender-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!53c4e032!-Agent-placeOfBirth>
+  a void:Dataset;
+  void:property <http://rdvocab.info/ElementsGr2/placeOfBirth>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!384aa914!-placeOfBirth-string>;
+  void:triples "24047"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!384aa914!-placeOfBirth-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!ad8cb28c!-Agent-placeOfDeath>
+  a void:Dataset;
+  void:property <http://rdvocab.info/ElementsGr2/placeOfDeath>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!387b112f!-placeOfDeath-string>;
+  void:triples "20454"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!387b112f!-placeOfDeath-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!ebb771b7!-Agent-professionOrOccupation>
+  a void:Dataset;
+  void:property <http://rdvocab.info/ElementsGr2/professionOrOccupation>;
+  void:triples "79082"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!2f0e3cf7!-Agent-nationality>
+  a void:Dataset;
+  void:property <http://www.europeanafashion.eu/edmfp/nationality>;
+  void:triples "26729"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!e4686133!-Agent-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void:triples "91856"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!0a363030!Place> a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/Place>;
+  void:entities "17530"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!cb91036b!-Place-lat>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!ab3024e8!-Place-long>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!56f71425!-Place-prefLabel> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!cb91036b!-Place-lat> a
+    void:Dataset;
+  void:property <http://www.w3.org/2003/01/geo/wgs84_pos#lat>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!233018d6!-lat-string>;
+  void:triples "1276"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!233018d6!-lat-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!ab3024e8!-Place-long>
+  a void:Dataset;
+  void:property <http://www.w3.org/2003/01/geo/wgs84_pos#long>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!7626375c!-long-string>;
+  void:triples "1276"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!7626375c!-long-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!56f71425!-Place-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void:triples "17978"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/ProvidedCHO>;
+  void:entities "668950"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!8e44ba39!-ProvidedCHO-spn>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!d06ecde5!-ProvidedCHO-contributor>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!6bac1248!-ProvidedCHO-creator>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!e9097446!-ProvidedCHO-description>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!8928030d!-ProvidedCHO-format>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!ef48f15f!-ProvidedCHO-identifier>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!711353d5!-ProvidedCHO-language>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!810e38b6!-ProvidedCHO-publisher>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!8c70e31a!-ProvidedCHO-relation>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!051bd243!-ProvidedCHO-subject>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!0c84e981!-ProvidedCHO-title>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!2eb26e29!-ProvidedCHO-type>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!31c8538f!-ProvidedCHO-created>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!b0c05369!-ProvidedCHO-extent>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!ff1886b4!-ProvidedCHO-hasPart>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!b4c5e673!-ProvidedCHO-isPartOf>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!9ab5607a!-ProvidedCHO-isReferencedBy>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!a3cd984a!-ProvidedCHO-provenance>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!3d59a8be!-ProvidedCHO-spatial> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!8e44ba39!-ProvidedCHO-spn>
+  a void:Dataset;
+  void:property <http://id.loc.gov/vocabulary/relators/spn>;
+  void:triples "521557"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!d06ecde5!-ProvidedCHO-contributor>
+  a void:Dataset;
+  void:property <http://purl.org/dc/elements/1.1/contributor>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!8b6b74ae!-ProvidedCHO-contributor-Agent>;
+  void:triples "486527"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!8b6b74ae!-ProvidedCHO-contributor-Agent>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/Agent>;
+  void:triples "450937"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_f37f1c5c> a void:Linkset;
+  void:linkPredicate <http://purl.org/dc/elements/1.1/contributor>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!08265ff5!Agent> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!6bac1248!-ProvidedCHO-creator>
+  a void:Dataset;
+  void:property <http://purl.org/dc/elements/1.1/creator>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!c4bfe075!-ProvidedCHO-creator-Agent>;
+  void:triples "653814"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!c4bfe075!-ProvidedCHO-creator-Agent>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/Agent>;
+  void:triples "504698"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_aa64d30d> a void:Linkset;
+  void:linkPredicate <http://purl.org/dc/elements/1.1/creator>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!08265ff5!Agent> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!e9097446!-ProvidedCHO-description>
+  a void:Dataset;
+  void:property <http://purl.org/dc/elements/1.1/description>;
+  void:triples "426654"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!8928030d!-ProvidedCHO-format>
+  a void:Dataset;
+  void:property <http://purl.org/dc/elements/1.1/format>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!af8abfbc!-ProvidedCHO-format-Place>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!f8f03435!-ProvidedCHO-format-Concept>;
+  void:triples "917973"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!af8abfbc!-ProvidedCHO-format-Place>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/Place>;
+  void:triples "2"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!f8f03435!-ProvidedCHO-format-Concept>
+  a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:triples "917973"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_54fdbd0c> a void:Linkset;
+  void:linkPredicate <http://purl.org/dc/elements/1.1/format>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!0a363030!Place> .
+
+<http://example.com/void-description/rijksmuseum#linkset_e2094c67> a void:Linkset;
+  void:linkPredicate <http://purl.org/dc/elements/1.1/format>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!ffeaf0d3!Concept> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!ef48f15f!-ProvidedCHO-identifier>
+  a void:Dataset;
+  void:property <http://purl.org/dc/elements/1.1/identifier>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!88531b69!-identifier-string>;
+  void:triples "667894"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!88531b69!-identifier-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!711353d5!-ProvidedCHO-language>
+  a void:Dataset;
+  void:property <http://purl.org/dc/elements/1.1/language>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!20673f6e!-language-string>;
+  void:triples "667890"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!20673f6e!-language-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!810e38b6!-ProvidedCHO-publisher>
+  a void:Dataset;
+  void:property <http://purl.org/dc/elements/1.1/publisher>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!a3dad64f!-publisher-string>;
+  void:triples "667890"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!a3dad64f!-publisher-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!8c70e31a!-ProvidedCHO-relation>
+  a void:Dataset;
+  void:property <http://purl.org/dc/elements/1.1/relation>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!0bc27244!-ProvidedCHO-relation-ProvidedCHO>;
+  void:triples "108298"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!0bc27244!-ProvidedCHO-relation-ProvidedCHO>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/ProvidedCHO>;
+  void:triples "107313"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_00d1f03e> a void:Linkset;
+  void:linkPredicate <http://purl.org/dc/elements/1.1/relation>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!051bd243!-ProvidedCHO-subject>
+  a void:Dataset;
+  void:property <http://purl.org/dc/elements/1.1/subject>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!489d3346!-ProvidedCHO-subject-Agent>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!1640cc19!-ProvidedCHO-subject-Place>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!75016cf5!-ProvidedCHO-subject-TimeSpan>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!a0298a39!-ProvidedCHO-subject-Concept>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!97fd5df6!-subject-string>;
+  void:triples "1566375"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!489d3346!-ProvidedCHO-subject-Agent>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/Agent>;
+  void:triples "179203"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!1640cc19!-ProvidedCHO-subject-Place>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/Place>;
+  void:triples "209058"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!75016cf5!-ProvidedCHO-subject-TimeSpan>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/TimeSpan>;
+  void:triples "42383"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!a0298a39!-ProvidedCHO-subject-Concept>
+  a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:triples "1058946"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!97fd5df6!-subject-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseum#linkset_0dfdf65b> a void:Linkset;
+  void:linkPredicate <http://purl.org/dc/elements/1.1/subject>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!08265ff5!Agent> .
+
+<http://example.com/void-description/rijksmuseum#linkset_e2b5affc> a void:Linkset;
+  void:linkPredicate <http://purl.org/dc/elements/1.1/subject>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!0a363030!Place> .
+
+<http://example.com/void-description/rijksmuseum#linkset_1f252436> a void:Linkset;
+  void:linkPredicate <http://purl.org/dc/elements/1.1/subject>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!237312e4!TimeSpan> .
+
+<http://example.com/void-description/rijksmuseum#linkset_cee20524> a void:Linkset;
+  void:linkPredicate <http://purl.org/dc/elements/1.1/subject>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!ffeaf0d3!Concept> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!0c84e981!-ProvidedCHO-title>
+  a void:Dataset;
+  void:property <http://purl.org/dc/elements/1.1/title>;
+  void:triples "1001718"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!2eb26e29!-ProvidedCHO-type>
+  a void:Dataset;
+  void:property <http://purl.org/dc/elements/1.1/type>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!19f948ac!-ProvidedCHO-type-Place>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!231aca34!-ProvidedCHO-type-Concept>;
+  void:triples "921332"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!19f948ac!-ProvidedCHO-type-Place>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/Place>;
+  void:triples "20"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!231aca34!-ProvidedCHO-type-Concept>
+  a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:triples "921332"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_7646023d> a void:Linkset;
+  void:linkPredicate <http://purl.org/dc/elements/1.1/type>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!0a363030!Place> .
+
+<http://example.com/void-description/rijksmuseum#linkset_5528fb1a> a void:Linkset;
+  void:linkPredicate <http://purl.org/dc/elements/1.1/type>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!ffeaf0d3!Concept> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!31c8538f!-ProvidedCHO-created>
+  a void:Dataset;
+  void:property dcterms:created;
+  void:triples "1358092"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!b0c05369!-ProvidedCHO-extent>
+  a void:Dataset;
+  void:property dcterms:extent;
+  void:triples "2764793"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!ff1886b4!-ProvidedCHO-hasPart>
+  a void:Dataset;
+  void:property dcterms:hasPart;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!c109e964!-ProvidedCHO-hasPart-ProvidedCHO>;
+  void:triples "164051"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!c109e964!-ProvidedCHO-hasPart-ProvidedCHO>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/ProvidedCHO>;
+  void:triples "163737"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_a54bb6bc> a void:Linkset;
+  void:linkPredicate dcterms:hasPart;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!b4c5e673!-ProvidedCHO-isPartOf>
+  a void:Dataset;
+  void:property dcterms:isPartOf;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!89920fc0!-ProvidedCHO-isPartOf-ProvidedCHO>;
+  void:triples "1456626"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!89920fc0!-ProvidedCHO-isPartOf-ProvidedCHO>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/ProvidedCHO>;
+  void:triples "163230"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_9628f333> a void:Linkset;
+  void:linkPredicate dcterms:isPartOf;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!9ab5607a!-ProvidedCHO-isReferencedBy>
+  a void:Dataset;
+  void:property dcterms:isReferencedBy;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!f5607c44!-isReferencedBy-string>;
+  void:triples "287541"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!f5607c44!-isReferencedBy-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!a3cd984a!-ProvidedCHO-provenance>
+  a void:Dataset;
+  void:property dcterms:provenance;
+  void:triples "37132"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!3d59a8be!-ProvidedCHO-spatial>
+  a void:Dataset;
+  void:property dcterms:spatial;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!b2d40720!-ProvidedCHO-spatial-Place>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!3a7f7040!-ProvidedCHO-spatial-Concept>;
+  void:triples "545851"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!b2d40720!-ProvidedCHO-spatial-Place>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/Place>;
+  void:triples "545851"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!3a7f7040!-ProvidedCHO-spatial-Concept>
+  a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:triples "4117"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_d7aa8064> a void:Linkset;
+  void:linkPredicate dcterms:spatial;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!0a363030!Place> .
+
+<http://example.com/void-description/rijksmuseum#_graph_rijksmuseum!95fc1609> void:subset
+    <http://example.com/void-description/rijksmuseum#linkset_d7aa8064>, <http://example.com/void-description/rijksmuseum#linkset_039c035a>,
+    <http://example.com/void-description/rijksmuseum#linkset_3e78c7a9>, <http://example.com/void-description/rijksmuseum#linkset_3659d9da>,
+    <http://example.com/void-description/rijksmuseum#linkset_e01724d7>, <http://example.com/void-description/rijksmuseum#linkset_2424ffed>,
+    <http://example.com/void-description/rijksmuseum#linkset_414cf6d1> .
+
+<http://example.com/void-description/rijksmuseum#linkset_039c035a> a void:Linkset;
+  void:linkPredicate dcterms:spatial;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!ffeaf0d3!Concept> .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!535e06d3!-ProvidedCHO-temporal>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!ddef1c10!-ProvidedCHO-type>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!46bb6aac!-ProvidedCHO-technique> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!535e06d3!-ProvidedCHO-temporal>
+  a void:Dataset;
+  void:property dcterms:temporal;
+  void:triples "552006"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!ddef1c10!-ProvidedCHO-type>
+  a void:Dataset;
+  void:property <http://www.europeana.eu/schemas/edm/type>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!12fc5def!-type-string>;
+  void:triples "667890"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!12fc5def!-type-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!46bb6aac!-ProvidedCHO-technique>
+  a void:Dataset;
+  void:property <http://www.europeanafashion.eu/edmfp/technique>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!9330c3c5!-ProvidedCHO-technique-Concept>;
+  void:triples "819023"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!9330c3c5!-ProvidedCHO-technique-Concept>
+  a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:triples "819023"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_3e78c7a9> a void:Linkset;
+  void:linkPredicate <http://www.europeanafashion.eu/edmfp/technique>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!ffeaf0d3!Concept> .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!237312e4!TimeSpan> a
+    void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/TimeSpan>;
+  void:entities "1937"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!9bcbe784!-TimeSpan-prefLabel> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!9bcbe784!-TimeSpan-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void:triples "1980"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!00ee0736!WebResource>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/WebResource>;
+  void:entities "401403"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!a1b5bcc9!-WebResource-format>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!2a2cedd1!-WebResource-rights>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!93dee0da!-WebResource-created>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!daf6c942!-WebResource-rights> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!a1b5bcc9!-WebResource-format>
+  a void:Dataset;
+  void:property <http://purl.org/dc/elements/1.1/format>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!85d9a070!-format-string>;
+  void:triples "401403"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!85d9a070!-format-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!2a2cedd1!-WebResource-rights>
+  a void:Dataset;
+  void:property <http://purl.org/dc/elements/1.1/rights>;
+  void:triples "802806"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!93dee0da!-WebResource-created>
+  a void:Dataset;
+  void:property dcterms:created;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!6b07e916!-created-string>;
+  void:triples "401403"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!6b07e916!-created-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!daf6c942!-WebResource-rights>
+  a void:Dataset;
+  void:property <http://www.europeana.eu/schemas/edm/rights>;
+  void:triples "401403"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!f815437a!Aggregation>
+  a void:Dataset;
+  void:class <http://www.openarchives.org/ore/terms/Aggregation>;
+  void:entities "668950"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!1f587804!-Aggregation-aggregatedCHO>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!c7277ad3!-Aggregation-dataProvider>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!4f8696e3!-Aggregation-isShownAt>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!af048ee5!-Aggregation-isShownBy>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!e41bfde8!-Aggregation-object>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!bc3b8337!-Aggregation-provider>,
+    <http://example.com/void-description/rijksmuseumrijksmuseum!fb4f4c96!-Aggregation-rights> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!1f587804!-Aggregation-aggregatedCHO>
+  a void:Dataset;
+  void:property <http://www.europeana.eu/schemas/edm/aggregatedCHO>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!5f6ca42c!-Aggregation-aggregatedCHO-ProvidedCHO>;
+  void:triples "668950"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!5f6ca42c!-Aggregation-aggregatedCHO-ProvidedCHO>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/ProvidedCHO>;
+  void:triples "668950"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_3659d9da> a void:Linkset;
+  void:linkPredicate <http://www.europeana.eu/schemas/edm/aggregatedCHO>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!f815437a!Aggregation>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!c7277ad3!-Aggregation-dataProvider>
+  a void:Dataset;
+  void:property <http://www.europeana.eu/schemas/edm/dataProvider>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!74ae8d21!-dataProvider-string>;
+  void:triples "668950"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!74ae8d21!-dataProvider-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!4f8696e3!-Aggregation-isShownAt>
+  a void:Dataset;
+  void:property <http://www.europeana.eu/schemas/edm/isShownAt>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!fe1235a1!-Aggregation-isShownAt-ProvidedCHO>;
+  void:triples "668950"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!fe1235a1!-Aggregation-isShownAt-ProvidedCHO>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/ProvidedCHO>;
+  void:triples "667890"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_e01724d7> a void:Linkset;
+  void:linkPredicate <http://www.europeana.eu/schemas/edm/isShownAt>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!f815437a!Aggregation>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!6515c153!ProvidedCHO> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!af048ee5!-Aggregation-isShownBy>
+  a void:Dataset;
+  void:property <http://www.europeana.eu/schemas/edm/isShownBy>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!b33995a5!-Aggregation-isShownBy-WebResource>;
+  void:triples "402463"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!b33995a5!-Aggregation-isShownBy-WebResource>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/WebResource>;
+  void:triples "401403"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_2424ffed> a void:Linkset;
+  void:linkPredicate <http://www.europeana.eu/schemas/edm/isShownBy>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!f815437a!Aggregation>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!00ee0736!WebResource> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!e41bfde8!-Aggregation-object>
+  a void:Dataset;
+  void:property <http://www.europeana.eu/schemas/edm/object>;
+  void:classPartition <http://example.com/void-description/rijksmuseumrijksmuseum!39647104!-Aggregation-object-WebResource>;
+  void:triples "401403"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!39647104!-Aggregation-object-WebResource>
+  a void:Dataset;
+  void:class <http://www.europeana.eu/schemas/edm/WebResource>;
+  void:triples "401403"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#linkset_414cf6d1> a void:Linkset;
+  void:linkPredicate <http://www.europeana.eu/schemas/edm/object>;
+  void:subjectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!f815437a!Aggregation>;
+  void:objectsTarget <http://example.com/void-description/rijksmuseum#rijksmuseum!00ee0736!WebResource> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!bc3b8337!-Aggregation-provider>
+  a void:Dataset;
+  void:property <http://www.europeana.eu/schemas/edm/provider>;
+  void_ext:datatypePartition <http://example.com/void-description/rijksmuseumrijksmuseum!2bbd06b0!-provider-string>;
+  void:triples "667890"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!2bbd06b0!-provider-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!fb4f4c96!-Aggregation-rights>
+  a void:Dataset;
+  void:property <http://www.europeana.eu/schemas/edm/rights>;
+  void:triples "667890"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!ffeaf0d3!Concept> a void:Dataset;
+  void:class <http://www.w3.org/2004/02/skos/core#Concept>;
+  void:entities "38436"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/rijksmuseumrijksmuseum!37ce0ad7!-Concept-prefLabel> .
+
+<http://example.com/void-description/rijksmuseumrijksmuseum!37ce0ad7!-Concept-prefLabel>
+  a void:Dataset;
+  void:property <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void:triples "39006"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!85e1ede4!spn> void:property
+    <http://id.loc.gov/vocabulary/relators/spn>;
+  void:triples "521557"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!5e23481d!contributor>
+  void:property <http://purl.org/dc/elements/1.1/contributor>;
+  void:triples "486527"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!d8448f7d!creator> void:property
+    <http://purl.org/dc/elements/1.1/creator>;
+  void:triples "653814"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!38e1536b!description>
+  void:property <http://purl.org/dc/elements/1.1/description>;
+  void:triples "426654"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!3c3cd391!format> void:property
+    <http://purl.org/dc/elements/1.1/format>;
+  void:triples "1319376"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!bee9e5e3!identifier>
+  void:property <http://purl.org/dc/elements/1.1/identifier>;
+  void:triples "667894"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!276ec96e!language> void:property
+    <http://purl.org/dc/elements/1.1/language>;
+  void:triples "667890"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!b70aed1c!publisher> void:property
+    <http://purl.org/dc/elements/1.1/publisher>;
+  void:triples "667890"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!9b00e028!relation> void:property
+    <http://purl.org/dc/elements/1.1/relation>;
+  void:triples "108298"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!cfac1f9e!rights> void:property
+    <http://purl.org/dc/elements/1.1/rights>;
+  void:triples "802806"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!78b01b16!subject> void:property
+    <http://purl.org/dc/elements/1.1/subject>;
+  void:triples "1566375"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!10a2b68e!title> void:property
+    <http://purl.org/dc/elements/1.1/title>;
+  void:triples "1001718"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!6a062186!type> void:property
+    <http://purl.org/dc/elements/1.1/type>;
+  void:triples "921332"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!f31288f4!created> void:property
+    dcterms:created;
+  void:triples "1759495"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!f9bd646e!extent> void:property
+    dcterms:extent;
+  void:triples "2764793"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!394eb5dd!hasPart> void:property
+    dcterms:hasPart;
+  void:triples "164051"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!cf78d212!isPartOf> void:property
+    dcterms:isPartOf;
+  void:triples "1456626"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!e3da73e1!isReferencedBy>
+  void:property dcterms:isReferencedBy;
+  void:triples "287541"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!5002f799!provenance>
+  void:property dcterms:provenance;
+  void:triples "37132"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!c6e46bff!spatial> void:property
+    dcterms:spatial;
+  void:triples "545851"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!74d2396c!temporal> void:property
+    dcterms:temporal;
+  void:triples "552006"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!4fe63fba!dateOfBirth>
+  void:property <http://rdvocab.info/ElementsGr2/dateOfBirth>;
+  void:triples "41770"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!d7e3ee65!dateOfDeath>
+  void:property <http://rdvocab.info/ElementsGr2/dateOfDeath>;
+  void:triples "40571"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!22447630!gender> void:property
+    <http://rdvocab.info/ElementsGr2/gender>;
+  void:triples "26074"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!ac296786!placeOfBirth>
+  void:property <http://rdvocab.info/ElementsGr2/placeOfBirth>;
+  void:triples "24047"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!eeee42d3!placeOfDeath>
+  void:property <http://rdvocab.info/ElementsGr2/placeOfDeath>;
+  void:triples "20454"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!eeeb5570!professionOrOccupation>
+  void:property <http://rdvocab.info/ElementsGr2/professionOrOccupation>;
+  void:triples "79082"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!240277ef!datePublished>
+  void:property <http://schema.org/datePublished>;
+  void:triples "44"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!44801ca2!headline> void:property
+    <http://schema.org/headline>;
+  void:triples "44"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!0b6c7899!itemReviewed>
+  void:property <http://schema.org/itemReviewed>;
+  void:triples "44"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!dc02b2d1!publisher> void:property
+    <http://schema.org/publisher>;
+  void:triples "44"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!890c1d35!P100i_died_in>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P100i_died_in>;
+  void:triples "946"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!244037f0!P108i_was_produced_by>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by>;
+  void:triples "3644"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!4360eb94!P129_is_about>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P129_is_about>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!d36f4a3b!P129i_is_subject_of>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of>;
+  void:triples "414"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!d4c56896!P138_represents>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P138_represents>;
+  void:triples "7812"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!43693f3f!P14_carried_out_by>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>;
+  void:triples "1057"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!53f72e91!P16_used_specific_object>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object>;
+  void:triples "9343"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!50bfbae1!P190_has_symbolic_content>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content>;
+  void:triples "14707"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!569c870e!P1_is_identified_by>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>;
+  void:triples "88884"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!d8bae48c!P2_has_type>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>;
+  void:triples "14243"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!4229e2aa!P43_has_dimension>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension>;
+  void:triples "234"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!734bfcae!P4_has_time-span>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span>;
+  void:triples "4798"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!03ad33f2!P4_has_timespan>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P4_has_timespan>;
+  void:triples "1875"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!62fe6460!P50_has_current_keeper>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P50_has_current_keeper>;
+  void:triples "47"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!8635e517!P65_shows_visual_item>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P65_shows_visual_item>;
+  void:triples "7748"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!b002e175!P65i_is_shown_by>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P65i_is_shown_by>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!80008085!P67i_is_referred_to_by>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by>;
+  void:triples "1194"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!9ba60f37!P72_has_language>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P72_has_language>;
+  void:triples "7111"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!45eee039!P7_took_place_at>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at>;
+  void:triples "2577"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!a2021591!P82a_begin_of_the_begin>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin>;
+  void:triples "6668"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!bfc6c9d1!P82b_end_of_the_end>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end>;
+  void:triples "6655"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!ebf04fbd!P90_has_value>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P90_has_value>;
+  void:triples "234"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!39cf6675!P91_has_unit>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P91_has_unit>;
+  void:triples "234"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!9a255169!P94i_was_created_by>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by>;
+  void:triples "15"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!59bf5831!P98i_was_brought_into_life>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P98i_was_brought_into_life>;
+  void:triples "941"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!26daa8f3!P9_consists_of>
+  void:property <http://www.cidoc-crm.org/cidoc-crm/P9_consists_of>;
+  void:triples "6"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!f6f31221!aggregatedCHO>
+  void:property <http://www.europeana.eu/schemas/edm/aggregatedCHO>;
+  void:triples "668950"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!5b602c69!dataProvider>
+  void:property <http://www.europeana.eu/schemas/edm/dataProvider>;
+  void:triples "668950"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!8eabbebd!isShownAt> void:property
+    <http://www.europeana.eu/schemas/edm/isShownAt>;
+  void:triples "668950"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!b23eb52b!isShownBy> void:property
+    <http://www.europeana.eu/schemas/edm/isShownBy>;
+  void:triples "402463"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!31d40a5f!object> void:property
+    <http://www.europeana.eu/schemas/edm/object>;
+  void:triples "401403"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!5cb029d6!provider> void:property
+    <http://www.europeana.eu/schemas/edm/provider>;
+  void:triples "667890"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!fed54c43!rights> void:property
+    <http://www.europeana.eu/schemas/edm/rights>;
+  void:triples "1069293"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!878ed38a!type> void:property
+    <http://www.europeana.eu/schemas/edm/type>;
+  void:triples "667890"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!50207345!nationality>
+  void:property <http://www.europeanafashion.eu/edmfp/nationality>;
+  void:triples "26729"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!1469cb16!technique> void:property
+    <http://www.europeanafashion.eu/edmfp/technique>;
+  void:triples "819023"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!ea758cf9!asWKT> void:property
+    <http://www.opengis.net/ont/geosparql#asWKT>;
+  void:triples "251"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!3348f96c!hasGeometry>
+  void:property <http://www.opengis.net/ont/geosparql#hasGeometry>;
+  void:triples "251"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!c74e2b73!type> void:property
+    rdf:type;
+  void:triples "1943105"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!4f75ce12!label> void:property
+    <http://www.w3.org/2000/01/rdf-schema#label>;
+  void:triples "616"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!172382a0!lat> void:property
+    <http://www.w3.org/2003/01/geo/wgs84_pos#lat>;
+  void:triples "1276"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!e7990c6d!long> void:property
+    <http://www.w3.org/2003/01/geo/wgs84_pos#long>;
+  void:triples "1276"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!93e393b7!closeMatch>
+  void:property <http://www.w3.org/2004/02/skos/core#closeMatch>;
+  void:triples "16"^^xsd:long .
+
+<http://example.com/void-description/rijksmuseum#rijksmuseum!8d3b7b43!prefLabel> void:property
+    <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  void:triples "150749"^^xsd:long .

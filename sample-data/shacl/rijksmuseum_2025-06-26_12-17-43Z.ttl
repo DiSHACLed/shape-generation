@@ -1,0 +1,311 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://example.com/shape#http://www.europeana.eu/schemas/edm/> .
+@prefix ns2:	<http://www.w3.org/ns/shacl#> .
+@prefix ns3:	<http://www.europeana.eu/schemas/edm/> .
+@prefix ns4:	<http://example.com/shape#http://www.w3.org/2004/02/skos/core#> .
+@prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
+@prefix ns6:	<http://example.com/shape#http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns7:	<http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns8:	<http://example.com/shape#http://schema.org/> .
+@prefix ns9:	<http://schema.org/> .
+@prefix ns10:	<http://example.com/shape#http://www.openarchives.org/ore/terms/> .
+@prefix ns11:	<http://www.openarchives.org/ore/terms/> .
+@prefix dc:	<http://purl.org/dc/elements/1.1/> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:	<http://purl.org/dc/terms/> .
+@prefix ns15:	<http://www.europeanafashion.eu/edmfp/> .
+@prefix geo:	<http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ns17:	<http://rdvocab.info/ElementsGr2/> .
+@prefix ns18:	<http://id.loc.gov/vocabulary/relators/> .
+
+ns1:Place
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns3:Place ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	6 ] , [	ns2:path	geo:long ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	geo:lat ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns4:Concept
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	skos:Concept ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	13 ] .
+ns1:TimeSpan
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns3:TimeSpan ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	4 ] .
+ns6:E42_Identifier
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E42_Identifier ;
+	ns2:property	[	ns2:path	ns7:P190_has_symbolic_content ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns7:P2_has_type ;
+				ns2:maxCount	1 ] .
+ns1:ProvidedCHO
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns3:ProvidedCHO ;
+	ns2:property	[	ns2:path	dc:identifier ;
+				ns2:maxCount	5 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	dc:subject ;
+				ns2:maxCount	128 ;
+				ns2:class	skos:Concept ] , [	ns2:path	dcterms:temporal ;
+				ns2:maxCount	20 ] , [	ns2:path	dc:format ;
+				ns2:maxCount	54 ;
+				ns2:class	skos:Concept ] , [	ns2:path	dc:publisher ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns15:technique ;
+				ns2:maxCount	34 ;
+				ns2:class	skos:Concept ] , [	ns2:path	dcterms:spatial ;
+				ns2:maxCount	46 ;
+				ns2:class	ns3:Place ] , [	ns2:path	dcterms:isPartOf ;
+				ns2:maxCount	16 ;
+				ns2:class	ns3:ProvidedCHO ] , [	ns2:path	dcterms:isReferencedBy ;
+				ns2:maxCount	31 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	dc:type ;
+				ns2:maxCount	32 ;
+				ns2:class	ns3:Place ] , [	ns2:path	dc:language ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	dcterms:provenance ;
+				ns2:maxCount	1 ] , [	ns2:path	dcterms:created ;
+				ns2:maxCount	8 ] , [	ns2:path	dc:subject ;
+				ns2:maxCount	64 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	dcterms:spatial ;
+				ns2:maxCount	46 ;
+				ns2:class	skos:Concept ] , [	ns2:path	dcterms:extent ;
+				ns2:maxCount	337 ] , [	ns2:path	dc:creator ;
+				ns2:maxCount	6 ;
+				ns2:class	ns3:Agent ] , [	ns2:path	dc:relation ;
+				ns2:maxCount	584 ;
+				ns2:class	ns3:ProvidedCHO ] , [	ns2:path	dc:contributor ;
+				ns2:maxCount	128 ;
+				ns2:class	ns3:Agent ] , [	ns2:path	dc:subject ;
+				ns2:maxCount	128 ;
+				ns2:class	ns3:TimeSpan ] , [	ns2:path	dc:format ;
+				ns2:maxCount	54 ;
+				ns2:class	ns3:Place ] , [	ns2:path	dc:description ;
+				ns2:maxCount	4 ] , [	ns2:path	dc:title ;
+				ns2:maxCount	9 ] , [	ns2:path	ns3:type ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns18:spn ;
+				ns2:maxCount	2 ] , [	ns2:path	dc:type ;
+				ns2:maxCount	32 ;
+				ns2:class	skos:Concept ] , [	ns2:path	dc:subject ;
+				ns2:maxCount	128 ;
+				ns2:class	ns3:Agent ] , [	ns2:path	dc:subject ;
+				ns2:maxCount	128 ;
+				ns2:class	ns3:Place ] , [	ns2:path	dcterms:hasPart ;
+				ns2:maxCount	1968 ;
+				ns2:class	ns3:ProvidedCHO ] .
+ns6:E54_Dimension
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E54_Dimension ;
+	ns2:property	[	ns2:path	ns7:P90_has_value ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns7:P2_has_type ;
+				ns2:maxCount	1 ] , [	ns2:path	ns7:P91_has_unit ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns7:P90_has_value ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:decimal ] .
+ns8:ReviewNewsArticle
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns9:ReviewNewsArticle ;
+	ns2:property	[	ns2:path	ns9:headline ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns9:datePublished ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:date ] , [	ns2:path	ns9:publisher ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns9:itemReviewed ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:E7_Activity ] , [	ns2:path	ns9:datePublished ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns6:E36_Visual_Item
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E36_Visual_Item ;
+	ns2:property	[	ns2:path	ns7:P129_is_about ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:E7_Activity ] , [	ns2:path	ns7:P138_represents ;
+				ns2:maxCount	4 ;
+				ns2:class	ns7:E7_Activity ] , [	ns2:path	ns7:P65i_is_shown_by ;
+				ns2:maxCount	1 ] .
+ns6:E7_Activity
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E7_Activity ;
+	ns2:property	[	ns2:path	ns7:P9_consists_of ;
+				ns2:maxCount	4 ;
+				ns2:class	ns7:E7_Activity ] , [	ns2:path	skos:closeMatch ;
+				ns2:maxCount	1 ] , [	ns2:path	ns7:P16_used_specific_object ;
+				ns2:maxCount	1116 ;
+				ns2:class	ns3:ProvidedCHO ] , [	ns2:path	ns7:P7_took_place_at ;
+				ns2:maxCount	1 ] , [	ns2:path	ns7:P67i_is_referred_to_by ;
+				ns2:maxCount	4 ;
+				ns2:class	ns7:E22_Human-Made_Object ] , [	ns2:path	ns7:P2_has_type ;
+				ns2:maxCount	1 ] , [	ns2:path	ns7:P1_is_identified_by ;
+				ns2:maxCount	4 ;
+				ns2:class	ns7:E33_E41_Linguistic_Appellation ] , [	ns2:path	ns7:P14_carried_out_by ;
+				ns2:maxCount	4 ;
+				ns2:class	ns7:E39_Actor ] , [	ns2:path	ns7:P129i_is_subject_of ;
+				ns2:maxCount	23 ] , [	ns2:path	ns7:P4_has_time-span ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:E52_Time-Span ] .
+ns10:Aggregation
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns11:Aggregation ;
+	ns2:property	[	ns2:path	ns3:isShownBy ;
+				ns2:maxCount	5 ;
+				ns2:class	ns3:WebResource ] , [	ns2:path	ns3:dataProvider ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns3:aggregatedCHO ;
+				ns2:maxCount	1 ;
+				ns2:class	ns3:ProvidedCHO ] , [	ns2:path	ns3:isShownAt ;
+				ns2:maxCount	2 ;
+				ns2:class	ns3:ProvidedCHO ] , [	ns2:path	ns3:object ;
+				ns2:maxCount	5 ;
+				ns2:class	ns3:WebResource ] , [	ns2:path	ns3:provider ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns3:rights ;
+				ns2:maxCount	1 ] .
+ns6:E52_Time-Span
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E52_Time-Span ;
+	ns2:property	[	ns2:path	ns7:P82a_begin_of_the_begin ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns7:P82a_begin_of_the_begin ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:gYear ] , [	ns2:path	ns7:P82b_end_of_the_end ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:gYear ] , [	ns2:path	ns7:P82a_begin_of_the_begin ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:date ] , [	ns2:path	ns7:P82b_end_of_the_end ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns7:P82b_end_of_the_end ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:date ] .
+ns6:E39_Actor
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E39_Actor ;
+	ns2:property	[	ns2:path	ns7:P1_is_identified_by ;
+				ns2:maxCount	14 ;
+				ns2:class	ns3:Agent ] , [	ns2:path	ns7:P100i_died_in ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:E69_Death ] , [	ns2:path	ns7:P98i_was_brought_into_life ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:E67_Birth ] , [	ns2:path	ns7:P1_is_identified_by ;
+				ns2:maxCount	14 ;
+				ns2:class	ns7:E41_Appellation ] , [	ns2:path	ns7:P2_has_type ;
+				ns2:maxCount	1 ] .
+ns6:E65_Creation
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E65_Creation ;
+	ns2:property	[	ns2:path	ns7:P4_has_time-span ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:E52_Time-Span ] , [	ns2:path	ns7:P14_carried_out_by ;
+				ns2:maxCount	1 ] .
+ns1:WebResource
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns3:WebResource ;
+	ns2:property	[	ns2:path	ns3:rights ;
+				ns2:maxCount	1 ] , [	ns2:path	dc:format ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	dcterms:created ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	dc:rights ;
+				ns2:maxCount	2 ] .
+ns6:E69_Death
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E69_Death ;
+	ns2:property	[	ns2:path	ns7:P7_took_place_at ;
+				ns2:maxCount	2 ;
+				ns2:class	ns3:Place ] , [	ns2:path	ns7:P4_has_timespan ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:E52_Time-Span ] .
+ns6:E73_Information_Object
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E73_Information_Object ;
+	ns2:property	[	ns2:path	ns7:P1_is_identified_by ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:E41_Appellation ] , [	ns2:path	ns7:P94i_was_created_by ;
+				ns2:maxCount	1 ;
+				ns2:class	ns7:E65_Creation ] , [	ns2:path	ns7:P65_shows_visual_item ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:E36_Visual_Item ] , [	ns2:path	ns7:P2_has_type ;
+				ns2:maxCount	1 ] .
+ns6:E22_Human-Made_Object
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E22_Human-Made_Object ;
+	ns2:property	[	ns2:path	ns7:P50_has_current_keeper ;
+				ns2:maxCount	1 ] , [	ns2:path	ns7:P65_shows_visual_item ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:E36_Visual_Item ] , [	ns2:path	ns7:P1_is_identified_by ;
+				ns2:maxCount	8 ;
+				ns2:class	ns3:ProvidedCHO ] , [	ns2:path	ns7:P1_is_identified_by ;
+				ns2:maxCount	4 ;
+				ns2:class	ns7:E42_Identifier ] , [	ns2:path	ns7:P108i_was_produced_by ;
+				ns2:maxCount	1 ;
+				ns2:class	ns7:E12_Production ] , [	ns2:path	ns7:P67i_is_referred_to_by ;
+				ns2:maxCount	1 ;
+				ns2:class	ns7:E33_Linguistic_Object ] , [	ns2:path	ns7:P1_is_identified_by ;
+				ns2:maxCount	8 ;
+				ns2:class	ns7:E33_E41_Linguistic_Appellation ] , [	ns2:path	ns7:P43_has_dimension ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:E54_Dimension ] , [	ns2:path	ns7:P1_is_identified_by ;
+				ns2:maxCount	8 ;
+				ns2:class	ns7:E41_Appellation ] , [	ns2:path	ns7:P2_has_type ;
+				ns2:maxCount	1 ] .
+ns6:E41_Appellation
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E41_Appellation ;
+	ns2:property	[	ns2:path	ns7:P190_has_symbolic_content ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] .
+ns6:E12_Production
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E12_Production ;
+	ns2:property	[	ns2:path	ns7:P4_has_time-span ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:E52_Time-Span ] .
+ns6:E67_Birth
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E67_Birth ;
+	ns2:property	[	ns2:path	ns7:P7_took_place_at ;
+				ns2:maxCount	2 ;
+				ns2:class	ns3:Place ] , [	ns2:path	ns7:P4_has_timespan ;
+				ns2:maxCount	2 ;
+				ns2:class	ns7:E52_Time-Span ] .
+ns1:Agent
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns3:Agent ;
+	ns2:property	[	ns2:path	skos:prefLabel ;
+				ns2:maxCount	28575 ] , [	ns2:path	ns15:nationality ;
+				ns2:maxCount	249 ] , [	ns2:path	ns17:placeOfDeath ;
+				ns2:maxCount	1722 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns17:professionOrOccupation ;
+				ns2:maxCount	431 ] , [	ns2:path	ns17:placeOfBirth ;
+				ns2:maxCount	2558 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns17:gender ;
+				ns2:maxCount	3 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns17:dateOfDeath ;
+				ns2:maxCount	11694 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns17:dateOfBirth ;
+				ns2:maxCount	11399 ;
+				ns2:datatype	xsd:string ] .
+ns6:E33_Linguistic_Object
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E33_Linguistic_Object ;
+	ns2:property	[	ns2:path	ns7:P190_has_symbolic_content ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns7:P2_has_type ;
+				ns2:maxCount	1 ] .
+ns6:E33_E41_Linguistic_Appellation
+	rdf:type	ns2:NodeShape ;
+	ns2:targetClass	ns7:E33_E41_Linguistic_Appellation ;
+	ns2:property	[	ns2:path	ns7:P72_has_language ;
+				ns2:maxCount	1 ] , [	ns2:path	ns7:P190_has_symbolic_content ;
+				ns2:maxCount	1 ;
+				ns2:datatype	xsd:string ] , [	ns2:path	ns7:P2_has_type ;
+				ns2:maxCount	1 ] .
