@@ -17,10 +17,11 @@ Since the [VoID](https://www.w3.org/TR/void/) vocabulary [structural metadata](h
 
 - Load dataset into triplestore
 - Make VoID structural metadata analysis of the dataset. See https://github.com/redpencilio/void-generator-docker for a Dockerized version of J. Bolleman's VoID description generator.
+```
+docker run --network=host -it redpencil/void-generator-docker java -jar void-generator.jar -r http://localhost:8890/sparql --void-file void-rijksmuseum.ttl --iri-of-void 'https://example.com/.well-known/void#' -g http://mu.semte.ch/graphs/rijksmuseum
+```
 - Load produced VoID description into triplestore
-- Run SPARQL CONSTRUCT query to construct SHACL shape (see example in repo)
-
-*The current approach using a single SPARQL CONSTRUCT query is provided as a proof of concept. This will soon be reworked to a Python script allowing for extension*
+- Run script to generate SHACL description
 
 ## parts of SHACL spec in scope
 
