@@ -87,7 +87,7 @@ WHERE {
   GRAPH <$void_description_graph> {
     {
       {
-        SELECT DISTINCT (?classPartition AS ?cp) ?nodeShape
+        SELECT DISTINCT (?classPartition AS ?cp) ?nodeShape ?subjectClass
         WHERE {
           GRAPH <$void_description_graph> {
             ?classPartition void:class ?subjectClass .
