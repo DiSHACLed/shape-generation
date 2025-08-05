@@ -18,7 +18,7 @@ Since the [VoID](https://www.w3.org/TR/void/) vocabulary [structural metadata](h
 - Load dataset into triplestore
 - Make VoID structural metadata analysis of the dataset. See https://github.com/redpencilio/void-generator-docker for a Dockerized version of J. Bolleman's VoID description generator.
 ```
-docker run --network=host -it redpencil/void-generator-docker java -jar void-generator.jar -r http://localhost:8890/sparql --void-file void-rijksmuseum.ttl --iri-of-void 'https://example.com/.well-known/void#' -g http://mu.semte.ch/graphs/rijksmuseum
+docker run --network=host -v ./output:/output -it redpencil/void-generator-docker java -jar void-generator.jar -r http://localhost:8890/sparql --void-file /output/void-rijksmuseum.ttl --iri-of-void 'https://example.com/.well-known/void#' -g http://mu.semte.ch/graphs/rijksmuseum
 ```
 - Load produced VoID description into triplestore
 - Run script to generate SHACL description
