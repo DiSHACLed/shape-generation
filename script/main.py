@@ -36,7 +36,7 @@ WHERE {
     )
     return query_string
 
-def generate_count_property_query(data_graph, subject_class, path, object_class=None, property=None):
+def generate_count_property_query(data_graph, subject_type, path, object_type=None, property=None):
     """
     """
     query_template = Template("""
@@ -46,10 +46,11 @@ WHERE {
         SELECT ?s (COUNT(?o) AS ?count)
         WHERE {
             GRAPH <$data_graph> {
-                ?s a <$subject_class> .
-    OPTIONAL {
-                ?s <$path> ?o .
-                $object_class_snippet }
+                ?s a <$subject_type> .
+                OPTIONAL {
+                    ?s <$path> ?o .
+                    $object_type_snippet
+                }
             }
         }
         GROUP BY ?s
@@ -58,8 +59,8 @@ WHERE {
 """)
     query_string = query_template.substitute(
         data_graph=data_graph,
-        subject_class=subject_class,
-        object_class_snippet=f"?o a <{object_class}> ." if object_class else "",
+        subject_type=subject_type,
+        object_type_snippet=f"?o a <{object_type}> ." if object_type else "",
         path=path
     )
     return query_string
@@ -187,7 +188,7 @@ if __name__ == '__main__':
             q = generate_count_property_query(DATASET_GRAPH,
                                               target_class,
                                               path,
-                                              object_class=object_class)
+                                              object_type=object_class)
             sparql_query.setQuery(q)
             res = sparql_query.query()
 
