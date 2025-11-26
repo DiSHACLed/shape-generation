@@ -189,19 +189,23 @@ if __name__ == '__main__':
                                               target_class,
                                               path,
                                               object_type=object_class)
+            logging.debug(q)
             sparql_query.setQuery(q)
             res = sparql_query.query()
 
             mincount = int(res.bindings[0]['minCount'].value)
             maxcount = int(res.bindings[0]['maxCount'].value)
+            logging.info(f"<{path}>: min {mincount}, max {maxcount} occurences per subject.")
 
             shacl_min_count, shacl_max_count = minmax2constraints(mincount, maxcount)
 
             if shacl_min_count:
                 triple = property_shape, SH['minCount'], Literal(mincount)
+                logging.info(f"suggesting sh:minCount {shacl_min_count}")
                 shacl_graph.add(triple)
             if shacl_max_count:
                 triple = property_shape, SH['maxCount'], Literal(maxcount)
+                logging.info(f"suggesting sh:maxCount {shacl_max_count}")
                 shacl_graph.add(triple)
 
     shacl_graph.serialize(destination='shacl_description.ttl', format='turtle')
