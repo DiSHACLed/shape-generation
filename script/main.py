@@ -169,6 +169,22 @@ def yield_property_shapes(graph, node_shape):
             logging.debug(binding[term.Variable('path')])
         yield binding[term.Variable('propertyShape')], binding[term.Variable('path')], binding[term.Variable('objectClass')] if term.Variable('objectClass') in binding else None
 
+def prompt_y_n(prompt, default=True):
+    while True:
+        # Show the prompt with default choice
+        default_str = f"[{'Y' if default is True else 'y'}/{'N' if default is False else 'n'}]"
+        response = input(f"{prompt} {default_str}: ").strip().lower()
+
+        if response == '':
+            return default
+
+        if response in ('y', 'yes'):
+            return True
+        elif response in ('n', 'no'):
+            return False
+        else:
+            print("Please respond with 'y' or 'n'.")
+
 if __name__ == '__main__':
     SPARQL_ENDPOINT = "http://localhost:8890/sparql" #  os.environ.get("SPARQL_ENDPOINT")
     DATASET_GRAPH = "http://example.com/graphs/rijksmuseum"
@@ -202,10 +218,12 @@ if __name__ == '__main__':
             if shacl_min_count:
                 triple = property_shape, SH['minCount'], Literal(mincount)
                 logging.info(f"suggesting sh:minCount {shacl_min_count}")
-                shacl_graph.add(triple)
+                if prompt_y_n(f"Add sh:minCount {shacl_min_count} for <{path}>?"):
+                    shacl_graph.add(triple)
             if shacl_max_count:
                 triple = property_shape, SH['maxCount'], Literal(maxcount)
                 logging.info(f"suggesting sh:maxCount {shacl_max_count}")
-                shacl_graph.add(triple)
+                if prompt_y_n(f"Add sh:maxCount {shacl_max_count} for <{path}>?"):
+                    shacl_graph.add(triple)
 
     shacl_graph.serialize(destination='shacl_description.ttl', format='turtle')
