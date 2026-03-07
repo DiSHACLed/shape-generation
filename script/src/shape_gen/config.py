@@ -17,6 +17,12 @@ VIRTUOSO_DIR = Path(f"{HOME_DIR}/{_BASE}/virtuoso-dbs")
 RESULTS = Path(f"{HOME_DIR}/{_BASE}/results")
 SAMPLE_DATA = Path(f"{HOME_DIR}/{_BASE}/sample-data")
 
+# Note this will be broken if you install without --editable
+SCRIPT_FOLDER = Path(__file__).resolve().parent.parent.parent.parent 
+# make sure these exist
+PLAY_JAR=Path(f'{SCRIPT_FOLDER}/external/shacl-play-app-0.11.7-onejar.jar')
+QSE_DIR=Path(f'{SCRIPT_FOLDER}/external/qse')
+
 namespaces={
     'sh': 'http://www.w3.org/ns/shacl#',
     'vl_besl': 'http://data.vlaanderen.be/ns/besluit#',

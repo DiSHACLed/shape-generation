@@ -25,7 +25,7 @@ def init(key : str, verbose : bool = False) -> Container :
         },
         volumes={
             # f"{DATA_DIR}/{key}.ttl": {"bind": f"/data/toLoad/{key}.ttl", "mode": "rw"},
-            str(resources.files("rdf_tools.other").joinpath('virtuoso.ini')): {"bind": "/data/virtuoso.ini", "mode": "ro"},
+            str(resources.files("shape_gen.assets").joinpath('virtuoso.ini')): {"bind": "/data/virtuoso.ini", "mode": "ro"},
             f"{VIRTUOSO_DIR}/{key}-db": {"bind": "/data", "mode": "rw"},
             },
         ports={"8890/tcp": 8890},

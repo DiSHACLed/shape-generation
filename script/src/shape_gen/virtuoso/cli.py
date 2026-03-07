@@ -27,10 +27,10 @@ def stop() : # assuming only one running at a time (otherwise, dynamic ports)
         )
     container.stop()
 
-@virtuoso_typer.command() 
-def start(key : str) :
-    container = CLIENT.containers.get(f'virtuoso-{key}')
-    # container in CLIENT.containers.list(filters={'status': 'exited'}) 
-            # if container.name and container.name = ('virtuoso-')
-        # )
-    container.start()
+# @virtuoso_typer.command() 
+# def start(key : str) :
+#     container = CLIENT.containers.get(f'virtuoso-{key}')
+#     # container in CLIENT.containers.list(filters={'status': 'exited'}) 
+#             # if container.name and container.name = ('virtuoso-')
+#         # )
+#     container.start()
