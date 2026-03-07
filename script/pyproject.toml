@@ -24,3 +24,6 @@ void = "shape_gen.void:void_typer"
 [build-system]
 requires = ["uv_build>=0.10.0,<0.11.0"]
 build-backend = "uv_build"
+
+[tool.uv.build-backend]
+source.include = ['assets/virtuoso.ini', '/voicl/templates/*.sparql']
