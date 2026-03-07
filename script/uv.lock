@@ -355,6 +355,7 @@ dependencies = [
     { name = "docker" },
     { name = "rdflib" },
     { name = "shexer" },
+    { name = "six" },
     { name = "sparqlwrapper" },
     { name = "typer" },
 ]
@@ -364,6 +365,7 @@ requires-dist = [
     { name = "docker", specifier = ">=7.1.0" },
     { name = "rdflib", specifier = ">=7.6.0" },
     { name = "shexer", specifier = ">=2.7.2.1" },
+    { name = "six", specifier = ">=1.17.0" },
     { name = "sparqlwrapper", specifier = ">=2.0.0" },
     { name = "typer", specifier = ">=0.24.1" },
 ]
@@ -394,6 +396,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/11/2d/0a4abb94de12fdf192fd3f0c28b2dfd1bd37ffa635f8cce535f97fabf6c4/shexer-2.7.2.1.tar.gz", hash = "sha256:1c3e23ed7ef26b466f020f93a47e38b182bd694b2dc2397500625c132b66da27", size = 127461, upload-time = "2026-02-27T01:01:47.918Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/23/f8/6c72e2f999561f020cc1ed519abccadf1b7eb8f6253eea1d2328408f1177/shexer-2.7.2.1-py3-none-any.whl", hash = "sha256:9b2b424caf52e7a0723f8cc6581ed4da05d420dfb80ba37130bb13c5563ee392", size = 192675, upload-time = "2026-02-27T01:01:46.551Z" },
+]
+
+[[package]]
+name = "six"
+version = "1.17.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81", size = 34031, upload-time = "2024-12-04T17:35:28.174Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050, upload-time = "2024-12-04T17:35:26.475Z" },
 ]
 
 [[package]]
