@@ -16,7 +16,10 @@ dependencies = [
 ]
 
 [project.scripts]
-shape-gen = "shape_gen:main"
+# shape-gen = "shape_gen:main"
+voicl = "shape_gen.voicl.generator:voicl_typer"
+virtuoso = "shape_gen.virtuoso.cli:virtuoso_typer"
+void = "shape_gen.void:void_typer"
 
 [build-system]
 requires = ["uv_build>=0.10.0,<0.11.0"]
