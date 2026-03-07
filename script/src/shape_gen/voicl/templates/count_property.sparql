@@ -1,0 +1,16 @@
+SELECT (MAX(?count) AS ?maxCount) (MIN(?count) AS ?minCount)
+WHERE {
+    {
+        SELECT ?s (COUNT(?o) AS ?count)
+        WHERE {
+            GRAPH <$data_graph> {
+                ?s a <$subject_type> .
+                OPTIONAL {
+                    ?s <$path> ?o .
+                    $object_type_snippet
+                }
+            }
+        }
+        GROUP BY ?s
+    }
+}

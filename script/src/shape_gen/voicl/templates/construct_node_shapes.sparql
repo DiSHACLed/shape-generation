@@ -1,0 +1,44 @@
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX void-ext: <http://ldf.fi/void-ext#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+CONSTRUCT {
+  ?nodeShape a sh:NodeShape ;
+  sh:targetClass ?subjectClass ;
+  sh:property [
+                sh:path ?prop ;
+                sh:datatype ?objectDatatype ;
+                sh:class ?objectClass ;
+              ]
+}
+WHERE {
+  GRAPH <$void_graph> {
+    {
+      { # get a gen. ID for each cp (as ?nodeShape)
+        SELECT DISTINCT (?classPartition AS ?cp) ?nodeShape ?subjectClass
+        WHERE {
+          GRAPH <$void_graph> {
+            ?classPartition void:class ?subjectClass .
+            BIND (URI(CONCAT("$class_partition_uri_prefix", STRUUID())) AS ?nodeShape)
+          }
+        }
+      }
+      ?cp void:class ?subjectClass ;
+          void:entities ?subjectsCount ;
+          void:propertyPartition ?pp .
+      ?pp void:property ?prop .
+      OPTIONAL {
+        {
+          ?pp  void:classPartition [ void:class ?objectClass ] .
+        } UNION {
+          ?pp void-ext:datatypePartition [ void-ext:datatype ?objectDatatype ] .
+        }
+      }
+    } UNION { # hmm?
+      ?linkset void:subjectsTarget [ void:class ?subjectClass ] ;
+      void:linkPredicate ?prop ;
+      void:objectsTarget [ void:class ?objectClass ] .
+    }
+  }
+}

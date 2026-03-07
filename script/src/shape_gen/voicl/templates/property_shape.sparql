@@ -1,0 +1,14 @@
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+SELECT DISTINCT ?propertyShape ?path ?objectDatatype ?objectClass
+WHERE {
+  <$node_shape> a sh:NodeShape ;
+    sh:property ?propertyShape .
+  ?propertyShape sh:path ?path .
+  OPTIONAL {
+    ?propertyShape sh:datatype ?objectDatatype .
+  }
+  OPTIONAL {
+    ?propertyShape sh:class ?objectClass .
+  }
+}
