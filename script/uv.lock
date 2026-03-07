@@ -353,14 +353,18 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "docker" },
+    { name = "rdflib" },
     { name = "shexer" },
+    { name = "sparqlwrapper" },
     { name = "typer" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "docker", specifier = ">=7.1.0" },
+    { name = "rdflib", specifier = ">=7.6.0" },
     { name = "shexer", specifier = ">=2.7.2.1" },
+    { name = "sparqlwrapper", specifier = ">=2.0.0" },
     { name = "typer", specifier = ">=0.24.1" },
 ]
 
