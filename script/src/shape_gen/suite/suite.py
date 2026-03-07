@@ -1,3 +1,4 @@
+from ..prelude import Typer
 from typing import Annotated
 from pathlib import Path
 import typer
@@ -38,7 +39,11 @@ def valid_codes(candidates : list[str]) :
     else :
         raise typer.BadParameter(f"{candidates} must all be in {valid_codes}")
 
-def suite(sources : Annotated[list[str], typer.Argument(callback=valid_keys)] = keys,
+suite_typer = Typer()
+
+
+@suite_typer.command()
+def run(sources : Annotated[list[str], typer.Argument(callback=valid_keys)] = keys,
             codes : list[str] = typer.Option([ task.code for task in tasks ], "--tasks", "-t", callback=valid_codes)) :
 
     for code in codes :
@@ -46,5 +51,13 @@ def suite(sources : Annotated[list[str], typer.Argument(callback=valid_keys)] = 
         task = lookup[code]
         for key in sources :
             execute(task, key)
-        
-typer.run(suite)
+
+@suite_typer.command()
+def info() :
+    print(f"\nttl-files found in {SAMPLE_DATA}: (refer to them *without* the extension in the `run` command)")
+    for key in keys :
+        print(f"- {key}")
+    print(f"\ncurrently implemented tasks (results to {RESULTS}):")
+    for task in tasks :
+        print(f"- {task.code}")
+        print(f"  description: {task.description}")

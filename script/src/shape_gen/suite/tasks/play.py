@@ -6,6 +6,7 @@ import subprocess
 from ...config import RESULTS
 from ...virtuoso.cli import init, stop
 from ...virtuoso.virtuoso import ENDPOINT
+from . import virtuoso
 
 JAVA_HEAP_SIZE = 32
 
@@ -46,7 +47,7 @@ def meat(key : Key) :
             raise RuntimeError(f"Command {command} failed with exit code {e.returncode}. See {log_file} for details.") from e
 
 task = Task(
-    description = "PLAY: generate SHACL from endpoint ",
+    description = f"generate SHACL from endpoint (depends on {virtuoso.CODE})",
     code = CODE,
     done = (lambda key : (RESULTS/Path(f"{CODE}/{key}.ttl")).is_file()),
     meat = meat,

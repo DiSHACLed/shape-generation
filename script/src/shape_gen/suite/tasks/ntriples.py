@@ -1,6 +1,7 @@
 from ..task import Task, Key
 from ...config import SAMPLE_DATA, RESULTS
 from ...prelude import docker_connect
+from . import qse
 
 from pathlib import Path
 
@@ -32,7 +33,7 @@ def meat(key : Key) :
             f.write(str(e))
 
 task = Task(
-    description = "from ttl generate nt file (needed for ...)",
+    description = f"generate nt file from ttl (needed for qse)",
     done = (lambda key : (RESULTS/Path(f"{CODE}/{key}.nt")).exists()),
     code = CODE,
     meat = meat

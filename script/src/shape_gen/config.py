@@ -1,7 +1,9 @@
 from pathlib import Path
 import os
 
-assert False, "Please configure the constants in config.py!"
+_I_HAVE_GONE_OVER_THIS_CONFIG = True
+
+assert _I_HAVE_GONE_OVER_THIS_CONFIG, "Please configure the constants in config.py!"
 
 # Using rootless docker?
 ROOTLESS = True
@@ -23,7 +25,7 @@ SCRIPT_FOLDER = Path(__file__).resolve().parent.parent.parent.parent
 PLAY_JAR=Path(f'{SCRIPT_FOLDER}/external/shacl-play-app-0.11.7-onejar.jar')
 QSE_DIR=Path(f'{SCRIPT_FOLDER}/external/qse')
 
-namespaces={
+NAMESPACES={
     'sh': 'http://www.w3.org/ns/shacl#',
     'vl_besl': 'http://data.vlaanderen.be/ns/besluit#',
     'vl_mand': 'http://data.vlaanderen.be/ns/mandaat#',
@@ -36,3 +38,7 @@ namespaces={
     'lblod_org': 'http://lblod.data.gift/vocabularies/organisatie/',
     'lblod_ere': 'http://data.lblod.info/vocabularies/erediensten/',
 }
+
+VIRTUOSO_DIR = "/media/koen/big-ssd/data"
+RESULTS = "/media/koen/big-ssd/results"
+SAMPLE_DATA=Path('/media/koen/big-ssd/sample-data')

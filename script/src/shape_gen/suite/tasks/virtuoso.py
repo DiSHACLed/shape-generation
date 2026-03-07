@@ -30,7 +30,7 @@ def post(key : Key) :
     stop()
 
 task = Task(
-    description = "Shexer: generate SHACL from ttl ",
+    description = f"sets up virtuoso endpoint (data in {VIRTUOSO_DIR}) from ttl",
     code = CODE,
     done = done,
     meat = meat,

@@ -1,6 +1,6 @@
 from contextlib import redirect_stdout
 from ..task import Task, Key
-from ...config import RESULTS, SAMPLE_DATA, namespaces
+from ...config import RESULTS, SAMPLE_DATA, NAMESPACES
 from pathlib import Path
 
 # import logging
@@ -25,7 +25,7 @@ def meat(key : Key) :
         examples_mode=ALL_EXAMPLES,
         # remove_empty_shapes=False,
         inverse_paths=True,
-        namespaces_dict={ abrev : url for (url, abrev) in namespaces.items() },
+        namespaces_dict={ abrev : url for (url, abrev) in NAMESPACES.items() },
         instances_report_mode=MIXED_INSTANCES,
     )
 
@@ -43,7 +43,7 @@ def meat(key : Key) :
                 )
 
 task = Task(
-    description = "Shexer: generate SHACL from ttl ",
+    description = "generate SHACL from ttl",
     done = (lambda key : Path(f'({RESULTS}/{CODE}/{key}.ttl').is_file()),
     code = CODE,
     meat = meat

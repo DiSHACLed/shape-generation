@@ -3,6 +3,8 @@ import logging
 from typing import Optional, Generator, Literal as Lit, cast
 from pathlib import Path
 
+from ..config import NAMESPACES
+
 from .heuristics import minmax2constraints
 from .interaction import prompt_y_n
 
@@ -93,23 +95,8 @@ def property_shapes(graph : Graph, node_shape) -> Generator[tuple[Node,Node,Node
 
 SH = Namespace("http://www.w3.org/ns/shacl#")
 
-# TODO in separate file ...
-namespaces = ( 
-    ('sh', 'http://www.w3.org/ns/shacl#'),
-    ('vl_besl', 'http://data.vlaanderen.be/ns/besluit#'),
-    ('vl_mand', 'http://data.vlaanderen.be/ns/mandaat#'),
-    ('vl_pers', 'http://data.vlaanderen.be/ns/persoon#'),
-
-    ('example', 'http://example.com/'),
-    ('mu_core', 'http://mu.semte.ch/vocabularies/core/'),
-
-    ('mu_ext', 'http://mu.semte.ch/vocabularies/ext/'),
-    ('lblod_org', 'http://lblod.data.gift/vocabularies/organisatie/'),
-    ('lblod_ere', 'http://data.lblod.info/vocabularies/erediensten/'),
-    )
-
 def add_prefixes(graph : Graph) :
-    for (prefix, full) in namespaces :
+    for (prefix, full) in NAMESPACES.items() :
         graph.bind(prefix, full)
 
 from ..prelude import Typer

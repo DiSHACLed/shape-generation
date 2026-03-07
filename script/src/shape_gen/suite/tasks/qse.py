@@ -107,7 +107,7 @@ def meat(key : Key) :
             raise RuntimeError(f"Command {command} failed with exit code {e.returncode}. See {log_file} for details.") from e
 
 task = Task(
-    description = "QSE: generate SHACL from nt ",
+    description = f"generate SHACL from nt (depends on {ntriples.CODE})",
     done = (lambda key : (RESULTS/Path(f"{CODE}/{key}/DATASET_QSE_FULL_SHACL.ttl")).is_file()),
     code = CODE,
     meat = meat

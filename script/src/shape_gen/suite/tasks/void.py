@@ -5,6 +5,7 @@ from ...virtuoso.cli import init, stop
 from ...virtuoso.virtuoso import ENDPOINT
 from ... import void
 from ...prelude import graph_name
+from . import virtuoso
 
 from contextlib import redirect_stdout, redirect_stderr
 
@@ -34,7 +35,7 @@ def post(key : Key) :
     stop()
 
 task = Task(
-    description = "Generate void file ",
+    description = f"generate void from endpoint (depends on {virtuoso.CODE})",
     code = CODE,
     done = done,
     meat = meat,
