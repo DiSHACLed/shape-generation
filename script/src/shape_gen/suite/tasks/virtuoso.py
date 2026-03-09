@@ -6,6 +6,8 @@ from ...virtuoso.cli import init, load, stop
 
 from contextlib import redirect_stdout, redirect_stderr
 
+from datetime import datetime
+
 CODE = 'virtuoso'
 
 def done(key : Key) :
@@ -21,6 +23,11 @@ def prep(key : Key) :
 def meat(key : Key) :
     input_file = Path(f'{SAMPLE_DATA}/{key}.ttl')
     log_file = Path(f"{RESULTS}/{CODE}/{key}.log")
+
+    path = Path(f"{VIRTUOSO_DIR}/{key}-db")
+    if path.exists() :
+        stamp = datetime.now().strftime("%d-%m-%H:%M:%S")
+        path.rename(f"{VIRTUOSO_DIR}/{key}-db-backup-{stamp}")
 
     with open(log_file, "w") as f:
         with redirect_stdout(f), redirect_stderr(f):

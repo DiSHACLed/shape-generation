@@ -27,10 +27,10 @@ for key in keys :
     assert (SAMPLE_DATA/Path(f"{key}.ttl")).exists()
 
 def valid_keys(candidates : list[str]) :
-    if all (candidate in keys for candidate in candidates) :
-        return candidates
-    else :
-        raise typer.BadParameter(f"Keys must be in {keys}")
+    for candidate in candidates :
+        if candidate not in keys :
+            raise typer.BadParameter(f"{candidate} not in {keys}")
+    return candidates
 
 def valid_codes(candidates : list[str]) :
     valid_codes = lookup.keys()
@@ -44,13 +44,16 @@ suite_typer = Typer()
 
 @suite_typer.command()
 def run(sources : Annotated[list[str], typer.Argument(callback=valid_keys)] = keys,
-            codes : list[str] = typer.Option([ task.code for task in tasks ], "--tasks", "-t", callback=valid_codes)) :
+            codes : list[str] = typer.Option([ task.code for task in tasks ], "--tasks", "-t", callback=valid_codes),
+            exclude_codes : list[str] = typer.Option([], "--exclude-tasks", "-e", callback=valid_codes),
+            overwrite : bool = False
+            ) :
 
-    for code in codes :
+    for code in (code for code in codes if code not in exclude_codes ) :
         (RESULTS/Path(code)).mkdir(parents=False, exist_ok=True)
         task = lookup[code]
         for key in sources :
-            execute(task, key)
+            execute(task, key, overwrite)
 
 @suite_typer.command()
 def info() :

@@ -18,6 +18,7 @@ _BASE = "shape-gen"
 VIRTUOSO_DIR = Path(f"{HOME_DIR}/{_BASE}/virtuoso-dbs")
 RESULTS = Path(f"{HOME_DIR}/{_BASE}/results")
 SAMPLE_DATA = Path(f"{HOME_DIR}/{_BASE}/sample-data")
+INTERMEDIATE = Path(f"{HOME_DIR}/{_BASE}/intermediate")
 
 # Note this will be broken if you install without --editable
 SCRIPT_FOLDER = Path(__file__).resolve().parent.parent.parent.parent 

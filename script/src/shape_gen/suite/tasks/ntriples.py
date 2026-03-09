@@ -1,5 +1,5 @@
 from ..task import Task, Key
-from ...config import SAMPLE_DATA, RESULTS
+from ...config import SAMPLE_DATA, RESULTS, INTERMEDIATE
 from ...prelude import docker_connect
 from . import qse
 
@@ -25,7 +25,7 @@ def meat(key : Key) :
                         stdout=True,
                         stderr=True, # TODO false? to raise error in python
                     )
-        with open(f"{RESULTS}/{CODE}/{key}.nt", 'wb') as f :
+        with open(f"{INTERMEDIATE}/{CODE}/{key}.nt", 'wb') as f :
             for chunk in container.logs(stream=True):
                 f.write(chunk)
     except Exception as e :
@@ -34,7 +34,7 @@ def meat(key : Key) :
 
 task = Task(
     description = f"generate nt file from ttl (needed for qse)",
-    done = (lambda key : (RESULTS/Path(f"{CODE}/{key}.nt")).exists()),
+    done = (lambda key : (INTERMEDIATE/Path(f"{CODE}/{key}.nt")).exists()),
     code = CODE,
     meat = meat
     )

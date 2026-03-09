@@ -47,7 +47,7 @@ def meat(key : Key) :
             raise RuntimeError(f"Command {command} failed with exit code {e.returncode}. See {log_file} for details.") from e
 
 task = Task(
-    description = f"generate SHACL from endpoint (depends on {virtuoso.CODE})",
+    description = f"generate SHACL from endpoint (depends on {virtuoso.CODE}) (note: shacl play writes log-file to current directory; cannot be turned off..)",
     code = CODE,
     done = (lambda key : (RESULTS/Path(f"{CODE}/{key}.ttl")).is_file()),
     meat = meat,

@@ -1,5 +1,5 @@
 from ..task import Task, Key
-from ...config import RESULTS, QSE_DIR
+from ...config import RESULTS, QSE_DIR, INTERMEDIATE
 from pathlib import Path
 import subprocess
 
@@ -16,9 +16,9 @@ def meat(key : Key) :
     if not QSE_JAR.is_file() :
         raise RuntimeError(f"{QSE_JAR} does not exist")
 
-    nt_file = Path(f'{RESULTS}/{ntriples.CODE}/{key}.nt')
+    nt_file = Path(f'{INTERMEDIATE}/{ntriples.CODE}/{key}.nt')
     if not nt_file.is_file() :
-        raise RuntimeError(f"{RESULTS}/{ntriples.CODE}/{key}.nt does not exist")
+        raise RuntimeError(f"{INTERMEDIATE}/{ntriples.CODE}/{key}.nt does not exist")
 
     output_path = Path(f"{RESULTS}/{CODE}/{key}/")
     output_path.mkdir(parents=False, exist_ok=True)
@@ -82,7 +82,7 @@ def meat(key : Key) :
         # ---------------------------------- Pruning Thresholds (Support and Confidence) -----------------------------
 
         # 1st parameter is confidence and 2nd is support. So for more parameters, you can append the list with more pairs lie (0.25,150) etc. Please do not use spaces in this list.
-        pruning_thresholds={{(0,0),(0.1,100),(0.9,100)}}
+        pruning_thresholds={{(0,0),(0.1,20),(0.2,20),(0.3,20),(0.4,20),(0.5,20),(0.6,20),(0.7,20),(0.8,20),(0.9,20),(0.9,50),(0.95,50),(0.95,100),(0.95,200)}}
     """
 
     config_file = Path(f"{RESULTS}/{CODE}/{key}/config.properties")

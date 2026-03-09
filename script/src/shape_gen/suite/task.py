@@ -19,8 +19,8 @@ class Task():
     prep : Optional[Command] = None
     post : Optional[Command] = None
 
-def execute(task : Task, key : Key) :
-    if task.done(key) :
+def execute(task : Task, key : Key, repeat : bool) :
+    if not repeat and task.done(key) :
         print(f"Task code-named {task.code} already ran on {key}.")
         return
     if task.prep is not None :

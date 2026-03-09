@@ -44,7 +44,7 @@ def meat(key : Key) :
 
 task = Task(
     description = "generate SHACL from ttl",
-    done = (lambda key : Path(f'({RESULTS}/{CODE}/{key}.ttl').is_file()),
+    done = (lambda key : (RESULTS/Path(f"{CODE}/{key}.ttl")).is_file()),
     code = CODE,
     meat = meat
     )
