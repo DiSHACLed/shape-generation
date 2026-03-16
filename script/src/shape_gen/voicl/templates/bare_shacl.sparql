@@ -1,4 +1,3 @@
-PREFIX up: <http://purl.uniprot.org/core/>
 PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX void-ext: <http://ldf.fi/void-ext#>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
@@ -8,38 +7,40 @@ CONSTRUCT {
   sh:targetClass ?subjectClass ;
   sh:property [
                 sh:path ?prop ;
-                sh:class ?objectClass ;
                 sh:datatype ?objectDatatype ;
-	          ]
+                sh:class ?objectClass ;
+              ]
 }
-		                        # sh:maxCount ?maxO ;
 WHERE {
-  {
-    SELECT DISTINCT ?subjectClass ?prop ?objectClass ?objectDatatype
-    WHERE {
-      GRAPH <$void_graph> {
-        {
-          ?cp void:class ?subjectClass ;
-          void:entities ?subjectsCount ;
-          void:propertyPartition ?pp .
-          ?pp void:property ?prop .
-          OPTIONAL {
-            {
-              ?pp  void:classPartition [ void:class ?objectClass ; void:triples ?objectsCount ] .
-
-            } UNION {
-              ?pp void-ext:datatypePartition [ void-ext:datatype ?objectDatatype ] .
-            }
+  GRAPH <$void_graph> {
+    {
+      {
+        SELECT DISTINCT (?classPartition AS ?cp) ?nodeShape ?subjectClass
+        WHERE {
+          GRAPH <$void_graph> {
+            ?classPartition void:class ?subjectClass .
+            BIND (URI(CONCAT("$shapes_prefix", STRUUID())) AS ?nodeShape)
           }
-        } UNION {
-          # ?linkset void:subjectsTarget [ void:class ?subjectClass ; void:entities ?subjectsCount ] ;
-          # void:linkPredicate ?prop ;
-          # void:objectsTarget [ void:class ?objectClass ; void:entities ?objectsCount ] .
         }
       }
-    }
-    GROUP BY ?subjectClass ?prop ?objectClass ?objectDatatype
+      ?cp void:class ?subjectClass ;
+      void:entities ?subjectsCount ;
+      void:propertyPartition ?pp .
+      ?pp void:property ?prop .
+      OPTIONAL {
+        {
+          ?pp  void:classPartition [ void:class ?objectClass ] .
+        } UNION {
+          ?pp void-ext:datatypePartition [ void-ext:datatype ?objectDatatype ] .
+        }
+      }
+    } 
+    # UNION 
+    # {
+    #   ?linkset void:subjectsTarget [ void:class ?subjectClass ] ;
+    #   void:linkPredicate ?prop ;
+    #   void:objectsTarget [ void:class ?objectClass ] .
+    #   BIND (URI(CONCAT("$shapes_prefix", STRUUID())) AS ?nodeShape)
+    # }
   }
-  # BIND (IRI(CONCAT("http://example.com/",CONCAT(STRAFTER(STR(?subjectClass), "#"),'Shape'))) AS ?nodeShape)
-  BIND (IRI(CONCAT("http://example.com/shape#", ?subjectClass)) AS ?nodeShape)
 }

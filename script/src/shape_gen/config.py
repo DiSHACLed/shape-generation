@@ -41,5 +41,6 @@ NAMESPACES={
 }
 
 VIRTUOSO_DIR = "/media/koen/big-ssd/data"
-RESULTS = "/media/koen/big-ssd/results"
+RESULTS = "/home/koen/shape-generation-clean/generated-output"
 SAMPLE_DATA=Path('/media/koen/big-ssd/sample-data')
+INTERMEDIATE=Path('/media/koen/big-ssd/intermediate')

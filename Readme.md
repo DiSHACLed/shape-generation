@@ -93,6 +93,8 @@ Similarly, [[shexer]] provides an `instances_cap`, though their authors propose 
 
 # Erroneous data / relevant structures
 
+TODO; discuss relevance wrt dishacled
+
 When automatically trying to extract shapes from an existing knowledge graph (that did not previously have a shape-s), there might be 'erroneous' data in there, deviating from the 'intended' structure of the graph.
 E.g. 10 million instances of 'person' all of which have a birthdate of `xsd:date` but two who have `xsd:string`, it's clear that the latter two are faulty (and should be discarded when considering the property shape)
 In [3] the refer to this as "spuriousness".
@@ -103,6 +105,7 @@ Moreover, there might be lots of instance classes/properties with only a handful
 
 We can try deal with the above completely automatically:
 - shexer provides `acceptance threshold` (between [0,1]) for relative cutoff for constraints (or constraint votes) (with acceptance threshold `t`, constraint evidenced less than `t x #instances` are ignored)
+TODO `all_instances_are_compliant_mode`
 - QSE provides `pruning_thresholds`; a relative and absolute cutoff (referred to as "confidence" and "support" in their paper)
 This assumes that erroneous (and irrelevant) data is small when compared to valid data.
 This is not always the case though; considering e.g. blood types, you would not want to discard AB negative as invalid.
@@ -118,6 +121,10 @@ Alternatively, we can sift through a collection of candidate shapes, inspecting 
 We can readily test validity of a generated shape;
 If shape was generated without pruning thresholds, validating data graph with shapes graph should validate all triples.
 With thresholds, the invalid triples are (very informally) "within the scope of the thresholds set".
+
+# Ouput
+
+notes about output [notes about output](./notes_output.md)
 
 # Completeness
 

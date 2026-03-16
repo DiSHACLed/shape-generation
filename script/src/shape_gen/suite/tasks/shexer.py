@@ -39,7 +39,7 @@ def meat(key : Key) :
                 # output_format=SHACL_TURTLE,
                 acceptance_threshold=threshold,
                 verbose=True,
-                # to_uml_path=uml_output
+                # rdfconfig_directory = f'{RESULTS}/{CODE}/{key}/'
                 )
 
 task = Task(

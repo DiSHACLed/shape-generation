@@ -8,15 +8,18 @@ from ..config import SAMPLE_DATA, RESULTS
 from .task import Task, execute
 
 from .tasks import play, qse
-from .tasks import qse, ntriples, shexer, virtuoso, void, play
+from .tasks import qse, ntriples, shexer, shexer_profile, shexer_bunch, virtuoso, void, play, voicl
 
 tasks : list[Task] = [
     ntriples.task, 
     qse.task,
     shexer.task,
+    shexer_profile.task,
+    shexer_bunch.task,
     virtuoso.task,
     void.task,
     play.task,
+    voicl.task,
     ]
 
 lookup : dict[str,Task] = { task.code : task for task in tasks  }

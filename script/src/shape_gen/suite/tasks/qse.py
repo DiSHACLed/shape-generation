@@ -18,7 +18,7 @@ def meat(key : Key) :
 
     nt_file = Path(f'{INTERMEDIATE}/{ntriples.CODE}/{key}.nt')
     if not nt_file.is_file() :
-        raise RuntimeError(f"{INTERMEDIATE}/{ntriples.CODE}/{key}.nt does not exist")
+        raise RuntimeError(f"{nt_file} does not exist")
 
     output_path = Path(f"{RESULTS}/{CODE}/{key}/")
     output_path.mkdir(parents=False, exist_ok=True)
