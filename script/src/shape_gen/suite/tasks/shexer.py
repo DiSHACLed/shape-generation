@@ -17,12 +17,14 @@ def meat(key : Key) :
     log_file = Path(f'{RESULTS}/{CODE}/{key}.log')
     threshold = 0
 
+    private = key.startswith('lblod')
+
     shaper = Shaper(
         all_classes_mode = True,
         graph_file_input = str(input_file),
         # graph_list_of_files_input= input,
         input_format=TURTLE_ITER,
-        examples_mode=ALL_EXAMPLES,
+        examples_mode=(ALL_EXAMPLES if not private else None),
         # remove_empty_shapes=False,
         inverse_paths=True,
         namespaces_dict={ abrev : url for (url, abrev) in NAMESPACES.items() },

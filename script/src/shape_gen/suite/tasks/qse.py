@@ -25,6 +25,8 @@ def meat(key : Key) :
 
     log_file = Path(f"{RESULTS}/{CODE}/{key}.log")
 
+    private = key.startswith('lblod')
+
     config = f"""\
         # ---------------------------------- QSE Config -----------------------------
         qse_exact_file=true
@@ -44,7 +46,7 @@ def meat(key : Key) :
         expected_number_of_lines=1000000
         is_wikidata=false
         # set true to add examples to shapes
-        add_examples=true
+        add_examples={'true' if not private else 'false'}
         # predicates used for labels (separated by ",")
         label_properties=<http://www.w3.org/2000/01/rdf-schema#label>,<http://www.w3.org/2004/02/skos/core#prefLabel>
         # IRI used for examples in shapes

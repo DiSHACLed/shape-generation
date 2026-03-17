@@ -16,6 +16,8 @@ from shexer.utils.structures.dicts import ShapeExampleFeaturesDict
 CODE = 'shexer-bunch'
 
 def meat(key : Key) :
+    private = key.startswith('lblod')
+
     input_dir = f'{RESULTS}/{shexer_profile.CODE}/{key}'
     
     if not Path(input_dir).exists() :
@@ -35,12 +37,13 @@ def meat(key : Key) :
     with open(f"{input_dir}/shape_names.json", "r") as f:
         shape_names = json.load(f)
 
-    with open(f"{input_dir}/class_min_iris.json", "r") as f:
-        class_min_iris_data = json.load(f)
+    if not private :
+        with open(f"{input_dir}/class_min_iris.json", "r") as f:
+            class_min_iris_data = json.load(f)
 
     def shex_graph(compliant : bool, format : Literal[SHEXC] | Literal[SHACL_TURTLE], threshold : float) :
         shaper = Shaper(
-            examples_mode=ALL_EXAMPLES,
+            examples_mode=(ALL_EXAMPLES if not private else None),
             instances_report_mode=MIXED_INSTANCES,
             graph_file_input="dummy.ttl",
             namespaces_dict={ abrev : url for (url, abrev) in NAMESPACES.items() },
@@ -50,13 +53,15 @@ def meat(key : Key) :
         )
         # shaper._check_correct_output_params = (lambda x, y : True)
 
-        class_min_iris = ShapeExampleFeaturesDict(track_inverse_features=False)
-        class_min_iris._base_dict = class_min_iris_data
+        if not private :
+            class_min_iris = ShapeExampleFeaturesDict(track_inverse_features=False)
+            class_min_iris._base_dict = class_min_iris_data
+            shaper._class_min_iris = class_min_iris
+
         shaper._profile = profile
         shaper._target_classes_dict = {}
         shaper._class_counts = class_counts
         shaper._shape_names = shape_names
-        shaper._class_min_iris = class_min_iris
 
         shaper.shex_graph(
             output_file=f"{output_dir}/{'shex' if format == SHEXC else 'shacl'}-{threshold}-{"compl" if compliant else "non_compl"}.ttl",

@@ -20,9 +20,11 @@ def meat(key : Key) :
 
     log_file = Path(f'{RESULTS}/{CODE}/{key}.log')
 
+    private = key.startswith('lblod')
+
     shaper = Shaper(
         all_classes_mode=True,
-        examples_mode=ALL_EXAMPLES,
+        examples_mode=(ALL_EXAMPLES if not private else None),
         instances_report_mode=MIXED_INSTANCES,
         graph_file_input=input_file,
         namespaces_dict={ abrev : url for (url, abrev) in NAMESPACES.items() },
@@ -41,8 +43,9 @@ def meat(key : Key) :
     with open(f"{output_path}/shape_names.json", "w") as out_stream:
         json.dump(shaper._shape_names, out_stream, indent=2)
 
-    with open(f"{output_path}/class_min_iris.json", "w") as out_stream:
-        json.dump(shaper._class_min_iris._base_dict, out_stream, indent=2)
+    if not private :
+        with open(f"{output_path}/class_min_iris.json", "w") as out_stream:
+            json.dump(shaper._class_min_iris._base_dict, out_stream, indent=2)
 
 task = Task(
     description = "instance tracker+class profile shexer; all saved in json files",
