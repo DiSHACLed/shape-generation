@@ -1,0 +1,206 @@
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX vl_besl: <http://data.vlaanderen.be/ns/besluit#>
+PREFIX vl_mand: <http://data.vlaanderen.be/ns/mandaat#>
+PREFIX vl_pers: <http://data.vlaanderen.be/ns/persoon#>
+PREFIX example: <http://example.com/>
+PREFIX mu_core: <http://mu.semte.ch/vocabularies/core/>
+PREFIX mu_ext: <http://mu.semte.ch/vocabularies/ext/>
+PREFIX lblod_org: <http://lblod.data.gift/vocabularies/organisatie/>
+PREFIX lblod_ere: <http://data.lblod.info/vocabularies/erediensten/>
+PREFIX : <http://weso.es/shapes/>
+
+:CreativeWork   # 335194 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/CreativeWork>]  {1}          # 100.0 % (335194 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <https://id.rijksmuseum.nl/3007115>   // <http://weso.es/shexer/ontology/total_conforming_instances> 335194
+
+
+:PublicationEvent   # 1066402 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/PublicationEvent>]  {1}          # 100.0 % (1066402 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <_:b2>   // <http://weso.es/shexer/ontology/total_conforming_instances> 1066402
+
+
+:Statement   # 570703 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/Statement>]  {1};          # 100.0 % (570703 instances).
+   <http://schema.org/additionalType>  IRI  +;                 # 100.0 % (570703 instances).
+            // rdfs:comment <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+   <http://schema.org/text>  <http://www.w3.org/2001/XMLSchema#string>  +          # 100.0 % (570703 instances).
+            // rdfs:comment "Collectie: Shanghai / Shanghai bo wu guan ji kan / 1995" ;
+} // <http://weso.es/shexer/ontology/conformant_example> <_:b2>   // <http://weso.es/shexer/ontology/total_conforming_instances> 570703
+
+
+:Place   # 281765 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/Place>]  {1};          # 100.0 % (281765 instances).
+   <http://schema.org/name>  <http://www.w3.org/2001/XMLSchema#string>  +          # 100.0 % (281765 instances).
+            // rdfs:comment "London: Scala; 1995" ;
+} // <http://weso.es/shexer/ontology/conformant_example> <_:b2>   // <http://weso.es/shexer/ontology/total_conforming_instances> 281765
+
+
+:DefinedTerm   # 312498 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/DefinedTerm>]  {1};          # 100.0 % (312498 instances).
+   <http://schema.org/name>  <http://www.w3.org/2001/XMLSchema#string>  +          # 100.0 % (312498 instances).
+            // rdfs:comment "London: Scala; 1995" ;
+} // <http://weso.es/shexer/ontology/conformant_example> <_:b2>   // <http://weso.es/shexer/ontology/total_conforming_instances> 312498
+
+
+:Book   # 284091 instances.
+{
+   <http://schema.org/exampleOfWork>  @:CreativeWork  {1};          # 100.0 % (284091 instances).
+            // rdfs:comment <https://id.rijksmuseum.nl/3007115> ;
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/Book>]  {1};          # 100.0 % (284091 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/ProductModel>]  {1};          # 100.0 % (284091 instances).
+   <http://schema.org/url>  IRI  {1};                          # 100.0 % (284091 instances).
+            // rdfs:comment <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=7115> ;
+   <http://schema.org/additionalType>  @:DefinedTerm  +          # 100.0 % (284091 instances).
+            // rdfs:comment "_:b1" ;
+            # 100.0 % (284091 instances). obj: BNode. Cardinality: {1}
+} // <http://weso.es/shexer/ontology/conformant_example> <https://id.rijksmuseum.nl/3017115>   // <http://weso.es/shexer/ontology/total_conforming_instances> 284091
+
+
+:ProductModel   # 315976 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/ProductModel>]  {1}          # 100.0 % (315976 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <https://id.rijksmuseum.nl/3017115>   // <http://weso.es/shexer/ontology/total_conforming_instances> 315976
+
+
+:VisualArtwork   # 434967 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/VisualArtwork>]  {1}          # 100.0 % (434967 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <https://id.rijksmuseum.nl/20027183>   // <http://weso.es/shexer/ontology/total_conforming_instances> 434967
+
+
+:CreativeWorkSeries   # 4979 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/ProductModel>]  {1};          # 100.0 % (4979 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/CreativeWorkSeries>]  {1};          # 100.0 % (4979 instances).
+   <http://schema.org/name>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (4979 instances).
+            // rdfs:comment "Bulletin van het Rijksmuseum" ;
+   <http://schema.org/url>  IRI  {1};                          # 100.0 % (4979 instances).
+            // rdfs:comment <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=253873> ;
+   <http://schema.org/exampleOfWork>  @:CreativeWork  {1};          # 100.0 % (4979 instances).
+            // rdfs:comment <https://id.rijksmuseum.nl/300253873> ;
+   <http://schema.org/additionalType>  @:PublicationEvent  +          # 100.0 % (4979 instances).
+            // rdfs:comment "_:b823" ;
+            # 100.0 % (4979 instances). obj: BNode. Cardinality: {1}
+            # 100.0 % (4979 instances). obj: @:DefinedTerm. Cardinality: +
+} // <http://weso.es/shexer/ontology/conformant_example> <https://id.rijksmuseum.nl/301155578>   // <http://weso.es/shexer/ontology/total_conforming_instances> 4979
+
+
+:Article   # 3536 instances.
+{
+   <http://schema.org/additionalType>  @:DefinedTerm  +;          # 100.0 % (3536 instances).
+            // rdfs:comment "_:b161" ;
+            # 100.0 % (3536 instances). obj: BNode. Cardinality: {1}
+            # 100.0 % (3536 instances). obj: @:PublicationEvent. Cardinality: +
+            # 100.0 % (3536 instances). obj: @:Statement. Cardinality: +
+   <http://schema.org/url>  IRI  {1};                          # 100.0 % (3536 instances).
+            // rdfs:comment <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=154594> ;
+   <http://schema.org/exampleOfWork>  @:CreativeWork  {1};          # 100.0 % (3536 instances).
+            // rdfs:comment <https://id.rijksmuseum.nl/300154594> ;
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/ProductModel>]  {1};          # 100.0 % (3536 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/Article>]  {1};          # 100.0 % (3536 instances).
+   <http://schema.org/sameAs>  IRI  {1};                       # 100.0 % (3536 instances).
+            // rdfs:comment <http://www.worldcat.org/oclc/775935962> ;
+   <http://schema.org/name>  <http://www.w3.org/2001/XMLSchema#string>  +          # 100.0 % (3536 instances).
+            // rdfs:comment "Voorlichten: het museum naar buiten brengen" ;
+} // <http://weso.es/shexer/ontology/conformant_example> <https://id.rijksmuseum.nl/301154594>   // <http://weso.es/shexer/ontology/total_conforming_instances> 3536
+
+
+:VideoObject   # 265 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/ProductModel>]  {1};          # 100.0 % (265 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/VideoObject>]  {1};          # 100.0 % (265 instances).
+   <http://schema.org/url>  IRI  {1};                          # 100.0 % (265 instances).
+            // rdfs:comment <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=140998> ;
+   <http://schema.org/workExample>  IRI  +;                    # 100.0 % (265 instances).
+            // rdfs:comment <https://id.rijksmuseum.nl/302144016> ;
+   <http://schema.org/exampleOfWork>  @:CreativeWork  {1};          # 100.0 % (265 instances).
+            // rdfs:comment <https://id.rijksmuseum.nl/300140998> ;
+   <http://schema.org/sameAs>  IRI  {1};                       # 100.0 % (265 instances).
+            // rdfs:comment <http://www.worldcat.org/oclc/740236617> ;
+   <http://schema.org/additionalType>  @:DefinedTerm  +;          # 100.0 % (265 instances).
+            // rdfs:comment "_:b2291" ;
+            # 100.0 % (265 instances). obj: BNode. Cardinality: {1}
+            # 100.0 % (265 instances). obj: @:PublicationEvent. Cardinality: +
+            # 100.0 % (265 instances). obj: @:Statement. Cardinality: +
+   <http://schema.org/name>  <http://www.w3.org/2001/XMLSchema#string>  {1}          # 100.0 % (265 instances).
+            // rdfs:comment "Tweehonderd jaar KNAW [DVD]" ;
+} // <http://weso.es/shexer/ontology/conformant_example> <https://id.rijksmuseum.nl/301140998>   // <http://weso.es/shexer/ontology/total_conforming_instances> 265
+
+
+:ArchiveComponent   # 81 instances.
+{
+   <http://schema.org/materialExtent>  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (81 instances).
+            // rdfs:comment "0,6 meter" ;
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/ProductModel>]  {1};          # 100.0 % (81 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/ArchiveComponent>]  {1};          # 100.0 % (81 instances).
+   <http://schema.org/url>  IRI  {1};                          # 100.0 % (81 instances).
+            // rdfs:comment <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=334166> ;
+   <http://schema.org/workExample>  IRI  +;                    # 100.0 % (81 instances).
+            // rdfs:comment <https://id.rijksmuseum.nl/302398666> ;
+   <http://schema.org/name>  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (81 instances).
+            // rdfs:comment "Werkarchief Marjan Unger" ;
+   <http://schema.org/additionalType>  @:DefinedTerm  +;          # 100.0 % (81 instances).
+            // rdfs:comment "_:b23805" ;
+            # 100.0 % (81 instances). obj: BNode. Cardinality: {1}
+            # 100.0 % (81 instances). obj: @:PublicationEvent. Cardinality: +
+            # 100.0 % (81 instances). obj: @:Statement. Cardinality: +
+            # 100.0 % (81 instances). obj: @:Place. Cardinality: +
+   <http://schema.org/exampleOfWork>  @:CreativeWork  {1}          # 100.0 % (81 instances).
+            // rdfs:comment <https://id.rijksmuseum.nl/300334166> ;
+} // <http://weso.es/shexer/ontology/conformant_example> <https://id.rijksmuseum.nl/301334166>   // <http://weso.es/shexer/ontology/total_conforming_instances> 81
+
+
+:DigitalDocument   # 184 instances.
+{
+   <http://schema.org/exampleOfWork>  @:CreativeWork  {1};          # 100.0 % (184 instances).
+            // rdfs:comment <https://id.rijksmuseum.nl/300105675> ;
+   <http://schema.org/workExample>  IRI  +;                    # 100.0 % (184 instances).
+            // rdfs:comment <https://id.rijksmuseum.nl/302108053> ;
+   <http://schema.org/url>  IRI  {1};                          # 100.0 % (184 instances).
+            // rdfs:comment <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=105675> ;
+   <http://schema.org/name>  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (184 instances).
+            // rdfs:comment "The online bible [CD-ROM]" ;
+   <http://schema.org/sameAs>  IRI  {1};                       # 100.0 % (184 instances).
+            // rdfs:comment <http://www.worldcat.org/oclc/150181257> ;
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/ProductModel>]  {1};          # 100.0 % (184 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/DigitalDocument>]  {1};          # 100.0 % (184 instances).
+   <http://schema.org/additionalType>  @:DefinedTerm  +          # 100.0 % (184 instances).
+            // rdfs:comment "_:b37793" ;
+            # 100.0 % (184 instances). obj: BNode. Cardinality: {1}
+            # 100.0 % (184 instances). obj: @:PublicationEvent. Cardinality: +
+            # 100.0 % (184 instances). obj: @:Statement. Cardinality: +
+} // <http://weso.es/shexer/ontology/conformant_example> <https://id.rijksmuseum.nl/301105675>   // <http://weso.es/shexer/ontology/total_conforming_instances> 184
+
+
+:WebSite   # 16 instances.
+{
+   <http://schema.org/materialExtent>  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (16 instances).
+            // rdfs:comment "1 online resource" ;
+   <http://schema.org/additionalType>  @:PublicationEvent  +;          # 100.0 % (16 instances).
+            // rdfs:comment "_:b29746" ;
+            # 100.0 % (16 instances). obj: BNode. Cardinality: {1}
+            # 100.0 % (16 instances). obj: @:Statement. Cardinality: +
+            # 100.0 % (16 instances). obj: @:DefinedTerm. Cardinality: +
+            # 100.0 % (16 instances). obj: @:Place. Cardinality: +
+   <http://schema.org/url>  IRI  {1};                          # 100.0 % (16 instances).
+            // rdfs:comment <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=299562> ;
+   <http://schema.org/name>  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (16 instances).
+            // rdfs:comment "Frits Lugt, les marques de collections de dessins & d'estampes" ;
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/ProductModel>]  {1};          # 100.0 % (16 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://schema.org/WebSite>]  {1};          # 100.0 % (16 instances).
+   <http://schema.org/exampleOfWork>  @:CreativeWork  {1};          # 100.0 % (16 instances).
+            // rdfs:comment <https://id.rijksmuseum.nl/300299562> ;
+   <http://schema.org/workExample>  @:DefinedTerm  +           # 100.0 % (16 instances).
+            // rdfs:comment "_:b29756" ;
+            # 100.0 % (16 instances). obj: BNode. Cardinality: {1}
+            # 100.0 % (16 instances). obj: @:PublicationEvent. Cardinality: +
+            # 100.0 % (16 instances). obj: @:Statement. Cardinality: +
+            # 100.0 % (16 instances). obj: @:Place. Cardinality: +
+} // <http://weso.es/shexer/ontology/conformant_example> <https://id.rijksmuseum.nl/301299562>   // <http://weso.es/shexer/ontology/total_conforming_instances> 16
+
+

@@ -1,0 +1,167 @@
+Benchmark Initiated for /media/koen/big-ssd/intermediate/ntriples/mandaten-fix.nt
+2026/03/09 13:53:35
+invoked::firstPass()
+Time Elapsed firstPass 2 sec , 0 min
+***** Total Parsing Time 2 sec , 0 min *****
+Time Elapsed secondPhase 5 sec , 0 min
+***** Total Parsing Time 7 sec , 0 min *****
+Storing labels
+Time Elapsed Label storing 1 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+Time Elapsed computeSupportConfidence 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: DEFAULT - SIZE: 2961
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_FULL.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_FULL_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 1 - 0
+/home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/db_0.7_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 648 | PARAMS: 70.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.7_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.7_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.7_20 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+/home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/db_0.6_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 674 | PARAMS: 60.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.6_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.6_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.6_20 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+/home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/db_0.5_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 723 | PARAMS: 50.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.5_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.5_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.5_20 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+/home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/db_0.3_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 1284 | PARAMS: 30.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.3_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.3_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.3_20 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 2940 | PARAMS: 0.0 - 0
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.0_0.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.0_0_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.0_0 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+/home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/db_0.9_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 576 | PARAMS: 90.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.9_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.9_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.9_20 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+/home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/db_0.9_50 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 465 | PARAMS: 90.0 - 50
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.9_50.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.9_50_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.9_50 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+/home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/db_0.8_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 648 | PARAMS: 80.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.8_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.8_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.8_20 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+/home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/db_0.4_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 1182 | PARAMS: 40.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.4_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.4_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.4_20 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+/home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/db_0.2_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 1331 | PARAMS: 20.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.2_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.2_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.2_20 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+/home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/db_0.1_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 1419 | PARAMS: 10.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.1_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.1_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.1_20 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+/home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/db_0.95_50 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 452 | PARAMS: 95.0 - 50
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.95_50.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.95_50_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.95_50 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+/home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/db_0.95_100 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 425 | PARAMS: 95.0 - 100
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.95_100.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.95_100_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.95_100 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+/home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/db_0.95_200 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 393 | PARAMS: 95.0 - 200
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.95_200.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/shape-generation-clean/generated-output/qse/mandaten-fix/DATASET_QSE_0.95_200_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.95_200 0 sec , 0 min
+***** Total Parsing Time 8 sec , 0 min *****
+Time Elapsed extractSHACLShapes-Time.For.Pruning.Only 3 sec , 0 min
+***** Total Parsing Time 11 sec , 0 min *****
+[DATASET, Confidence, Support, COUNT_MCC, MIN_CC, AVG_CC, COUNT_CC, MIN_MCC, COUNT_PS, MIN_LC, AVG_MCC, COUNT_NS, AVG_LC, MAX_LC, AVG_PS, MAX_CC, MAX_PS, MAX_MCC, COUNT_LC, MIN_PS, ]
+Done
+Time Elapsed extractSHACLShapes 5 sec , 0 min
+***** Total Parsing Time 16 sec , 0 min *****
+STATS: 
+	No. of Classes: 25
+2026/03/09 13:53:50

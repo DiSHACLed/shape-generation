@@ -1,0 +1,27 @@
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Optimizing for backing store: sparql
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 0/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 5/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 5/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 5/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 108/6405
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 6406/9798
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 8414/9798
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 9470/9798
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 9796/9798
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 9797/9798
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Ran 9798 queries
+
+
+python $ void file has been generated and copied to data/
+Void file generated and stored in /media/koen/big-ssd/results/void/lblod-big-fix.ttl

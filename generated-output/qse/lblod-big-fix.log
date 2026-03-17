@@ -1,0 +1,166 @@
+Benchmark Initiated for /media/koen/big-ssd/intermediate/ntriples/lblod-big-fix.nt
+2026/03/17 10:22:03
+invoked::firstPass()
+Time Elapsed firstPass 106 sec , 1 min
+***** Total Parsing Time 106 sec , 1 min *****
+Time Elapsed secondPhase 246 sec , 4 min
+***** Total Parsing Time 352 sec , 5 min *****
+Time Elapsed computeSupportConfidence 21 sec , 0 min
+***** Total Parsing Time 373 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_default created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: DEFAULT - SIZE: 17176
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_FULL.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_FULL_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 2 - 0
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.7_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 4067 | PARAMS: 70.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.7_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.7_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.7_20 1 sec , 0 min
+***** Total Parsing Time 374 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.6_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 4477 | PARAMS: 60.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.6_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.6_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.6_20 1 sec , 0 min
+***** Total Parsing Time 375 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.5_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 5005 | PARAMS: 50.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.5_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.5_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.5_20 1 sec , 0 min
+***** Total Parsing Time 376 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.3_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 6188 | PARAMS: 30.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.3_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.3_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.3_20 1 sec , 0 min
+***** Total Parsing Time 377 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.0_0 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 17103 | PARAMS: 0.0 - 0
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.0_0.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.0_0_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.0_0 3 sec , 0 min
+***** Total Parsing Time 380 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.9_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 3167 | PARAMS: 90.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.9_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.9_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.9_20 0 sec , 0 min
+***** Total Parsing Time 380 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.9_50 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 2678 | PARAMS: 90.0 - 50
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.9_50.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.9_50_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.9_50 0 sec , 0 min
+***** Total Parsing Time 380 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.8_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 3621 | PARAMS: 80.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.8_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.8_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.8_20 0 sec , 0 min
+***** Total Parsing Time 380 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.4_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 5680 | PARAMS: 40.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.4_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.4_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.4_20 0 sec , 0 min
+***** Total Parsing Time 380 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.2_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 6616 | PARAMS: 20.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.2_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.2_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.2_20 1 sec , 0 min
+***** Total Parsing Time 381 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.1_20 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 7238 | PARAMS: 10.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.1_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.1_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.1_20 1 sec , 0 min
+***** Total Parsing Time 382 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.95_50 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 2409 | PARAMS: 95.0 - 50
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.95_50.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.95_50_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.95_50 0 sec , 0 min
+***** Total Parsing Time 382 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.95_100 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 2042 | PARAMS: 95.0 - 100
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.95_100.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.95_100_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.95_100 0 sec , 0 min
+***** Total Parsing Time 382 sec , 5 min *****
+/home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/db_0.95_200 created successfully.
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 1606 | PARAMS: 95.0 - 200
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.95_200.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-big-fix/DATASET_QSE_0.95_200_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.95_200 0 sec , 0 min
+***** Total Parsing Time 382 sec , 5 min *****
+Time Elapsed extractSHACLShapes-Time.For.Pruning.Only 15 sec , 0 min
+***** Total Parsing Time 397 sec , 5 min *****
+[DATASET, Confidence, Support, COUNT_MCC, MIN_CC, AVG_CC, COUNT_CC, MIN_MCC, COUNT_PS, MIN_LC, AVG_MCC, COUNT_NS, AVG_LC, MAX_LC, AVG_PS, MAX_CC, MAX_PS, MAX_MCC, COUNT_LC, MIN_PS, ]
+Done
+Time Elapsed extractSHACLShapes 21 sec , 0 min
+***** Total Parsing Time 418 sec , 5 min *****
+STATS: 
+	No. of Classes: 73
+2026/03/17 10:28:39

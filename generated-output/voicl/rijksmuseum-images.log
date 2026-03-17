@@ -1,0 +1,25 @@
+10/03/2026 10:51:12 -- Generating bare shacl structure
+10/03/2026 10:51:12 -- Bare shacl structure done
+10/03/2026 10:51:12 -- Adding counts
+10/03/2026 10:51:12 -- -------------
+10/03/2026 10:51:12 -- http://example.com/shapes/5a3193e2-0eaf-4339-82ab-5b05d6e22cd5 ~ http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object
+10/03/2026 10:51:12 -- 	N76e54c040ca444df8d85947c7dc6ecc8 | http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content > [no object/datatype]
+10/03/2026 10:51:12 -- 		 min: 1 (min found at subject)
+10/03/2026 10:51:12 -- 		 max: 4 (max found at subject)
+10/03/2026 10:51:12 -- 		 shacl-min: 1
+10/03/2026 10:51:12 -- 	Nffb164907ecf4684bc4ac9d16cb120ba | http://www.cidoc-crm.org/cidoc-crm/P2_has_type > [no object/datatype]
+10/03/2026 10:51:12 -- 		 min: 1 (min found at subject)
+10/03/2026 10:51:12 -- 		 max: 1 (max found at subject)
+10/03/2026 10:51:12 -- 		 shacl-min: 1
+10/03/2026 10:51:12 -- 		 shacl-max: 1
+10/03/2026 10:51:12 -- http://example.com/shapes/65d14674-f569-45ad-abe2-cfb5f092c295 ~ http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object
+10/03/2026 10:51:12 -- 	N1bf00e220b4c44f2949f6a3cacf6e6ee | https://linked.art/ns/terms/digitally_shows > http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item
+10/03/2026 10:51:13 -- 		 min: 0 (min found at subject)
+10/03/2026 10:51:13 -- 		 max: 22 (max found at subject)
+10/03/2026 10:51:13 -- 	N3b0d172039c44b9788c8bbba787483d2 | http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by > http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object
+10/03/2026 10:51:13 -- 		 min: 0 (min found at subject)
+10/03/2026 10:51:13 -- 		 max: 44 (max found at subject)
+10/03/2026 10:51:13 -- 	N387d3fe1c59f4d16833168867f0e38f1 | https://linked.art/ns/terms/access_point > http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object
+10/03/2026 10:51:14 -- 		 min: 0 (min found at subject)
+10/03/2026 10:51:14 -- 		 max: 1 (max found at subject)
+10/03/2026 10:51:14 -- 		 shacl-max: 1

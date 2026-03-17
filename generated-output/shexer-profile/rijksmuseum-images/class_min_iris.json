@@ -1,0 +1,28 @@
+{
+  "http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object": [
+    "%",
+    "https://iiif.micr.io/ZNZWB/full/max/0/default.jpg",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object",
+      "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by": "_:b1",
+      "https://linked.art/ns/terms/access_point": "https://iiif.micr.io/ZNZWB/full/max/0/default.jpg",
+      "https://linked.art/ns/terms/digitally_shows": "https://id.rijksmuseum.nl/202604599"
+    }
+  ],
+  "http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object": [
+    "%",
+    "_:b0",
+    {
+      "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": "downloadbaar",
+      "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": "http://vocab.getty.edu/aat/300435434",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"
+    }
+  ],
+  "http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item": [
+    "%",
+    "https://id.rijksmuseum.nl/202604599",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"
+    }
+  ]
+}

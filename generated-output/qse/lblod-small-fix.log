@@ -1,0 +1,582 @@
+Benchmark Initiated for /media/koen/big-ssd/intermediate/ntriples/lblod-small-fix.nt
+2026/03/17 10:19:45
+invoked::firstPass()
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301632, col: 87] Lexical form '2024-11-3' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301632, col: 87] Lexical form '2024-11-3' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301633, col: 87] Lexical form '2024-11-3' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301633, col: 87] Lexical form '2024-11-3' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301634, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301634, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301635, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301635, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301636, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301636, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301637, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301637, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301638, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301638, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301639, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301639, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301640, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301640, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301641, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301641, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301693, col: 87] Lexical form '2024-12-4' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301693, col: 87] Lexical form '2024-12-4' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301694, col: 87] Lexical form '2024-12-4' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301694, col: 87] Lexical form '2024-12-4' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24302655, col: 87] Lexical form '2024-12-3' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24302655, col: 87] Lexical form '2024-12-3' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24302812, col: 87] Lexical form '2025-01-2' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24302812, col: 87] Lexical form '2025-01-2' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24302845, col: 87] Lexical form '2024-12-2' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityExtraction$0(Parser.java:105)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityExtraction(Parser.java:103)
+	at cs.qse.filebased.Parser.run(Parser.java:79)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24302845, col: 87] Lexical form '2024-12-2' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+Time Elapsed firstPass 41 sec , 0 min
+***** Total Parsing Time 41 sec , 0 min *****
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301632, col: 87] Lexical form '2024-11-3' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301632, col: 87] Lexical form '2024-11-3' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301633, col: 87] Lexical form '2024-11-3' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301633, col: 87] Lexical form '2024-11-3' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301634, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301634, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301635, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301635, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301636, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301636, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301637, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301637, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301638, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301638, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301639, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301639, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301640, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301640, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301641, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301641, col: 87] Lexical form '2024-12-1' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301693, col: 87] Lexical form '2024-12-4' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301693, col: 87] Lexical form '2024-12-4' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301694, col: 87] Lexical form '2024-12-4' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24301694, col: 87] Lexical form '2024-12-4' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24302655, col: 87] Lexical form '2024-12-3' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24302655, col: 87] Lexical form '2024-12-3' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24302812, col: 87] Lexical form '2025-01-2' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24302812, col: 87] Lexical form '2025-01-2' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+org.semanticweb.yars.nx.parser.ParseException: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24302845, col: 87] Lexical form '2024-12-2' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:212)
+	at cs.qse.filebased.Parser.lambda$entityConstraintsExtraction$4(Parser.java:165)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at cs.qse.filebased.Parser.entityConstraintsExtraction(Parser.java:158)
+	at cs.qse.filebased.Parser.run(Parser.java:80)
+	at cs.Main.benchmark(Main.java:67)
+	at cs.Main.main(Main.java:50)
+Caused by: org.semanticweb.yars.nx.parser.ParseException: Exception at position 0 while parsing: '07:59:21 WARN  riot            :: [line: 24302845, col: 87] Lexical form '2024-12-2' not valid for datatype XSD date'
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodesInternal(NxParser.java:330)
+	at org.semanticweb.yars.nx.parser.NxParser.parseNodes(NxParser.java:210)
+	... 8 more
+Time Elapsed secondPhase 64 sec , 1 min
+***** Total Parsing Time 105 sec , 1 min *****
+Time Elapsed computeSupportConfidence 4 sec , 0 min
+***** Total Parsing Time 109 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: DEFAULT - SIZE: 47373
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_FULL.ttl
+writeModelToFile  - 1 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_FULL_SHACL.ttl
+Pretty Formatting
+10:21:43.083 [main] WARN org.apache.jena.riot - [line: 619, col: 38] Bad IRI: <%3Chttp://www.w3.org/1999/02/22-rdf-syntax-ns#HTML%3E> Code: 0/ILLEGAL_CHARACTER in SCHEME: The character violates the grammar rules for URIs/IRIs.
+10:21:43.959 [main] WARN org.apache.jena.riot - [line: 125668, col: 38] Bad IRI: <%3Chttp://www.opengis.net/ont/geosparql#wktLiteral%3E> Code: 0/ILLEGAL_CHARACTER in SCHEME: The character violates the grammar rules for URIs/IRIs.
+10:21:43.972 [main] WARN org.apache.jena.riot - [line: 127572, col: 38] Bad IRI: <%3Chttp://www.w3.org/1999/02/22-rdf-syntax-ns#HTML%3E> Code: 0/ILLEGAL_CHARACTER in SCHEME: The character violates the grammar rules for URIs/IRIs.
+10:21:44.020 [main] WARN org.apache.jena.riot - [line: 134995, col: 38] Bad IRI: <%3Chttp://www.w3.org/1999/02/22-rdf-syntax-ns#HTML%3E> Code: 0/ILLEGAL_CHARACTER in SCHEME: The character violates the grammar rules for URIs/IRIs.
+10:21:44.065 [main] WARN org.apache.jena.riot - [line: 142435, col: 38] Bad IRI: <%3Chttp://www.w3.org/1999/02/22-rdf-syntax-ns#HTML%3E> Code: 0/ILLEGAL_CHARACTER in SCHEME: The character violates the grammar rules for URIs/IRIs.
+prettyFormatTurtle  - 4 - 0
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 7622 | PARAMS: 70.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.7_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.7_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.7_20 1 sec , 0 min
+***** Total Parsing Time 110 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 7946 | PARAMS: 60.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.6_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.6_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.6_20 1 sec , 0 min
+***** Total Parsing Time 111 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 8269 | PARAMS: 50.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.5_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.5_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.5_20 0 sec , 0 min
+***** Total Parsing Time 111 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 9173 | PARAMS: 30.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.3_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.3_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.3_20 1 sec , 0 min
+***** Total Parsing Time 112 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 37672 | PARAMS: 0.0 - 0
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.0_0.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.0_0_SHACL.ttl
+Pretty Formatting
+10:21:53.893 [main] WARN org.apache.jena.riot - [line: 598, col: 57] Bad IRI: <%3Chttp://www.w3.org/1999/02/22-rdf-syntax-ns#HTML%3E> Code: 0/ILLEGAL_CHARACTER in SCHEME: The character violates the grammar rules for URIs/IRIs.
+10:21:54.117 [main] WARN org.apache.jena.riot - [line: 98243, col: 38] Bad IRI: <%3Chttp://www.opengis.net/ont/geosparql#wktLiteral%3E> Code: 0/ILLEGAL_CHARACTER in SCHEME: The character violates the grammar rules for URIs/IRIs.
+10:21:54.124 [main] WARN org.apache.jena.riot - [line: 100032, col: 57] Bad IRI: <%3Chttp://www.w3.org/1999/02/22-rdf-syntax-ns#HTML%3E> Code: 0/ILLEGAL_CHARACTER in SCHEME: The character violates the grammar rules for URIs/IRIs.
+10:21:54.143 [main] WARN org.apache.jena.riot - [line: 107472, col: 57] Bad IRI: <%3Chttp://www.w3.org/1999/02/22-rdf-syntax-ns#HTML%3E> Code: 0/ILLEGAL_CHARACTER in SCHEME: The character violates the grammar rules for URIs/IRIs.
+prettyFormatTurtle  - 1 - 0
+Time Elapsed 0.0_0 3 sec , 0 min
+***** Total Parsing Time 115 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 6553 | PARAMS: 90.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.9_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.9_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.9_20 0 sec , 0 min
+***** Total Parsing Time 115 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 5989 | PARAMS: 90.0 - 50
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.9_50.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.9_50_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.9_50 0 sec , 0 min
+***** Total Parsing Time 115 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 7132 | PARAMS: 80.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.8_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.8_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.8_20 0 sec , 0 min
+***** Total Parsing Time 115 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 8878 | PARAMS: 40.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.4_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.4_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.4_20 0 sec , 0 min
+***** Total Parsing Time 115 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 9567 | PARAMS: 20.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.2_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.2_20_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.2_20 1 sec , 0 min
+***** Total Parsing Time 116 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 10779 | PARAMS: 10.0 - 20
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.1_20.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.1_20_SHACL.ttl
+Pretty Formatting
+10:21:59.628 [main] WARN org.apache.jena.riot - [line: 28, col: 57] Bad IRI: <%3Chttp://www.w3.org/1999/02/22-rdf-syntax-ns#HTML%3E> Code: 0/ILLEGAL_CHARACTER in SCHEME: The character violates the grammar rules for URIs/IRIs.
+10:21:59.703 [main] WARN org.apache.jena.riot - [line: 38181, col: 57] Bad IRI: <%3Chttp://www.w3.org/1999/02/22-rdf-syntax-ns#HTML%3E> Code: 0/ILLEGAL_CHARACTER in SCHEME: The character violates the grammar rules for URIs/IRIs.
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.1_20 1 sec , 0 min
+***** Total Parsing Time 117 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 5708 | PARAMS: 95.0 - 50
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.95_50.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.95_50_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.95_50 0 sec , 0 min
+***** Total Parsing Time 117 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 5060 | PARAMS: 95.0 - 100
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.95_100.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.95_100_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.95_100 0 sec , 0 min
+***** Total Parsing Time 117 sec , 1 min *****
+Invoked:: PostConstraintsAnnotator
+MODEL:: CUSTOM - SIZE: 4541 | PARAMS: 95.0 - 200
+::: ShapesExtractor ~ WRITING MODEL TO FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.95_200.ttl
+writeModelToFile  - 0 - 0
+::: ShapesExtractor ~ PRETTY FORMATTING TURTLE FILE: /home/koen/_dischacled/shape-generation/generated-output/qse/lblod-small-fix/DATASET_QSE_0.95_200_SHACL.ttl
+Pretty Formatting
+prettyFormatTurtle  - 0 - 0
+Time Elapsed 0.95_200 0 sec , 0 min
+***** Total Parsing Time 117 sec , 1 min *****
+Time Elapsed extractSHACLShapes-Time.For.Pruning.Only 14 sec , 0 min
+***** Total Parsing Time 131 sec , 1 min *****
+[DATASET, Confidence, Support, COUNT_MCC, MIN_CC, AVG_CC, COUNT_CC, MIN_MCC, COUNT_PS, MIN_LC, AVG_MCC, COUNT_NS, AVG_LC, MAX_LC, AVG_PS, MAX_CC, MAX_PS, MAX_MCC, COUNT_LC, MIN_PS, ]
+Done
+Time Elapsed extractSHACLShapes 24 sec , 0 min
+***** Total Parsing Time 155 sec , 1 min *****
+STATS: 
+	No. of Classes: 108
+2026/03/17 10:22:01

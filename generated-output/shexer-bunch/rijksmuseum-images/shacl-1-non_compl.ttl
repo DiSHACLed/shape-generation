@@ -1,0 +1,37 @@
+@prefix : <http://weso.es/shapes/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:D1_Digital_Object a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:in ( <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ] ;
+    sh:targetClass <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object> .
+
+:E33_Linguistic_Object a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:minCount 1 ;
+            sh:path <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> ],
+        [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ] ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> .
+
+:E36_Visual_Item a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:in ( <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ] ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> .
+

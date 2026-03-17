@@ -1,0 +1,92 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://shaclshapes.org/D1_Digital_ObjectShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/5005011698827010711875( ) is a http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has https://linked.art/ns/terms/digitally_shows( ); has https://linked.art/ns/terms/access_point( ); has http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/50072103978176557980( ) is a http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has https://linked.art/ns/terms/digitally_shows( ); has https://linked.art/ns/terms/access_point( ); has http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by( )" ;
+  <http://example.org/example> "https://iiif.micr.io/hgsZi/full/max/0/default.jpg( ) is a http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://iiif.micr.io/qoyuO/full/max/0/default.jpg( ) is a http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://iiif.micr.io/snsQR/full/max/0/default.jpg( ) is a http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/P67i_is_referred_to_byD1_Digital_ObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/access_pointD1_Digital_ObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/digitally_showsD1_Digital_ObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeD1_Digital_ObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object> .
+
+<http://shaclshapes.org/E33_Linguistic_ObjectShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "B4e758a916cf64d123098193f660cb3d4( ) is a http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "B81d6eedbdfdbc4dc342bcdf097078c43( ) is a http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "Ba313b6f2d84dcec02ea2f5b9d63c47c2( ) is a http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "Bd32701a28e0dfa9b7c97df7f42014d8a( ) is a http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "Be971fcf63ee4d900e4a0f27859aba29d( ) is a http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeE33_Linguistic_ObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> .
+
+<http://shaclshapes.org/E36_Visual_ItemShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/202271617( ) is a http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/202292217( ) is a http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/202614451( ) is a http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/202759557( ) is a http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/202782343( ) is a http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeE36_Visual_ItemShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> .
+
+<http://shaclshapes.org/P67i_is_referred_to_byD1_Digital_ObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B45c24a875a40d2b89fb3b7bec38bd24d( )" ;
+  <http://example.org/example> "_:B96026b3f708d654861162e3eae2c3c07( )" ;
+  <http://example.org/example> "_:Ba716b0d32930fa4a1fe2e3cd3c605518( )" ;
+  <http://example.org/example> "_:Bf6ae9c4fe63baaca0849dfacc93738c5( )" ;
+  <http://example.org/example> "_:Bff01e4e24920c2da65b90f6189c5f888( )" ;
+  <http://shaclshapes.org/confidence> 4.9985E-1 ;
+  <http://shaclshapes.org/support> "575256"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/E33_Linguistic_ObjectShape> ;
+  <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by> .
+
+<http://shaclshapes.org/access_pointD1_Digital_ObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://iiif.micr.io/BsyIf/full/max/0/default.jpg>( )" ;
+  <http://example.org/example> "<https://iiif.micr.io/VKXSR/full/max/0/default.jpg>( )" ;
+  <http://example.org/example> "<https://iiif.micr.io/XIDjZ/full/max/0/default.jpg>( )" ;
+  <http://example.org/example> "<https://iiif.micr.io/aRfKb/full/max/0/default.jpg>( )" ;
+  <http://example.org/example> "<https://iiif.micr.io/xgdHY/full/max/0/default.jpg>( )" ;
+  <http://shaclshapes.org/confidence> 5E-1 ;
+  <http://shaclshapes.org/support> "575434"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/D1_Digital_ObjectShape> ;
+  <http://www.w3.org/ns/shacl#path> <https://linked.art/ns/terms/access_point> .
+
+<http://shaclshapes.org/digitally_showsD1_Digital_ObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/202149726>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/202216491>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/202220858>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/202598993>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/20278900>( )" ;
+  <http://shaclshapes.org/confidence> 5E-1 ;
+  <http://shaclshapes.org/support> "575434"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/E36_Visual_ItemShape> ;
+  <http://www.w3.org/ns/shacl#path> <https://linked.art/ns/terms/digitally_shows> .
+
+<http://shaclshapes.org/instanceTypeD1_Digital_ObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object>( )" ;
+  <http://shaclshapes.org/confidence> 9.9992E-1 ;
+  <http://shaclshapes.org/support> "1150771"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeE33_Linguistic_ObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object>( )" ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeE36_Visual_ItemShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item>( )" ;
+  <http://shaclshapes.org/confidence> 9.9983E-1 ;
+  <http://shaclshapes.org/support> "575501"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+

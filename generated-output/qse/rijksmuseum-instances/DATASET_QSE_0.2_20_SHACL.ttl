@@ -1,0 +1,1870 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://shaclshapes.org/ArchiveComponentShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301245510( ) is a http://schema.org/ArchiveComponent( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301245765( ) is a http://schema.org/ArchiveComponent( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301245812( ) is a http://schema.org/ArchiveComponent( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301271806( ) is a http://schema.org/ArchiveComponent( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301295165( ) is a http://schema.org/ArchiveComponent( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/additionalTypeArchiveComponentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/exampleOfWorkArchiveComponentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeArchiveComponentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/materialExtentArchiveComponentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/nameArchiveComponentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/publicationArchiveComponentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sameAsArchiveComponentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subjectOfArchiveComponentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/urlArchiveComponentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/workExampleArchiveComponentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/ArchiveComponent> .
+
+<http://shaclshapes.org/ArticleShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301153678( ) is a http://schema.org/Article( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/isPartOf( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://schema.org/pagination( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301153777( ) is a http://schema.org/Article( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has http://schema.org/isPartOf( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/pagination( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301153830( ) is a http://schema.org/Article( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/isPartOf( ); has at least 1 http://schema.org/sameAs( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://schema.org/pagination( ); has http://schema.org/about( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301154602( ) is a http://schema.org/Article( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/isPartOf( ); has at least 1 http://schema.org/sameAs( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://schema.org/pagination( ); has http://schema.org/about( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301258907( ) is a http://schema.org/Article( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/isPartOf( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/pagination( ); has http://schema.org/name( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/aboutArticleShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/additionalTypeArticleShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/exampleOfWorkArticleShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeArticleShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/isPartOfArticleShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/nameArticleShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/paginationArticleShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sameAsArticleShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subjectOfArticleShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/urlArticleShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/Article> .
+
+<http://shaclshapes.org/BookShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301147364( ) is a http://schema.org/Book( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/size( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301180081( ) is a http://schema.org/Book( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301208978( ) is a http://schema.org/Book( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/size( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301215579( ) is a http://schema.org/Book( ); has http://schema.org/publication( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/size( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/isbn( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/30164228( ) is a http://schema.org/Book( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/size( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/additionalTypeBookShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/exampleOfWorkBookShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBookShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/isbnBookShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/materialExtentBookShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/nameBookShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/publicationBookShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sameAsBookShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sizeBookShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subjectOfBookShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/urlBookShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/workExampleBookShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/Book> .
+
+<http://shaclshapes.org/CreativeWorkSeriesShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301155358( ) is a http://schema.org/CreativeWorkSeries( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/size( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301155513( ) is a http://schema.org/CreativeWorkSeries( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/size( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301156298( ) is a http://schema.org/CreativeWorkSeries( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/size( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301156761( ) is a http://schema.org/CreativeWorkSeries( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has http://schema.org/size( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301157030( ) is a http://schema.org/CreativeWorkSeries( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/size( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/additionalTypeCreativeWorkSeriesShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/exampleOfWorkCreativeWorkSeriesShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeCreativeWorkSeriesShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/materialExtentCreativeWorkSeriesShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/nameCreativeWorkSeriesShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/publicationCreativeWorkSeriesShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sameAsCreativeWorkSeriesShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sizeCreativeWorkSeriesShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subjectOfCreativeWorkSeriesShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/urlCreativeWorkSeriesShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/workExampleCreativeWorkSeriesShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/CreativeWorkSeries> .
+
+<http://shaclshapes.org/CreativeWorkShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/300103279( ) is a http://schema.org/CreativeWork( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/300129551( ) is a http://schema.org/CreativeWork( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/300201925( ) is a http://schema.org/CreativeWork( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/300301964( ) is a http://schema.org/CreativeWork( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/3009419( ) is a http://schema.org/CreativeWork( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeCreativeWorkShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/CreativeWork> .
+
+<http://shaclshapes.org/DefinedTermShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "B126ebf0a28cf9e3345710a074b7e35b4( ) is a http://schema.org/DefinedTerm( ); has http://schema.org/text( ); has http://schema.org/startDate( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://schema.org/location( ); has http://schema.org/publishedBy( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "B29b790af440f81c5a9e9998dea63525c( ) is a http://schema.org/DefinedTerm( ); has http://schema.org/text( ); has http://schema.org/startDate( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://schema.org/location( ); has http://schema.org/publishedBy( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "B79c42c0695aff6cbaac0f0d6edd47aa0( ) is a http://schema.org/DefinedTerm( ); has http://schema.org/text( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/startDate( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://schema.org/location( ); has http://schema.org/publishedBy( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "B92520da0abdc5d9f734ca5ccf978d6eb( ) is a http://schema.org/DefinedTerm( ); has http://schema.org/text( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/startDate( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://schema.org/location( ); has http://schema.org/publishedBy( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "B9362d36480805890d8340499715418b4( ) is a http://schema.org/DefinedTerm( ); has http://schema.org/text( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/startDate( ); has at least 1 http://schema.org/sameAs( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://schema.org/location( ); has http://schema.org/publishedBy( ); has http://schema.org/name( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/additionalTypeDefinedTermShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeDefinedTermShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/locationDefinedTermShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/nameDefinedTermShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/publishedByDefinedTermShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sameAsDefinedTermShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/startDateDefinedTermShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/textDefinedTermShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/DefinedTerm> .
+
+<http://shaclshapes.org/DigitalDocumentShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301205299( ) is a http://schema.org/DigitalDocument( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has http://schema.org/size( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has at least 1 http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301242424( ) is a http://schema.org/DigitalDocument( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/size( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has at least 1 http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/30132856( ) is a http://schema.org/DigitalDocument( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has http://schema.org/size( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/isbn( ); has at least 1 http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/30139189( ) is a http://schema.org/DigitalDocument( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has http://schema.org/size( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/isbn( ); has at least 1 http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/30154315( ) is a http://schema.org/DigitalDocument( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/size( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/isbn( ); has at least 1 http://schema.org/name( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/additionalTypeDigitalDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/exampleOfWorkDigitalDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeDigitalDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/isbnDigitalDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/materialExtentDigitalDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/nameDigitalDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/publicationDigitalDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sameAsDigitalDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sizeDigitalDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subjectOfDigitalDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/urlDigitalDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/workExampleDigitalDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/DigitalDocument> .
+
+<http://shaclshapes.org/PlaceShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "B5754ecf1381c8c56ae5402b14756f1cd( ) is a http://schema.org/Place( ); has http://schema.org/text( ); has at least 1 http://schema.org/sameAs( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/startDate( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://schema.org/location( ); has http://schema.org/publishedBy( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "B594f0e235440266305a0b0a5b4b73758( ) is a http://schema.org/Place( ); has http://schema.org/text( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/startDate( ); has at least 1 http://schema.org/sameAs( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://schema.org/location( ); has http://schema.org/publishedBy( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "Bbdbf2bdda7d880bfdfac14de3ca44c1d( ) is a http://schema.org/Place( ); has http://schema.org/text( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/startDate( ); has at least 1 http://schema.org/sameAs( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://schema.org/location( ); has http://schema.org/publishedBy( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "Be6102e2a2728a7dfcde8d4df22e10a9b( ) is a http://schema.org/Place( ); has http://schema.org/text( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/startDate( ); has at least 1 http://schema.org/sameAs( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://schema.org/location( ); has http://schema.org/publishedBy( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "Bf1777ab31d7d1ed7c8f8543fdccaf05f( ) is a http://schema.org/Place( ); has http://schema.org/text( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/startDate( ); has at least 1 http://schema.org/sameAs( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://schema.org/location( ); has http://schema.org/publishedBy( ); has http://schema.org/name( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/additionalTypePlaceShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypePlaceShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/locationPlaceShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/namePlaceShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/publishedByPlaceShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sameAsPlaceShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/startDatePlaceShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/textPlaceShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/Place> .
+
+<http://shaclshapes.org/ProductModelShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301153338( ) is a http://schema.org/ProductModel( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has http://schema.org/exampleOfWork( ); has http://schema.org/size( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/additionalType( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301212926( ) is a http://schema.org/ProductModel( ); has http://schema.org/publication( ); has http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/additionalType( ); has http://schema.org/size( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301228396( ) is a http://schema.org/ProductModel( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has http://schema.org/exampleOfWork( ); has http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/size( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301286866( ) is a http://schema.org/ProductModel( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/size( ); has http://schema.org/additionalType( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301312067( ) is a http://schema.org/ProductModel( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has http://schema.org/exampleOfWork( ); has http://schema.org/additionalType( ); has http://schema.org/size( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has http://schema.org/name( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/additionalTypeProductModelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/exampleOfWorkProductModelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeProductModelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/isbnProductModelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/materialExtentProductModelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/nameProductModelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/publicationProductModelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sameAsProductModelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sizeProductModelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subjectOfProductModelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/urlProductModelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/workExampleProductModelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/ProductModel> .
+
+<http://shaclshapes.org/PublicationEventShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "B2e98af1f4c43897e80f399caacdeeb11( ) is a http://schema.org/PublicationEvent( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "Ba43fea7e3c0ca42fed2693b3ab66b8ec( ) is a http://schema.org/PublicationEvent( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "Bb0e66d35188ce669983ed15f16d79acc( ) is a http://schema.org/PublicationEvent( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "Bc8d5356c9ed888cc3af4ffb43469537e( ) is a http://schema.org/PublicationEvent( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "Be0441419a91e43b4e8c289831b46cccf( ) is a http://schema.org/PublicationEvent( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypePublicationEventShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/PublicationEvent> .
+
+<http://shaclshapes.org/StatementShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "B00eb6b56b32bd25166e28e5b6183a997( ) is a http://schema.org/Statement( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "B6ab054eef8be8e9bb055514214fdd3dd( ) is a http://schema.org/Statement( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "B7bfa00379b9a9c8acd37d74b828a8c81( ) is a http://schema.org/Statement( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "B9719d1021f13650762267f29fcb61108( ) is a http://schema.org/Statement( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "Bcbe9bd77b7506b19b2459fb6b166ee51( ) is a http://schema.org/Statement( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeStatementShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/Statement> .
+
+<http://shaclshapes.org/VideoObjectShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301132984( ) is a http://schema.org/VideoObject( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/size( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has at least 1 http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301245879( ) is a http://schema.org/VideoObject( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has http://schema.org/size( ); has at least 1 http://schema.org/additionalType( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has at least 1 http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301259661( ) is a http://schema.org/VideoObject( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/size( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has at least 1 http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/301262595( ) is a http://schema.org/VideoObject( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/size( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has at least 1 http://schema.org/name( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/30139128( ) is a http://schema.org/VideoObject( ); has http://schema.org/publication( ); has http://schema.org/subjectOf( ); has at least 1 http://schema.org/exampleOfWork( ); has at least 1 http://schema.org/additionalType( ); has http://schema.org/size( ); has at least 1 http://schema.org/sameAs( ); has http://schema.org/materialExtent( ); has at least 1 http://schema.org/workExample( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has at least 1 http://schema.org/url( ); has at least 1 http://schema.org/name( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/additionalTypeVideoObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/exampleOfWorkVideoObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeVideoObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/materialExtentVideoObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/nameVideoObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/publicationVideoObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sameAsVideoObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sizeVideoObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subjectOfVideoObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/urlVideoObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/workExampleVideoObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/VideoObject> .
+
+<http://shaclshapes.org/VisualArtworkShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/200130771( ) is a http://schema.org/VisualArtwork( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/200204796( ) is a http://schema.org/VisualArtwork( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/200287024( ) is a http://schema.org/VisualArtwork( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/200598516( ) is a http://schema.org/VisualArtwork( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "https://id.rijksmuseum.nl/200710570( ) is a http://schema.org/VisualArtwork( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeVisualArtworkShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/VisualArtwork> .
+
+<http://shaclshapes.org/aboutArticleShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/20014006>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/20028170>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/200412891>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/200574612>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/20067431>( )" ;
+  <http://shaclshapes.org/confidence> 3.5633E-1 ;
+  <http://shaclshapes.org/support> "1260"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <http://schema.org/VisualArtwork> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/VisualArtworkShape> ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/about> .
+
+<http://shaclshapes.org/additionalTypeArchiveComponentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B0c4959b35ac0e1603d8dbe4d65929de5( )" ;
+  <http://example.org/example> "_:B59a31cf06850012e9259e374aa6df28e( )" ;
+  <http://example.org/example> "_:B706d6123f7632e3e252bdcba5d128841( )" ;
+  <http://example.org/example> "_:B84fb4fed65d27c9ecc8a2ba2083b4a67( )" ;
+  <http://example.org/example> "_:Bf92bbeb82fb3a4640c0d463a90d6da57( )" ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "81"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "81"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "81"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "81"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/additionalType> .
+
+<http://shaclshapes.org/additionalTypeArticleShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B3aa0cc84179d6da873754d8260b0842a( )" ;
+  <http://example.org/example> "_:B7606e587c6358524cbf86d70cce5b57c( )" ;
+  <http://example.org/example> "_:Bb4f40b64864614a3c86b7ac83bc5a17a( )" ;
+  <http://example.org/example> "_:Bdd2d2527025572ac620306b099a1a5ce( )" ;
+  <http://example.org/example> "_:Bddab27f6267ea03d27ca8fa9c6c7614d( )" ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "3536"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "3536"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8643E-1 ;
+    <http://shaclshapes.org/support> "3488"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "3536"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/additionalType> .
+
+<http://shaclshapes.org/additionalTypeBookShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B6fce543573f4f6282dbbdb214a3993a0( )" ;
+  <http://example.org/example> "_:B7faf664bc4924971f0a1c0ea6de05cb2( )" ;
+  <http://example.org/example> "_:Bd97bcc9384bfa81412469792c596888c( )" ;
+  <http://example.org/example> "_:Be458f24ba0703a046dec8f153964ea6e( )" ;
+  <http://example.org/example> "_:Bfc96dd46124893f54f0bb582edd5d0f7( )" ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.9994E-1 ;
+    <http://shaclshapes.org/support> "284075"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.9972E-1 ;
+    <http://shaclshapes.org/support> "284012"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8421E-1 ;
+    <http://shaclshapes.org/support> "279606"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "284091"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/additionalType> .
+
+<http://shaclshapes.org/additionalTypeCreativeWorkSeriesShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B435a6e4c7c858620e2151a1d1ffb6436( )" ;
+  <http://example.org/example> "_:B688570f7fc058f0137395e0fb191ca64( )" ;
+  <http://example.org/example> "_:B8b7e5650ce821e3f1edf0fb87461d716( )" ;
+  <http://example.org/example> "_:Ba85857b0f7ca2840818b405d7687d50b( )" ;
+  <http://example.org/example> "_:Bf1137ee9c08a89235bd80c9e46ef7ff7( )" ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "4979"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.998E-1 ;
+    <http://shaclshapes.org/support> "4978"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8494E-1 ;
+    <http://shaclshapes.org/support> "4904"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "4979"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/additionalType> .
+
+<http://shaclshapes.org/additionalTypeDefinedTermShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://id.loc.gov/vocabulary/mnotetype/addphys>( )" ;
+  <http://example.org/example> "<http://id.loc.gov/vocabulary/mnotetype/binding>( )" ;
+  <http://example.org/example> "<http://id.loc.gov/vocabulary/mnotetype/issuing>( )" ;
+  <http://example.org/example> "<http://id.loc.gov/vocabulary/mnotetype/physical>( )" ;
+  <http://example.org/example> "<http://vocab.getty.edu/aat/300435416>( )" ;
+  <http://shaclshapes.org/confidence> 2.2092E-1 ;
+  <http://shaclshapes.org/support> "69036"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/additionalType> .
+
+<http://shaclshapes.org/additionalTypeDigitalDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B26a73db7bcf0ceef9451baefce439f94( )" ;
+  <http://example.org/example> "_:B35a0068cd1dfe73364e7b5edcf44405c( )" ;
+  <http://example.org/example> "_:B9c1dea8753c472289778d6444a1010b8( )" ;
+  <http://example.org/example> "_:Bf4b5346098219a635a4dc2e96ff49fef( )" ;
+  <http://example.org/example> "_:Bf8fd43d3bb1fdef238891f6d61cecbd2( )" ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "184"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "184"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.7283E-1 ;
+    <http://shaclshapes.org/support> "179"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "184"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/additionalType> .
+
+<http://shaclshapes.org/additionalTypePlaceShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://id.loc.gov/vocabulary/mnotetype/accmat>( )" ;
+  <http://example.org/example> "<http://id.loc.gov/vocabulary/mnotetype/binding>( )" ;
+  <http://example.org/example> "<http://id.loc.gov/vocabulary/mnotetype/issuing>( )" ;
+  <http://example.org/example> "<http://id.loc.gov/vocabulary/mnotetype/physical>( )" ;
+  <http://example.org/example> "<http://vocab.getty.edu/aat/300435416>( )" ;
+  <http://shaclshapes.org/confidence> 2.4358E-1 ;
+  <http://shaclshapes.org/support> "68631"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/additionalType> .
+
+<http://shaclshapes.org/additionalTypeProductModelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B48f786b43b69d972958ccb6a6914409d( )" ;
+  <http://example.org/example> "_:B826dd9937cc3948373562e418eaaacee( )" ;
+  <http://example.org/example> "_:Bb504dc17bfed55caa40f00a46c8ba17e( )" ;
+  <http://example.org/example> "_:Bd5d14156404db5e2b0e42db17f6df0aa( )" ;
+  <http://example.org/example> "_:Be7e8f61906a20a9e79a68d51e634bea7( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.8894E-1 ;
+    <http://shaclshapes.org/support> "312482"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8872E-1 ;
+    <http://shaclshapes.org/support> "312413"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.7332E-1 ;
+    <http://shaclshapes.org/support> "307546"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8899E-1 ;
+    <http://shaclshapes.org/support> "312498"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/additionalType> .
+
+<http://shaclshapes.org/additionalTypeVideoObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B1e869a5b8c27273a5130669d813efedf( )" ;
+  <http://example.org/example> "_:B778baaca78b43ea4362402f474f727cd( )" ;
+  <http://example.org/example> "_:B871044cc97051019df773bb0b56526aa( )" ;
+  <http://example.org/example> "_:Bca0a76c33a4a763dfa6c0fc52ee6ee34( )" ;
+  <http://example.org/example> "_:Bdea1f96bfb7f8866b14dc6d3cae09e86( )" ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "265"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "265"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.9245E-1 ;
+    <http://shaclshapes.org/support> "263"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "265"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/additionalType> .
+
+<http://shaclshapes.org/exampleOfWorkArchiveComponentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300245812>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300251573>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300252079>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300271806>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300295845>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "81"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <http://schema.org/CreativeWork> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/CreativeWorkShape> ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/exampleOfWork> .
+
+<http://shaclshapes.org/exampleOfWorkArticleShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300154039>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300154406>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300154415>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300259304>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300310648>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "3536"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <http://schema.org/CreativeWork> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/CreativeWorkShape> ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/exampleOfWork> .
+
+<http://shaclshapes.org/exampleOfWorkBookShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300183240>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300271477>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/30038289>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/30040693>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/30053120>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "284091"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <http://schema.org/CreativeWork> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/CreativeWorkShape> ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/exampleOfWork> .
+
+<http://shaclshapes.org/exampleOfWorkCreativeWorkSeriesShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300155251>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300156765>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300156903>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300157013>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300328658>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "4979"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <http://schema.org/CreativeWork> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/CreativeWorkShape> ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/exampleOfWork> .
+
+<http://shaclshapes.org/exampleOfWorkDigitalDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300102031>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/30017228>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300185425>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/3001910>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300286928>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "184"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <http://schema.org/CreativeWork> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/CreativeWorkShape> ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/exampleOfWork> .
+
+<http://shaclshapes.org/exampleOfWorkProductModelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300156608>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300197749>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300254511>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300327205>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/30052237>( )" ;
+  <http://shaclshapes.org/confidence> 9.893E-1 ;
+  <http://shaclshapes.org/support> "312594"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <http://schema.org/CreativeWork> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/CreativeWorkShape> ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/exampleOfWork> .
+
+<http://shaclshapes.org/exampleOfWorkVideoObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300217173>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300242250>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300319843>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/300323733>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/30078769>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "265"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <http://schema.org/CreativeWork> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/CreativeWorkShape> ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/exampleOfWork> .
+
+<http://shaclshapes.org/instanceTypeArchiveComponentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://schema.org/ArchiveComponent>( )" ;
+  <http://example.org/example> "<http://schema.org/ProductModel>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "81"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/ArchiveComponent> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeArticleShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://schema.org/Article>( )" ;
+  <http://example.org/example> "<http://schema.org/ProductModel>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "3536"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/Article> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBookShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://schema.org/Book>( )" ;
+  <http://example.org/example> "<http://schema.org/CreativeWork>( )" ;
+  <http://example.org/example> "<http://schema.org/ProductModel>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "284091"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/Book> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeCreativeWorkSeriesShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://schema.org/CreativeWork>( )" ;
+  <http://example.org/example> "<http://schema.org/CreativeWorkSeries>( )" ;
+  <http://example.org/example> "<http://schema.org/ProductModel>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "4979"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/CreativeWorkSeries> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeCreativeWorkShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://schema.org/Book>( )" ;
+  <http://example.org/example> "<http://schema.org/CreativeWork>( )" ;
+  <http://example.org/example> "<http://schema.org/CreativeWorkSeries>( )" ;
+  <http://example.org/example> "<http://schema.org/ProductModel>( )" ;
+  <http://shaclshapes.org/confidence> 9.9037E-1 ;
+  <http://shaclshapes.org/support> "331965"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/CreativeWork> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeDefinedTermShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://schema.org/DefinedTerm>( )" ;
+  <http://example.org/example> "<http://schema.org/Place>( )" ;
+  <http://example.org/example> "<http://schema.org/PublicationEvent>( )" ;
+  <http://example.org/example> "<http://schema.org/Statement>( )" ;
+  <http://shaclshapes.org/confidence> 2.2102E-1 ;
+  <http://shaclshapes.org/support> "69068"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/DefinedTerm> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeDigitalDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://schema.org/DigitalDocument>( )" ;
+  <http://example.org/example> "<http://schema.org/ProductModel>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "184"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/DigitalDocument> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypePlaceShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://schema.org/DefinedTerm>( )" ;
+  <http://example.org/example> "<http://schema.org/Place>( )" ;
+  <http://example.org/example> "<http://schema.org/PublicationEvent>( )" ;
+  <http://example.org/example> "<http://schema.org/Statement>( )" ;
+  <http://shaclshapes.org/confidence> 2.4369E-1 ;
+  <http://shaclshapes.org/support> "68663"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/Place> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeProductModelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://schema.org/Article>( )" ;
+  <http://example.org/example> "<http://schema.org/Book>( )" ;
+  <http://example.org/example> "<http://schema.org/CreativeWork>( )" ;
+  <http://example.org/example> "<http://schema.org/CreativeWorkSeries>( )" ;
+  <http://example.org/example> "<http://schema.org/ProductModel>( )" ;
+  <http://shaclshapes.org/confidence> 9.8931E-1 ;
+  <http://shaclshapes.org/support> "312599"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/ProductModel> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypePublicationEventShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://schema.org/DefinedTerm>( )" ;
+  <http://example.org/example> "<http://schema.org/Place>( )" ;
+  <http://example.org/example> "<http://schema.org/PublicationEvent>( )" ;
+  <http://example.org/example> "<http://schema.org/Statement>( )" ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/PublicationEvent> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeStatementShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://schema.org/DefinedTerm>( )" ;
+  <http://example.org/example> "<http://schema.org/Place>( )" ;
+  <http://example.org/example> "<http://schema.org/PublicationEvent>( )" ;
+  <http://example.org/example> "<http://schema.org/Statement>( )" ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/Statement> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeVideoObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://schema.org/ProductModel>( )" ;
+  <http://example.org/example> "<http://schema.org/VideoObject>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "265"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/VideoObject> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeVisualArtworkShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://schema.org/VisualArtwork>( )" ;
+  <http://shaclshapes.org/confidence> 6.6174E-1 ;
+  <http://shaclshapes.org/support> "287833"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/VisualArtwork> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/isPartOfArticleShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/301155194>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/301155578>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/301156856>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/301157608>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/301292052>( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/CreativeWorkShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.5645E-1 ;
+    <http://shaclshapes.org/support> "3382"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/CreativeWork> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.5645E-1 ;
+    <http://shaclshapes.org/support> "3382"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/ProductModel> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.5192E-1 ;
+    <http://shaclshapes.org/support> "3366"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/CreativeWorkSeries> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/isPartOf> .
+
+<http://shaclshapes.org/isbnBookShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "0060112611" ;
+  <http://example.org/example> "3937251367" ;
+  <http://example.org/example> "9780300220179" ;
+  <http://example.org/example> "9783775753265" ;
+  <http://example.org/example> "9789071361005" ;
+  <http://shaclshapes.org/confidence> 3.3635E-1 ;
+  <http://shaclshapes.org/support> "95555"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/isbn> .
+
+<http://shaclshapes.org/isbnDigitalDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "0942946030" ;
+  <http://example.org/example> "1588391019" ;
+  <http://example.org/example> "2717722548" ;
+  <http://example.org/example> "9780471264569" ;
+  <http://example.org/example> "9788993518061" ;
+  <http://shaclshapes.org/confidence> 3.6413E-1 ;
+  <http://shaclshapes.org/support> "67"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/isbn> .
+
+<http://shaclshapes.org/isbnProductModelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "0691009821" ;
+  <http://example.org/example> "9029546972" ;
+  <http://example.org/example> "9782757210314" ;
+  <http://example.org/example> "9783039421848" ;
+  <http://example.org/example> "9788375810936" ;
+  <http://shaclshapes.org/confidence> 3.0577E-1 ;
+  <http://shaclshapes.org/support> "96615"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/isbn> .
+
+<http://shaclshapes.org/locationDefinedTermShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B2fac61cdffb3d423f35f1d2736a4e237( )" ;
+  <http://example.org/example> "_:B3edc3b59561d8e339cab8c5f6f649735( )" ;
+  <http://example.org/example> "_:B4170341c9fa8e4d1ceab0dba189dd098( )" ;
+  <http://example.org/example> "_:Ba9e364b38bde67c855c489afa26cdeea( )" ;
+  <http://example.org/example> "_:Be56540ae1bffdb6d8604661d646a1761( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/PlaceShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 2.1786E-1 ;
+    <http://shaclshapes.org/support> "68081"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.1785E-1 ;
+    <http://shaclshapes.org/support> "68079"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.1786E-1 ;
+    <http://shaclshapes.org/support> "68082"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.1761E-1 ;
+    <http://shaclshapes.org/support> "68002"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/location> .
+
+<http://shaclshapes.org/locationPlaceShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B0c6819f0613280df01c9817424cc7a07( )" ;
+  <http://example.org/example> "_:B175e08aafe129a2d8ec51071d1b18352( )" ;
+  <http://example.org/example> "_:B22ba80436434d722ef278aaa09eb1138( )" ;
+  <http://example.org/example> "_:B932854390a2dec63ff43325cd448f6ed( )" ;
+  <http://example.org/example> "_:Bef41038e5cc2f3acf7848c166128cfd2( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/PlaceShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 2.4022E-1 ;
+    <http://shaclshapes.org/support> "67685"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.4021E-1 ;
+    <http://shaclshapes.org/support> "67683"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.4023E-1 ;
+    <http://shaclshapes.org/support> "67687"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.3997E-1 ;
+    <http://shaclshapes.org/support> "67616"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/location> .
+
+<http://shaclshapes.org/materialExtentArchiveComponentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "0.05 meter" ;
+  <http://example.org/example> "0.2 meter" ;
+  <http://example.org/example> "0.5 meter" ;
+  <http://example.org/example> "0.53 meter" ;
+  <http://example.org/example> "1,5 meter" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "81"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/materialExtent> .
+
+<http://shaclshapes.org/materialExtentBookShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "104 p." ;
+  <http://example.org/example> "128 pagina's" ;
+  <http://example.org/example> "159 p." ;
+  <http://example.org/example> "241 p." ;
+  <http://example.org/example> "71 p." ;
+  <http://shaclshapes.org/confidence> 7.1245E-1 ;
+  <http://shaclshapes.org/support> "202402"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/materialExtent> .
+
+<http://shaclshapes.org/materialExtentCreativeWorkSeriesShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "2 vol." ;
+  <http://example.org/example> "26 vol." ;
+  <http://example.org/example> "v." ;
+  <http://example.org/example> "vol." ;
+  <http://example.org/example> "volumes" ;
+  <http://shaclshapes.org/confidence> 2.8801E-1 ;
+  <http://shaclshapes.org/support> "1434"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/materialExtent> .
+
+<http://shaclshapes.org/materialExtentDigitalDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "1 CD-ROM (HTML; Linux, Mac OS, OS/2, Amiga, Windows)" ;
+  <http://example.org/example> "1 CD-ROM (Windws 95-NT-2000, Internet Explorer 5.0, CD player 24 speed, 1024x768, true color)" ;
+  <http://example.org/example> "1 audio disc" ;
+  <http://example.org/example> "1 cd-rom" ;
+  <http://example.org/example> "46 p." ;
+  <http://shaclshapes.org/confidence> 9.837E-1 ;
+  <http://shaclshapes.org/support> "181"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/materialExtent> .
+
+<http://shaclshapes.org/materialExtentProductModelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "118 p." ;
+  <http://example.org/example> "226 p." ;
+  <http://example.org/example> "439 p." ;
+  <http://example.org/example> "68 p." ;
+  <http://example.org/example> "[32] p." ;
+  <http://shaclshapes.org/confidence> 6.9827E-1 ;
+  <http://shaclshapes.org/support> "220636"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/materialExtent> .
+
+<http://shaclshapes.org/materialExtentVideoObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "1 DVD-Video (25 Min.)" ;
+  <http://example.org/example> "1 dvd (1.78:1 widescreen, NTSC, regio 2)" ;
+  <http://example.org/example> "1 dvd-video (61 min.)" ;
+  <http://example.org/example> "1 dvd-video (96 min.)" ;
+  <http://example.org/example> "1 videocassette (30 min.)" ;
+  <http://shaclshapes.org/confidence> 9.0566E-1 ;
+  <http://shaclshapes.org/support> "240"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/materialExtent> .
+
+<http://shaclshapes.org/nameArchiveComponentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> """"'Zimmer Frei, Nederland - Duitsland na 1945'. / 'Deutschland - Niederlande, Heiter bis wolkig'. Tentoonstelling Speerpuntenreeks: 'Vredesconferentie 1899'. Tentoonstelling Speerpuntenreeks: Kinderwetje 1874'.: Documentatie m.b.t. de tentoonstelling 'Zimmer frei: Nederland-Duitsland na 1945', (Haus der Geschichte, Bonn 2000 en, Rijksmuseum, Amsterdam 2001)). En de Speerpuntenreeks tentoonstellingen 'Vredesconferentie 1899' en 'Kinderwetje 1874' in 1999."( )""" ;
+  <http://example.org/example> """"Archief Ernst Wilhelm Moes"( )""" ;
+  <http://example.org/example> """"Archief Kunsthandel Staal"( )""" ;
+  <http://example.org/example> """"Documentatie m.b.t. de tentoonstelling Herman Willem Daendels 1991."( )""" ;
+  <http://example.org/example> """"Kleine archieven RPK (oud-medewerkers en nalatenschappen)"( )""" ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 6.0494E-1 ;
+    <http://shaclshapes.org/support> "49"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  ] [
+    <http://shaclshapes.org/confidence> 3.9506E-1 ;
+    <http://shaclshapes.org/support> "32"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/name> .
+
+<http://shaclshapes.org/nameArticleShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "Aanwinst" ;
+  <http://example.org/example> "Boekbespreking: Herstel in eigen waarde, Monumentenzorg in Indonesië" ;
+  <http://example.org/example> "Dageraad der Gouden Eeuw: Noordnederlandse kunst tussen 1580 en 1620" ;
+  <http://example.org/example> "Recent acquisitions: women in the Rijksmuseum collection" ;
+  <http://example.org/example> "Verslag over de Vereniging van Vrienden der Aziatische Kunst gedurende het kalenderjaar 1980" ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 5.987E-1 ;
+    <http://shaclshapes.org/support> "2117"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  ] [
+    <http://shaclshapes.org/confidence> 4.013E-1 ;
+    <http://shaclshapes.org/support> "1419"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/name> .
+
+<http://shaclshapes.org/nameBookShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> """"Art nouveau et art déco"( )""" ;
+  <http://example.org/example> """"Epic mythology"( )""" ;
+  <http://example.org/example> """"Jean Marc Nattier 1685-1766"( )""" ;
+  <http://example.org/example> """"Sperky z ceských granátu a vejíre: ze sbírek Moravské Galérie v Brne"( )""" ;
+  <http://example.org/example> """"Ungarische Spitzenkunst"( )""" ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 5.113E-1 ;
+    <http://shaclshapes.org/support> "145256"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  ] [
+    <http://shaclshapes.org/confidence> 4.9123E-1 ;
+    <http://shaclshapes.org/support> "139555"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/name> .
+
+<http://shaclshapes.org/nameCreativeWorkSeriesShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "Aziatische Kunst: mededelingenblad van de Vereniging van Vrienden der Aziatische Kunst" ;
+  <http://example.org/example> "Bulletin van het Rijksmuseum" ;
+  <http://example.org/example> "De Rijksmuseumkunstkrant : over verzamelingen en tentoonstellingen" ;
+  <http://example.org/example> "History of photography" ;
+  <http://example.org/example> "Rijksmuseum bulletin" ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 6.5033E-1 ;
+    <http://shaclshapes.org/support> "3238"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  ] [
+    <http://shaclshapes.org/confidence> 3.7678E-1 ;
+    <http://shaclshapes.org/support> "1876"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/name> .
+
+<http://shaclshapes.org/nameDefinedTermShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "Boeken"@nl ;
+  <http://example.org/example> "Books"@en ;
+  <http://example.org/example> "Gio: Zempel" ;
+  <http://example.org/example> "Tentoonstellingscatalogi"@nl ;
+  <http://example.org/example> "Tōkyō: Heibonsha; 2012" ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 2.2102E-1 ;
+    <http://shaclshapes.org/support> "69068"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.2089E-1 ;
+    <http://shaclshapes.org/support> "69027"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.1868E-1 ;
+    <http://shaclshapes.org/support> "68338"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/name> .
+
+<http://shaclshapes.org/nameDigitalDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> """"Lux in tenebris: Barock in der Slowakei und sein Mitteleuropäscher Kontext [CD-ROM]"( )""" ;
+  <http://example.org/example> """"Nicolai Grigorescu [CD-ROM]"( )""" ;
+  <http://example.org/example> """"Sie sind der beste Briefschreiber unsres Jahrhunderts: der Briefwechsel von Gerhard Marcks und Hans Wimmer 1942-1981 im Deutschen Kunstarchiv"( )""" ;
+  <http://example.org/example> """"Sonates et caprices"( )""" ;
+  <http://example.org/example> """"The victor weeps: Afghanistan [DVD]"( )""" ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 3.4783E-1 ;
+    <http://shaclshapes.org/support> "64"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  ] [
+    <http://shaclshapes.org/confidence> 6.5217E-1 ;
+    <http://shaclshapes.org/support> "120"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/name> .
+
+<http://shaclshapes.org/namePlaceShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "Boeken"@nl ;
+  <http://example.org/example> "De Haan" ;
+  <http://example.org/example> "Paris: Denis Ozanne; [20--?]" ;
+  <http://example.org/example> "Sotheby's" ;
+  <http://example.org/example> "W. Knapp" ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 2.4161E-1 ;
+    <http://shaclshapes.org/support> "68078"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.4369E-1 ;
+    <http://shaclshapes.org/support> "68663"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.4107E-1 ;
+    <http://shaclshapes.org/support> "67926"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/name> .
+
+<http://shaclshapes.org/nameProductModelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> """"'s Gravenhage. Een berijmd verhaal met geschiedkundige aanteekeningen."( )""" ;
+  <http://example.org/example> """"Contemporary Korean ceramics I: a prelude to the new wave"( )""" ;
+  <http://example.org/example> """"European academicism in the nineteenth century: paintings and drawings from the National Museum in Warsaw and other Polish collections"( )""" ;
+  <http://example.org/example> """"German and Austrian paintings of the 17th century: The National Gallery in Prague : illustrated summary catalogue"( )""" ;
+  <http://example.org/example> """"Medicine before science: the business of medicine from the Middle Ages to the Enlightenment"( )""" ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 5.1476E-1 ;
+    <http://shaclshapes.org/support> "162652"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  ] [
+    <http://shaclshapes.org/confidence> 4.7754E-1 ;
+    <http://shaclshapes.org/support> "150892"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/name> .
+
+<http://shaclshapes.org/nameVideoObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> """"Art across the ages [DVD]"( )""" ;
+  <http://example.org/example> """"Door het beeld, door het woord"( )""" ;
+  <http://example.org/example> """"Rebelse stad: Provo en de onstuimige jaren zestig"( )""" ;
+  <http://example.org/example> """"Saskia Uylenburgh 1612-1642: over wat zij wil, en wat het leven met haar wil...."( )""" ;
+  <http://example.org/example> """"Wang Shui Ho"( )""" ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 4.1132E-1 ;
+    <http://shaclshapes.org/support> "109"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  ] [
+    <http://shaclshapes.org/confidence> 5.8868E-1 ;
+    <http://shaclshapes.org/support> "156"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/name> .
+
+<http://shaclshapes.org/paginationArticleShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "(1991), p. 22-29" ;
+  <http://example.org/example> "40-2 (juni 2010), p. 3-18" ;
+  <http://example.org/example> "55(2007), p. 208-217" ;
+  <http://example.org/example> "57 (2009), P. 43-87" ;
+  <http://example.org/example> "67 (2019), p. 30-53" ;
+  <http://shaclshapes.org/confidence> 9.5645E-1 ;
+  <http://shaclshapes.org/support> "3382"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/pagination> .
+
+<http://shaclshapes.org/publicationArchiveComponentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B08eea2631bf14dbc5819d608721a08eb( )" ;
+  <http://example.org/example> "_:B1f042ddfb2652ac7f98f4e7ca2811c04( )" ;
+  <http://example.org/example> "_:B8bb616bfc0fc55e7689b975398e5dd76( )" ;
+  <http://example.org/example> "_:Bdf4f75b0972a69083edcc9d0f604a78a( )" ;
+  <http://example.org/example> "_:Bf96ae5eb136449d02ff1d941d97be295( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 5.3086E-1 ;
+    <http://shaclshapes.org/support> "43"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 5.3086E-1 ;
+    <http://shaclshapes.org/support> "43"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 5.3086E-1 ;
+    <http://shaclshapes.org/support> "43"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 5.3086E-1 ;
+    <http://shaclshapes.org/support> "43"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/publication> .
+
+<http://shaclshapes.org/publicationBookShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B2b10b41f5ad5febd4ae56ce046c3c593( )" ;
+  <http://example.org/example> "_:B57ef36aebe46121f2ca91d6a01ecd0fe( )" ;
+  <http://example.org/example> "_:B580135f97584c64006d6d52f1978fb71( )" ;
+  <http://example.org/example> "_:B6ba09ee5022815a425ad9af4037be2eb( )" ;
+  <http://example.org/example> "_:B6f5cb1c9aa58e735d8f6b9042f92a72d( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/PublicationEventShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.9582E-1 ;
+    <http://shaclshapes.org/support> "282903"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.9579E-1 ;
+    <http://shaclshapes.org/support> "282894"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.9571E-1 ;
+    <http://shaclshapes.org/support> "282873"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.9574E-1 ;
+    <http://shaclshapes.org/support> "282881"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/publication> .
+
+<http://shaclshapes.org/publicationCreativeWorkSeriesShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B1e01b86afee3d0ffc4c25ed6af523cdf( )" ;
+  <http://example.org/example> "_:B1f29bc64b22053d7c7f10cae5b96759c( )" ;
+  <http://example.org/example> "_:B7a4ef672b11f51355e3addc2fbaffd86( )" ;
+  <http://example.org/example> "_:B7d811df434fbdc4df96caa925622101c( )" ;
+  <http://example.org/example> "_:Bcbef669c22d30ccce01732f49c4b7e06( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.9799E-1 ;
+    <http://shaclshapes.org/support> "4969"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.9799E-1 ;
+    <http://shaclshapes.org/support> "4969"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.9799E-1 ;
+    <http://shaclshapes.org/support> "4969"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.9799E-1 ;
+    <http://shaclshapes.org/support> "4969"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/publication> .
+
+<http://shaclshapes.org/publicationDigitalDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B4a462ad99b4ad26ec83484ddfdaea274( )" ;
+  <http://example.org/example> "_:B650c3f3e279416f555030e92a011b271( )" ;
+  <http://example.org/example> "_:B92e9078f2e7572b8938d2957fbcabac7( )" ;
+  <http://example.org/example> "_:B939702d48620a5b57f9c9d6883422461( )" ;
+  <http://example.org/example> "_:B9525a8c65b069d0a20f23e4e10ade37f( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.8913E-1 ;
+    <http://shaclshapes.org/support> "182"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8913E-1 ;
+    <http://shaclshapes.org/support> "182"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8913E-1 ;
+    <http://shaclshapes.org/support> "182"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8913E-1 ;
+    <http://shaclshapes.org/support> "182"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/publication> .
+
+<http://shaclshapes.org/publicationProductModelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B0abe83285c4ec67d097d0390f6b607b4( )" ;
+  <http://example.org/example> "_:B6b0424e01672f5f3e8ff910d39cc191b( )" ;
+  <http://example.org/example> "_:B9c509da5e46c2e65a94002197b0fe26d( )" ;
+  <http://example.org/example> "_:Bb197ae55a5c9f5e7b8564aee1dc6d373( )" ;
+  <http://example.org/example> "_:Bcfb9718f73256147445ad2dd8b86d3e8( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/PublicationEventShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.7285E-1 ;
+    <http://shaclshapes.org/support> "307397"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.7282E-1 ;
+    <http://shaclshapes.org/support> "307388"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.7275E-1 ;
+    <http://shaclshapes.org/support> "307367"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.7278E-1 ;
+    <http://shaclshapes.org/support> "307374"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/publication> .
+
+<http://shaclshapes.org/publicationVideoObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B0b26d95562f8401295aa23918022f22a( )" ;
+  <http://example.org/example> "_:B309fe272444591e16f28f5d501064be5( )" ;
+  <http://example.org/example> "_:B9944602ba4c4f41e38357908dede4fc7( )" ;
+  <http://example.org/example> "_:Ba1b882dd0463142fd182e530e8a0fd82( )" ;
+  <http://example.org/example> "_:Bfd71adf9d27337d8c128633afb77cc6e( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.8491E-1 ;
+    <http://shaclshapes.org/support> "261"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8491E-1 ;
+    <http://shaclshapes.org/support> "261"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8491E-1 ;
+    <http://shaclshapes.org/support> "261"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8491E-1 ;
+    <http://shaclshapes.org/support> "261"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/publication> .
+
+<http://shaclshapes.org/publishedByDefinedTermShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B0dc6dc5508c3a9c3156250282a1dba14( )" ;
+  <http://example.org/example> "_:Bbcfeb81ca162c83ad8efd555d249c767( )" ;
+  <http://example.org/example> "_:Bd0a9506a9ce7a5a9cb6a7a803b26b2dd( )" ;
+  <http://example.org/example> "_:Bfc617273d947bb0de76673bb16a6f93c( )" ;
+  <http://example.org/example> "_:Bfcfb00e907bc0deb424c073e4102a3cb( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/PublicationEventShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 2.1568E-1 ;
+    <http://shaclshapes.org/support> "67399"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.1564E-1 ;
+    <http://shaclshapes.org/support> "67386"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.1519E-1 ;
+    <http://shaclshapes.org/support> "67245"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.1527E-1 ;
+    <http://shaclshapes.org/support> "67270"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/publishedBy> .
+
+<http://shaclshapes.org/publishedByPlaceShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B101d44374df2eabb53b0f635bf57cffa( )" ;
+  <http://example.org/example> "_:B33ed2393f61c563f059d0a305d112963( )" ;
+  <http://example.org/example> "_:B47bc01a00940d3cc73c56e7d5c84f808( )" ;
+  <http://example.org/example> "_:B529f3b8478dbb8faaf83bd69d1f2b26e( )" ;
+  <http://example.org/example> "_:B88541ef73ff36354cbd15b1f88dd9e26( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/PublicationEventShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 2.3779E-1 ;
+    <http://shaclshapes.org/support> "67000"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.3775E-1 ;
+    <http://shaclshapes.org/support> "66989"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.3726E-1 ;
+    <http://shaclshapes.org/support> "66852"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.3736E-1 ;
+    <http://shaclshapes.org/support> "66881"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/publishedBy> .
+
+<http://shaclshapes.org/sameAsArchiveComponentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/1220945216>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/1220945852>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/1220946490>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/1220948641>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/1220948732>( )" ;
+  <http://shaclshapes.org/confidence> 4.6914E-1 ;
+  <http://shaclshapes.org/support> "38"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/sameAs> .
+
+<http://shaclshapes.org/sameAsArticleShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/1232948650>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/1232948855>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/1232949014>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/1232949686>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/775939037>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "3536"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/sameAs> .
+
+<http://shaclshapes.org/sameAsBookShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/1230558313>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/15037393>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/6146567>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/739055389>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/739319087>( )" ;
+  <http://shaclshapes.org/confidence> 9.9962E-1 ;
+  <http://shaclshapes.org/support> "283984"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/sameAs> .
+
+<http://shaclshapes.org/sameAsCreativeWorkSeriesShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/41035466>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/475209050>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/723993438>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/740303401>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/907158626>( )" ;
+  <http://shaclshapes.org/confidence> 9.9558E-1 ;
+  <http://shaclshapes.org/support> "4957"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/sameAs> .
+
+<http://shaclshapes.org/sameAsDefinedTermShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://vocab.getty.edu/aat/300026096>( )" ;
+  <http://example.org/example> "<http://vocab.getty.edu/aat/300028051>( )" ;
+  <http://example.org/example> "<http://vocab.getty.edu/aat/300048715>( )" ;
+  <http://example.org/example> "<http://vocab.getty.edu/aat/300311990>( )" ;
+  <http://example.org/example> "<http://vocab.getty.edu/aat/300417819>( )" ;
+  <http://shaclshapes.org/confidence> 2.2101E-1 ;
+  <http://shaclshapes.org/support> "69064"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/sameAs> .
+
+<http://shaclshapes.org/sameAsDigitalDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/150222803>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/739826175>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/739927995>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/865320231>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/865320572>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "184"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/sameAs> .
+
+<http://shaclshapes.org/sameAsPlaceShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://vocab.getty.edu/aat/300026068>( )" ;
+  <http://example.org/example> "<http://vocab.getty.edu/aat/300026096>( )" ;
+  <http://example.org/example> "<http://vocab.getty.edu/aat/300026642>( )" ;
+  <http://example.org/example> "<http://vocab.getty.edu/aat/300028051>( )" ;
+  <http://example.org/example> "<http://vocab.getty.edu/aat/300417819>( )" ;
+  <http://shaclshapes.org/confidence> 2.4155E-1 ;
+  <http://shaclshapes.org/support> "68060"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/sameAs> .
+
+<http://shaclshapes.org/sameAsProductModelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/63368012>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/68219468>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/768433071>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/783533411>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/905504920>( )" ;
+  <http://shaclshapes.org/confidence> 9.8854E-1 ;
+  <http://shaclshapes.org/support> "312354"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/sameAs> .
+
+<http://shaclshapes.org/sameAsVideoObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/1096513778>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/1101025722>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/231657753>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/739457250>( )" ;
+  <http://example.org/example> "<http://www.worldcat.org/oclc/742977944>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "265"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/sameAs> .
+
+<http://shaclshapes.org/sizeBookShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "20 cm." ;
+  <http://example.org/example> "23 cm" ;
+  <http://example.org/example> "27 cm." ;
+  <http://example.org/example> "30 cm." ;
+  <http://example.org/example> "8°." ;
+  <http://shaclshapes.org/confidence> 9.0681E-1 ;
+  <http://shaclshapes.org/support> "257617"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/size> .
+
+<http://shaclshapes.org/sizeCreativeWorkSeriesShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "21 cm." ;
+  <http://example.org/example> "22 cm." ;
+  <http://example.org/example> "24 cm" ;
+  <http://example.org/example> "28 cm." ;
+  <http://example.org/example> "30 cm." ;
+  <http://shaclshapes.org/confidence> 8.2828E-1 ;
+  <http://shaclshapes.org/support> "4124"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/size> .
+
+<http://shaclshapes.org/sizeDigitalDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "12 cm." ;
+  <http://example.org/example> "13 cm." ;
+  <http://example.org/example> "13 x 14 cm" ;
+  <http://example.org/example> "19 cm." ;
+  <http://example.org/example> "4 3/4 in." ;
+  <http://shaclshapes.org/confidence> 9.7283E-1 ;
+  <http://shaclshapes.org/support> "179"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/size> .
+
+<http://shaclshapes.org/sizeProductModelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "16 cm." ;
+  <http://example.org/example> "21 cm." ;
+  <http://example.org/example> "22 cm." ;
+  <http://example.org/example> "28 cm." ;
+  <http://example.org/example> "8°." ;
+  <http://shaclshapes.org/confidence> 8.9016E-1 ;
+  <http://shaclshapes.org/support> "281270"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/size> .
+
+<http://shaclshapes.org/sizeVideoObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "18 cm." ;
+  <http://example.org/example> "19 cm" ;
+  <http://example.org/example> "19 cm." ;
+  <http://example.org/example> "21 cm." ;
+  <http://example.org/example> "23 cm" ;
+  <http://shaclshapes.org/confidence> 9.434E-1 ;
+  <http://shaclshapes.org/support> "250"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/size> .
+
+<http://shaclshapes.org/startDateDefinedTermShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "1992"^^<http://schema.org/Date> ;
+  <http://example.org/example> "1994"^^<http://schema.org/Date> ;
+  <http://example.org/example> "2006"^^<http://schema.org/Date> ;
+  <http://example.org/example> "2008"^^<http://schema.org/Date> ;
+  <http://example.org/example> "2019"^^<http://schema.org/Date> ;
+  <http://shaclshapes.org/confidence> 2.1155E-1 ;
+  <http://shaclshapes.org/support> "66110"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <%3Chttp://schema.org/Date%3E> ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/startDate> .
+
+<http://shaclshapes.org/startDatePlaceShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "1938"^^<http://schema.org/Date> ;
+  <http://example.org/example> "1994"^^<http://schema.org/Date> ;
+  <http://example.org/example> "1996"^^<http://schema.org/Date> ;
+  <http://example.org/example> "2005"^^<http://schema.org/Date> ;
+  <http://example.org/example> "2018"^^<http://schema.org/Date> ;
+  <http://shaclshapes.org/confidence> 2.3328E-1 ;
+  <http://shaclshapes.org/support> "65731"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <%3Chttp://schema.org/Date%3E> ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/startDate> .
+
+<http://shaclshapes.org/subjectOfArchiveComponentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B0e8badcedf9383db88a6fe575c388b1f( )" ;
+  <http://example.org/example> "_:B140865427a465a651661edce76e463aa( )" ;
+  <http://example.org/example> "_:B8e02f0220fec832a6cd97aefd7218196( )" ;
+  <http://example.org/example> "_:B9f81eff22167d185aa4a6c362111d7fa( )" ;
+  <http://example.org/example> "_:Bfe455dc6b608b5e42c066a212c9237d3( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.8765E-1 ;
+    <http://shaclshapes.org/support> "80"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8765E-1 ;
+    <http://shaclshapes.org/support> "80"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8765E-1 ;
+    <http://shaclshapes.org/support> "80"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8765E-1 ;
+    <http://shaclshapes.org/support> "80"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/subjectOf> .
+
+<http://shaclshapes.org/subjectOfArticleShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B1c888785ee7d35b486363aebf73b4343( )" ;
+  <http://example.org/example> "_:B77a5b7125fd9dc6c6981dca2c95de931( )" ;
+  <http://example.org/example> "_:Ba10deb8956b7152482a52bd6c290459b( )" ;
+  <http://example.org/example> "_:Bb3ac3ea7a1007fe678baed2d1fc1461c( )" ;
+  <http://example.org/example> "_:Bd53225aca424fbe6ea4bd54afe59a62d( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/PublicationEventShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 8.8829E-1 ;
+    <http://shaclshapes.org/support> "3141"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 8.8829E-1 ;
+    <http://shaclshapes.org/support> "3141"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 8.7868E-1 ;
+    <http://shaclshapes.org/support> "3107"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 8.8292E-1 ;
+    <http://shaclshapes.org/support> "3122"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/subjectOf> .
+
+<http://shaclshapes.org/subjectOfBookShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B23b0c26fd253d682d133a47ef78ad293( )" ;
+  <http://example.org/example> "_:B299c1c578a3e779ce949c512f7d7ab1d( )" ;
+  <http://example.org/example> "_:B732b82b48647174f27bedfac550dc406( )" ;
+  <http://example.org/example> "_:Bad92df1f203bebab16d944a5189720a8( )" ;
+  <http://example.org/example> "_:Bbaca83d6fdab0b5995365168f3044ab1( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/StatementShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.6845E-1 ;
+    <http://shaclshapes.org/support> "275127"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.6849E-1 ;
+    <http://shaclshapes.org/support> "275140"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.623E-1 ;
+    <http://shaclshapes.org/support> "273380"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.6453E-1 ;
+    <http://shaclshapes.org/support> "274013"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/subjectOf> .
+
+<http://shaclshapes.org/subjectOfCreativeWorkSeriesShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B2dd43da5fb11eee0ba482c54dd82c51c( )" ;
+  <http://example.org/example> "_:B49c984cede86eb3cdb68a06d70c26d39( )" ;
+  <http://example.org/example> "_:B65b8ac59e8a97ee9929d2fd281d6a460( )" ;
+  <http://example.org/example> "_:Ba4b535c115f0cd9b406945f3f575ba59( )" ;
+  <http://example.org/example> "_:Bbcec4b5aa9e136839c008ece3fee3b86( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/PublicationEventShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.3995E-1 ;
+    <http://shaclshapes.org/support> "4680"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.3995E-1 ;
+    <http://shaclshapes.org/support> "4680"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.3694E-1 ;
+    <http://shaclshapes.org/support> "4665"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.3814E-1 ;
+    <http://shaclshapes.org/support> "4671"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/subjectOf> .
+
+<http://shaclshapes.org/subjectOfDigitalDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B3976248df47940264e3e0d5bd3b13104( )" ;
+  <http://example.org/example> "_:B41e25c5a4100c12e7d55b22299eb3b6e( )" ;
+  <http://example.org/example> "_:B6938549e063e8b1a436c464a2ba214bd( )" ;
+  <http://example.org/example> "_:Bc3f4ec25c1ef635cd4d066ac58662f15( )" ;
+  <http://example.org/example> "_:Be42842ad05e5f6ae5148ee3af370cf1d( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.6196E-1 ;
+    <http://shaclshapes.org/support> "177"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.6196E-1 ;
+    <http://shaclshapes.org/support> "177"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.5652E-1 ;
+    <http://shaclshapes.org/support> "176"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.6196E-1 ;
+    <http://shaclshapes.org/support> "177"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/subjectOf> .
+
+<http://shaclshapes.org/subjectOfProductModelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B797491f5c0f2a52179de6b44022683ed( )" ;
+  <http://example.org/example> "_:B992ef813c6bd4fa40fdf6512e5f9f36b( )" ;
+  <http://example.org/example> "_:Bb14c710154eefe596c4f06282f292ea8( )" ;
+  <http://example.org/example> "_:Bc81682f8adefcf64a2c929cea0fdd9a3( )" ;
+  <http://example.org/example> "_:Bf816c4c2ed16acc88c678a59deaf053d( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/StatementShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.4851E-1 ;
+    <http://shaclshapes.org/support> "299707"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.4855E-1 ;
+    <http://shaclshapes.org/support> "299720"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.4253E-1 ;
+    <http://shaclshapes.org/support> "297818"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.4473E-1 ;
+    <http://shaclshapes.org/support> "298513"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/subjectOf> .
+
+<http://shaclshapes.org/subjectOfVideoObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "_:B17c106be8d1a05cc5e8893fb89030e43( )" ;
+  <http://example.org/example> "_:B30479731cce47d6cdd47ba65ef5129a5( )" ;
+  <http://example.org/example> "_:B43ff93744fa9b4cffbd2de5da14ee922( )" ;
+  <http://example.org/example> "_:B58f5eb0d0f7e956fd3598ded00d478eb( )" ;
+  <http://example.org/example> "_:Bb5bb9656ac3d7e982db1b75a00ff2d9e( )" ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DefinedTermShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.4717E-1 ;
+    <http://shaclshapes.org/support> "251"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/PublicationEvent> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.4717E-1 ;
+    <http://shaclshapes.org/support> "251"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Statement> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.4717E-1 ;
+    <http://shaclshapes.org/support> "251"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/Place> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.4717E-1 ;
+    <http://shaclshapes.org/support> "251"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://schema.org/DefinedTerm> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/subjectOf> .
+
+<http://shaclshapes.org/textDefinedTermShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "Tentoonstelling: Antwerpen, Koninklijk Museum voor Schone Kunsten, 1999/10/17-2000/01/16" ;
+  <http://example.org/example> """[ce catalogue a été publié à l'occasion de l'exposition "Pierre Bonnard (1867 - 1947), peindre l'arcadie", Paris, Musée d'Orsay, 17 mars - 19 juillet 2015, Madrid, Fundación MAPFRE, 10 septembre 2015 - 6 janvier 2016, San Francisco, Fine Arts Museums of San Francisco, 6 février - 15 mai 2016]""" ;
+  <http://example.org/example> "hoofdz. ill." ;
+  <http://example.org/example> "ill." ;
+  <http://example.org/example> "illustraties" ;
+  <http://shaclshapes.org/confidence> 2.208E-1 ;
+  <http://shaclshapes.org/support> "69000"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/text> .
+
+<http://shaclshapes.org/textPlaceShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "Aan de kop van de titelpagina: la theorie, la pratique et l'art en photographie" ;
+  <http://example.org/example> "[I] Commentarium / Pramod Chandra; forew. Sherman E. Lee. - 223 p., 120 p. pl. - ISBN 3-201-00959-8" ;
+  <http://example.org/example> "geb." ;
+  <http://example.org/example> "ill." ;
+  <http://example.org/example> "ilustracje kolorowe" ;
+  <http://shaclshapes.org/confidence> 2.4345E-1 ;
+  <http://shaclshapes.org/support> "68595"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/text> .
+
+<http://shaclshapes.org/urlArchiveComponentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=250242>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=253158>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=271806>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=295334>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=295903>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "81"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/url> .
+
+<http://shaclshapes.org/urlArticleShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=153549>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=153685>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=154564>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=195813>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=302810>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "3536"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/url> .
+
+<http://shaclshapes.org/urlBookShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=102195>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=150888>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=16696>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=262708>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=53904>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "284091"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/url> .
+
+<http://shaclshapes.org/urlCreativeWorkSeriesShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=155222>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=157787>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=233322>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=271512>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=273089>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "4979"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/url> .
+
+<http://shaclshapes.org/urlDigitalDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=191875>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=306973>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=3393>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=56039>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=72118>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "184"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/url> .
+
+<http://shaclshapes.org/urlProductModelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=118259>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=128090>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=135782>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=273997>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=32963>( )" ;
+  <http://shaclshapes.org/confidence> 9.893E-1 ;
+  <http://shaclshapes.org/support> "312594"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/url> .
+
+<http://shaclshapes.org/urlVideoObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=100476>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=120498>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=126613>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=198248>( )" ;
+  <http://example.org/example> "<https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=247795>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "265"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/url> .
+
+<http://shaclshapes.org/workExampleArchiveComponentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302260521>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302279578>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302326642>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302339353>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302356313>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "81"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/workExample> .
+
+<http://shaclshapes.org/workExampleBookShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302121441>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302144452>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302258869>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302368720>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/30278971>( )" ;
+  <http://shaclshapes.org/confidence> 9.9989E-1 ;
+  <http://shaclshapes.org/support> "284061"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/workExample> .
+
+<http://shaclshapes.org/workExampleCreativeWorkSeriesShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302159369>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302256247>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302296336>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302303386>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302308602>( )" ;
+  <http://shaclshapes.org/confidence> 9.8233E-1 ;
+  <http://shaclshapes.org/support> "4891"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/workExample> .
+
+<http://shaclshapes.org/workExampleDigitalDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302123433>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302256392>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302313993>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/30247617>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/30258135>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "184"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/workExample> .
+
+<http://shaclshapes.org/workExampleProductModelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302150512>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302192712>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302212273>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/30225677>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302375237>( )" ;
+  <http://shaclshapes.org/confidence> 9.774E-1 ;
+  <http://shaclshapes.org/support> "308834"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/workExample> .
+
+<http://shaclshapes.org/workExampleVideoObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302194150>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302197908>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302202675>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302289236>( )" ;
+  <http://example.org/example> "<https://id.rijksmuseum.nl/302337669>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "265"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://schema.org/workExample> .
+
+

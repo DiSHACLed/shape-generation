@@ -1,0 +1,993 @@
+10/03/2026 10:55:30 -- Generating bare shacl structure
+10/03/2026 10:55:30 -- Bare shacl structure done
+10/03/2026 10:55:30 -- Adding counts
+10/03/2026 10:55:30 -- -------------
+10/03/2026 10:55:30 -- http://example.com/shapes/a9004d1c-ea80-49dd-8a13-ce97bbf81144 ~ http://schema.org/ArchiveComponent
+10/03/2026 10:55:30 -- 	N032fb8c0ffdd4dbfbc8276a910669cd9 | http://schema.org/url > [no object/datatype]
+10/03/2026 10:55:30 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:30 -- 		 shacl-min: 1
+10/03/2026 10:55:30 -- 		 shacl-max: 1
+10/03/2026 10:55:30 -- 	N4a8938bcc44e42648167fc54721d6da2 | http://schema.org/subjectOf > http://schema.org/DefinedTerm
+10/03/2026 10:55:30 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 8 (max found at subject)
+10/03/2026 10:55:30 -- 	N344eca685c204cbb86385d27636ad675 | http://schema.org/subjectOf > http://schema.org/Place
+10/03/2026 10:55:30 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 8 (max found at subject)
+10/03/2026 10:55:30 -- 	Nd8eab93bc9284437adca96af6f9bce95 | http://schema.org/subjectOf > http://schema.org/PublicationEvent
+10/03/2026 10:55:30 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 8 (max found at subject)
+10/03/2026 10:55:30 -- 	Nefce132a889c4b38a27e7fc13d5a0037 | http://schema.org/subjectOf > http://schema.org/Statement
+10/03/2026 10:55:30 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 8 (max found at subject)
+10/03/2026 10:55:30 -- 	Naa1bca01a4424ffaa6200d6098b4e10c | http://schema.org/workExample > [no object/datatype]
+10/03/2026 10:55:30 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 31 (max found at subject)
+10/03/2026 10:55:30 -- 		 shacl-min: 1
+10/03/2026 10:55:30 -- 	Naee2b045b6cd4f4b801f694163993ff8 | http://schema.org/materialExtent > [no object/datatype]
+10/03/2026 10:55:30 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:30 -- 		 shacl-min: 1
+10/03/2026 10:55:30 -- 		 shacl-max: 1
+10/03/2026 10:55:30 -- 	N76653ab8aee64471b291be55de573a91 | http://schema.org/size > [no object/datatype]
+10/03/2026 10:55:30 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:30 -- 		 shacl-max: 1
+10/03/2026 10:55:30 -- 	Na8f796aeb28d4901843c43aff76826f2 | http://schema.org/sameAs > [no object/datatype]
+10/03/2026 10:55:30 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:30 -- 		 shacl-max: 1
+10/03/2026 10:55:30 -- 	N808d2c4339474d15a53b4a1f737966e1 | http://schema.org/additionalType > http://schema.org/DefinedTerm
+10/03/2026 10:55:30 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:30 -- 		 shacl-min: 1
+10/03/2026 10:55:30 -- 		 shacl-max: 1
+10/03/2026 10:55:30 -- 	N893a617042ef41fb820e11e3cbe4bafe | http://schema.org/additionalType > http://schema.org/Place
+10/03/2026 10:55:30 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:30 -- 		 shacl-min: 1
+10/03/2026 10:55:30 -- 		 shacl-max: 1
+10/03/2026 10:55:30 -- 	Nc71bb0756fec4180b86b4faa8b8726b0 | http://schema.org/additionalType > http://schema.org/PublicationEvent
+10/03/2026 10:55:30 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:30 -- 		 shacl-min: 1
+10/03/2026 10:55:30 -- 		 shacl-max: 1
+10/03/2026 10:55:30 -- 	Nad4c77a286384e349ae9897f2bc4ed6d | http://schema.org/additionalType > http://schema.org/Statement
+10/03/2026 10:55:30 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:30 -- 		 shacl-min: 1
+10/03/2026 10:55:30 -- 		 shacl-max: 1
+10/03/2026 10:55:30 -- 	N97c59ccbda6d43ac94e1ddae3bc74c09 | http://schema.org/publication > http://schema.org/DefinedTerm
+10/03/2026 10:55:30 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:30 -- 	N890ad900c54544d4bdb0ef6c5476cf4e | http://schema.org/publication > http://schema.org/Place
+10/03/2026 10:55:30 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:30 -- 	N9bcc469339494a429d11a822b4f8db69 | http://schema.org/publication > http://schema.org/PublicationEvent
+10/03/2026 10:55:30 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:30 -- 	N6486ef1d9b78461294b8c0dcfeafc4cf | http://schema.org/publication > http://schema.org/Statement
+10/03/2026 10:55:30 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:30 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:30 -- 	N0d8c9e01c77447ac81cf5dbc02d35676 | http://schema.org/name > [no object/datatype]
+10/03/2026 10:55:31 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:31 -- 		 shacl-min: 1
+10/03/2026 10:55:31 -- 		 shacl-max: 1
+10/03/2026 10:55:31 -- 	N5db3409d23274e2b8891df145d106619 | http://schema.org/exampleOfWork > http://schema.org/CreativeWork
+10/03/2026 10:55:31 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:31 -- 		 shacl-min: 1
+10/03/2026 10:55:31 -- 		 shacl-max: 1
+10/03/2026 10:55:31 -- http://example.com/shapes/ca3b7a99-6023-4019-ac50-a6c4bf3d89a1 ~ http://schema.org/DefinedTerm
+10/03/2026 10:55:31 -- 	N0ed8060b1e084fcd9cd3b884c68b9135 | http://schema.org/startDate > [no object/datatype]
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 12 (max found at subject)
+10/03/2026 10:55:31 -- 	Ncfe4483db06a42ec9b1cd15243cb91bc | http://schema.org/text > [no object/datatype]
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 18 (max found at subject)
+10/03/2026 10:55:31 -- 	Ne2b97ed9971b490b95c525a98d28eb53 | http://schema.org/endDate > [no object/datatype]
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:31 -- 		 shacl-max: 1
+10/03/2026 10:55:31 -- 	Nba3cd53dd12e4b43b9a7a730ea479e4f | http://schema.org/publishedBy > http://schema.org/DefinedTerm
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:31 -- 	Nef29c274267d49ef954c90738f17a9df | http://schema.org/publishedBy > http://schema.org/Place
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:31 -- 	Nffdf8424c41441a9b84e293ba484fde2 | http://schema.org/publishedBy > http://schema.org/PublicationEvent
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:31 -- 	Na63c976140df448598f748514d81e53e | http://schema.org/publishedBy > http://schema.org/Statement
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:31 -- 	N18d2e0fd020d4b9dbe619ab0bb08331f | http://schema.org/additionalType > [no object/datatype]
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 6 (max found at subject)
+10/03/2026 10:55:31 -- 	Nb6b154a1ef894a5ca74e2e14642f69f0 | http://schema.org/sameAs > [no object/datatype]
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:31 -- 	N5590c5fd1aa14735a8c53f8980c1e395 | http://schema.org/name > [no object/datatype]
+10/03/2026 10:55:31 -- 		 min: 2 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 31 (max found at subject)
+10/03/2026 10:55:31 -- 		 shacl-min: 1
+10/03/2026 10:55:31 -- 	N1ab2332a3e7c42dc8e03e5368d55a65f | http://schema.org/location > http://schema.org/DefinedTerm
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:31 -- 	Ne87349b8b8194f70a4c66f22431568ae | http://schema.org/location > http://schema.org/Place
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:31 -- 	N289413693d78484f9a2605c51d938452 | http://schema.org/location > http://schema.org/PublicationEvent
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:31 -- 	Nbcc4da680aa2415591d5996f09cd4b11 | http://schema.org/location > http://schema.org/Statement
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:31 -- http://example.com/shapes/3d3b5dfb-29b3-437e-954f-9de382735541 ~ http://schema.org/Place
+10/03/2026 10:55:31 -- 	N8f773e15bf9644639716539ea4a5007d | http://schema.org/additionalType > [no object/datatype]
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 6 (max found at subject)
+10/03/2026 10:55:31 -- 	Nf2882cffd6f74b788a03460352536229 | http://schema.org/sameAs > [no object/datatype]
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:31 -- 	N9d96acad30dd4f25a91c4ae68311e744 | http://schema.org/endDate > [no object/datatype]
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:31 -- 		 shacl-max: 1
+10/03/2026 10:55:31 -- 	N01a6dddd5cac410ea6fe88a74969d7a2 | http://schema.org/startDate > [no object/datatype]
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 12 (max found at subject)
+10/03/2026 10:55:31 -- 	Nc26efd31ba6540b18feae79a257d1c77 | http://schema.org/name > [no object/datatype]
+10/03/2026 10:55:31 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 31 (max found at subject)
+10/03/2026 10:55:31 -- 		 shacl-min: 1
+10/03/2026 10:55:31 -- 	Ne4959b9c339d462f96a5f57d54749f51 | http://schema.org/location > http://schema.org/DefinedTerm
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:31 -- 	N55a12a78407a417d9ecbb96ef41a9f88 | http://schema.org/location > http://schema.org/Place
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:31 -- 	Nccae785cd80046ab9d1d93665423a804 | http://schema.org/location > http://schema.org/PublicationEvent
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:31 -- 	N8e844083fd2c474699adf022c4851700 | http://schema.org/location > http://schema.org/Statement
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:31 -- 	N1d16c5f6cbf446cea5e0b98e77af2299 | http://schema.org/text > [no object/datatype]
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 18 (max found at subject)
+10/03/2026 10:55:31 -- 	N3e818f7f314b4aeebf3a67b0dd9c60ca | http://schema.org/publishedBy > http://schema.org/DefinedTerm
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:31 -- 	N14a64604131545aa93b06403f238371b | http://schema.org/publishedBy > http://schema.org/Place
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:31 -- 	N7766fe9638c247f8aad441fb9e21530d | http://schema.org/publishedBy > http://schema.org/PublicationEvent
+10/03/2026 10:55:31 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:31 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:31 -- 	Nc4556bfd6cab42a1b383c16e68a7bced | http://schema.org/publishedBy > http://schema.org/Statement
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:32 -- http://example.com/shapes/67b54e66-2a7b-46b3-b439-15d9ac51bf12 ~ http://schema.org/PublicationEvent
+10/03/2026 10:55:32 -- 	N4704de9b2f8f40c2869f2db8fa971ab0 | http://schema.org/publishedBy > http://schema.org/DefinedTerm
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:32 -- 	N1fc536ce775d4503984435ce824978be | http://schema.org/publishedBy > http://schema.org/Place
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:32 -- 	N390c383285024ea2bfcadff709fbc736 | http://schema.org/publishedBy > http://schema.org/PublicationEvent
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:32 -- 	N9dbbbc0ce1af429da1ce6583b92a6a56 | http://schema.org/publishedBy > http://schema.org/Statement
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:32 -- 	Nac030083b92e4ea09b2df5ed9dd7815a | http://schema.org/location > http://schema.org/DefinedTerm
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:32 -- 	Na856617863a544de9d996f5ea14486c4 | http://schema.org/location > http://schema.org/Place
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:32 -- 	N460ca8b5bd394ce69f087fcf88bbf3be | http://schema.org/location > http://schema.org/PublicationEvent
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:32 -- 	N8503bc83217248bcb697010b0fc5a1f9 | http://schema.org/location > http://schema.org/Statement
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:32 -- 	N6dd420843a3749a1b13c7e0bdba5aa4e | http://schema.org/startDate > [no object/datatype]
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 12 (max found at subject)
+10/03/2026 10:55:32 -- 	N16a419cb55584156a28c8d66f8722869 | http://schema.org/endDate > [no object/datatype]
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:32 -- 		 shacl-max: 1
+10/03/2026 10:55:32 -- 	N01caeb515a8a4b3580f81c29480b5511 | http://schema.org/sameAs > [no object/datatype]
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:32 -- 	N9faee12eb26b40deb0c410d8849e1acb | http://schema.org/additionalType > [no object/datatype]
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 6 (max found at subject)
+10/03/2026 10:55:32 -- 	N2fcc87f340b044909d983b53e3dc19cd | http://schema.org/name > [no object/datatype]
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 31 (max found at subject)
+10/03/2026 10:55:32 -- 	N8d6e4a825d0744e19ab65d0aa6721955 | http://schema.org/text > [no object/datatype]
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 18 (max found at subject)
+10/03/2026 10:55:32 -- http://example.com/shapes/ab8597ea-19ef-45b6-aff0-c1cc22b067c3 ~ http://schema.org/Statement
+10/03/2026 10:55:32 -- 	N1c943e27945e4785bfe60814454eed86 | http://schema.org/additionalType > [no object/datatype]
+10/03/2026 10:55:32 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 6 (max found at subject)
+10/03/2026 10:55:32 -- 		 shacl-min: 1
+10/03/2026 10:55:32 -- 	N914293c207824c6986e6eee3c62002ae | http://schema.org/publishedBy > http://schema.org/DefinedTerm
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:32 -- 	Nb0be7c3c5b66469fb1ee0f899ce3deaf | http://schema.org/publishedBy > http://schema.org/Place
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:32 -- 	N527601327136419ca67a390229c2d6da | http://schema.org/publishedBy > http://schema.org/PublicationEvent
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:32 -- 	Nd56a7e4774e34b3e8ce5205432a2d192 | http://schema.org/publishedBy > http://schema.org/Statement
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 10 (max found at subject)
+10/03/2026 10:55:32 -- 	N73ba552964f24a42ab0c832d2eeabaf4 | http://schema.org/location > http://schema.org/DefinedTerm
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:32 -- 	N929268abfc6f45d89476b8697995e84f | http://schema.org/location > http://schema.org/Place
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:32 -- 	N3f2acff771a6487881687a33122b5ff3 | http://schema.org/location > http://schema.org/PublicationEvent
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:32 -- 	Nad3ee729b9ec4330b947d38dbe67d0ed | http://schema.org/location > http://schema.org/Statement
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:32 -- 	Ne7d0e31b90aa4af78000e5a449eff112 | http://schema.org/endDate > [no object/datatype]
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:32 -- 		 shacl-max: 1
+10/03/2026 10:55:32 -- 	N4ff124b372d0462380becd1bdce4cb48 | http://schema.org/name > [no object/datatype]
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 31 (max found at subject)
+10/03/2026 10:55:32 -- 	N8c6f3fa09ff8414680cc446dde746a8a | http://schema.org/startDate > [no object/datatype]
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 12 (max found at subject)
+10/03/2026 10:55:32 -- 	N583894743eb2446090c3c76a0b8af36b | http://schema.org/text > [no object/datatype]
+10/03/2026 10:55:32 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 18 (max found at subject)
+10/03/2026 10:55:32 -- 		 shacl-min: 1
+10/03/2026 10:55:32 -- 	N7b8515c143b24a2283664f1d475a9d49 | http://schema.org/sameAs > [no object/datatype]
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:32 -- http://example.com/shapes/9874124a-ca4a-4d78-a8ce-2a690c70f44a ~ http://schema.org/CreativeWork
+10/03/2026 10:55:32 -- 	N2c2b15c381c84d729d113bf0107a02c4 | http://schema.org/size > [no object/datatype]
+10/03/2026 10:55:32 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:32 -- 		 max: 2 (max found at subject)
+10/03/2026 10:55:32 -- 	Nbaf304ac87f04dd1a43d55117e4cf819 | http://schema.org/alternateName > [no object/datatype]
+10/03/2026 10:55:33 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:33 -- 		 max: 9 (max found at subject)
+10/03/2026 10:55:33 -- 	Nb14ecfbc635747e7a964430e423bf44f | http://schema.org/bookEdition > [no object/datatype]
+10/03/2026 10:55:33 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:33 -- 		 max: 2 (max found at subject)
+10/03/2026 10:55:33 -- 	N0fee974e57fd40a784e60974d56ef26e | http://schema.org/publication > http://schema.org/DefinedTerm
+10/03/2026 10:55:33 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:33 -- 		 max: 66 (max found at subject)
+10/03/2026 10:55:33 -- 	N1e4be4b62cc343139e9c3d4e8a18d7df | http://schema.org/publication > http://schema.org/Place
+10/03/2026 10:55:33 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:33 -- 		 max: 65 (max found at subject)
+10/03/2026 10:55:33 -- 	N384e703885ea46c78e28e9a759bcf624 | http://schema.org/publication > http://schema.org/PublicationEvent
+10/03/2026 10:55:33 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:33 -- 		 max: 66 (max found at subject)
+10/03/2026 10:55:33 -- 	N73de68946c4d4071bd8f7beb4b5cb97e | http://schema.org/publication > http://schema.org/Statement
+10/03/2026 10:55:33 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:33 -- 		 max: 66 (max found at subject)
+10/03/2026 10:55:33 -- 	N0def6a9a847c455d9fac49f8bcd8eb74 | http://schema.org/materialExtent > [no object/datatype]
+10/03/2026 10:55:33 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:33 -- 		 max: 2 (max found at subject)
+10/03/2026 10:55:33 -- 	Nb718db17d6fc49fda73708056cdfea12 | http://schema.org/about > http://schema.org/VisualArtwork
+10/03/2026 10:55:33 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:33 -- 		 max: 1399 (max found at subject)
+10/03/2026 10:55:33 -- 	Nf902624b778b4f52828c60a212362f5b | http://schema.org/workExample > [no object/datatype]
+10/03/2026 10:55:33 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:33 -- 		 max: 189 (max found at subject)
+10/03/2026 10:55:33 -- 	N0358d46e3f154ea49491b60e225c29a3 | http://schema.org/url > [no object/datatype]
+10/03/2026 10:55:33 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:33 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:33 -- 		 shacl-max: 1
+10/03/2026 10:55:33 -- 	N95e11845b1eb4bafaf8f95580df357f6 | http://schema.org/isbn > [no object/datatype]
+10/03/2026 10:55:34 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:34 -- 		 max: 15 (max found at subject)
+10/03/2026 10:55:34 -- 	N8427f61a78af40ea9878a093030fd8b6 | http://schema.org/name > [no object/datatype]
+10/03/2026 10:55:34 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:34 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:34 -- 	N241ffee8bdf6442aa22150b6683cdf28 | http://schema.org/sameAs > [no object/datatype]
+10/03/2026 10:55:34 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:34 -- 		 max: 52 (max found at subject)
+10/03/2026 10:55:34 -- 	N944f3ac07cf2427bb22d0af7f70e1ad2 | http://schema.org/subjectOf > http://schema.org/DefinedTerm
+10/03/2026 10:55:34 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:34 -- 		 max: 15 (max found at subject)
+10/03/2026 10:55:34 -- 	N6ae97efbc8a6415baa0225273deab79b | http://schema.org/subjectOf > http://schema.org/Place
+10/03/2026 10:55:34 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:34 -- 		 max: 15 (max found at subject)
+10/03/2026 10:55:34 -- 	Nf8e13fab155b48b2a89b7209b31cc951 | http://schema.org/subjectOf > http://schema.org/PublicationEvent
+10/03/2026 10:55:34 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:34 -- 		 max: 15 (max found at subject)
+10/03/2026 10:55:34 -- 	N5455a7958c4a476997e33267a24c8420 | http://schema.org/subjectOf > http://schema.org/Statement
+10/03/2026 10:55:34 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:34 -- 		 max: 15 (max found at subject)
+10/03/2026 10:55:34 -- 	N8ef6844e5ba04dff8be561790bedee8c | http://schema.org/exampleOfWork > http://schema.org/CreativeWork
+10/03/2026 10:55:34 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:34 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:34 -- 		 shacl-max: 1
+10/03/2026 10:55:34 -- 	N551f7bf44b884c3abb66f52fa29df408 | http://schema.org/additionalType > http://schema.org/DefinedTerm
+10/03/2026 10:55:34 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:34 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:34 -- 		 shacl-max: 1
+10/03/2026 10:55:34 -- 	N4f3bb9294b71442a9c547b34431e2916 | http://schema.org/additionalType > http://schema.org/Place
+10/03/2026 10:55:34 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:34 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:34 -- 		 shacl-max: 1
+10/03/2026 10:55:34 -- 	N20881488415846019e1a964d212fa057 | http://schema.org/additionalType > http://schema.org/PublicationEvent
+10/03/2026 10:55:34 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:34 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:34 -- 		 shacl-max: 1
+10/03/2026 10:55:34 -- 	Na147c4a58b8d41db8427bf187e4b98b4 | http://schema.org/additionalType > http://schema.org/Statement
+10/03/2026 10:55:34 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:34 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:34 -- 		 shacl-max: 1
+10/03/2026 10:55:34 -- http://example.com/shapes/16afba8e-ed4d-4766-acf4-578e296691c0 ~ http://schema.org/Article
+10/03/2026 10:55:35 -- 	N3507477a09af47f5bc38b6705852311e | http://schema.org/name > [no object/datatype]
+10/03/2026 10:55:35 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 2 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-min: 1
+10/03/2026 10:55:35 -- 	N39301b4bb0e5497b8ad5c8e84d442376 | http://schema.org/sameAs > [no object/datatype]
+10/03/2026 10:55:35 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-min: 1
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	Nc2e05a22cb634d48899f6f5b6572e2d8 | http://schema.org/isPartOf > http://schema.org/Book
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	N2717d4df67f34b75be57ccf728c71400 | http://schema.org/isPartOf > http://schema.org/CreativeWork
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	N51ff84cb98a6457fa31e25a551bd99fa | http://schema.org/isPartOf > http://schema.org/CreativeWorkSeries
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	N65ffe472b57e490fbccb081f7fbf876c | http://schema.org/isPartOf > http://schema.org/ProductModel
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	N8e6e60ce88a24553a8223e4138a41319 | http://schema.org/exampleOfWork > http://schema.org/CreativeWork
+10/03/2026 10:55:35 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-min: 1
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	N2a3f07a20c4c406db10e4a0b6ceb4877 | http://schema.org/additionalType > http://schema.org/DefinedTerm
+10/03/2026 10:55:35 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-min: 1
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	Ndf9a95539d67419fb0ee214c2c283b39 | http://schema.org/additionalType > http://schema.org/Place
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	Nad84647726de4d7d897681000e35fd68 | http://schema.org/additionalType > http://schema.org/PublicationEvent
+10/03/2026 10:55:35 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-min: 1
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	Nce3388e2975c49b9bc87d9ffc33fd5ba | http://schema.org/additionalType > http://schema.org/Statement
+10/03/2026 10:55:35 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-min: 1
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	N91202b20184d403ab2ac4ebb6a2b7925 | http://schema.org/about > http://schema.org/VisualArtwork
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 747 (max found at subject)
+10/03/2026 10:55:35 -- 	N1f069150e182462294a4ba7187a61a55 | http://schema.org/subjectOf > http://schema.org/DefinedTerm
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:35 -- 	Nb5f7ee1ac460404b9095f3a134a127f7 | http://schema.org/subjectOf > http://schema.org/Place
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:35 -- 	Nf985dfac749f48cbbe3a58511247d2a2 | http://schema.org/subjectOf > http://schema.org/PublicationEvent
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:35 -- 	Nb5886db688094761bf7ee35634457863 | http://schema.org/subjectOf > http://schema.org/Statement
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:35 -- 	N77178912f83d41039f3a7dc2df718cfe | http://schema.org/publication > http://schema.org/DefinedTerm
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:35 -- 	N2eb364d4bf644232b543928c773d3c01 | http://schema.org/publication > http://schema.org/Place
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:35 -- 	Nfb40bdbaa9af451bb8ed927427b6b4c6 | http://schema.org/publication > http://schema.org/PublicationEvent
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:35 -- 	Na0181be78d604cf88ba52dc70cfce2b6 | http://schema.org/publication > http://schema.org/Statement
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:35 -- 	Nc1785c503d7c4a52a7607c602ffe4f6a | http://schema.org/pagination > [no object/datatype]
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	N251aa6806dba4d6d92afa01d8d1b28b0 | http://schema.org/url > [no object/datatype]
+10/03/2026 10:55:35 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-min: 1
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	Na09b88babf9a4cce8b660db62c688d27 | http://schema.org/size > [no object/datatype]
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	N7cf8155d2f4942d1b27797255b61799a | http://schema.org/workExample > [no object/datatype]
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	N0fbe897694084e879ddf2572c051a212 | http://schema.org/materialExtent > [no object/datatype]
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- http://example.com/shapes/38733767-5905-4985-baf4-cc6b8d378078 ~ http://schema.org/Book
+10/03/2026 10:55:35 -- 	Nf7bdb81bc8c84c32ae13e2a7b81a2293 | http://schema.org/additionalType > http://schema.org/DefinedTerm
+10/03/2026 10:55:35 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-min: 1
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	N80ac98b19d5b41f0baf8896ad03e161c | http://schema.org/additionalType > http://schema.org/Place
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	Nceb063d8fb114950bea06118b17cc557 | http://schema.org/additionalType > http://schema.org/PublicationEvent
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	N6cafabc7c12642b08c0dc2d88a037815 | http://schema.org/additionalType > http://schema.org/Statement
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	Nf24405c855044b23bb8e323299241432 | http://schema.org/isbn > [no object/datatype]
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 42 (max found at subject)
+10/03/2026 10:55:35 -- 	N7e5490e0aa7c4a9592902ac57fb60713 | http://schema.org/url > [no object/datatype]
+10/03/2026 10:55:35 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:35 -- 		 shacl-min: 1
+10/03/2026 10:55:35 -- 		 shacl-max: 1
+10/03/2026 10:55:35 -- 	Nfc34d384c8184b538c1c115cc2d0446b | http://schema.org/materialExtent > [no object/datatype]
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 3 (max found at subject)
+10/03/2026 10:55:35 -- 	N5006e6b7e9f04c9eb822eb64cfd8678b | http://schema.org/publication > http://schema.org/DefinedTerm
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 32 (max found at subject)
+10/03/2026 10:55:35 -- 	N2dc4f75da4154627bad7142730ff161d | http://schema.org/publication > http://schema.org/Place
+10/03/2026 10:55:35 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:35 -- 		 max: 30 (max found at subject)
+10/03/2026 10:55:35 -- 	N267b3b2b63be4e89b3b21c0798e1adf1 | http://schema.org/publication > http://schema.org/PublicationEvent
+10/03/2026 10:55:36 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:36 -- 		 max: 32 (max found at subject)
+10/03/2026 10:55:36 -- 	N24507a00af6b463e9aaede3158286915 | http://schema.org/publication > http://schema.org/Statement
+10/03/2026 10:55:36 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:36 -- 		 max: 32 (max found at subject)
+10/03/2026 10:55:36 -- 	Nc941ac1be13447c2a9f3aa3190455397 | http://schema.org/alternateName > [no object/datatype]
+10/03/2026 10:55:36 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:36 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:36 -- 		 shacl-max: 1
+10/03/2026 10:55:36 -- 	N31db310b2b1b41029f9c8728b3a91d2f | http://schema.org/bookEdition > [no object/datatype]
+10/03/2026 10:55:36 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:36 -- 		 max: 2 (max found at subject)
+10/03/2026 10:55:36 -- 	N900051311db24e6b8c764dc1be189b37 | http://schema.org/workExample > http://schema.org/DefinedTerm
+10/03/2026 10:55:36 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:36 -- 		 max: 12 (max found at subject)
+10/03/2026 10:55:36 -- 	N492537e5c29842fb88261ff93b0750a1 | http://schema.org/workExample > http://schema.org/Place
+10/03/2026 10:55:36 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:36 -- 		 max: 13 (max found at subject)
+10/03/2026 10:55:36 -- 	Nf84eadfdc06443aca1103dc3d923dcde | http://schema.org/workExample > http://schema.org/PublicationEvent
+10/03/2026 10:55:36 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:36 -- 		 max: 13 (max found at subject)
+10/03/2026 10:55:36 -- 	Nef5f283434624a478388258564a7d84c | http://schema.org/workExample > http://schema.org/Statement
+10/03/2026 10:55:36 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:36 -- 		 max: 13 (max found at subject)
+10/03/2026 10:55:36 -- 	Ndf1fc70cfbba450e8561edc3274ae2d9 | http://schema.org/size > [no object/datatype]
+10/03/2026 10:55:36 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:36 -- 		 max: 2 (max found at subject)
+10/03/2026 10:55:36 -- 	N0ee62b8b346d4148aa794357b020efc3 | http://schema.org/about > http://schema.org/VisualArtwork
+10/03/2026 10:55:36 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:36 -- 		 max: 10737 (max found at subject)
+10/03/2026 10:55:36 -- 	Nfe84c608313a4af281977a75e944ed69 | http://schema.org/name > [no object/datatype]
+10/03/2026 10:55:36 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:36 -- 		 max: 6 (max found at subject)
+10/03/2026 10:55:36 -- 	Nbe2f362eb93248f2a972c8299b9b6d49 | http://schema.org/sameAs > [no object/datatype]
+10/03/2026 10:55:36 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:36 -- 		 max: 71 (max found at subject)
+10/03/2026 10:55:36 -- 	N477ed54720de4f46ad721e4c0389254e | http://schema.org/exampleOfWork > http://schema.org/CreativeWork
+10/03/2026 10:55:37 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:37 -- 		 shacl-min: 1
+10/03/2026 10:55:37 -- 		 shacl-max: 1
+10/03/2026 10:55:37 -- 	N28ca9fd17160407dbea4460901af0b4b | http://schema.org/subjectOf > http://schema.org/DefinedTerm
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 31 (max found at subject)
+10/03/2026 10:55:37 -- 	N76c18141e612444881138cedcb78ba16 | http://schema.org/subjectOf > http://schema.org/Place
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 29 (max found at subject)
+10/03/2026 10:55:37 -- 	Nd10e8ab2fb6a4609835a2b16312dea94 | http://schema.org/subjectOf > http://schema.org/PublicationEvent
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 31 (max found at subject)
+10/03/2026 10:55:37 -- 	N202f8f0421f845d8a7b5fcc03930f750 | http://schema.org/subjectOf > http://schema.org/Statement
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 31 (max found at subject)
+10/03/2026 10:55:37 -- http://example.com/shapes/84e14567-63e8-4950-ab19-9ecb3a10fe13 ~ http://schema.org/CreativeWorkSeries
+10/03/2026 10:55:37 -- 	Na1c6ea1671b0496d9d79b6e3fd711683 | http://schema.org/alternateName > [no object/datatype]
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 9 (max found at subject)
+10/03/2026 10:55:37 -- 	Ne3671a2bb857439fa773c057f254a04b | http://schema.org/materialExtent > [no object/datatype]
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:37 -- 		 shacl-max: 1
+10/03/2026 10:55:37 -- 	Nc433b87a04194384b6458b21c4d44168 | http://schema.org/bookEdition > [no object/datatype]
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:37 -- 		 shacl-max: 1
+10/03/2026 10:55:37 -- 	N9ab0fcb59f214a18960bf5abb0372748 | http://schema.org/sameAs > [no object/datatype]
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 34 (max found at subject)
+10/03/2026 10:55:37 -- 	N61dc1c706f294a1d91c6e9b92200719d | http://schema.org/publication > http://schema.org/DefinedTerm
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:37 -- 	Na5a872852f2d45ee98333a7d001468f4 | http://schema.org/publication > http://schema.org/Place
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:37 -- 	N45d1a23a36fa4ec6a226aacb2432cb96 | http://schema.org/publication > http://schema.org/PublicationEvent
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:37 -- 	N08f425043ac2433e994569499849b2a0 | http://schema.org/publication > http://schema.org/Statement
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 11 (max found at subject)
+10/03/2026 10:55:37 -- 	Ncd1d2fe7a00948cfb80e6cfadc955ee3 | http://schema.org/size > [no object/datatype]
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:37 -- 		 shacl-max: 1
+10/03/2026 10:55:37 -- 	Nfb902638d85f418298fce8bb50ae2292 | http://schema.org/exampleOfWork > http://schema.org/CreativeWork
+10/03/2026 10:55:37 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:37 -- 		 shacl-min: 1
+10/03/2026 10:55:37 -- 		 shacl-max: 1
+10/03/2026 10:55:37 -- 	N6466abf28c554e798965e0ff6d9992be | http://schema.org/url > [no object/datatype]
+10/03/2026 10:55:37 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:37 -- 		 shacl-min: 1
+10/03/2026 10:55:37 -- 		 shacl-max: 1
+10/03/2026 10:55:37 -- 	N0470b0f484524e0ba245fe944b0e2e70 | http://schema.org/workExample > http://schema.org/DefinedTerm
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 19 (max found at subject)
+10/03/2026 10:55:37 -- 	Nd15f4fdd31e94adfb76ab50097e5c1a5 | http://schema.org/workExample > http://schema.org/Place
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 19 (max found at subject)
+10/03/2026 10:55:37 -- 	N550bbf0721864271943215c2c3255030 | http://schema.org/workExample > http://schema.org/PublicationEvent
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 19 (max found at subject)
+10/03/2026 10:55:37 -- 	Nd5c1508a918c49d69df60bd566df46f7 | http://schema.org/workExample > http://schema.org/Statement
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 19 (max found at subject)
+10/03/2026 10:55:37 -- 	Nd1b01c1ac80f44f1b659295087a77c05 | http://schema.org/additionalType > http://schema.org/DefinedTerm
+10/03/2026 10:55:37 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:37 -- 		 shacl-min: 1
+10/03/2026 10:55:37 -- 		 shacl-max: 1
+10/03/2026 10:55:37 -- 	Nee7d9f22c21b4dd0a10a04bee8cdea67 | http://schema.org/additionalType > http://schema.org/Place
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:37 -- 		 shacl-max: 1
+10/03/2026 10:55:37 -- 	N522b4c1b72e5492b91a6a9950e89ad89 | http://schema.org/additionalType > http://schema.org/PublicationEvent
+10/03/2026 10:55:37 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:37 -- 		 shacl-min: 1
+10/03/2026 10:55:37 -- 		 shacl-max: 1
+10/03/2026 10:55:37 -- 	Nb7134cfa94af4f628097b1cb977dbf63 | http://schema.org/additionalType > http://schema.org/Statement
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:37 -- 		 shacl-max: 1
+10/03/2026 10:55:37 -- 	N6c5553e7b2424c9092eab35748599d54 | http://schema.org/subjectOf > http://schema.org/DefinedTerm
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 14 (max found at subject)
+10/03/2026 10:55:37 -- 	N7be1677f6b514f46bc9ba0b783e7e3bc | http://schema.org/subjectOf > http://schema.org/Place
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 13 (max found at subject)
+10/03/2026 10:55:37 -- 	N31aecedc1a1b49ca8912dab5b21da836 | http://schema.org/subjectOf > http://schema.org/PublicationEvent
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 14 (max found at subject)
+10/03/2026 10:55:37 -- 	N6f2d24d9198f489995fee660adffda91 | http://schema.org/subjectOf > http://schema.org/Statement
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 14 (max found at subject)
+10/03/2026 10:55:37 -- 	N36595789b9224afcb7d143710a4734bb | http://schema.org/isbn > [no object/datatype]
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 35 (max found at subject)
+10/03/2026 10:55:37 -- 	Ndbb569b7d205462f93bc118ffc26b7d5 | http://schema.org/name > [no object/datatype]
+10/03/2026 10:55:37 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:37 -- 		 shacl-min: 1
+10/03/2026 10:55:37 -- 	N9db94eb7647c422a93c59614dd4967c4 | http://schema.org/about > http://schema.org/VisualArtwork
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 1182 (max found at subject)
+10/03/2026 10:55:37 -- http://example.com/shapes/bd743ed0-6a23-48e0-877b-610c674ef909 ~ http://schema.org/ProductModel
+10/03/2026 10:55:37 -- 	N6bcdc0d7bbeb4844bd7bb9cbb9a09d09 | http://schema.org/bookEdition > [no object/datatype]
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 2 (max found at subject)
+10/03/2026 10:55:37 -- 	Ndddb366ae817455690c4cfa2e51b42e7 | http://schema.org/size > [no object/datatype]
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 2 (max found at subject)
+10/03/2026 10:55:37 -- 	N141fe609a9254e22afbef5265235cfa7 | http://schema.org/alternateName > [no object/datatype]
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 9 (max found at subject)
+10/03/2026 10:55:37 -- 	Nc1ad18bfbff34bbc99aba650d6bf2978 | http://schema.org/about > http://schema.org/VisualArtwork
+10/03/2026 10:55:37 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:37 -- 		 max: 10737 (max found at subject)
+10/03/2026 10:55:37 -- 	Na9be6a28164a4c5895905e0882d22306 | http://schema.org/publication > http://schema.org/DefinedTerm
+10/03/2026 10:55:38 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:38 -- 		 max: 66 (max found at subject)
+10/03/2026 10:55:38 -- 	N4bc058b3739640b3a3a8811c74482d6b | http://schema.org/publication > http://schema.org/Place
+10/03/2026 10:55:38 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:38 -- 		 max: 65 (max found at subject)
+10/03/2026 10:55:38 -- 	N7b4e62a85a1548fa8cfc934d51a8013c | http://schema.org/publication > http://schema.org/PublicationEvent
+10/03/2026 10:55:38 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:38 -- 		 max: 66 (max found at subject)
+10/03/2026 10:55:38 -- 	N377891c1296944869c568d745e5e913a | http://schema.org/publication > http://schema.org/Statement
+10/03/2026 10:55:38 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:38 -- 		 max: 66 (max found at subject)
+10/03/2026 10:55:38 -- 	N53938f080ee34402bf7ba18ce5080b38 | http://schema.org/pagination > [no object/datatype]
+10/03/2026 10:55:38 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:38 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:38 -- 		 shacl-max: 1
+10/03/2026 10:55:38 -- 	Ndaff9aed18dd441c964938c89cc63ae1 | http://schema.org/exampleOfWork > http://schema.org/CreativeWork
+10/03/2026 10:55:38 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:38 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:38 -- 		 shacl-max: 1
+10/03/2026 10:55:38 -- 	Naeb9af1ed0064cb6a82a90ccc7f4ef51 | http://schema.org/subjectOf > http://schema.org/DefinedTerm
+10/03/2026 10:55:38 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:38 -- 		 max: 31 (max found at subject)
+10/03/2026 10:55:38 -- 	N49d5390ace7245c99229d3097d681d5f | http://schema.org/subjectOf > http://schema.org/Place
+10/03/2026 10:55:38 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:38 -- 		 max: 29 (max found at subject)
+10/03/2026 10:55:38 -- 	N5d472a02d53b4d64a0ce6061009e0f01 | http://schema.org/subjectOf > http://schema.org/PublicationEvent
+10/03/2026 10:55:38 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:38 -- 		 max: 31 (max found at subject)
+10/03/2026 10:55:38 -- 	N0a089a01d914404cbafb3e033a20bda1 | http://schema.org/subjectOf > http://schema.org/Statement
+10/03/2026 10:55:38 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:38 -- 		 max: 31 (max found at subject)
+10/03/2026 10:55:38 -- 	Naab63347b6c64c5fb5dd532fbe9bdb82 | http://schema.org/name > [no object/datatype]
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 6 (max found at subject)
+10/03/2026 10:55:39 -- 	N6ade119bec0744c2914aed858eb2c7a3 | http://schema.org/url > [no object/datatype]
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:39 -- 		 shacl-max: 1
+10/03/2026 10:55:39 -- 	N07e851a60dac4f05a64a4b561a6886fb | http://schema.org/additionalType > http://schema.org/DefinedTerm
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:39 -- 		 shacl-max: 1
+10/03/2026 10:55:39 -- 	N6264dbcb92354402b63eb4e211264db3 | http://schema.org/additionalType > http://schema.org/Place
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:39 -- 		 shacl-max: 1
+10/03/2026 10:55:39 -- 	N8dfa77aeb57e45d5b9f5c28c79a85f70 | http://schema.org/additionalType > http://schema.org/PublicationEvent
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:39 -- 		 shacl-max: 1
+10/03/2026 10:55:39 -- 	N21f69f7681444210bd1035f753e9d78b | http://schema.org/additionalType > http://schema.org/Statement
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:39 -- 		 shacl-max: 1
+10/03/2026 10:55:39 -- 	Nb4026f6639804eb49307f8ebabd94dd6 | http://schema.org/isPartOf > http://schema.org/Book
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:39 -- 		 shacl-max: 1
+10/03/2026 10:55:39 -- 	N5676cf38e5194219b751d93967c07318 | http://schema.org/isPartOf > http://schema.org/CreativeWork
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:39 -- 		 shacl-max: 1
+10/03/2026 10:55:39 -- 	Ne189d72d2899471aa0ef41d4b0060bb0 | http://schema.org/isPartOf > http://schema.org/CreativeWorkSeries
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:39 -- 		 shacl-max: 1
+10/03/2026 10:55:39 -- 	Nf18244a50c05492a94a5d6aa472a2d73 | http://schema.org/isPartOf > http://schema.org/ProductModel
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:39 -- 		 shacl-max: 1
+10/03/2026 10:55:39 -- 	N61e02b6566ca4b529d6fe91661643c78 | http://schema.org/workExample > http://schema.org/DefinedTerm
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 19 (max found at subject)
+10/03/2026 10:55:39 -- 	N1f9e849ec3f94adcba66f92559926e58 | http://schema.org/workExample > http://schema.org/Place
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 19 (max found at subject)
+10/03/2026 10:55:39 -- 	N196da03b86814a6c945873b0a62fa4a1 | http://schema.org/workExample > http://schema.org/PublicationEvent
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 19 (max found at subject)
+10/03/2026 10:55:39 -- 	N79df2ca73b67498eb66ef4983c950f98 | http://schema.org/workExample > http://schema.org/Statement
+10/03/2026 10:55:39 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:39 -- 		 max: 19 (max found at subject)
+10/03/2026 10:55:39 -- 	N7c45b5ace63240f49e1020f613e3a6b8 | http://schema.org/isbn > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 42 (max found at subject)
+10/03/2026 10:55:40 -- 	N6f84dbee05ad4e9a890912006d2f8446 | http://schema.org/materialExtent > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 3 (max found at subject)
+10/03/2026 10:55:40 -- 	Nccdfa59ce42a4568846806ba1b2878e7 | http://schema.org/sameAs > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 71 (max found at subject)
+10/03/2026 10:55:40 -- http://example.com/shapes/d8530690-e33d-446f-a4d8-275e7ac17160 ~ http://schema.org/DigitalDocument
+10/03/2026 10:55:40 -- 	Nc0f25c3c30174174b59812343c21478b | http://schema.org/size > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N8fe035c8972f4b38bd2e0d8021960fd1 | http://schema.org/exampleOfWork > http://schema.org/CreativeWork
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N0ced789dfcc4460ba7146efba6aa2075 | http://schema.org/isbn > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 2 (max found at subject)
+10/03/2026 10:55:40 -- 	Nf0d4e0f8e693419dac83906ab98956c2 | http://schema.org/materialExtent > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N2c8d856d7fc348fd9f216d4f8ec52703 | http://schema.org/about > http://schema.org/VisualArtwork
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 5 (max found at subject)
+10/03/2026 10:55:40 -- 	N249f230e2b7c411f96465136b0b48216 | http://schema.org/bookEdition > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N821e413df69648aaab0df6bd9848946e | http://schema.org/workExample > http://schema.org/DefinedTerm
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N1ddec7b022d24264bd4c51eb3a55cb9f | http://schema.org/workExample > http://schema.org/Place
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N0be2982193c242d99dcb3ece2a603c8f | http://schema.org/workExample > http://schema.org/PublicationEvent
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Nacbffc141549476983f685fb31fc08a8 | http://schema.org/workExample > http://schema.org/Statement
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Ncb319347255d42b6804a2b2cce4580c7 | http://schema.org/publication > http://schema.org/DefinedTerm
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	N1f041164715641548d17c3ff3022c8df | http://schema.org/publication > http://schema.org/Place
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 6 (max found at subject)
+10/03/2026 10:55:40 -- 	N5b90cbce89484ceea688734376138856 | http://schema.org/publication > http://schema.org/PublicationEvent
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	Na7b7a9b00e8f4e549b329e622afc94fb | http://schema.org/publication > http://schema.org/Statement
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	N102fafd772854601a2e78dc55811efcc | http://schema.org/name > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Nca21eb4e836940769abe0ab82ce95466 | http://schema.org/additionalType > http://schema.org/DefinedTerm
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Ncb72437236e1416db2ae38f2470da2c4 | http://schema.org/additionalType > http://schema.org/Place
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Nb3a9cdbc468447479c43bb67c2c1a422 | http://schema.org/additionalType > http://schema.org/PublicationEvent
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N6fc8f29204094752b5da3a1881e11820 | http://schema.org/additionalType > http://schema.org/Statement
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N63df81b1206a45298ebbf6a162ceea12 | http://schema.org/subjectOf > http://schema.org/DefinedTerm
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	N043dad4a0ecb475dbca880cc0b50f2ea | http://schema.org/subjectOf > http://schema.org/Place
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	N9625fb49145f472e8f8b10534394d4a1 | http://schema.org/subjectOf > http://schema.org/PublicationEvent
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	N1acd08f93471489ab23aae1c06df4f2c | http://schema.org/subjectOf > http://schema.org/Statement
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	N33499c02ef114fac891579ff51480c6a | http://schema.org/url > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N3959cac37d6443d190cd156d1466bd06 | http://schema.org/sameAs > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- http://example.com/shapes/689c0950-ff84-4390-97fe-bb827ce5e322 ~ http://schema.org/VideoObject
+10/03/2026 10:55:40 -- 	N8aefcd8533a44065b34dbea7f1334c59 | http://schema.org/bookEdition > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N9e12e7438b6143449ae1205444c80fb5 | http://schema.org/publication > http://schema.org/DefinedTerm
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	N8d0bfb8b6dbf4527affc028476ec0b44 | http://schema.org/publication > http://schema.org/Place
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 6 (max found at subject)
+10/03/2026 10:55:40 -- 	N5e1fabd194a64f388e578b36cd4b09b3 | http://schema.org/publication > http://schema.org/PublicationEvent
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	N4dca2ff8e79c4223a7e9578b8366cc6a | http://schema.org/publication > http://schema.org/Statement
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	N766ce79fa29b4df68aab685ccc95b764 | http://schema.org/size > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 2 (max found at subject)
+10/03/2026 10:55:40 -- 	N6157846c811d4178b71fa48d249d381d | http://schema.org/url > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Nfec8d16d3ac6474db730cfb05926f079 | http://schema.org/isbn > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 2 (max found at subject)
+10/03/2026 10:55:40 -- 	Nba0133df7aa9443bb8ad23793fea341e | http://schema.org/about > http://schema.org/VisualArtwork
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 3 (max found at subject)
+10/03/2026 10:55:40 -- 	Nd389bd2eeb5a4c35b3f3c0edee0d3eda | http://schema.org/materialExtent > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N42625fa5ef8747dcadb81019beae2503 | http://schema.org/name > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Ncb50bf084f6f4fecb598ae7d081b9c7e | http://schema.org/additionalType > http://schema.org/DefinedTerm
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N99caa630ca5b4a45bc6ad6687461a366 | http://schema.org/additionalType > http://schema.org/Place
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N460c4794ab484f84bf071492e43777ce | http://schema.org/additionalType > http://schema.org/PublicationEvent
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Nf3a9c4f052d148288c679e6df7335585 | http://schema.org/additionalType > http://schema.org/Statement
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N4ed8cb5631164e4aaf64d19887ba0160 | http://schema.org/exampleOfWork > http://schema.org/CreativeWork
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Nb30cf56b434b4c7ebb97a4bcf41878c0 | http://schema.org/workExample > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 2 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 	N37899ef5bae64242baec7fddcbfb736a | http://schema.org/subjectOf > http://schema.org/DefinedTerm
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	Nbdb6bfcadbb14c588ca7637934c017be | http://schema.org/subjectOf > http://schema.org/Place
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	Nf383f001a25e455e8f2ab714a2779e99 | http://schema.org/subjectOf > http://schema.org/PublicationEvent
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	Nfe9e709b091b4b7e9f115e1510a9d421 | http://schema.org/subjectOf > http://schema.org/Statement
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 7 (max found at subject)
+10/03/2026 10:55:40 -- 	Ne0f02e5a1f064ecaa9b01ed3d72e461b | http://schema.org/sameAs > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- http://example.com/shapes/85758deb-9d7a-4760-bdd2-43d619b67d0b ~ http://schema.org/WebSite
+10/03/2026 10:55:40 -- 	N4bf93bdce0114784affdd1b8897223eb | http://schema.org/workExample > http://schema.org/DefinedTerm
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N11e86ea083444eeaadca8f2bf38044e9 | http://schema.org/workExample > http://schema.org/Place
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Nb80e73da78c147dbac4690d75bb00aca | http://schema.org/workExample > http://schema.org/PublicationEvent
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Nd5c54c01ee2c49b6bc7e253c870a02b5 | http://schema.org/workExample > http://schema.org/Statement
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N051dd0c619174c68ba7a84e9b544e7e2 | http://schema.org/subjectOf > http://schema.org/DefinedTerm
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:40 -- 	N2fd54ad394b143358f244a129a029ba5 | http://schema.org/subjectOf > http://schema.org/Place
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:40 -- 	N66a4485a49b44962bea1cfc61c43ecc3 | http://schema.org/subjectOf > http://schema.org/PublicationEvent
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:40 -- 	N44026baabf21498287ee46da47529a36 | http://schema.org/subjectOf > http://schema.org/Statement
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 4 (max found at subject)
+10/03/2026 10:55:40 -- 	N57e22572ca834f81b2cfd8019219022b | http://schema.org/additionalType > http://schema.org/DefinedTerm
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N5d87d778809646f09a4fdb2a3efe5e4e | http://schema.org/additionalType > http://schema.org/Place
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N846eed4b67f148189216f704c4feaa54 | http://schema.org/additionalType > http://schema.org/PublicationEvent
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Na196f43f7cab425184be7706ec709042 | http://schema.org/additionalType > http://schema.org/Statement
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N4e653bfea8bc47fda00864f4888bfbcb | http://schema.org/url > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	N7af57174f6e34d2ca6cb81eb0bb8c3d9 | http://schema.org/sameAs > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 25 (max found at subject)
+10/03/2026 10:55:40 -- 	Nc17ae6791d7c4361a995fd5fd744a1cf | http://schema.org/exampleOfWork > http://schema.org/CreativeWork
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Naba5d409c8b647e59271cd5a00f6abd6 | http://schema.org/publication > http://schema.org/DefinedTerm
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 6 (max found at subject)
+10/03/2026 10:55:40 -- 	N2c8c6a478bda46dcace15c438e81736e | http://schema.org/publication > http://schema.org/Place
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 6 (max found at subject)
+10/03/2026 10:55:40 -- 	N2973125947e340a4b18fa7ec2c286309 | http://schema.org/publication > http://schema.org/PublicationEvent
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 6 (max found at subject)
+10/03/2026 10:55:40 -- 	N9def85ead2d744c39d263995679cab5e | http://schema.org/publication > http://schema.org/Statement
+10/03/2026 10:55:40 -- 		 min: 0 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 6 (max found at subject)
+10/03/2026 10:55:40 -- 	N5dca51eb8df749e3a572e4c49f754699 | http://schema.org/name > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1
+10/03/2026 10:55:40 -- 	Nc2b4155c18644624875e43efbc1c49ed | http://schema.org/materialExtent > [no object/datatype]
+10/03/2026 10:55:40 -- 		 min: 1 (min found at subject)
+10/03/2026 10:55:40 -- 		 max: 1 (max found at subject)
+10/03/2026 10:55:40 -- 		 shacl-min: 1
+10/03/2026 10:55:40 -- 		 shacl-max: 1

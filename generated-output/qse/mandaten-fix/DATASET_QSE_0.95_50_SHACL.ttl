@@ -1,0 +1,448 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://shaclshapes.org/AgentInPositieShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.lblod.info/id/mandatarissen/63A17E549D253F0E051E4483( ) is a http://data.lblod.info/vocabularies/contacthub/AgentInPositie( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandatarissen/649BED9ECF69EA2BE577A382( ) is a http://data.lblod.info/vocabularies/contacthub/AgentInPositie( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandatarissen/651BD57796FC0E4DDF39AA91( ) is a http://data.lblod.info/vocabularies/contacthub/AgentInPositie( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandatarissen/66278281AA69EC8A8A9E03EF( ) is a http://data.lblod.info/vocabularies/contacthub/AgentInPositie( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandatarissen/6683FB67C77ACE4182718A8C( ) is a http://data.lblod.info/vocabularies/contacthub/AgentInPositie( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeAgentInPositieShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.lblod.info/vocabularies/contacthub/AgentInPositie> .
+
+<http://shaclshapes.org/BeleidsdomeinCodeShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/5C3728849E5B6400090007A2(natuur) is a http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/5E394843A3ACB600080006B2(Interne en externe relaties) is a http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/5ab10d3a4c934f28dc000093(Preventie) is a http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/63038817470F7A00080001E0(Roerend erfgoed en archief) is a http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/675ABA9775ECF8C65D4C5BCF(flankerend onderwijsbeleid) is a http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBeleidsdomeinCodeShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode> .
+
+<http://shaclshapes.org/BestuurVanDeEredienstShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.lblod.info/id/besturenVanDeEredienst/936e984c90bc03653abdae811cf84abe(Kerkfabriek St.-Monulfus en Gondulfus St.-Huibrechts-Lille van Pelt (Neerpelt)) is a http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/besturenVanDeEredienst/ba21d4b543f5c7f8be3cc8f463e52606(Kerkfabriek St.-Jozef van Houthulst) is a http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/besturenVanDeEredienst/bcd49d3a065fbabbf5ae3578472845a5(Kerkfabriek Don Bosco van Torhout) is a http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/besturenVanDeEredienst/bdf549950fb6bafef258e1f0e5687d25(Israëlitische gemeente Mojsdis Chaside Belze van Antwerpen) is a http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/besturenVanDeEredienst/c13018155cfdffc26169eae78f1a300d(Evangelische gemeente Paulus) is a http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBestuurVanDeEredienstShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst> .
+
+<http://shaclshapes.org/BestuurseenheidShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.lblod.info/id/besturenVanDeEredienst/5c53969f936e5f78d12e9b96d8b22941(Kerkfabriek Nieuwerkerken van Nieuwerkerken) is a http://data.vlaanderen.be/ns/besluit#Bestuurseenheid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/besturenVanDeEredienst/dc0a001ceca625d892d44e755e704bbd(Kerkfabriek O.-L.-Vrouw Tenhemelopneming van Hasselt (Kermt)) is a http://data.vlaanderen.be/ns/besluit#Bestuurseenheid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/besturenVanDeEredienst/f3817477f72d75ea3a24f72183815bda(Kerkfabriek St.-Jozef Sledderlo van Genk) is a http://data.vlaanderen.be/ns/besluit#Bestuurseenheid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/bestuurseenheden/96d87c4956c98414938dd5fceeb05f65feebf21fbe5918e6d23bc2b58a7fc716(PZ Assenede/Evergem) is a http://data.vlaanderen.be/ns/besluit#Bestuurseenheid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/bestuurseenheden/c4486571e2cf6a0656e29a47a3f210cf9bf732876320953c5759aef27b639842(Vereniging Ons Tehuis voor Zuid-West-Vlaanderen) is a http://data.vlaanderen.be/ns/besluit#Bestuurseenheid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBestuurseenheidShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/besluit#Bestuurseenheid> .
+
+<http://shaclshapes.org/BestuursorgaanClassificatieCodeShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/0dbc70ec-6be9-4997-b8e1-11b6c0542382(Bevoegd beslissingsorgaan) is a http://lblod.data.gift/vocabularies/organisatie/BestuursorgaanClassificatieCode( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/0dbc70ec-6be9-4997-b8e1-11b6c0542382(Bevoegd beslissingsorgaan) is a http://mu.semte.ch/vocabularies/ext/BestuursorgaanClassificatieCode( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/11f0af9e-016c-4e0b-983a-d8bc73804abc(Adjunct-algemeen directeur) is a http://lblod.data.gift/vocabularies/organisatie/BestuursorgaanClassificatieCode( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/180a2fba-6ca9-4766-9b94-82006bb9c709(Gouverneur) is a http://mu.semte.ch/vocabularies/ext/BestuursorgaanClassificatieCode( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/39854196-f214-4688-87a1-d6ad12baa2fa(Algemeen directeur) is a http://lblod.data.gift/vocabularies/organisatie/BestuursorgaanClassificatieCode( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/5733254e-73ff-4844-8d43-7afb7ec726e8(Directiecomité) is a http://mu.semte.ch/vocabularies/ext/BestuursorgaanClassificatieCode( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/5ab0e9b8a3b2ca7c5e000007(Raad voor Maatschappelijk Welzijn) is a http://mu.semte.ch/vocabularies/ext/BestuursorgaanClassificatieCode( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/5ab0e9b8a3b2ca7c5e00000a(Districtsraad) is a http://lblod.data.gift/vocabularies/organisatie/BestuursorgaanClassificatieCode( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/5ab0e9b8a3b2ca7c5e00000a(Districtsraad) is a http://mu.semte.ch/vocabularies/ext/BestuursorgaanClassificatieCode( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/7148e12a-ae03-4a7b-bb16-7b6269b84175(College) is a http://lblod.data.gift/vocabularies/organisatie/BestuursorgaanClassificatieCode( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBestuursorgaanClassificatieCodeShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://lblod.data.gift/vocabularies/organisatie/BestuursorgaanClassificatieCode> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BestuursorgaanClassificatieCode> .
+
+<http://shaclshapes.org/BestuursorgaanShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.lblod.info/id/bestuursorganen/1986c3a7e016bdb62dba1693e43c47ef244ec501942b5246f34d04e18801d118(Vast Bureau Ranst) is a http://data.vlaanderen.be/ns/besluit#Bestuursorgaan( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/bestuursorganen/9ccd7c7bc351d42935cb2fae8807329d72ddf6de92da52539ddf3ddb43169679(Algemeen directeur Wetteren) is a http://data.vlaanderen.be/ns/besluit#Bestuursorgaan( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/bestuursorganen/d30ea34c93a2c91d6ed98c1553ce3c2c7f2fd9d96df4a7f7948d6660ff087743(Raad voor Maatschappelijk Welzijn Vilvoorde) is a http://data.vlaanderen.be/ns/besluit#Bestuursorgaan( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/bestuursorganen/fd2785c0673b6901271933679b6ee8cffeb1b09ea5bdfa8c5a15e8df558e659c( ) is a http://data.vlaanderen.be/ns/besluit#Bestuursorgaan( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/eredienstbestuursorganen/aed6501b09710eecb5a51afbc024f164( ) is a http://data.vlaanderen.be/ns/besluit#Bestuursorgaan( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBestuursorgaanShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/besluit#Bestuursorgaan> .
+
+<http://shaclshapes.org/CentraalBestuurVanDeEredienstShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.lblod.info/id/centraleBesturenVanDeEredienst/10eb80ee6549660245c81adc23abc9a5(CKB Knesselare) is a http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/centraleBesturenVanDeEredienst/42dcb2faa3fb60b0fb2c4dde3b4f7049(CKB Halle) is a http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/centraleBesturenVanDeEredienst/9bde6213ed1dff945fb57fb58c183b0c(CKB Hamme) is a http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/centraleBesturenVanDeEredienst/aa540078b526c2b26fdb2cd64c6a23ca(CKB Meulebeke) is a http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/centraleBesturenVanDeEredienst/cb4a58c98fe794e9f52b9402c01ef9e3(CKB Ranst) is a http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeCentraalBestuurVanDeEredienstShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst> .
+
+<http://shaclshapes.org/ConceptShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/6729E8A2A12BA678FC8872D4(Internationale samenwerking) is a http://www.w3.org/2004/02/skos/core#Concept( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/673B0F6A0926B1E89E0D52B2(Inname openbaar domein) is a http://www.w3.org/2004/02/skos/core#Concept( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/673F793AECC681A256F7FA5F(Buurtwerking) is a http://www.w3.org/2004/02/skos/core#Concept( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/6745CD160C4268E3E46F3A53(Zorgzame buurten) is a http://www.w3.org/2004/02/skos/core#Concept( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/6756AE617806F7390C7754E2(sport) is a http://www.w3.org/2004/02/skos/core#Concept( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeConceptShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://shaclshapes.org/FractieShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.lblod.info/id/fracties/5E901DC9A3ACB60008000B41( ) is a http://data.vlaanderen.be/ns/mandaat#Fractie( ); has http://www.w3.org/ns/org#memberOf( ); has https://www.w3.org/ns/regorg#legalName( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/fracties/64900C26EEAFF3E26065846A( ) is a http://data.vlaanderen.be/ns/mandaat#Fractie( ); has http://www.w3.org/ns/org#memberOf( ); has https://www.w3.org/ns/regorg#legalName( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/fracties/671B6D850C2BDDC7570103DF( ) is a http://data.vlaanderen.be/ns/mandaat#Fractie( ); has http://www.w3.org/ns/org#memberOf( ); has https://www.w3.org/ns/regorg#legalName( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/fracties/673357DF772DCFC8D656095F( ) is a http://data.vlaanderen.be/ns/mandaat#Fractie( ); has http://www.w3.org/ns/org#memberOf( ); has https://www.w3.org/ns/regorg#legalName( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/fracties/67335F25D2F339806D122635( ) is a http://data.vlaanderen.be/ns/mandaat#Fractie( ); has http://www.w3.org/ns/org#memberOf( ); has https://www.w3.org/ns/regorg#legalName( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeFractieShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/legalNameFractieShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/memberOfFractieShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/uuidFractieShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/mandaat#Fractie> .
+
+<http://shaclshapes.org/LocationShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.lblod.info/id/werkingsgebieden/0bdeb160-01dd-11f1-a85d-f536cdcb153e(Destelbergen, Merelbeke-Melle, Oosterzele) is a http://www.w3.org/ns/prov#Location( ); has http://www.w3.org/2000/01/rdf-schema#label( ); has http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://mu.semte.ch/vocabularies/ext/werkingsgebiedNiveau( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/werkingsgebieden/35d77dbd06c8d621f6a74ce951bcf09b72588cfa4648b34ad9c9e874fc996812(Herk-de-Stad) is a http://www.w3.org/ns/prov#Location( ); has http://www.w3.org/2000/01/rdf-schema#label( ); has http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://mu.semte.ch/vocabularies/ext/werkingsgebiedNiveau( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/werkingsgebieden/70b1eac0-87f9-11f0-9ab2-fd01d76a1444(Bilzen-Hoeselt, Diepenbeek, Genk, Lanaken, Zutendaal) is a http://www.w3.org/ns/prov#Location( ); has http://www.w3.org/2000/01/rdf-schema#label( ); has http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://mu.semte.ch/vocabularies/ext/werkingsgebiedNiveau( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/werkingsgebieden/814996a1984d3c12a5c4e5078e1edfa110150cb679f2c9e10d0045c720e96788(Damme) is a http://www.w3.org/ns/prov#Location( ); has http://www.w3.org/2000/01/rdf-schema#label( ); has http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://mu.semte.ch/vocabularies/ext/werkingsgebiedNiveau( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/werkingsgebieden/c9a20ef0-01dc-11f1-a85d-f536cdcb153e(Denderleeuw, Haaltert) is a http://www.w3.org/ns/prov#Location( ); has http://www.w3.org/2000/01/rdf-schema#label( ); has http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( ); has http://mu.semte.ch/vocabularies/ext/werkingsgebiedNiveau( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeLocationShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelLocationShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/uuidLocationShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/werkingsgebiedNiveauLocationShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Location> .
+
+<http://shaclshapes.org/MandaatShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.lblod.info/id/mandaten/28b5895a11f58bc0615e1d84a95a0af7( ) is a http://data.vlaanderen.be/ns/mandaat#Mandaat( ); has http://www.w3.org/ns/org#role( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandaten/2b32e31763fb700c0d82d2078ce5ab2c( ) is a http://data.vlaanderen.be/ns/mandaat#Mandaat( ); has http://www.w3.org/ns/org#role( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandaten/6592d3cd6e1ecbe25b93352924ce6eb83d9b28366e3f0c5c0b3c7c971f697608( ) is a http://data.vlaanderen.be/ns/mandaat#Mandaat( ); has http://www.w3.org/ns/org#role( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandaten/6f0576b59d3485939b4ea385e32762b5( ) is a http://data.vlaanderen.be/ns/mandaat#Mandaat( ); has http://www.w3.org/ns/org#role( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandaten/d29e0ed9b5fd9fbc21df6f9d03e9ef9f( ) is a http://data.vlaanderen.be/ns/mandaat#Mandaat( ); has http://www.w3.org/ns/org#role( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeMandaatShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/roleMandaatShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/uuidMandaatShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/mandaat#Mandaat> .
+
+<http://shaclshapes.org/MandatarisShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.lblod.info/id/mandatarissen/60DC4D66CA2C910008000048( ) is a http://data.vlaanderen.be/ns/mandaat#Mandataris( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandatarissen/81e7e556-9c6c-4a84-83e7-d32c7885e9dc( ) is a http://data.vlaanderen.be/ns/mandaat#Mandataris( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandatarissen/99acbc16e1803c3ffea1bc16c060f15dd0b55a54ecb351d332bf42426dbe48db( ) is a http://data.vlaanderen.be/ns/mandaat#Mandataris( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandatarissen/c4cf76a2-21ee-4faf-a811-d224d5ff93c8( ) is a http://data.vlaanderen.be/ns/mandaat#Mandataris( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandatarissen/fa7dafc3-c47c-4e62-840e-588fb8321889( ) is a http://data.vlaanderen.be/ns/mandaat#Mandataris( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeMandatarisShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/mandaat#Mandataris> .
+
+<http://shaclshapes.org/MembershipShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.lblod.info/id/lidmaatschap/55c924e22020a14134ef47310af1a92066e57617( ) is a http://www.w3.org/ns/org#Membership( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/lidmaatschap/bfce8424e2cf72e6a5919814bd9600c1e862ca52( ) is a http://www.w3.org/ns/org#Membership( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/lidmaatschap/c60499ef849beb0ea32d8e991f337d80455ed3ba( ) is a http://www.w3.org/ns/org#Membership( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/lidmaatschappen/5F4BB369F9D30200080008B6( ) is a http://www.w3.org/ns/org#Membership( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/lidmaatschappen/63DD09DBCD74AD1FBD0393FB( ) is a http://www.w3.org/ns/org#Membership( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeMembershipShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/uuidMembershipShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/org#Membership> .
+
+<http://shaclshapes.org/PersonShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.lblod.info/id/personen/26e64f4da36711868aedf13ee5dd413510428f65f12179e26e6dd54dac2138a1( ) is a http://www.w3.org/ns/person#Person( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/personen/6d137839b51053bf5598086bd7e3738e98650df19ae58be918c947115cbaf918( ) is a http://www.w3.org/ns/person#Person( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/personen/88afdee3ced8316f24df19a5a370974eef3f5ed033f71b845d6d251ca361cb5f( ) is a http://www.w3.org/ns/person#Person( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/personen/d61812ff37fea6e74635a282125f08a5f02bee93318d6b0ce99d81bcb47a3d89( ) is a http://www.w3.org/ns/person#Person( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/personen/e1da9818-c277-46ee-852a-3991a6303a3e( ) is a http://www.w3.org/ns/person#Person( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypePersonShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/person#Person> .
+
+<http://shaclshapes.org/PostShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.lblod.info/id/mandaten/21441fba505e785ea0fdf76858c6b245( ) is a http://www.w3.org/ns/org#Post( ); has http://www.w3.org/ns/org#role( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandaten/9ad80893a46051031c8cb411b7b7fbe5( ) is a http://www.w3.org/ns/org#Post( ); has http://www.w3.org/ns/org#role( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandaten/ccb8cdfa3fa3f0e6a28dabfc4f176a1e( ) is a http://www.w3.org/ns/org#Post( ); has http://www.w3.org/ns/org#role( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandaten/de66b7c255082c31428d646e2bfd9a06cd4702ff7b15d23fac6ad8e22acb4c97( ) is a http://www.w3.org/ns/org#Post( ); has http://www.w3.org/ns/org#role( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/mandaten/f6c6536339464cfd664e85fe47cf5111792a18e073c54dd14fd04577b7a32b95( ) is a http://www.w3.org/ns/org#Post( ); has http://www.w3.org/ns/org#role( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypePostShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/rolePostShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/uuidPostShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/org#Post> .
+
+<http://shaclshapes.org/TombstoneShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://example.org/example> "http://data.lblod.info/id/lidmaatschappen/050D348F-DCC6-11EF-BC01-8152F78DE954( ) is a http://www.w3.org/ns/activitystreams#Tombstone( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/lidmaatschappen/050D3952-DCC6-11EF-BC01-8152F78DE954( ) is a http://www.w3.org/ns/activitystreams#Tombstone( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/lidmaatschappen/1add338d-d832-46d6-8ad5-03151c7d0f07( ) is a http://www.w3.org/ns/activitystreams#Tombstone( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/lidmaatschappen/c4e8b60a-bfd1-414f-9663-2146a7328200( ) is a http://www.w3.org/ns/activitystreams#Tombstone( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://example.org/example> "http://data.lblod.info/id/lidmaatschappen/d1b42302-869d-4049-a6c7-0c5f04f3ad49( ) is a http://www.w3.org/ns/activitystreams#Tombstone( ); has at least 1 http://mu.semte.ch/vocabularies/core/uuid( ); has http://www.w3.org/1999/02/22-rdf-syntax-ns#type( )" ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeTombstoneShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/uuidTombstoneShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/activitystreams#Tombstone> .
+
+<http://shaclshapes.org/instanceTypeAgentInPositieShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://data.lblod.info/vocabularies/contacthub/AgentInPositie>( )" ;
+  <http://example.org/example> "<http://data.vlaanderen.be/ns/mandaat#Mandataris>( )" ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.lblod.info/vocabularies/contacthub/AgentInPositie> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBeleidsdomeinCodeShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode>( )" ;
+  <http://example.org/example> "<http://www.w3.org/2004/02/skos/core#Concept>( )" ;
+  <http://www.w3.org/ns/shacl#in> ( <http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBestuurVanDeEredienstShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst>( )" ;
+  <http://example.org/example> "<http://data.vlaanderen.be/ns/besluit#Bestuurseenheid>( )" ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBestuurseenheidShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst>( )" ;
+  <http://example.org/example> "<http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst>( )" ;
+  <http://example.org/example> "<http://data.vlaanderen.be/ns/besluit#Bestuurseenheid>( )" ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/besluit#Bestuurseenheid> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBestuursorgaanClassificatieCodeShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://lblod.data.gift/vocabularies/organisatie/BestuursorgaanClassificatieCode>( )" ;
+  <http://example.org/example> "<http://mu.semte.ch/vocabularies/ext/BestuursorgaanClassificatieCode>( )" ;
+  <http://example.org/example> "<http://www.w3.org/2004/02/skos/core#Concept>( )" ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://lblod.data.gift/vocabularies/organisatie/BestuursorgaanClassificatieCode> ) ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://mu.semte.ch/vocabularies/ext/BestuursorgaanClassificatieCode> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBestuursorgaanShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://data.vlaanderen.be/ns/besluit#Bestuursorgaan>( )" ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/besluit#Bestuursorgaan> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeCentraalBestuurVanDeEredienstShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst>( )" ;
+  <http://example.org/example> "<http://data.vlaanderen.be/ns/besluit#Bestuurseenheid>( )" ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeConceptShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode>( )" ;
+  <http://example.org/example> "<http://mu.semte.ch/vocabularies/ext/BestuurseenheidClassificatieCode>( )" ;
+  <http://example.org/example> "<http://mu.semte.ch/vocabularies/ext/OrganizationClassificationCode>( )" ;
+  <http://example.org/example> "<http://www.w3.org/2004/02/skos/core#Concept>( )" ;
+  <http://example.org/example> "<http://www.w3.org/ns/prov#Location>( )" ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/2004/02/skos/core#Concept> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeFractieShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://data.vlaanderen.be/ns/mandaat#Fractie>( )" ;
+  <http://example.org/example> "<http://www.w3.org/ns/activitystreams#Tombstone>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "7607"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/mandaat#Fractie> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeLocationShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://www.w3.org/2004/02/skos/core#Concept>( )" ;
+  <http://example.org/example> "<http://www.w3.org/ns/prov#Location>( )" ;
+  <http://shaclshapes.org/confidence> 9.9254E-1 ;
+  <http://shaclshapes.org/support> "665"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/ns/prov#Location> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeMandaatShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://data.vlaanderen.be/ns/mandaat#Mandaat>( )" ;
+  <http://example.org/example> "<http://www.w3.org/ns/org#Post>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "52267"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/mandaat#Mandaat> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeMandatarisShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://data.lblod.info/vocabularies/contacthub/AgentInPositie>( )" ;
+  <http://example.org/example> "<http://data.vlaanderen.be/ns/mandaat#Mandataris>( )" ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/mandaat#Mandataris> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeMembershipShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://www.w3.org/ns/activitystreams#Tombstone>( )" ;
+  <http://example.org/example> "<http://www.w3.org/ns/org#Membership>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "67587"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/ns/org#Membership> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypePersonShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://www.w3.org/ns/person#Person>( )" ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/ns/person#Person> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypePostShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://data.vlaanderen.be/ns/mandaat#Mandaat>( )" ;
+  <http://example.org/example> "<http://www.w3.org/ns/org#Post>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "52189"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/ns/org#Post> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeTombstoneShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://data.vlaanderen.be/ns/mandaat#Fractie>( )" ;
+  <http://example.org/example> "<http://www.w3.org/ns/activitystreams#Tombstone>( )" ;
+  <http://example.org/example> "<http://www.w3.org/ns/org#Membership>( )" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "173"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/ns/activitystreams#Tombstone> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/labelLocationShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "Affligem, Asse, Beersel, Bever, Dilbeek, Drogenbos, Galmaarden, Gooik, Grimbergen, Halle, Herne, Kapelle-op-den-Bos, Kortenberg, Kraainem, Lennik, Liedekerke, Linkebeek, Londerzeel, Machelen, Meise, Merchtem, Opwijk, Pepingen, Roosdaal, Sint-Genesius-Rode, Sint-Pieters-Leeuw, Steenokkerzeel, Ternat, Vilvoorde, Wemmel, Wezembeek-Oppem, Zaventem, Zemst" ;
+  <http://example.org/example> "Asse, Dilbeek" ;
+  <http://example.org/example> "Heusden-Zolder" ;
+  <http://example.org/example> "Kortrijk, Wevelgem" ;
+  <http://example.org/example> "Lede, Sint-Lievens-Houtem" ;
+  <http://shaclshapes.org/confidence> 9.9254E-1 ;
+  <http://shaclshapes.org/support> "665"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/legalNameFractieShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "    CD&V" ;
+  <http://example.org/example> "  N-VA" ;
+  <http://example.org/example> "Groen" ;
+  <http://example.org/example> "N-VA" ;
+  <http://example.org/example> "sp.a-Groen" ;
+  <http://shaclshapes.org/confidence> 9.9974E-1 ;
+  <http://shaclshapes.org/support> "7605"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <https://www.w3.org/ns/regorg#legalName> .
+
+<http://shaclshapes.org/memberOfFractieShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://data.lblod.info/id/bestuursorganen/2691f26ea289b593a0796657d45180dab3ddd517ef5c7d3e5c4cd1d21e9c79c5>( )" ;
+  <http://example.org/example> "<http://data.lblod.info/id/bestuursorganen/27d976bca8665b26a25b511693aade62a3d07b8933a524a8e5b5a0b0d04966b5>( )" ;
+  <http://example.org/example> "<http://data.lblod.info/id/bestuursorganen/32b62279e6928cf2e7167103b9911891972194fa97accc3aa9abbbf3e74cb4e8>( )" ;
+  <http://example.org/example> "<http://data.lblod.info/id/bestuursorganen/98135792dce5b2201a210510b0c51f42e21b61760b00c641fbeb117b082fc823>( )" ;
+  <http://example.org/example> "<http://data.lblod.info/id/bestuursorganen/de7c0669ad42f52c439eea5676ff849139d6045681f49fdfa6376779340ccc13>( )" ;
+  <http://shaclshapes.org/confidence> 9.9422E-1 ;
+  <http://shaclshapes.org/support> "7563"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> <http://data.vlaanderen.be/ns/besluit#Bestuursorgaan> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/BestuursorgaanShape> ;
+  <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/org#memberOf> .
+
+<http://shaclshapes.org/roleMandaatShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<http://data.vlaanderen.be/id/concept/BestuursfunctieCode/180d13930d6f1a3938e0aa7fa9990002>(Penningmeester van het bestuur van de eredienst)" ;
+  <http://example.org/example> "<http://data.vlaanderen.be/id/concept/BestuursfunctieCode/5ab0e9b8a3b2ca7c5e000018>(Voorzitter van het Vast bureau)" ;
+  <http://example.org/example> "<http://data.vlaanderen.be/id/concept/BestuursfunctieCode/5ac134b9800b81da3c450d6b9605cef2>(Secretaris van het bestuur van de eredienst)" ;
+  <http://example.org/example> "<http://data.vlaanderen.be/id/concept/BestuursfunctieCode/8c91c321ad477c4fc372ee36358d3ed4>(Expert van het centraal bestuur van de eredienst)" ;
+  <http://example.org/example> "<http://data.vlaanderen.be/id/concept/BestuursfunctieCode/a8b5509b-f86b-48f8-94d6-fe463a9b77e3>(Bestuurslid van het bestuur van de eredienst (Grote Helft))" ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.9393E-1 ;
+    <http://shaclshapes.org/support> "51950"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://mu.semte.ch/vocabularies/ext/BestuursfunctieCode> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.9393E-1 ;
+    <http://shaclshapes.org/support> "51950"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://lblod.data.gift/vocabularies/organisatie/BestuursfunctieCode> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/org#role> .
+
+<http://shaclshapes.org/rolePostShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "<hhttp://data.vlaanderen.be/id/concept/BestuursfunctieCode/e2af0ea1a6af96cfb698ac39ad985eea>( )" ;
+  <http://example.org/example> "<http://data.vlaanderen.be/id/concept/BestuursfunctieCode/180d13930d6f1a3938e0aa7fa9990002>(Penningmeester van het bestuur van de eredienst)" ;
+  <http://example.org/example> "<http://data.vlaanderen.be/id/concept/BestuursfunctieCode/2962f0bd-2836-4758-9866-8ce8ea2c536f>(Bestuurslid van het bestuur van de eredienst (Kleine Helft))" ;
+  <http://example.org/example> "<http://data.vlaanderen.be/id/concept/BestuursfunctieCode/5ab0e9b8a3b2ca7c5e000017>(Lid van het Vast Bureau)" ;
+  <http://example.org/example> "<http://data.vlaanderen.be/id/concept/BestuursfunctieCode/5ac134b9800b81da3c450d6b9605cef2>(Secretaris van het bestuur van de eredienst)" ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.9393E-1 ;
+    <http://shaclshapes.org/support> "51872"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://mu.semte.ch/vocabularies/ext/BestuursfunctieCode> ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.9393E-1 ;
+    <http://shaclshapes.org/support> "51872"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://lblod.data.gift/vocabularies/organisatie/BestuursfunctieCode> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/org#role> .
+
+<http://shaclshapes.org/uuidFractieShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "21bb0ad3184237a0499e6654ec18cf1e612f7cf4df301471f2ef79ced7570fec" ;
+  <http://example.org/example> "5C46F06257753A00090000E8" ;
+  <http://example.org/example> "5C507E8FCEE7BF0009000241" ;
+  <http://example.org/example> "5C6ED771D5BECA000C000215" ;
+  <http://example.org/example> "7a71eed029de41d46bdf758ecf255dda94c54a48f9391118aac4c9176b7b56ba" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "7607"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://mu.semte.ch/vocabularies/core/uuid> .
+
+<http://shaclshapes.org/uuidLocationShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "23748190-8322-11f0-9ab2-fd01d76a1444" ;
+  <http://example.org/example> "4e9145296dd19d485ec42a16eb637eac1f0f19a96472041ee6079bae45623c10" ;
+  <http://example.org/example> "ae494f69be10f82afa1d7b0937abd22f490e09d268c743ea7b8e6a66c516d4fc" ;
+  <http://example.org/example> "cb88ad5637546b3555148dd0f3ed4f310a959b8f01212239e8bc37b790fcd4b3" ;
+  <http://example.org/example> "d1a7c48910cb2fc1ab3145d9a69e125d46c37dedf83d29d5f386697bc87892dd" ;
+  <http://shaclshapes.org/confidence> 9.9254E-1 ;
+  <http://shaclshapes.org/support> "665"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://mu.semte.ch/vocabularies/core/uuid> .
+
+<http://shaclshapes.org/uuidMandaatShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "12fda4b54d3572ca2e19967e3a79cf3c" ;
+  <http://example.org/example> "24b26f43147ac865976521282f96b4a2" ;
+  <http://example.org/example> "45385a5907084de8b9816b5dd1db085d" ;
+  <http://example.org/example> "7e14fc69bc158f9fd7f1d3566dd5f86e" ;
+  <http://example.org/example> "b023dffbe005feeadd02e3dbc703b939" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "52267"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://mu.semte.ch/vocabularies/core/uuid> .
+
+<http://shaclshapes.org/uuidMembershipShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "49de5caf-751e-4492-a139-f043162b2758" ;
+  <http://example.org/example> "4a843710-f1e2-4999-8fc0-534a8f0878e7" ;
+  <http://example.org/example> "5F4ADBA1F9D30200080006F5" ;
+  <http://example.org/example> "a14188bd3765e5154fd84ef393a2c75bc50859aa" ;
+  <http://example.org/example> "b34d81a68925992556470fde8fd4aa42c1dbfcae" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "67587"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://mu.semte.ch/vocabularies/core/uuid> .
+
+<http://shaclshapes.org/uuidPostShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "378fa91fd69b71520a287e4fcbc5744a" ;
+  <http://example.org/example> "5f3ee9a0f0b31fed07fbb889edd13135c75071d11d3c3ccfefd8756904af2a19" ;
+  <http://example.org/example> "8be263812286c26090a92b5f45412fd6" ;
+  <http://example.org/example> "9ec1a00db78ff2288d768216f854feab59282b4b620b6ce82af26ab14d8e742b" ;
+  <http://example.org/example> "c6e5d65b910c73b6d5ab4cd41c624329" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "52189"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://mu.semte.ch/vocabularies/core/uuid> .
+
+<http://shaclshapes.org/uuidTombstoneShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "050D2C82-DCC6-11EF-BC01-8152F78DE954" ;
+  <http://example.org/example> "b4bbfe4b-020b-4a76-a01e-3f956c68b3df" ;
+  <http://example.org/example> "c78d057c-4db0-403f-90c0-addec2898773" ;
+  <http://example.org/example> "ceab3d99-ec02-40c4-a4ee-edcde8eddb42" ;
+  <http://example.org/example> "e6a02cbf-3eca-4bd0-8ea5-f72a68fbad76" ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "173"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://mu.semte.ch/vocabularies/core/uuid> .
+
+<http://shaclshapes.org/werkingsgebiedNiveauLocationShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://example.org/example> "District" ;
+  <http://example.org/example> "Gemeente" ;
+  <http://example.org/example> "Provincie" ;
+  <http://example.org/example> "Referentieregio" ;
+  <http://example.org/example> "Samengesteld werkingsgebied" ;
+  <http://shaclshapes.org/confidence> 9.9254E-1 ;
+  <http://shaclshapes.org/support> "665"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://mu.semte.ch/vocabularies/ext/werkingsgebiedNiveau> .
+
+

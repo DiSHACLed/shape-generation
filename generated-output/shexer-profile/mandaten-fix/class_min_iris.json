@@ -1,0 +1,272 @@
+{
+  "http://data.vlaanderen.be/ns/mandaat#Mandataris": [
+    "%",
+    "http://data.lblod.info/id/mandatarissen/00548b0f-e1b9-4af4-a34b-b036e17fbc9e",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://data.vlaanderen.be/ns/mandaat#Mandataris",
+      "http://data.vlaanderen.be/ns/mandaat#status": "http://data.vlaanderen.be/id/concept/MandatarisStatusCode/21063a5b-912c-4241-841c-cc7fb3c73e75",
+      "http://data.vlaanderen.be/ns/mandaat#rangorde": "Drie\u00ebntwintigste lid",
+      "http://data.vlaanderen.be/ns/mandaat#isBestuurlijkeAliasVan": "http://data.lblod.info/id/personen/a29033e9-c752-4d9f-9068-47c80eeaf77d",
+      "http://mu.semte.ch/vocabularies/core/uuid": "00548b0f-e1b9-4af4-a34b-b036e17fbc9e",
+      "http://data.vlaanderen.be/ns/mandaat#start": "2025-08-05T22:00:00Z",
+      "http://data.vlaanderen.be/ns/mandaat#einde": "2030-12-31T22:59:59Z",
+      "http://www.w3.org/ns/org#holds": "http://data.lblod.info/id/mandaten/42315ed10d4a3692914bcbdd568fc92cbf8f1f2d7fc8aac849690c2f7df246e7",
+      "http://www.w3.org/ns/org#hasMembership": "http://data.lblod.info/id/lidmaatschappen/E6CB0AF0-5100-11F0-9EC8-EAA73EBAC1A7",
+      "http://data.vlaanderen.be/ns/mandaat#beleidsdomein": "http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/5ab10d3a4c934f28dc000037",
+      "http://data.vlaanderen.be/ns/mandaat#isTijdelijkVervangenDoor": "http://data.lblod.info/id/mandatarissen/6878B2459A53CD016F5DE6D6"
+    }
+  ],
+  "http://data.lblod.info/vocabularies/contacthub/AgentInPositie": [
+    "%",
+    "http://data.lblod.info/id/mandatarissen/06e5c123-b69b-4914-9f7a-d6aabe3adf0c",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://data.vlaanderen.be/ns/mandaat#Mandataris",
+      "http://data.vlaanderen.be/ns/mandaat#start": "2025-02-26T23:00:00Z",
+      "http://mu.semte.ch/vocabularies/core/uuid": "06e5c123-b69b-4914-9f7a-d6aabe3adf0c",
+      "http://data.vlaanderen.be/ns/mandaat#status": "http://data.vlaanderen.be/id/concept/MandatarisStatusCode/21063a5b-912c-4241-841c-cc7fb3c73e75",
+      "http://data.vlaanderen.be/ns/mandaat#einde": "2030-11-30T23:59:59Z",
+      "http://data.vlaanderen.be/ns/mandaat#isBestuurlijkeAliasVan": "http://data.lblod.info/id/personen/358447a0faafacb36559f1f299d275546f711e0ee316061538a4c0d7933497f2",
+      "http://data.vlaanderen.be/ns/mandaat#rangorde": "Elfde lid",
+      "http://www.w3.org/ns/org#hasMembership": "http://data.lblod.info/id/lidmaatschappen/1E266806-F4EE-11EF-BC01-8152F78DE954",
+      "http://www.w3.org/ns/org#holds": "http://data.lblod.info/id/mandaten/a7a7ca12a58bba70e9bd146f3666ce47c30e93aa1609ac85eb15f4944bb57156",
+      "http://data.vlaanderen.be/ns/mandaat#beleidsdomein": "http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/5ab10d3a4c934f28dc0000a2"
+    }
+  ],
+  "http://www.w3.org/ns/person#Person": [
+    "%",
+    "http://data.lblod.info/id/personen/0000ff1401f8f6ea89266fb0f35465bba2271766f435a54d753001d3f4a510ec",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/person#Person",
+      "http://data.vlaanderen.be/ns/persoon#gebruikteVoornaam": "Renate",
+      "http://xmlns.com/foaf/0.1/familyName": "Hufkens",
+      "http://mu.semte.ch/vocabularies/core/uuid": "0000ff1401f8f6ea89266fb0f35465bba2271766f435a54d753001d3f4a510ec",
+      "http://xmlns.com/foaf/0.1/name": "",
+      "http://www.w3.org/2002/07/owl#sameAs": "http://data.lblod.info/id/personen/0bd64b06-c6ef-41e7-97ea-45bf1b4cef63"
+    }
+  ],
+  "http://data.vlaanderen.be/ns/mandaat#Fractie": [
+    "%",
+    "http://data.lblod.info/fracties/052caeb8-f7ae-4e08-88fd-1020fab8e9b6",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://data.vlaanderen.be/ns/mandaat#Fractie",
+      "http://www.w3.org/ns/org#linkedTo": "http://data.lblod.info/id/bestuurseenheden/986bc8bd29af2847bdaa104fe5ff052201032f3e5b95d7b2ae3a3c5486842a94",
+      "http://www.w3.org/ns/org#memberOf": "http://data.lblod.info/id/bestuursorganen/520b34b7bb1c672187c3280650696fbb9d05bbbafde2f0d0dded8860b6aaddd4",
+      "https://www.w3.org/ns/regorg#legalName": "Onafhankelijk",
+      "http://mu.semte.ch/vocabularies/core/uuid": "052caeb8-f7ae-4e08-88fd-1020fab8e9b6"
+    }
+  ],
+  "http://www.w3.org/ns/activitystreams#Tombstone": [
+    "%",
+    "http://data.lblod.info/id/fracties/67ACB474AF085B8E625335FA",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://data.vlaanderen.be/ns/mandaat#Fractie",
+      "http://mu.semte.ch/vocabularies/core/uuid": "67ACB474AF085B8E625335FA",
+      "https://www.w3.org/ns/regorg#legalName": "Onafhankelijk",
+      "http://www.w3.org/ns/org#memberOf": "http://data.lblod.info/id/bestuursorganen/32228399016065c6689667aea33a0eb4b7d3bcd19dacf5ee10deb280aecc3426",
+      "http://www.w3.org/ns/org#linkedTo": "http://data.lblod.info/id/bestuurseenheden/4e6d15d5c7fd95c996087bb13cdee985f0b550256be745024d5facd1485df284"
+    }
+  ],
+  "http://data.vlaanderen.be/ns/besluit#Bestuurseenheid": [
+    "%",
+    "http://data.lblod.info/id/besturenVanDeEredienst/681DEE87D4DB18EC8BA95929",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://data.vlaanderen.be/ns/besluit#Bestuurseenheid",
+      "http://data.vlaanderen.be/ns/besluit#classificatie": "http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/66ec74fd-8cfc-4e16-99c6-350b35012e86",
+      "http://www.w3.org/ns/org#hasPrimarySite": "http://data.lblod.info/id/vestigingen/681DEE87D4DB18EC8BA95928",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "Hilal te Sint-Niklaas",
+      "http://data.vlaanderen.be/ns/besluit#werkingsgebied": "http://data.lblod.info/id/werkingsgebieden/d627c2dfdfc539a95a791916b85b5de4d2cc3ecf5c8dfa44e7c9bad8a7c69824",
+      "http://mu.semte.ch/vocabularies/core/uuid": "681DEE87D4DB18EC8BA95929",
+      "http://www.w3.org/ns/org#linkedTo": "http://data.lblod.info/id/bestuurseenheden/141d9d6b-54af-4d17-b313-8d1c30bc3f5b",
+      "http://www.w3.org/2004/02/skos/core#altLabel": "Sint-Lambertus Geistingen-Ophoven"
+    }
+  ],
+  "http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst": [
+    "%",
+    "http://data.lblod.info/id/besturenVanDeEredienst/681DEE87D4DB18EC8BA95929",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://data.vlaanderen.be/ns/besluit#Bestuurseenheid",
+      "http://data.vlaanderen.be/ns/besluit#classificatie": "http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/66ec74fd-8cfc-4e16-99c6-350b35012e86",
+      "http://www.w3.org/ns/org#hasPrimarySite": "http://data.lblod.info/id/vestigingen/681DEE87D4DB18EC8BA95928",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "Hilal te Sint-Niklaas",
+      "http://data.vlaanderen.be/ns/besluit#werkingsgebied": "http://data.lblod.info/id/werkingsgebieden/d627c2dfdfc539a95a791916b85b5de4d2cc3ecf5c8dfa44e7c9bad8a7c69824",
+      "http://mu.semte.ch/vocabularies/core/uuid": "681DEE87D4DB18EC8BA95929",
+      "http://www.w3.org/2004/02/skos/core#altLabel": "Sint-Lambertus Geistingen-Ophoven"
+    }
+  ],
+  "http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst": [
+    "%",
+    "http://data.lblod.info/id/centraleBesturenVanDeEredienst/68427818D4DB18EC8BA95984",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://data.vlaanderen.be/ns/besluit#Bestuurseenheid",
+      "http://www.w3.org/ns/org#hasPrimarySite": "http://data.lblod.info/id/vestigingen/68427817D4DB18EC8BA95983",
+      "http://data.vlaanderen.be/ns/besluit#classificatie": "http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/f9cac08a-13c1-49da-9bcb-f650b0604054",
+      "http://data.vlaanderen.be/ns/besluit#werkingsgebied": "http://data.lblod.info/id/werkingsgebieden/92398c49-30d5-46b2-af90-37f135c89e47",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "CKB Pajottegem Galmaarden",
+      "http://mu.semte.ch/vocabularies/core/uuid": "68427818D4DB18EC8BA95984"
+    }
+  ],
+  "http://data.vlaanderen.be/ns/besluit#Bestuursorgaan": [
+    "%",
+    "http://data.lblod.info/id/bestuursorganen/00059377fd900b69c80ce3b262dd6f15301fa762b15f911892bc7353082cdd60",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://data.vlaanderen.be/ns/besluit#Bestuursorgaan",
+      "http://data.vlaanderen.be/ns/mandaat#bindingStart": "2024-12-02T00:00:00",
+      "http://mu.semte.ch/vocabularies/core/uuid": "00059377fd900b69c80ce3b262dd6f15301fa762b15f911892bc7353082cdd60",
+      "http://data.vlaanderen.be/ns/mandaat#bindingEinde": "2024-12-02T00:00:00",
+      "http://data.vlaanderen.be/ns/besluit#classificatie": "http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/5ab0e9b8a3b2ca7c5e000007",
+      "http://data.vlaanderen.be/ns/besluit#bestuurt": "http://data.lblod.info/id/bestuurseenheden/708128d3128fb87ca50371ea08b3778d5faced46dcc4c42e034f101e1b7b474a",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "Raad voor Maatschappelijk Welzijn Wervik",
+      "http://data.vlaanderen.be/ns/mandaat#isTijdspecialisatieVan": "http://data.lblod.info/id/bestuursorganen/e64decc3de28035f5e21f329fabfc9dcdb05172c5b4ac7463f75fb623213c250",
+      "http://www.w3.org/ns/org#hasPost": "http://data.lblod.info/id/mandaten/8e30862eea52c0ee89f3316d4359a3d861676e7c440bb117f01a7caf508c4a54"
+    }
+  ],
+  "http://www.w3.org/ns/org#Membership": [
+    "%",
+    "http://data.lblod.info/id/lidmaatschap/116ed652603d4994a4922fbcb3ed179d086f057f",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/org#Membership",
+      "http://mu.semte.ch/vocabularies/core/uuid": "116ed652603d4994a4922fbcb3ed179d086f057f",
+      "http://www.w3.org/ns/org#organisation": "http://data.lblod.info/id/fracties/67335F22D2F339806D122634"
+    }
+  ],
+  "http://www.w3.org/ns/org#Post": [
+    "%",
+    "http://data.lblod.info/id/mandaten/00321c20ef45d485b2174cca591407218ba5155397a37ae25e899f9ca59b819a",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/org#Post",
+      "http://www.w3.org/ns/org#role": "http://data.vlaanderen.be/id/concept/BestuursfunctieCode/7b038cc40bba10bec833ecfe6f15bc7a",
+      "http://data.vlaanderen.be/ns/mandaat#aantalHouders": "1",
+      "http://mu.semte.ch/vocabularies/core/uuid": "00321c20ef45d485b2174cca591407218ba5155397a37ae25e899f9ca59b819a"
+    }
+  ],
+  "http://data.vlaanderen.be/ns/mandaat#Mandaat": [
+    "%",
+    "http://data.lblod.info/id/mandaten/00321c20ef45d485b2174cca591407218ba5155397a37ae25e899f9ca59b819a",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/org#Post",
+      "http://www.w3.org/ns/org#role": "http://data.vlaanderen.be/id/concept/BestuursfunctieCode/7b038cc40bba10bec833ecfe6f15bc7a",
+      "http://data.vlaanderen.be/ns/mandaat#aantalHouders": "1",
+      "http://mu.semte.ch/vocabularies/core/uuid": "00321c20ef45d485b2174cca591407218ba5155397a37ae25e899f9ca59b819a"
+    }
+  ],
+  "http://www.w3.org/ns/prov#Location": [
+    "%",
+    "http://data.lblod.info/id/werkingsgebieden/b1e76750-8320-11f0-9ab2-fd01d76a1444",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/prov#Location",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Bonheiden, Duffel, Kontich, Mechelen, Putte, Puurs-Sint-Amands, Rumst, Sint-Katelijne-Waver, Willebroek",
+      "http://mu.semte.ch/vocabularies/ext/werkingsgebiedNiveau": "Samengesteld werkingsgebied",
+      "http://mu.semte.ch/vocabularies/core/uuid": "b1e76750-8320-11f0-9ab2-fd01d76a1444"
+    }
+  ],
+  "http://www.w3.org/2004/02/skos/core#Concept": [
+    "%",
+    "http://data.lblod.info/id/werkingsgebieden/60a52229c92c1407e0549a573f820fb8a1f9fab5c82654b4b3493bc81be365de",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/prov#Location",
+      "http://mu.semte.ch/vocabularies/core/uuid": "60a52229c92c1407e0549a573f820fb8a1f9fab5c82654b4b3493bc81be365de",
+      "http://mu.semte.ch/vocabularies/ext/werkingsgebiedNiveau": "Provincie",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Vlaams-Brabant",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "Administratieve vereenvoudiging"
+    }
+  ],
+  "http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode": [
+    "%",
+    "http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/5ab10d3a4c934f28dc000027",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "Administratieve vereenvoudiging",
+      "http://mu.semte.ch/vocabularies/core/uuid": "5ab10d3a4c934f28dc000027"
+    }
+  ],
+  "http://mu.semte.ch/vocabularies/ext/BestuurseenheidClassificatieCode": [
+    "%",
+    "http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/088784b6-e188-48bf-b94f-94665f9e1f53",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://mu.semte.ch/vocabularies/ext/BestuurseenheidClassificatieCode",
+      "http://mu.semte.ch/vocabularies/core/uuid": "088784b6-e188-48bf-b94f-94665f9e1f53",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "PEVA provincie"
+    }
+  ],
+  "http://mu.semte.ch/vocabularies/ext/OrganizationClassificationCode": [
+    "%",
+    "http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/088784b6-e188-48bf-b94f-94665f9e1f53",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://mu.semte.ch/vocabularies/ext/BestuurseenheidClassificatieCode",
+      "http://mu.semte.ch/vocabularies/core/uuid": "088784b6-e188-48bf-b94f-94665f9e1f53",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "PEVA provincie"
+    }
+  ],
+  "http://lblod.data.gift/vocabularies/organisatie/BestuurseenheidClassificatieCode": [
+    "%",
+    "http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/088784b6-e188-48bf-b94f-94665f9e1f53",
+    {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://mu.semte.ch/vocabularies/ext/BestuurseenheidClassificatieCode",
+      "http://mu.semte.ch/vocabularies/core/uuid": "088784b6-e188-48bf-b94f-94665f9e1f53",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "PEVA provincie"
+    }
+  ],
+  "http://lblod.data.gift/vocabularies/organisatie/BestuursfunctieCode": [
+    "%",
+    "http://data.vlaanderen.be/id/concept/BestuursfunctieCode/855489b9-b584-4f34-90b2-39aea808cd9f",
+    {
+      "http://mu.semte.ch/vocabularies/core/uuid": "855489b9-b584-4f34-90b2-39aea808cd9f",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "Leidend ambtenaar",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2004/02/skos/core#Concept"
+    }
+  ],
+  "http://mu.semte.ch/vocabularies/ext/BestuursfunctieCode": [
+    "%",
+    "http://data.vlaanderen.be/id/concept/BestuursfunctieCode/855489b9-b584-4f34-90b2-39aea808cd9f",
+    {
+      "http://mu.semte.ch/vocabularies/core/uuid": "855489b9-b584-4f34-90b2-39aea808cd9f",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "Leidend ambtenaar",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2004/02/skos/core#Concept"
+    }
+  ],
+  "http://lblod.data.gift/vocabularies/organisatie/BestuursorgaanClassificatieCode": [
+    "%",
+    "http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/013cc838-173a-4657-b1ae-b00c048df943",
+    {
+      "http://mu.semte.ch/vocabularies/core/uuid": "013cc838-173a-4657-b1ae-b00c048df943",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "Raad van bestuur",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2004/02/skos/core#Concept"
+    }
+  ],
+  "http://mu.semte.ch/vocabularies/ext/BestuursorgaanClassificatieCode": [
+    "%",
+    "http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/013cc838-173a-4657-b1ae-b00c048df943",
+    {
+      "http://mu.semte.ch/vocabularies/core/uuid": "013cc838-173a-4657-b1ae-b00c048df943",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "Raad van bestuur",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2004/02/skos/core#Concept"
+    }
+  ],
+  "http://lblod.data.gift/vocabularies/organisatie/MandatarisStatusCode": [
+    "%",
+    "http://data.vlaanderen.be/id/concept/MandatarisStatusCode/21063a5b-912c-4241-841c-cc7fb3c73e75",
+    {
+      "http://mu.semte.ch/vocabularies/core/uuid": "21063a5b-912c-4241-841c-cc7fb3c73e75",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "Effectief",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2004/02/skos/core#Concept"
+    }
+  ],
+  "http://mu.semte.ch/vocabularies/ext/MandatarisStatusCode": [
+    "%",
+    "http://data.vlaanderen.be/id/concept/MandatarisStatusCode/21063a5b-912c-4241-841c-cc7fb3c73e75",
+    {
+      "http://mu.semte.ch/vocabularies/core/uuid": "21063a5b-912c-4241-841c-cc7fb3c73e75",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "Effectief",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2004/02/skos/core#Concept"
+    }
+  ],
+  "http://mu.semte.ch/vocabularies/ext/RepresentatiefOrgaanClassificatieCode": [
+    "%",
+    "http://data.vlaanderen.be/id/concept/RepresentatiefOrgaanClassificatieCode/89a00b5a-024f-4630-a722-65a5e68967e5",
+    {
+      "http://mu.semte.ch/vocabularies/core/uuid": "89a00b5a-024f-4630-a722-65a5e68967e5",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": "Representatief orgaan",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2004/02/skos/core#Concept"
+    }
+  ]
+}

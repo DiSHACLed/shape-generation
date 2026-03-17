@@ -1,0 +1,292 @@
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Optimizing for backing store: sparql
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 0/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 2/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 2/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 2/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 2/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 2/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 2/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 2/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 2/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 2/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 2/11
+
+void-docker $ [pool-2-thread-2] WARN org.eclipse.rdf4j.http.client.SPARQLProtocolSession - Server reports problem: null (enable debug logging for full details)
+
+void-docker $ [pool-2-thread-2] ERROR swiss.sib.swissprot.voidcounter.sparql.CountDistinctLiteralObjectsInDefaultGraph - failed counting distinct literal objects for all graphs
+
+void-docker $ org.eclipse.rdf4j.query.QueryEvaluationException: Virtuoso S1TAT Error Query did not complete due to ANYTIME timeout.
+
+void-docker $ 	at org.eclipse.rdf4j.repository.sparql.query.SPARQLTupleQuery.evaluate(SPARQLTupleQuery.java:50)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.Helper.runTupleQuery(Helper.java:68)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.Helper.getSingleLongFromSparql(Helper.java:48)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.CountDistinctLiteralObjectsInDefaultGraph.run(CountDistinctLiteralObjectsInDefaultGraph.java:45)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.CountDistinctLiteralObjectsInDefaultGraph.run(CountDistinctLiteralObjectsInDefaultGraph.java:14)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.QueryCallable.execute(QueryCallable.java:41)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.QueryCallable.call(QueryCallable.java:26)
+
+void-docker $ 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+
+void-docker $ 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+
+void-docker $ 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+
+void-docker $ 	at java.base/java.lang.Thread.run(Thread.java:1447)
+
+void-docker $ Caused by: org.eclipse.rdf4j.repository.RepositoryException: Virtuoso S1TAT Error Query did not complete due to ANYTIME timeout.
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.execute(SPARQLProtocolSession.java:1095)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.executeOK(SPARQLProtocolSession.java:1029)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.sendTupleQueryViaHttp(SPARQLProtocolSession.java:782)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.getBackgroundTupleQueryResult(SPARQLProtocolSession.java:677)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.sendTupleQuery(SPARQLProtocolSession.java:377)
+
+void-docker $ 	at org.eclipse.rdf4j.repository.sparql.query.SPARQLTupleQuery.evaluate(SPARQLTupleQuery.java:47)
+
+void-docker $ 	... 10 more
+
+void-docker $ [pool-2-thread-5] WARN org.eclipse.rdf4j.http.client.SPARQLProtocolSession - Server reports problem: null (enable debug logging for full details)
+
+void-docker $ [pool-2-thread-5] ERROR swiss.sib.swissprot.voidcounter.sparql.CountDistinctLiteralObjects - failed counting distinct literal objects for http://www.example.com/wikidata
+
+void-docker $ org.eclipse.rdf4j.query.QueryEvaluationException: Virtuoso S1TAT Error Query did not complete due to ANYTIME timeout.
+
+void-docker $ 	at org.eclipse.rdf4j.repository.sparql.query.SPARQLTupleQuery.evaluate(SPARQLTupleQuery.java:50)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.Helper.runTupleQuery(Helper.java:68)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.Helper.getSingleLongFromSparql(Helper.java:48)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.CountDistinctLiteralObjects.run(CountDistinctLiteralObjects.java:47)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.CountDistinctLiteralObjects.run(CountDistinctLiteralObjects.java:15)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.QueryCallable.execute(QueryCallable.java:41)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.QueryCallable.call(QueryCallable.java:26)
+
+void-docker $ 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+
+void-docker $ 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+
+void-docker $ 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+
+void-docker $ 	at java.base/java.lang.Thread.run(Thread.java:1447)
+
+void-docker $ Caused by: org.eclipse.rdf4j.repository.RepositoryException: Virtuoso S1TAT Error Query did not complete due to ANYTIME timeout.
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.execute(SPARQLProtocolSession.java:1095)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.executeOK(SPARQLProtocolSession.java:1029)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.sendTupleQueryViaHttp(SPARQLProtocolSession.java:782)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.getBackgroundTupleQueryResult(SPARQLProtocolSession.java:677)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.sendTupleQuery(SPARQLProtocolSession.java:377)
+
+void-docker $ 	at org.eclipse.rdf4j.repository.sparql.query.SPARQLTupleQuery.evaluate(SPARQLTupleQuery.java:47)
+
+void-docker $ 	... 10 more
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 2/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 3/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 3/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 3/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 3/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 3/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 3/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 3/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 3/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 3/11
+
+void-docker $ [pool-2-thread-4] WARN org.eclipse.rdf4j.http.client.SPARQLProtocolSession - Server reports problem: null (enable debug logging for full details)
+
+void-docker $ [pool-2-thread-4] ERROR swiss.sib.swissprot.voidcounter.sparql.CountDistinctIriSubjectsAndObjectsInDefaultGraph - failed counting distinct iri objects and subjects default graph
+
+void-docker $ org.eclipse.rdf4j.query.QueryEvaluationException: Virtuoso S1TAT Error Query did not complete due to ANYTIME timeout.
+
+void-docker $ 	at org.eclipse.rdf4j.repository.sparql.query.SPARQLTupleQuery.evaluate(SPARQLTupleQuery.java:50)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.Helper.runTupleQuery(Helper.java:68)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.CountDistinctIriSubjectsAndObjectsInDefaultGraph.run(CountDistinctIriSubjectsAndObjectsInDefaultGraph.java:51)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.CountDistinctIriSubjectsAndObjectsInDefaultGraph.run(CountDistinctIriSubjectsAndObjectsInDefaultGraph.java:19)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.QueryCallable.execute(QueryCallable.java:41)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.QueryCallable.call(QueryCallable.java:26)
+
+void-docker $ 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+
+void-docker $ 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+
+void-docker $ 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+
+void-docker $ 	at java.base/java.lang.Thread.run(Thread.java:1447)
+
+void-docker $ Caused by: org.eclipse.rdf4j.repository.RepositoryException: Virtuoso S1TAT Error Query did not complete due to ANYTIME timeout.
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.execute(SPARQLProtocolSession.java:1095)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.executeOK(SPARQLProtocolSession.java:1029)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.sendTupleQueryViaHttp(SPARQLProtocolSession.java:782)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.getBackgroundTupleQueryResult(SPARQLProtocolSession.java:677)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.sendTupleQuery(SPARQLProtocolSession.java:377)
+
+void-docker $ 	at org.eclipse.rdf4j.repository.sparql.query.SPARQLTupleQuery.evaluate(SPARQLTupleQuery.java:47)
+
+void-docker $ 	... 9 more
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 140/38509
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 2983/39733
+
+void-docker $ [pool-2-thread-3] WARN org.eclipse.rdf4j.http.client.SPARQLProtocolSession - Server reports problem: null (enable debug logging for full details)
+
+void-docker $ [pool-2-thread-3] ERROR swiss.sib.swissprot.voidcounter.sparql.CountDistinctIriSubjectsAndObjectsInAGraph - failed counting distinct iri objects and subjects http://www.example.com/wikidata
+
+void-docker $ org.eclipse.rdf4j.query.QueryEvaluationException: Virtuoso S1TAT Error Query did not complete due to ANYTIME timeout.
+
+void-docker $ 	at org.eclipse.rdf4j.repository.sparql.query.SPARQLTupleQuery.evaluate(SPARQLTupleQuery.java:50)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.Helper.runTupleQuery(Helper.java:68)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.CountDistinctIriSubjectsAndObjectsInAGraph.run(CountDistinctIriSubjectsAndObjectsInAGraph.java:53)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.sparql.CountDistinctIriSubjectsAndObjectsInAGraph.run(CountDistinctIriSubjectsAndObjectsInAGraph.java:20)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.QueryCallable.execute(QueryCallable.java:41)
+
+void-docker $ 	at swiss.sib.swissprot.voidcounter.QueryCallable.call(QueryCallable.java:26)
+
+void-docker $ 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+
+void-docker $ 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+
+void-docker $ 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+
+void-docker $ 	at java.base/java.lang.Thread.run(Thread.java:1447)
+
+void-docker $ Caused by: org.eclipse.rdf4j.repository.RepositoryException: Virtuoso S1TAT Error Query did not complete due to ANYTIME timeout.
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.execute(SPARQLProtocolSession.java:1095)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.executeOK(SPARQLProtocolSession.java:1029)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.sendTupleQueryViaHttp(SPARQLProtocolSession.java:782)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.getBackgroundTupleQueryResult(SPARQLProtocolSession.java:677)
+
+void-docker $ 	at org.eclipse.rdf4j.http.client.SPARQLProtocolSession.sendTupleQuery(SPARQLProtocolSession.java:377)
+
+void-docker $ 	at org.eclipse.rdf4j.repository.sparql.query.SPARQLTupleQuery.evaluate(SPARQLTupleQuery.java:47)
+
+void-docker $ 	... 9 more
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 5549/40831
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 8461/42085
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 11237/43285
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 13815/44395
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 16450/45532
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 18898/46588
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 21083/47539
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 23656/48643
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 25883/49612
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 28110/50581
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 30584/51655
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 32295/52390
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 34401/53296
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 36690/54286
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 38585/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 39187/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 39788/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 40308/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 40888/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 41371/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 41812/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 42229/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 42625/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 42991/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 43421/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 43881/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 44290/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 44749/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 45166/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 45533/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 45832/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 46278/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 46701/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 47005/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 47366/55081
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 47719/55081
+

@@ -1,0 +1,420 @@
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX vl_besl: <http://data.vlaanderen.be/ns/besluit#>
+PREFIX vl_mand: <http://data.vlaanderen.be/ns/mandaat#>
+PREFIX vl_pers: <http://data.vlaanderen.be/ns/persoon#>
+PREFIX example: <http://example.com/>
+PREFIX mu_core: <http://mu.semte.ch/vocabularies/core/>
+PREFIX mu_ext: <http://mu.semte.ch/vocabularies/ext/>
+PREFIX lblod_org: <http://lblod.data.gift/vocabularies/organisatie/>
+PREFIX lblod_ere: <http://data.lblod.info/vocabularies/erediensten/>
+PREFIX : <http://weso.es/shapes/>
+
+:Mandataris   # 154386 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [vl_mand:Mandataris]  {1};          # 100.0 % (154386 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (154386 instances).
+            // rdfs:comment "00548b0f-e1b9-4af4-a34b-b036e17fbc9e" ;
+   vl_mand:isBestuurlijkeAliasVan  @:Person  +;                # 99.99611363724689 % (154380 instances).
+            // rdfs:comment <http://data.lblod.info/id/personen/a29033e9-c752-4d9f-9068-47c80eeaf77d> ;
+            # 99.9922272744938 % (154374 instances). obj: @:Person. Cardinality: {2}
+   <http://www.w3.org/ns/org#holds>  @:Post  +;                # 99.99611363724689 % (154380 instances).
+            // rdfs:comment <http://data.lblod.info/id/mandaten/42315ed10d4a3692914bcbdd568fc92cbf8f1f2d7fc8aac849690c2f7df246e7> ;
+            # 99.98963636599173 % (154370 instances). obj: @:Post. Cardinality: {1}
+            # 99.99611363724689 % (154380 instances). obj: @:Mandaat. Cardinality: +
+   vl_mand:start  <http://www.w3.org/2001/XMLSchema#dateTime>  +;          # 99.95336364696281 % (154314 instances).
+            // rdfs:comment "2025-08-05T22:00:00Z" ;
+            # 99.95206819271178 % (154312 instances). obj: <http://www.w3.org/2001/XMLSchema#dateTime>. Cardinality: {1}
+   vl_mand:einde  <http://www.w3.org/2001/XMLSchema#dateTime>  +;          # 76.73364165144508 % (118466 instances).
+            // rdfs:comment "2030-12-31T22:59:59Z" ;
+            # 76.73105074294301 % (118462 instances). obj: <http://www.w3.org/2001/XMLSchema#dateTime>. Cardinality: {1}
+   <http://www.w3.org/ns/org#hasMembership>  IRI  +;           # 74.35518764654826 % (114794 instances).
+            // rdfs:comment <http://data.lblod.info/id/lidmaatschappen/E6CB0AF0-5100-11F0-9EC8-EAA73EBAC1A7> ;
+            # 74.24248312670838 % (114620 instances). obj: IRI. Cardinality: {1}
+            # 71.57514282383117 % (110502 instances). obj: @:Membership. Cardinality: +
+   vl_mand:status  @:Concept  {2}                              # 69.65009780679596 % (107530 instances).
+            // rdfs:comment <http://data.vlaanderen.be/id/concept/MandatarisStatusCode/21063a5b-912c-4241-841c-cc7fb3c73e75> ;
+            # 69.65009780679596 % (107530 instances). obj: @:MandatarisStatusCode. Cardinality: {2}
+            # 69.65009780679596 % (107530 instances). obj: @:MandatarisStatusCode_mu_ext. Cardinality: {2}
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/id/mandatarissen/00548b0f-e1b9-4af4-a34b-b036e17fbc9e>   // <http://weso.es/shexer/ontology/total_conforming_instances> 154386
+
+
+:AgentInPositie   # 6338 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [vl_mand:Mandataris]  {1};          # 100.0 % (6338 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://data.lblod.info/vocabularies/contacthub/AgentInPositie>]  {1};          # 100.0 % (6338 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (6338 instances).
+            // rdfs:comment "06e5c123-b69b-4914-9f7a-d6aabe3adf0c" ;
+   vl_mand:status  @:Concept  {2};                             # 100.0 % (6338 instances).
+            // rdfs:comment <http://data.vlaanderen.be/id/concept/MandatarisStatusCode/21063a5b-912c-4241-841c-cc7fb3c73e75> ;
+            # 100.0 % (6338 instances). obj: @:MandatarisStatusCode. Cardinality: {2}
+            # 100.0 % (6338 instances). obj: @:MandatarisStatusCode_mu_ext. Cardinality: {2}
+   vl_mand:einde  <http://www.w3.org/2001/XMLSchema#dateTime>  {1};          # 100.0 % (6338 instances).
+            // rdfs:comment "2030-11-30T23:59:59Z" ;
+   vl_mand:isBestuurlijkeAliasVan  @:Person  {2};              # 100.0 % (6338 instances).
+            // rdfs:comment <http://data.lblod.info/id/personen/358447a0faafacb36559f1f299d275546f711e0ee316061538a4c0d7933497f2> ;
+   <http://www.w3.org/ns/org#holds>  @:Mandaat  {1};           # 100.0 % (6338 instances).
+            // rdfs:comment <http://data.lblod.info/id/mandaten/a7a7ca12a58bba70e9bd146f3666ce47c30e93aa1609ac85eb15f4944bb57156> ;
+            # 100.0 % (6338 instances). obj: @:Post. Cardinality: {1}
+   vl_mand:start  <http://www.w3.org/2001/XMLSchema#dateTime>  {1};          # 99.27421899652887 % (6292 instances).
+            // rdfs:comment "2025-02-26T23:00:00Z" ;
+   <http://www.w3.org/ns/org#hasMembership>  IRI  {1}          # 79.4887977279899 % (5038 instances).
+            // rdfs:comment <http://data.lblod.info/id/lidmaatschappen/1E266806-F4EE-11EF-BC01-8152F78DE954> ;
+            # 79.45724203218681 % (5036 instances). obj: @:Membership. Cardinality: {1}
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/id/mandatarissen/06e5c123-b69b-4914-9f7a-d6aabe3adf0c>   // <http://weso.es/shexer/ontology/total_conforming_instances> 6338
+
+
+:Person   # 159966 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/ns/person#Person>]  {1};          # 100.0 % (159966 instances).
+   <http://xmlns.com/foaf/0.1/familyName>  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (159966 instances).
+            // rdfs:comment "Hufkens" ;
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (159966 instances).
+            // rdfs:comment "0000ff1401f8f6ea89266fb0f35465bba2271766f435a54d753001d3f4a510ec" ;
+            # 99.99874973431854 % (159964 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   vl_pers:gebruikteVoornaam  <http://www.w3.org/2001/XMLSchema#string>  +          # 99.9912481402298 % (159952 instances).
+            // rdfs:comment "Renate" ;
+            # 99.98749734318542 % (159946 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/id/personen/0000ff1401f8f6ea89266fb0f35465bba2271766f435a54d753001d3f4a510ec>   // <http://weso.es/shexer/ontology/total_conforming_instances> 159966
+
+
+:Fractie   # 7607 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [vl_mand:Fractie]  {1};          # 100.0 % (7607 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (7607 instances).
+            // rdfs:comment "052caeb8-f7ae-4e08-88fd-1020fab8e9b6" ;
+   <https://www.w3.org/ns/regorg#legalName>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 99.98685421322466 % (7606 instances).
+            // rdfs:comment "Onafhankelijk" ;
+            # 99.9342710661233 % (7602 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   <http://www.w3.org/ns/org#memberOf>  @:Bestuursorgaan  +;          # 99.42158538188511 % (7563 instances).
+            // rdfs:comment <http://data.lblod.info/id/bestuursorganen/520b34b7bb1c672187c3280650696fbb9d05bbbafde2f0d0dded8860b6aaddd4> ;
+            # 43.19705534376232 % (3286 instances). obj: @:Bestuursorgaan. Cardinality: {2}
+   <http://www.w3.org/ns/org#linkedTo>  @:Bestuurseenheid  +          # 92.4543183909557 % (7033 instances).
+            // rdfs:comment <http://data.lblod.info/id/bestuurseenheden/986bc8bd29af2847bdaa104fe5ff052201032f3e5b95d7b2ae3a3c5486842a94> ;
+            # 85.78940449585907 % (6526 instances). obj: @:Bestuurseenheid. Cardinality: {2}
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/fracties/052caeb8-f7ae-4e08-88fd-1020fab8e9b6>   // <http://weso.es/shexer/ontology/total_conforming_instances> 7607
+
+
+:Tombstone   # 173 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/ns/activitystreams#Tombstone>]  {1};          # 100.0 % (173 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (173 instances).
+            // rdfs:comment "67ACB474AF085B8E625335FA" ;
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/ns/org#Membership>]  {1}          # 98.84393063583815 % (171 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/id/fracties/67ACB474AF085B8E625335FA>   // <http://weso.es/shexer/ontology/total_conforming_instances> 173
+
+
+:Bestuurseenheid   # 7440 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [vl_besl:Bestuurseenheid]  {1};          # 100.0 % (7440 instances).
+   vl_besl:classificatie  @:BestuurseenheidClassificatieCode_lblod_org  +;          # 100.0 % (7440 instances).
+            // rdfs:comment <http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/66ec74fd-8cfc-4e16-99c6-350b35012e86> ;
+            # 92.28494623655914 % (6866 instances). obj: @:BestuurseenheidClassificatieCode_lblod_org. Cardinality: {1}
+            # 100.0 % (7440 instances). obj: @:OrganizationClassificationCode. Cardinality: +
+            # 100.0 % (7440 instances). obj: @:BestuurseenheidClassificatieCode. Cardinality: +
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (7440 instances).
+            // rdfs:comment "Hilal te Sint-Niklaas" ;
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (7440 instances).
+            // rdfs:comment "681DEE87D4DB18EC8BA95929" ;
+   <http://www.w3.org/ns/org#hasPrimarySite>  IRI  {1};          # 99.91935483870968 % (7434 instances).
+            // rdfs:comment <http://data.lblod.info/id/vestigingen/681DEE87D4DB18EC8BA95928> ;
+   vl_besl:werkingsgebied  IRI  {1};                           # 94.43548387096774 % (7026 instances).
+            // rdfs:comment <http://data.lblod.info/id/werkingsgebieden/d627c2dfdfc539a95a791916b85b5de4d2cc3ecf5c8dfa44e7c9bad8a7c69824> ;
+            # 93.09139784946237 % (6926 instances). obj: @:Location. Cardinality: +
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [lblod_ere:BestuurVanDeEredienst]  {1};          # 54.03225806451613 % (4020 instances).
+   <http://www.w3.org/2004/02/skos/core#altLabel>  <http://www.w3.org/2001/XMLSchema#string>  +          # 50.86021505376343 % (3784 instances).
+            // rdfs:comment "Sint-Lambertus Geistingen-Ophoven" ;
+            # 50.7258064516129 % (3774 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/id/besturenVanDeEredienst/681DEE87D4DB18EC8BA95929>   // <http://weso.es/shexer/ontology/total_conforming_instances> 7440
+
+
+:BestuurVanDeEredienst   # 4020 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [vl_besl:Bestuurseenheid]  {1};          # 100.0 % (4020 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [lblod_ere:BestuurVanDeEredienst]  {1};          # 100.0 % (4020 instances).
+   vl_besl:classificatie  @:BestuurseenheidClassificatieCode_lblod_org  {1};          # 100.0 % (4020 instances).
+            // rdfs:comment <http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/66ec74fd-8cfc-4e16-99c6-350b35012e86> ;
+            # 100.0 % (4020 instances). obj: @:OrganizationClassificationCode. Cardinality: {1}
+            # 100.0 % (4020 instances). obj: @:BestuurseenheidClassificatieCode. Cardinality: {1}
+   <http://www.w3.org/ns/org#hasPrimarySite>  IRI  {1};          # 100.0 % (4020 instances).
+            // rdfs:comment <http://data.lblod.info/id/vestigingen/681DEE87D4DB18EC8BA95928> ;
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (4020 instances).
+            // rdfs:comment "Hilal te Sint-Niklaas" ;
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (4020 instances).
+            // rdfs:comment "681DEE87D4DB18EC8BA95929" ;
+   vl_besl:werkingsgebied  @:Location  +;                      # 99.60199004975124 % (4004 instances).
+            // rdfs:comment <http://data.lblod.info/id/werkingsgebieden/d627c2dfdfc539a95a791916b85b5de4d2cc3ecf5c8dfa44e7c9bad8a7c69824> ;
+            # 99.35323383084577 % (3994 instances). obj: @:Location. Cardinality: {1}
+   <http://www.w3.org/2004/02/skos/core#altLabel>  <http://www.w3.org/2001/XMLSchema#string>  +          # 78.2089552238806 % (3144 instances).
+            // rdfs:comment "Sint-Lambertus Geistingen-Ophoven" ;
+            # 78.1094527363184 % (3140 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/id/besturenVanDeEredienst/681DEE87D4DB18EC8BA95929>   // <http://weso.es/shexer/ontology/total_conforming_instances> 4020
+
+
+:CentraalBestuurVanDeEredienst   # 634 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [vl_besl:Bestuurseenheid]  {1};          # 100.0 % (634 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [lblod_ere:CentraalBestuurVanDeEredienst]  {1};          # 100.0 % (634 instances).
+   <http://www.w3.org/ns/org#hasPrimarySite>  IRI  {1};          # 100.0 % (634 instances).
+            // rdfs:comment <http://data.lblod.info/id/vestigingen/68427817D4DB18EC8BA95983> ;
+   vl_besl:classificatie  @:OrganizationClassificationCode  {1};          # 100.0 % (634 instances).
+            // rdfs:comment <http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/f9cac08a-13c1-49da-9bcb-f650b0604054> ;
+            # 100.0 % (634 instances). obj: @:BestuurseenheidClassificatieCode_lblod_org. Cardinality: {1}
+            # 100.0 % (634 instances). obj: @:BestuurseenheidClassificatieCode. Cardinality: {1}
+   vl_besl:werkingsgebied  @:Location  {1};                    # 100.0 % (634 instances).
+            // rdfs:comment <http://data.lblod.info/id/werkingsgebieden/92398c49-30d5-46b2-af90-37f135c89e47> ;
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (634 instances).
+            // rdfs:comment "CKB Pajottegem Galmaarden" ;
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2}          # 100.0 % (634 instances).
+            // rdfs:comment "68427818D4DB18EC8BA95984" ;
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/id/centraleBesturenVanDeEredienst/68427818D4DB18EC8BA95984>   // <http://weso.es/shexer/ontology/total_conforming_instances> 634
+
+
+:Bestuursorgaan   # 60100 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [vl_besl:Bestuursorgaan]  {1};          # 100.0 % (60100 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (60100 instances).
+            // rdfs:comment "00059377fd900b69c80ce3b262dd6f15301fa762b15f911892bc7353082cdd60" ;
+   vl_mand:isTijdspecialisatieVan  @:Bestuursorgaan  {2};          # 67.52412645590682 % (40582 instances).
+            // rdfs:comment <http://data.lblod.info/id/bestuursorganen/e64decc3de28035f5e21f329fabfc9dcdb05172c5b4ac7463f75fb623213c250> ;
+   vl_mand:bindingStart  <http://www.w3.org/2001/XMLSchema#dateTime>  {1};          # 67.04492512479202 % (40294 instances).
+            // rdfs:comment "2024-12-02T00:00:00" ;
+   <http://www.w3.org/ns/org#hasPost>  IRI  +;                 # 48.901830282861894 % (29390 instances).
+            // rdfs:comment <http://data.lblod.info/id/mandaten/8e30862eea52c0ee89f3316d4359a3d861676e7c440bb117f01a7caf508c4a54> ;
+            # 48.89517470881864 % (29386 instances). obj: @:Mandaat. Cardinality: +
+            # 48.848585690515804 % (29358 instances). obj: @:Post. Cardinality: +
+   vl_mand:bindingEinde  <http://www.w3.org/2001/XMLSchema#dateTime>  {1};          # 45.03161397670549 % (27064 instances).
+            // rdfs:comment "2024-12-02T00:00:00" ;
+   vl_besl:classificatie  @:BestuursorgaanClassificatieCode  +;          # 32.475873544093176 % (19518 instances).
+            // rdfs:comment <http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/5ab0e9b8a3b2ca7c5e000007> ;
+            # 32.475873544093176 % (19518 instances). obj: @:BestuursorgaanClassificatieCode_mu_ext. Cardinality: +
+   vl_besl:bestuurt  IRI  {1};                                 # 32.455906821963396 % (19506 instances).
+            // rdfs:comment <http://data.lblod.info/id/bestuurseenheden/708128d3128fb87ca50371ea08b3778d5faced46dcc4c42e034f101e1b7b474a> ;
+            # 32.206322795341094 % (19356 instances). obj: @:Bestuurseenheid. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  {1}          # 32.316139767054906 % (19422 instances).
+            // rdfs:comment "Raad voor Maatschappelijk Welzijn Wervik" ;
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/id/bestuursorganen/00059377fd900b69c80ce3b262dd6f15301fa762b15f911892bc7353082cdd60>   // <http://weso.es/shexer/ontology/total_conforming_instances> 60100
+
+
+:Membership   # 67587 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/ns/org#Membership>]  {1};          # 100.0 % (67587 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (67587 instances).
+            // rdfs:comment "116ed652603d4994a4922fbcb3ed179d086f057f" ;
+            # 99.99852042552561 % (67586 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   <http://www.w3.org/ns/org#organisation>  IRI  +             # 87.44876973382455 % (59104 instances).
+            // rdfs:comment <http://data.lblod.info/id/fracties/67335F22D2F339806D122634> ;
+            # 77.78714841611553 % (52574 instances). obj: IRI. Cardinality: {1}
+            # 87.40438249959311 % (59074 instances). obj: @:Fractie. Cardinality: +
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/id/lidmaatschap/116ed652603d4994a4922fbcb3ed179d086f057f>   // <http://weso.es/shexer/ontology/total_conforming_instances> 67587
+
+
+:Post   # 52189 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/ns/org#Post>]  {1};          # 100.0 % (52189 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [vl_mand:Mandaat]  {1};          # 100.0 % (52189 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (52189 instances).
+            // rdfs:comment "00321c20ef45d485b2174cca591407218ba5155397a37ae25e899f9ca59b819a" ;
+   <http://www.w3.org/ns/org#role>  IRI  +                     # 99.98850332445535 % (52183 instances).
+            // rdfs:comment <http://data.vlaanderen.be/id/concept/BestuursfunctieCode/7b038cc40bba10bec833ecfe6f15bc7a> ;
+            # 99.39259230872406 % (51872 instances). obj: IRI. Cardinality: {1}
+            # 99.39259230872406 % (51872 instances). obj: @:BestuursfunctieCode. Cardinality: {1}
+            # 99.39259230872406 % (51872 instances). obj: @:BestuursfunctieCode_mu_ext. Cardinality: {1}
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/id/mandaten/00321c20ef45d485b2174cca591407218ba5155397a37ae25e899f9ca59b819a>   // <http://weso.es/shexer/ontology/total_conforming_instances> 52189
+
+
+:Mandaat   # 52267 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [vl_mand:Mandaat]  {1};          # 100.0 % (52267 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (52267 instances).
+            // rdfs:comment "00321c20ef45d485b2174cca591407218ba5155397a37ae25e899f9ca59b819a" ;
+   <http://www.w3.org/ns/org#role>  IRI  +;                    # 99.98852048137448 % (52261 instances).
+            // rdfs:comment <http://data.vlaanderen.be/id/concept/BestuursfunctieCode/7b038cc40bba10bec833ecfe6f15bc7a> ;
+            # 99.39349876595175 % (51950 instances). obj: IRI. Cardinality: {1}
+            # 99.39349876595175 % (51950 instances). obj: @:BestuursfunctieCode. Cardinality: {1}
+            # 99.39349876595175 % (51950 instances). obj: @:BestuursfunctieCode_mu_ext. Cardinality: {1}
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/ns/org#Post>]  {1}          # 99.85076625786824 % (52189 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/id/mandaten/00321c20ef45d485b2174cca591407218ba5155397a37ae25e899f9ca59b819a>   // <http://weso.es/shexer/ontology/total_conforming_instances> 52267
+
+
+:Location   # 670 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/ns/prov#Location>]  {1};          # 100.0 % (670 instances).
+   <http://www.w3.org/2000/01/rdf-schema#label>  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (670 instances).
+            // rdfs:comment "Bonheiden, Duffel, Kontich, Mechelen, Putte, Puurs-Sint-Amands, Rumst, Sint-Katelijne-Waver, Willebroek" ;
+   mu_ext:werkingsgebiedNiveau  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (670 instances).
+            // rdfs:comment "Samengesteld werkingsgebied" ;
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +          # 100.0 % (670 instances).
+            // rdfs:comment "b1e76750-8320-11f0-9ab2-fd01d76a1444" ;
+            # 98.50746268656717 % (660 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/id/werkingsgebieden/b1e76750-8320-11f0-9ab2-fd01d76a1444>   // <http://weso.es/shexer/ontology/total_conforming_instances> 670
+
+
+:Concept   # 8909 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/2004/02/skos/core#Concept>]  {1};          # 100.0 % (8909 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (8909 instances).
+            // rdfs:comment "60a52229c92c1407e0549a573f820fb8a1f9fab5c82654b4b3493bc81be365de" ;
+            # 85.82332472780334 % (7646 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 99.88775395667304 % (8899 instances).
+            // rdfs:comment "Administratieve vereenvoudiging" ;
+            # 85.71107868447638 % (7636 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:BeleidsdomeinCode]  {1}          # 84.90290717252216 % (7564 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.lblod.info/id/werkingsgebieden/60a52229c92c1407e0549a573f820fb8a1f9fab5c82654b4b3493bc81be365de>   // <http://weso.es/shexer/ontology/total_conforming_instances> 8909
+
+
+:BeleidsdomeinCode   # 11032 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:BeleidsdomeinCode]  {1};          # 100.0 % (11032 instances).
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (11032 instances).
+            // rdfs:comment "Administratieve vereenvoudiging" ;
+            # 68.56417693981146 % (7564 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+            # 31.435823060188543 % (3468 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (11032 instances).
+            // rdfs:comment "5ab10d3a4c934f28dc000027" ;
+            # 68.56417693981146 % (7564 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+            # 31.435823060188543 % (3468 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/2004/02/skos/core#Concept>]  {1}          # 68.56417693981146 % (7564 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.vlaanderen.be/id/concept/BeleidsdomeinCode/5ab10d3a4c934f28dc000027>   // <http://weso.es/shexer/ontology/total_conforming_instances> 11032
+
+
+:BestuurseenheidClassificatieCode   # 27 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:BestuurseenheidClassificatieCode]  {1};          # 100.0 % (27 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:OrganizationClassificationCode]  {1};          # 100.0 % (27 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [lblod_org:BestuurseenheidClassificatieCode]  {1};          # 100.0 % (27 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (27 instances).
+            // rdfs:comment "088784b6-e188-48bf-b94f-94665f9e1f53" ;
+            # 70.37037037037037 % (19 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 29.629629629629626 % (8 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (27 instances).
+            // rdfs:comment "PEVA provincie" ;
+            # 70.37037037037037 % (19 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 29.629629629629626 % (8 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/2004/02/skos/core#Concept>]  {1}          # 29.629629629629626 % (8 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/088784b6-e188-48bf-b94f-94665f9e1f53>   // <http://weso.es/shexer/ontology/total_conforming_instances> 27
+
+
+:OrganizationClassificationCode   # 28 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:OrganizationClassificationCode]  {1};          # 100.0 % (28 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (28 instances).
+            // rdfs:comment "088784b6-e188-48bf-b94f-94665f9e1f53" ;
+            # 71.42857142857143 % (20 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 28.57142857142857 % (8 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (28 instances).
+            // rdfs:comment "PEVA provincie" ;
+            # 71.42857142857143 % (20 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 28.57142857142857 % (8 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:BestuurseenheidClassificatieCode]  {1};          # 96.42857142857143 % (27 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [lblod_org:BestuurseenheidClassificatieCode]  {1};          # 96.42857142857143 % (27 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/2004/02/skos/core#Concept>]  {1}          # 32.142857142857146 % (9 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/088784b6-e188-48bf-b94f-94665f9e1f53>   // <http://weso.es/shexer/ontology/total_conforming_instances> 28
+
+
+:BestuurseenheidClassificatieCode_lblod_org   # 27 instances.
+{
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:BestuurseenheidClassificatieCode]  {1};          # 100.0 % (27 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:OrganizationClassificationCode]  {1};          # 100.0 % (27 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [lblod_org:BestuurseenheidClassificatieCode]  {1};          # 100.0 % (27 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (27 instances).
+            // rdfs:comment "088784b6-e188-48bf-b94f-94665f9e1f53" ;
+            # 70.37037037037037 % (19 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 29.629629629629626 % (8 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (27 instances).
+            // rdfs:comment "PEVA provincie" ;
+            # 70.37037037037037 % (19 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 29.629629629629626 % (8 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/2004/02/skos/core#Concept>]  {1}          # 29.629629629629626 % (8 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/088784b6-e188-48bf-b94f-94665f9e1f53>   // <http://weso.es/shexer/ontology/total_conforming_instances> 27
+
+
+:BestuursfunctieCode   # 44 instances.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (44 instances).
+            // rdfs:comment "855489b9-b584-4f34-90b2-39aea808cd9f" ;
+            # 95.45454545454545 % (42 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (44 instances).
+            // rdfs:comment "Leidend ambtenaar" ;
+            # 95.45454545454545 % (42 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [lblod_org:BestuursfunctieCode]  {1};          # 100.0 % (44 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:BestuursfunctieCode]  {1}          # 100.0 % (44 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.vlaanderen.be/id/concept/BestuursfunctieCode/855489b9-b584-4f34-90b2-39aea808cd9f>   // <http://weso.es/shexer/ontology/total_conforming_instances> 44
+
+
+:BestuursfunctieCode_mu_ext   # 44 instances.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (44 instances).
+            // rdfs:comment "855489b9-b584-4f34-90b2-39aea808cd9f" ;
+            # 95.45454545454545 % (42 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (44 instances).
+            // rdfs:comment "Leidend ambtenaar" ;
+            # 95.45454545454545 % (42 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [lblod_org:BestuursfunctieCode]  {1};          # 100.0 % (44 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:BestuursfunctieCode]  {1}          # 100.0 % (44 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.vlaanderen.be/id/concept/BestuursfunctieCode/855489b9-b584-4f34-90b2-39aea808cd9f>   // <http://weso.es/shexer/ontology/total_conforming_instances> 44
+
+
+:BestuursorgaanClassificatieCode   # 63 instances.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (63 instances).
+            // rdfs:comment "013cc838-173a-4657-b1ae-b00c048df943" ;
+            # 85.71428571428571 % (54 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (63 instances).
+            // rdfs:comment "Raad van bestuur" ;
+            # 85.71428571428571 % (54 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [lblod_org:BestuursorgaanClassificatieCode]  {1};          # 100.0 % (63 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:BestuursorgaanClassificatieCode]  {1};          # 100.0 % (63 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/2004/02/skos/core#Concept>]  {1}          # 85.71428571428571 % (54 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/013cc838-173a-4657-b1ae-b00c048df943>   // <http://weso.es/shexer/ontology/total_conforming_instances> 63
+
+
+:BestuursorgaanClassificatieCode_mu_ext   # 63 instances.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (63 instances).
+            // rdfs:comment "013cc838-173a-4657-b1ae-b00c048df943" ;
+            # 85.71428571428571 % (54 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (63 instances).
+            // rdfs:comment "Raad van bestuur" ;
+            # 85.71428571428571 % (54 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [lblod_org:BestuursorgaanClassificatieCode]  {1};          # 100.0 % (63 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:BestuursorgaanClassificatieCode]  {1};          # 100.0 % (63 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/2004/02/skos/core#Concept>]  {1}          # 85.71428571428571 % (54 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/013cc838-173a-4657-b1ae-b00c048df943>   // <http://weso.es/shexer/ontology/total_conforming_instances> 63
+
+
+:MandatarisStatusCode   # 8 instances.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (8 instances).
+            // rdfs:comment "21063a5b-912c-4241-841c-cc7fb3c73e75" ;
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (8 instances).
+            // rdfs:comment "Effectief" ;
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/2004/02/skos/core#Concept>]  {1};          # 100.0 % (8 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [lblod_org:MandatarisStatusCode]  {1};          # 100.0 % (8 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:MandatarisStatusCode]  {1}          # 100.0 % (8 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.vlaanderen.be/id/concept/MandatarisStatusCode/21063a5b-912c-4241-841c-cc7fb3c73e75>   // <http://weso.es/shexer/ontology/total_conforming_instances> 8
+
+
+:MandatarisStatusCode_mu_ext   # 8 instances.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (8 instances).
+            // rdfs:comment "21063a5b-912c-4241-841c-cc7fb3c73e75" ;
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (8 instances).
+            // rdfs:comment "Effectief" ;
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/2004/02/skos/core#Concept>]  {1};          # 100.0 % (8 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [lblod_org:MandatarisStatusCode]  {1};          # 100.0 % (8 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:MandatarisStatusCode]  {1}          # 100.0 % (8 instances).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.vlaanderen.be/id/concept/MandatarisStatusCode/21063a5b-912c-4241-841c-cc7fb3c73e75>   // <http://weso.es/shexer/ontology/total_conforming_instances> 8
+
+
+:RepresentatiefOrgaanClassificatieCode   # 1 instance.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (1 instance).
+            // rdfs:comment "89a00b5a-024f-4630-a722-65a5e68967e5" ;
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  {1};          # 100.0 % (1 instance).
+            // rdfs:comment "Representatief orgaan" ;
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [<http://www.w3.org/2004/02/skos/core#Concept>]  {1};          # 100.0 % (1 instance).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:RepresentatiefOrgaanClassificatieCode]  {1};          # 100.0 % (1 instance).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [mu_ext:OrganizationClassificationCode]  {1}          # 100.0 % (1 instance).
+} // <http://weso.es/shexer/ontology/conformant_example> <http://data.vlaanderen.be/id/concept/RepresentatiefOrgaanClassificatieCode/89a00b5a-024f-4630-a722-65a5e68967e5>   // <http://weso.es/shexer/ontology/total_conforming_instances> 1
+
+

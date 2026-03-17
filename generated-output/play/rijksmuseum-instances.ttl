@@ -1,0 +1,1644 @@
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix shape: <https://shacl-play.sparna.fr/shapes/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+shape:DigitalDocument_name
+        dash:propertyRole  dash:LabelRole ;
+        sh:datatype        xsd:string ;
+        sh:maxCount        1 ;
+        sh:minCount        1 ;
+        sh:name            "name"@en ;
+        sh:nodeKind        sh:Literal ;
+        sh:path            <http://schema.org/name> .
+
+shape:WebSite_subjectOf_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:CreativeWorkSeries_subjectOf_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:CreativeWork_publication_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:CreativeWorkSeries_name
+        dash:propertyRole  dash:LabelRole ;
+        sh:minCount        1 ;
+        sh:name            "name"@en ;
+        sh:nodeKind        sh:Literal ;
+        sh:or              ( shape:CreativeWorkSeries_name_datatype_0 shape:CreativeWorkSeries_name_datatype_1 ) ;
+        sh:path            <http://schema.org/name> .
+
+shape:DefinedTerm_location_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:DigitalDocument
+        rdf:type        sh:NodeShape ;
+        rdfs:label      "DigitalDocument"@en ;
+        sh:property     shape:DigitalDocument_bookEdition , shape:DigitalDocument_exampleOfWork , shape:DigitalDocument_sameAs , shape:DigitalDocument_size , shape:DigitalDocument_isbn , shape:DigitalDocument_publication , shape:DigitalDocument_about , shape:DigitalDocument_url , shape:DigitalDocument_workExample , shape:DigitalDocument_additionalType , shape:DigitalDocument_materialExtent , shape:DigitalDocument_subjectOf , shape:DigitalDocument_name ;
+        sh:targetClass  <http://schema.org/DigitalDocument> .
+
+shape:CreativeWork_subjectOf
+        sh:name      "subjectOf"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:CreativeWork_subjectOf_class_0 shape:CreativeWork_subjectOf_class_1 shape:CreativeWork_subjectOf_class_2 shape:CreativeWork_subjectOf_class_3 ) ;
+        sh:path      <http://schema.org/subjectOf> .
+
+shape:Place_startDate
+        sh:datatype  <http://schema.org/Date> ;
+        sh:name      "startDate"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/startDate> .
+
+shape:DefinedTerm_text_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:Place_additionalType
+        sh:name      "additionalType"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/additionalType> .
+
+shape:Statement_name_datatype_1
+        sh:datatype  xsd:string .
+
+shape:ArchiveComponent_publication
+        sh:name      "publication"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:ArchiveComponent_publication_class_0 shape:ArchiveComponent_publication_class_1 shape:ArchiveComponent_publication_class_2 shape:ArchiveComponent_publication_class_3 ) ;
+        sh:path      <http://schema.org/publication> .
+
+shape:VideoObject_additionalType_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:WebSite_publication_class_3
+        sh:class  <http://schema.org/Place> .
+
+shape:ArchiveComponent_subjectOf_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:PublicationEvent_name_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:Place_endDate  sh:datatype  <http://schema.org/Date> ;
+        sh:maxCount  1 ;
+        sh:name      "endDate"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/endDate> .
+
+shape:Article  rdf:type  sh:NodeShape ;
+        rdfs:label      "Article"@en ;
+        sh:property     shape:Article_exampleOfWork , shape:Article_size , shape:Article_name , shape:Article_pagination , shape:Article_publication , shape:Article_isPartOf , shape:Article_about , shape:Article_materialExtent , shape:Article_workExample , shape:Article_subjectOf , shape:Article_additionalType , shape:Article_sameAs , shape:Article_url ;
+        sh:targetClass  <http://schema.org/Article> .
+
+shape:Article_workExample
+        sh:maxCount  1 ;
+        sh:name      "workExample"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/workExample> .
+
+shape:PublicationEvent_location_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:ArchiveComponent_materialExtent
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "materialExtent"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/materialExtent> .
+
+shape:ArchiveComponent
+        rdf:type        sh:NodeShape ;
+        rdfs:label      "ArchiveComponent"@en ;
+        sh:property     shape:ArchiveComponent_url , shape:ArchiveComponent_subjectOf , shape:ArchiveComponent_publication , shape:ArchiveComponent_additionalType , shape:ArchiveComponent_sameAs , shape:ArchiveComponent_exampleOfWork , shape:ArchiveComponent_materialExtent , shape:ArchiveComponent_workExample , shape:ArchiveComponent_size , shape:ArchiveComponent_name ;
+        sh:targetClass  <http://schema.org/ArchiveComponent> .
+
+shape:WebSite_additionalType_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:ProductModel_pagination
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "pagination"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/pagination> .
+
+shape:ProductModel_exampleOfWork
+        sh:class     <http://schema.org/CreativeWork> ;
+        sh:maxCount  1 ;
+        sh:name      "exampleOfWork"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/exampleOfWork> .
+
+shape:DigitalDocument_subjectOf_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:Article_isPartOf
+        sh:maxCount  1 ;
+        sh:name      "isPartOf"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:or        ( shape:Article_isPartOf_class_0 shape:Article_isPartOf_class_1 shape:Article_isPartOf_class_2 shape:Article_isPartOf_class_3 ) ;
+        sh:path      <http://schema.org/isPartOf> .
+
+shape:CreativeWorkSeries_about
+        sh:class     <http://schema.org/VisualArtwork> ;
+        sh:name      "about"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/about> .
+
+shape:CreativeWork_workExample
+        sh:name      "workExample"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/workExample> .
+
+shape:Place_name_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:VideoObject_about
+        sh:class     <http://schema.org/VisualArtwork> ;
+        sh:name      "about"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/about> .
+
+shape:DigitalDocument_workExample
+        sh:minCount  1 ;
+        sh:name      "workExample"@en ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <http://schema.org/workExample> .
+
+shape:Article_publication_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:DigitalDocument_materialExtent
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "materialExtent"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/materialExtent> .
+
+shape:DefinedTerm_text
+        sh:name      "text"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:DefinedTerm_text_datatype_0 shape:DefinedTerm_text_datatype_1 ) ;
+        sh:path      <http://schema.org/text> .
+
+shape:CreativeWorkSeries_publication_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:ArchiveComponent_exampleOfWork
+        sh:class     <http://schema.org/CreativeWork> ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "exampleOfWork"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/exampleOfWork> .
+
+shape:WebSite_workExample_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:CreativeWork_additionalType_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:VideoObject_subjectOf
+        sh:name      "subjectOf"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:VideoObject_subjectOf_class_0 shape:VideoObject_subjectOf_class_1 shape:VideoObject_subjectOf_class_2 shape:VideoObject_subjectOf_class_3 ) ;
+        sh:path      <http://schema.org/subjectOf> .
+
+shape:Article_additionalType
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "additionalType"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:Article_additionalType_class_0 shape:Article_additionalType_class_1 shape:Article_additionalType_class_2 shape:Article_additionalType_class_3 ) ;
+        sh:path      <http://schema.org/additionalType> .
+
+shape:ProductModel_bookEdition_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:Article_additionalType_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:Article_subjectOf
+        sh:name      "subjectOf"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:Article_subjectOf_class_0 shape:Article_subjectOf_class_1 shape:Article_subjectOf_class_2 shape:Article_subjectOf_class_3 ) ;
+        sh:path      <http://schema.org/subjectOf> .
+
+shape:Place_location_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:ProductModel_isPartOf_class_3
+        sh:class  <http://schema.org/Book> .
+
+shape:ArchiveComponent_additionalType_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:CreativeWorkSeries_name_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:DefinedTerm_location
+        sh:name      "location"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:DefinedTerm_location_class_0 shape:DefinedTerm_location_class_1 shape:DefinedTerm_location_class_2 shape:DefinedTerm_location_class_3 ) ;
+        sh:path      <http://schema.org/location> .
+
+shape:ProductModel_additionalType_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:VideoObject_subjectOf_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:PublicationEvent_publishedBy_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:ProductModel_materialExtent_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:DefinedTerm_publishedBy_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:ProductModel_publication_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:DigitalDocument_additionalType_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:DigitalDocument_about
+        sh:class     <http://schema.org/VisualArtwork> ;
+        sh:name      "about"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/about> .
+
+shape:Article_subjectOf_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:Book_subjectOf_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:Book_materialExtent
+        sh:name      "materialExtent"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:Book_materialExtent_datatype_0 shape:Book_materialExtent_datatype_1 ) ;
+        sh:path      <http://schema.org/materialExtent> .
+
+shape:Book_publication_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:ArchiveComponent_publication_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:VideoObject_publication_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:WebSite_publication
+        sh:name      "publication"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:WebSite_publication_class_0 shape:WebSite_publication_class_1 shape:WebSite_publication_class_2 shape:WebSite_publication_class_3 ) ;
+        sh:path      <http://schema.org/publication> .
+
+shape:CreativeWorkSeries_subjectOf_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:Statement_location_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:VideoObject_bookEdition
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "bookEdition"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/bookEdition> .
+
+shape:Statement_publishedBy
+        sh:name      "publishedBy"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:Statement_publishedBy_class_0 shape:Statement_publishedBy_class_1 shape:Statement_publishedBy_class_2 shape:Statement_publishedBy_class_3 ) ;
+        sh:path      <http://schema.org/publishedBy> .
+
+shape:Statement_text_datatype_1
+        sh:datatype  xsd:string .
+
+shape:PublicationEvent_endDate
+        sh:datatype  <http://schema.org/Date> ;
+        sh:maxCount  1 ;
+        sh:name      "endDate"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/endDate> .
+
+shape:VideoObject_isbn
+        sh:datatype  xsd:string ;
+        sh:name      "isbn"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/isbn> .
+
+shape:VideoObject_sameAs
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "sameAs"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/sameAs> .
+
+shape:ProductModel_materialExtent
+        sh:name      "materialExtent"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:ProductModel_materialExtent_datatype_0 shape:ProductModel_materialExtent_datatype_1 ) ;
+        sh:path      <http://schema.org/materialExtent> .
+
+shape:Book_materialExtent_datatype_1
+        sh:datatype  xsd:string .
+
+shape:VideoObject_additionalType_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:WebSite_subjectOf
+        sh:name      "subjectOf"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:WebSite_subjectOf_class_0 shape:WebSite_subjectOf_class_1 shape:WebSite_subjectOf_class_2 shape:WebSite_subjectOf_class_3 ) ;
+        sh:path      <http://schema.org/subjectOf> .
+
+shape:PublicationEvent_text_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:Article_isPartOf_class_1
+        sh:class  <http://schema.org/ProductModel> .
+
+shape:Article_exampleOfWork
+        sh:class     <http://schema.org/CreativeWork> ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "exampleOfWork"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/exampleOfWork> .
+
+shape:ProductModel_workExample
+        sh:name      "workExample"@en ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <http://schema.org/workExample> .
+
+shape:CreativeWork_isbn
+        sh:datatype  xsd:string ;
+        sh:name      "isbn"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/isbn> .
+
+shape:WebSite_subjectOf_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:ProductModel_sameAs
+        sh:name      "sameAs"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/sameAs> .
+
+shape:CreativeWork_publication_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:WebSite_additionalType_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:Statement_sameAs
+        sh:name      "sameAs"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/sameAs> .
+
+shape:DigitalDocument_subjectOf_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:CreativeWorkSeries_exampleOfWork
+        sh:class     <http://schema.org/CreativeWork> ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "exampleOfWork"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/exampleOfWork> .
+
+shape:DigitalDocument_isbn
+        sh:datatype  xsd:string ;
+        sh:name      "isbn"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/isbn> .
+
+shape:DefinedTerm_name_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:WebSite_publication_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:CreativeWork_bookEdition_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:CreativeWorkSeries_isbn
+        sh:datatype  xsd:string ;
+        sh:name      "isbn"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/isbn> .
+
+shape:WebSite_materialExtent
+        sh:datatype  xsd:string ;
+        sh:in        ( "1 online resource" "1 online resource." ) ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "materialExtent"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/materialExtent> .
+
+shape:Book_bookEdition_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:CreativeWorkSeries_bookEdition
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "bookEdition"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/bookEdition> .
+
+shape:DigitalDocument_publication_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:CreativeWork_additionalType
+        sh:maxCount  1 ;
+        sh:name      "additionalType"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:CreativeWork_additionalType_class_0 shape:CreativeWork_additionalType_class_1 shape:CreativeWork_additionalType_class_2 shape:CreativeWork_additionalType_class_3 ) ;
+        sh:path      <http://schema.org/additionalType> .
+
+shape:PublicationEvent_additionalType
+        sh:name      "additionalType"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/additionalType> .
+
+shape:CreativeWork_additionalType_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:Book_additionalType_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:Article_additionalType_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:Article_publication
+        sh:name      "publication"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:Article_publication_class_0 shape:Article_publication_class_1 shape:Article_publication_class_2 shape:Article_publication_class_3 ) ;
+        sh:path      <http://schema.org/publication> .
+
+shape:Place_location  sh:name  "location"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:Place_location_class_0 shape:Place_location_class_1 shape:Place_location_class_2 shape:Place_location_class_3 ) ;
+        sh:path      <http://schema.org/location> .
+
+shape:ArchiveComponent_additionalType_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:CreativeWork_subjectOf_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:Statement_endDate
+        sh:datatype  <http://schema.org/Date> ;
+        sh:maxCount  1 ;
+        sh:name      "endDate"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/endDate> .
+
+shape:ProductModel_additionalType_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:PublicationEvent_publishedBy_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:ArchiveComponent_additionalType
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "additionalType"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:ArchiveComponent_additionalType_class_0 shape:ArchiveComponent_additionalType_class_1 shape:ArchiveComponent_additionalType_class_2 shape:ArchiveComponent_additionalType_class_3 ) ;
+        sh:path      <http://schema.org/additionalType> .
+
+shape:CreativeWorkSeries_additionalType_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:CreativeWorkSeries_publication_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:Place_publishedBy_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:CreativeWork_size_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:ProductModel_subjectOf_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:CreativeWork_about
+        sh:class     <http://schema.org/VisualArtwork> ;
+        sh:name      "about"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/about> .
+
+shape:DefinedTerm_endDate
+        sh:datatype  <http://schema.org/Date> ;
+        sh:maxCount  1 ;
+        sh:name      "endDate"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/endDate> .
+
+shape:Book_url  sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "url"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/url> .
+
+shape:WebSite_url  sh:in  ( <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=299562> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=270793> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=270792> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=312334> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=325032> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=312383> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=312397> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=309338> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=312321> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=312327> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=331332> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=312347> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=312342> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=312382> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=251414> <https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=312394> ) ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "url"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/url> .
+
+shape:CreativeWork_name_datatype_1
+        sh:datatype  xsd:string .
+
+shape:ProductModel_name_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:Place_sameAs  sh:name  "sameAs"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/sameAs> .
+
+shape:Article_subjectOf_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:CreativeWork_publication
+        sh:name      "publication"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:CreativeWork_publication_class_0 shape:CreativeWork_publication_class_1 shape:CreativeWork_publication_class_2 shape:CreativeWork_publication_class_3 ) ;
+        sh:path      <http://schema.org/publication> .
+
+shape:Book_publication_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:ProductModel_size_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:DigitalDocument_publication
+        sh:name      "publication"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:DigitalDocument_publication_class_0 shape:DigitalDocument_publication_class_1 shape:DigitalDocument_publication_class_2 shape:DigitalDocument_publication_class_3 ) ;
+        sh:path      <http://schema.org/publication> .
+
+shape:ProductModel  rdf:type  sh:NodeShape ;
+        rdfs:label      "ProductModel"@en ;
+        sh:property     shape:ProductModel_url , shape:ProductModel_additionalType , shape:ProductModel_size , shape:ProductModel_pagination , shape:ProductModel_subjectOf , shape:ProductModel_sameAs , shape:ProductModel_bookEdition , shape:ProductModel_exampleOfWork , shape:ProductModel_workExample , shape:ProductModel_isbn , shape:ProductModel_name , shape:ProductModel_publication , shape:ProductModel_alternateName , shape:ProductModel_about , shape:ProductModel_materialExtent , shape:ProductModel_isPartOf ;
+        sh:targetClass  <http://schema.org/ProductModel> .
+
+shape:Statement_location_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:ArchiveComponent_url
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "url"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/url> .
+
+shape:ProductModel_isPartOf_class_0
+        sh:class  <http://schema.org/CreativeWorkSeries> .
+
+shape:Place_location_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:DigitalDocument_additionalType
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "additionalType"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:DigitalDocument_additionalType_class_0 shape:DigitalDocument_additionalType_class_1 shape:DigitalDocument_additionalType_class_2 shape:DigitalDocument_additionalType_class_3 ) ;
+        sh:path      <http://schema.org/additionalType> .
+
+shape:Book_publication
+        sh:name      "publication"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:Book_publication_class_0 shape:Book_publication_class_1 shape:Book_publication_class_2 shape:Book_publication_class_3 ) ;
+        sh:path      <http://schema.org/publication> .
+
+shape:ProductModel_isbn
+        sh:datatype  xsd:string ;
+        sh:name      "isbn"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/isbn> .
+
+shape:DigitalDocument_additionalType_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:CreativeWorkSeries_subjectOf
+        sh:name      "subjectOf"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:CreativeWorkSeries_subjectOf_class_0 shape:CreativeWorkSeries_subjectOf_class_1 shape:CreativeWorkSeries_subjectOf_class_2 shape:CreativeWorkSeries_subjectOf_class_3 ) ;
+        sh:path      <http://schema.org/subjectOf> .
+
+shape:Article_isPartOf_class_3
+        sh:class  <http://schema.org/Book> .
+
+shape:Statement_publishedBy_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:Place_text  sh:name  "text"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:Place_text_datatype_0 shape:Place_text_datatype_1 ) ;
+        sh:path      <http://schema.org/text> .
+
+shape:ArchiveComponent_publication_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:VideoObject_publication_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:WebSite_subjectOf_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:PublicationEvent_text
+        sh:name      "text"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:PublicationEvent_text_datatype_0 shape:PublicationEvent_text_datatype_1 ) ;
+        sh:path      <http://schema.org/text> .
+
+shape:CreativeWork_publication_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:DefinedTerm_location_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:Place_text_datatype_1
+        sh:datatype  xsd:string .
+
+shape:Statement_name_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:CreativeWork_size
+        sh:name      "size"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:CreativeWork_size_datatype_0 shape:CreativeWork_size_datatype_1 ) ;
+        sh:path      <http://schema.org/size> .
+
+shape:WebSite_publication_class_2
+        sh:class  <http://schema.org/Statement> .
+
+shape:ArchiveComponent_subjectOf_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:CreativeWorkSeries_alternateName
+        sh:datatype  xsd:string ;
+        sh:name      "alternateName"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/alternateName> .
+
+shape:Place_name  dash:propertyRole  dash:LabelRole ;
+        sh:minCount        1 ;
+        sh:name            "name"@en ;
+        sh:nodeKind        sh:Literal ;
+        sh:or              ( shape:Place_name_datatype_0 shape:Place_name_datatype_1 ) ;
+        sh:path            <http://schema.org/name> .
+
+shape:ArchiveComponent_size
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "size"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/size> .
+
+shape:ArchiveComponent_sameAs
+        sh:maxCount  1 ;
+        sh:name      "sameAs"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/sameAs> .
+
+shape:CreativeWork_sameAs
+        sh:name      "sameAs"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/sameAs> .
+
+shape:Statement_location
+        sh:name      "location"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:Statement_location_class_0 shape:Statement_location_class_1 shape:Statement_location_class_2 shape:Statement_location_class_3 ) ;
+        sh:path      <http://schema.org/location> .
+
+shape:DefinedTerm_additionalType
+        sh:name      "additionalType"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/additionalType> .
+
+shape:PublicationEvent_location_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:DigitalDocument_publication_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:PublicationEvent_name
+        sh:name      "name"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:PublicationEvent_name_datatype_0 shape:PublicationEvent_name_datatype_1 ) ;
+        sh:path      <http://schema.org/name> .
+
+shape:DigitalDocument_size
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "size"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/size> .
+
+shape:VideoObject_exampleOfWork
+        sh:class     <http://schema.org/CreativeWork> ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "exampleOfWork"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/exampleOfWork> .
+
+shape:Article_pagination
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "pagination"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/pagination> .
+
+shape:Article_name  dash:propertyRole  dash:LabelRole ;
+        sh:datatype        xsd:string ;
+        sh:minCount        1 ;
+        sh:name            "name"@en ;
+        sh:nodeKind        sh:Literal ;
+        sh:path            <http://schema.org/name> .
+
+shape:ProductModel_about
+        sh:class     <http://schema.org/VisualArtwork> ;
+        sh:name      "about"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/about> .
+
+shape:Book_additionalType_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:CreativeWorkSeries_size
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "size"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/size> .
+
+shape:ProductModel_publication
+        sh:name      "publication"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:ProductModel_publication_class_0 shape:ProductModel_publication_class_1 shape:ProductModel_publication_class_2 shape:ProductModel_publication_class_3 ) ;
+        sh:path      <http://schema.org/publication> .
+
+shape:WebSite_exampleOfWork
+        sh:class     <http://schema.org/CreativeWork> ;
+        sh:in        ( <https://id.rijksmuseum.nl/300299562> <https://id.rijksmuseum.nl/300270793> <https://id.rijksmuseum.nl/300270792> <https://id.rijksmuseum.nl/300312334> <https://id.rijksmuseum.nl/300325032> <https://id.rijksmuseum.nl/300312383> <https://id.rijksmuseum.nl/300312397> <https://id.rijksmuseum.nl/300309338> <https://id.rijksmuseum.nl/300312321> <https://id.rijksmuseum.nl/300312327> <https://id.rijksmuseum.nl/300331332> <https://id.rijksmuseum.nl/300312347> <https://id.rijksmuseum.nl/300312342> <https://id.rijksmuseum.nl/300312382> <https://id.rijksmuseum.nl/300251414> <https://id.rijksmuseum.nl/300312394> ) ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "exampleOfWork"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/exampleOfWork> .
+
+shape:Statement  rdf:type  sh:NodeShape ;
+        rdfs:label      "Statement"@en ;
+        sh:property     shape:Statement_name , shape:Statement_additionalType , shape:Statement_publishedBy , shape:Statement_endDate , shape:Statement_text , shape:Statement_startDate , shape:Statement_sameAs , shape:Statement_location ;
+        sh:targetClass  <http://schema.org/Statement> .
+
+shape:CreativeWork_subjectOf_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:Article_publication_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:CreativeWork_materialExtent_datatype_1
+        sh:datatype  xsd:string .
+
+shape:DigitalDocument_subjectOf
+        sh:name      "subjectOf"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:DigitalDocument_subjectOf_class_0 shape:DigitalDocument_subjectOf_class_1 shape:DigitalDocument_subjectOf_class_2 shape:DigitalDocument_subjectOf_class_3 ) ;
+        sh:path      <http://schema.org/subjectOf> .
+
+shape:VideoObject_name
+        dash:propertyRole  dash:LabelRole ;
+        sh:datatype        xsd:string ;
+        sh:maxCount        1 ;
+        sh:minCount        1 ;
+        sh:name            "name"@en ;
+        sh:nodeKind        sh:Literal ;
+        sh:path            <http://schema.org/name> .
+
+shape:Book_about  sh:class  <http://schema.org/VisualArtwork> ;
+        sh:name      "about"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/about> .
+
+shape:WebSite_sameAs  sh:name  "sameAs"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/sameAs> .
+
+shape:CreativeWorkSeries_additionalType_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:CreativeWorkSeries_publication_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:Place_publishedBy_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:ProductModel_subjectOf_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:Place  rdf:type   sh:NodeShape ;
+        rdfs:label      "Place"@en ;
+        sh:property     shape:Place_sameAs , shape:Place_additionalType , shape:Place_endDate , shape:Place_text , shape:Place_location , shape:Place_startDate , shape:Place_publishedBy , shape:Place_name ;
+        sh:targetClass  <http://schema.org/Place> .
+
+shape:WebSite_workExample_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:VideoObject_workExample
+        sh:minCount  1 ;
+        sh:name      "workExample"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/workExample> .
+
+shape:DefinedTerm  rdf:type  sh:NodeShape ;
+        rdfs:label      "DefinedTerm"@en ;
+        sh:property     shape:DefinedTerm_sameAs , shape:DefinedTerm_additionalType , shape:DefinedTerm_endDate , shape:DefinedTerm_name , shape:DefinedTerm_startDate , shape:DefinedTerm_text , shape:DefinedTerm_location , shape:DefinedTerm_publishedBy ;
+        sh:targetClass  <http://schema.org/DefinedTerm> .
+
+shape:PublicationEvent_location
+        sh:name      "location"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:PublicationEvent_location_class_0 shape:PublicationEvent_location_class_1 shape:PublicationEvent_location_class_2 shape:PublicationEvent_location_class_3 ) ;
+        sh:path      <http://schema.org/location> .
+
+shape:Book_workExample
+        sh:name      "workExample"@en ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <http://schema.org/workExample> .
+
+shape:WebSite  rdf:type  sh:NodeShape ;
+        rdfs:label      "WebSite"@en ;
+        sh:property     shape:WebSite_workExample , shape:WebSite_materialExtent , shape:WebSite_publication , shape:WebSite_subjectOf , shape:WebSite_sameAs , shape:WebSite_exampleOfWork , shape:WebSite_url , shape:WebSite_name , shape:WebSite_additionalType ;
+        sh:targetClass  <http://schema.org/WebSite> .
+
+shape:CreativeWork_name
+        sh:name      "name"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:CreativeWork_name_datatype_0 shape:CreativeWork_name_datatype_1 ) ;
+        sh:path      <http://schema.org/name> .
+
+shape:Article_additionalType_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:Book  rdf:type    sh:NodeShape ;
+        rdfs:label      "Book"@en ;
+        sh:property     shape:Book_url , shape:Book_alternateName , shape:Book_workExample , shape:Book_additionalType , shape:Book_size , shape:Book_subjectOf , shape:Book_sameAs , shape:Book_exampleOfWork , shape:Book_publication , shape:Book_bookEdition , shape:Book_isbn , shape:Book_name , shape:Book_about , shape:Book_materialExtent ;
+        sh:targetClass  <http://schema.org/Book> .
+
+shape:DigitalDocument_exampleOfWork
+        sh:class     <http://schema.org/CreativeWork> ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "exampleOfWork"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/exampleOfWork> .
+
+shape:ProductModel_isPartOf_class_2
+        sh:class  <http://schema.org/CreativeWork> .
+
+shape:Place_location_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:ProductModel_additionalType_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:PublicationEvent_startDate
+        sh:datatype  <http://schema.org/Date> ;
+        sh:name      "startDate"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/startDate> .
+
+shape:VideoObject  rdf:type  sh:NodeShape ;
+        rdfs:label      "VideoObject"@en ;
+        sh:property     shape:VideoObject_publication , shape:VideoObject_bookEdition , shape:VideoObject_url , shape:VideoObject_additionalType , shape:VideoObject_size , shape:VideoObject_isbn , shape:VideoObject_subjectOf , shape:VideoObject_name , shape:VideoObject_about , shape:VideoObject_workExample , shape:VideoObject_materialExtent , shape:VideoObject_exampleOfWork , shape:VideoObject_sameAs ;
+        sh:targetClass  <http://schema.org/VideoObject> .
+
+shape:Book_name_datatype_1
+        sh:datatype  xsd:string .
+
+shape:VideoObject_subjectOf_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:PublicationEvent_publishedBy_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:DefinedTerm_sameAs
+        sh:name      "sameAs"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/sameAs> .
+
+shape:Book_size_datatype_1
+        sh:datatype  xsd:string .
+
+shape:DefinedTerm_publishedBy_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:CreativeWorkSeries_url
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "url"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/url> .
+
+shape:ProductModel_publication_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:DigitalDocument_additionalType_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:CreativeWorkSeries_materialExtent
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "materialExtent"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/materialExtent> .
+
+shape:Statement_publishedBy_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:Book_subjectOf_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:Book_isbn  sh:datatype  xsd:string ;
+        sh:name      "isbn"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/isbn> .
+
+shape:DefinedTerm_name
+        dash:propertyRole  dash:LabelRole ;
+        sh:minCount        1 ;
+        sh:name            "name"@en ;
+        sh:nodeKind        sh:Literal ;
+        sh:or              ( shape:DefinedTerm_name_datatype_0 shape:DefinedTerm_name_datatype_1 ) ;
+        sh:path            <http://schema.org/name> .
+
+shape:ArchiveComponent_publication_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:VideoObject_publication_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:PublicationEvent_sameAs
+        sh:name      "sameAs"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/sameAs> .
+
+shape:CreativeWorkSeries
+        rdf:type        sh:NodeShape ;
+        rdfs:label      "CreativeWorkSeries"@en ;
+        sh:property     shape:CreativeWorkSeries_name , shape:CreativeWorkSeries_publication , shape:CreativeWorkSeries_sameAs , shape:CreativeWorkSeries_additionalType , shape:CreativeWorkSeries_size , shape:CreativeWorkSeries_bookEdition , shape:CreativeWorkSeries_exampleOfWork , shape:CreativeWorkSeries_workExample , shape:CreativeWorkSeries_about , shape:CreativeWorkSeries_url , shape:CreativeWorkSeries_isbn , shape:CreativeWorkSeries_materialExtent , shape:CreativeWorkSeries_subjectOf , shape:CreativeWorkSeries_alternateName ;
+        sh:targetClass  <http://schema.org/CreativeWorkSeries> .
+
+shape:ProductModel_size
+        sh:name      "size"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:ProductModel_size_datatype_0 shape:ProductModel_size_datatype_1 ) ;
+        sh:path      <http://schema.org/size> .
+
+shape:CreativeWorkSeries_subjectOf_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:CreativeWork_materialExtent
+        sh:name      "materialExtent"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:CreativeWork_materialExtent_datatype_0 shape:CreativeWork_materialExtent_datatype_1 ) ;
+        sh:path      <http://schema.org/materialExtent> .
+
+shape:Article_url  sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "url"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/url> .
+
+shape:VisualArtwork  rdf:type  sh:NodeShape ;
+        rdfs:label      "VisualArtwork"@en ;
+        sh:targetClass  <http://schema.org/VisualArtwork> .
+
+shape:DefinedTerm_location_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:DigitalDocument_sameAs
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "sameAs"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/sameAs> .
+
+shape:Book_alternateName
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "alternateName"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/alternateName> .
+
+shape:Statement_text_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:DefinedTerm_text_datatype_1
+        sh:datatype  xsd:string .
+
+shape:Book_materialExtent_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:VideoObject_additionalType_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:CreativeWorkSeries_workExample
+        sh:name      "workExample"@en ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <http://schema.org/workExample> .
+
+shape:Article_isPartOf_class_0
+        sh:class  <http://schema.org/CreativeWorkSeries> .
+
+shape:ArchiveComponent_subjectOf_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:PublicationEvent_name_datatype_1
+        sh:datatype  xsd:string .
+
+shape:VideoObject_additionalType
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "additionalType"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:VideoObject_additionalType_class_0 shape:VideoObject_additionalType_class_1 shape:VideoObject_additionalType_class_2 shape:VideoObject_additionalType_class_3 ) ;
+        sh:path      <http://schema.org/additionalType> .
+
+shape:Place_publishedBy
+        sh:name      "publishedBy"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:Place_publishedBy_class_0 shape:Place_publishedBy_class_1 shape:Place_publishedBy_class_2 shape:Place_publishedBy_class_3 ) ;
+        sh:path      <http://schema.org/publishedBy> .
+
+shape:PublicationEvent_location_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:WebSite_additionalType_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:Book_sameAs  sh:name  "sameAs"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/sameAs> .
+
+shape:DigitalDocument_subjectOf_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:DefinedTerm_publishedBy
+        sh:name      "publishedBy"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:DefinedTerm_publishedBy_class_0 shape:DefinedTerm_publishedBy_class_1 shape:DefinedTerm_publishedBy_class_2 shape:DefinedTerm_publishedBy_class_3 ) ;
+        sh:path      <http://schema.org/publishedBy> .
+
+shape:CreativeWork_url
+        sh:maxCount  1 ;
+        sh:name      "url"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/url> .
+
+shape:ProductModel_isPartOf
+        sh:maxCount  1 ;
+        sh:name      "isPartOf"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:or        ( shape:ProductModel_isPartOf_class_0 shape:ProductModel_isPartOf_class_1 shape:ProductModel_isPartOf_class_2 shape:ProductModel_isPartOf_class_3 ) ;
+        sh:path      <http://schema.org/isPartOf> .
+
+shape:Place_name_datatype_1
+        sh:datatype  xsd:string .
+
+shape:Article_publication_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:ProductModel_alternateName
+        sh:datatype  xsd:string ;
+        sh:name      "alternateName"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/alternateName> .
+
+shape:Statement_additionalType
+        sh:minCount  1 ;
+        sh:name      "additionalType"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/additionalType> .
+
+shape:ProductModel_name
+        sh:name      "name"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:ProductModel_name_datatype_0 shape:ProductModel_name_datatype_1 ) ;
+        sh:path      <http://schema.org/name> .
+
+shape:Statement_text  sh:minCount  1 ;
+        sh:name      "text"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:Statement_text_datatype_0 shape:Statement_text_datatype_1 ) ;
+        sh:path      <http://schema.org/text> .
+
+shape:Article_about  sh:class  <http://schema.org/VisualArtwork> ;
+        sh:name      "about"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/about> .
+
+shape:DigitalDocument_publication_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:WebSite_workExample_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:CreativeWork_additionalType_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:PublicationEvent_publishedBy
+        sh:name      "publishedBy"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:PublicationEvent_publishedBy_class_0 shape:PublicationEvent_publishedBy_class_1 shape:PublicationEvent_publishedBy_class_2 shape:PublicationEvent_publishedBy_class_3 ) ;
+        sh:path      <http://schema.org/publishedBy> .
+
+shape:Book_additionalType_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:ProductModel_bookEdition_datatype_1
+        sh:datatype  xsd:string .
+
+shape:Article_additionalType_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:ArchiveComponent_additionalType_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:CreativeWorkSeries_name_datatype_1
+        sh:datatype  xsd:string .
+
+shape:CreativeWork_subjectOf_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:ProductModel_additionalType_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:VideoObject_subjectOf_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:PublicationEvent_publishedBy_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:ProductModel_materialExtent_datatype_1
+        sh:datatype  xsd:string .
+
+shape:CreativeWorkSeries_additionalType_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:DefinedTerm_publishedBy_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:ProductModel_publication_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:CreativeWork_bookEdition
+        sh:name      "bookEdition"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:CreativeWork_bookEdition_datatype_0 shape:CreativeWork_bookEdition_datatype_1 ) ;
+        sh:path      <http://schema.org/bookEdition> .
+
+shape:Place_publishedBy_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:ProductModel_subjectOf_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:DigitalDocument_bookEdition
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "bookEdition"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/bookEdition> .
+
+shape:Statement_name  sh:name  "name"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:Statement_name_datatype_0 shape:Statement_name_datatype_1 ) ;
+        sh:path      <http://schema.org/name> .
+
+shape:Article_sameAs  sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "sameAs"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/sameAs> .
+
+shape:CreativeWork_name_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:Article_subjectOf_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:Book_subjectOf_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:Book_publication_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:ArchiveComponent_workExample
+        sh:minCount  1 ;
+        sh:name      "workExample"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/workExample> .
+
+shape:CreativeWorkSeries_subjectOf_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:CreativeWork_exampleOfWork
+        sh:class     <http://schema.org/CreativeWork> ;
+        sh:maxCount  1 ;
+        sh:name      "exampleOfWork"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/exampleOfWork> .
+
+shape:CreativeWork  rdf:type  sh:NodeShape ;
+        rdfs:label      "CreativeWork"@en ;
+        sh:property     shape:CreativeWork_about , shape:CreativeWork_bookEdition , shape:CreativeWork_subjectOf , shape:CreativeWork_size , shape:CreativeWork_alternateName , shape:CreativeWork_exampleOfWork , shape:CreativeWork_isbn , shape:CreativeWork_additionalType , shape:CreativeWork_publication , shape:CreativeWork_name , shape:CreativeWork_materialExtent , shape:CreativeWork_url , shape:CreativeWork_sameAs , shape:CreativeWork_workExample ;
+        sh:targetClass  <http://schema.org/CreativeWork> .
+
+shape:Statement_location_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:Book_bookEdition
+        sh:name      "bookEdition"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:Book_bookEdition_datatype_0 shape:Book_bookEdition_datatype_1 ) ;
+        sh:path      <http://schema.org/bookEdition> .
+
+shape:Book_size  sh:name  "size"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:Book_size_datatype_0 shape:Book_size_datatype_1 ) ;
+        sh:path      <http://schema.org/size> .
+
+shape:VideoObject_publication
+        sh:name      "publication"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:VideoObject_publication_class_0 shape:VideoObject_publication_class_1 shape:VideoObject_publication_class_2 shape:VideoObject_publication_class_3 ) ;
+        sh:path      <http://schema.org/publication> .
+
+shape:VideoObject_additionalType_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:PublicationEvent_text_datatype_1
+        sh:datatype  xsd:string .
+
+shape:  rdf:type  <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://purl.org/dc/terms/abstract>
+                "Generated by SHACL Play!"@en ;
+        <http://purl.org/dc/terms/created>
+                "2026-03-09T12:36:54.714Z"^^xsd:dateTime .
+
+shape:Article_isPartOf_class_2
+        sh:class  <http://schema.org/CreativeWork> .
+
+shape:Statement_publishedBy_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:WebSite_subjectOf_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:CreativeWork_publication_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:DefinedTerm_location_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:WebSite_additionalType_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:Place_text_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:DigitalDocument_subjectOf_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:Article_materialExtent
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "materialExtent"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/materialExtent> .
+
+shape:CreativeWorkSeries_additionalType
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "additionalType"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:CreativeWorkSeries_additionalType_class_0 shape:CreativeWorkSeries_additionalType_class_1 shape:CreativeWorkSeries_additionalType_class_2 shape:CreativeWorkSeries_additionalType_class_3 ) ;
+        sh:path      <http://schema.org/additionalType> .
+
+shape:DigitalDocument_url
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "url"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/url> .
+
+shape:Book_subjectOf  sh:name  "subjectOf"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:Book_subjectOf_class_0 shape:Book_subjectOf_class_1 shape:Book_subjectOf_class_2 shape:Book_subjectOf_class_3 ) ;
+        sh:path      <http://schema.org/subjectOf> .
+
+shape:DefinedTerm_name_datatype_1
+        sh:datatype  xsd:string .
+
+shape:WebSite_publication_class_1
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:DefinedTerm_startDate
+        sh:datatype  <http://schema.org/Date> ;
+        sh:name      "startDate"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/startDate> .
+
+shape:ArchiveComponent_subjectOf_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:CreativeWork_bookEdition_datatype_1
+        sh:datatype  xsd:string .
+
+shape:Book_additionalType
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "additionalType"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:Book_additionalType_class_0 shape:Book_additionalType_class_1 shape:Book_additionalType_class_2 shape:Book_additionalType_class_3 ) ;
+        sh:path      <http://schema.org/additionalType> .
+
+shape:PublicationEvent_location_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:Book_bookEdition_datatype_1
+        sh:datatype  xsd:string .
+
+shape:DigitalDocument_publication_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:CreativeWorkSeries_sameAs
+        sh:name      "sameAs"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/sameAs> .
+
+shape:ProductModel_bookEdition
+        sh:name      "bookEdition"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:ProductModel_bookEdition_datatype_0 shape:ProductModel_bookEdition_datatype_1 ) ;
+        sh:path      <http://schema.org/bookEdition> .
+
+shape:CreativeWork_additionalType_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:CreativeWorkSeries_publication
+        sh:name      "publication"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:CreativeWorkSeries_publication_class_0 shape:CreativeWorkSeries_publication_class_1 shape:CreativeWorkSeries_publication_class_2 shape:CreativeWorkSeries_publication_class_3 ) ;
+        sh:path      <http://schema.org/publication> .
+
+shape:Statement_startDate
+        sh:datatype  <http://schema.org/Date> ;
+        sh:name      "startDate"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/startDate> .
+
+shape:Book_additionalType_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:Book_name  sh:name  "name"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:or        ( shape:Book_name_datatype_0 shape:Book_name_datatype_1 ) ;
+        sh:path      <http://schema.org/name> .
+
+shape:WebSite_name  dash:propertyRole  dash:LabelRole ;
+        sh:datatype        xsd:string ;
+        sh:in              ( "Frits Lugt, les marques de collections de dessins & d'estampes" "Navy models" "Drawings by Rembrandt and his school" "Arkyves: reference tool for the history of culture" "Dutch paintings of the seventeenth century" "Artstor" "International bibliography of art" "Works by Hercules Segers" "JSTOR" "AHR net" "European sculpure: in the Rijksmuseum" "Artnet" "Art sales catalogues online" "Artprice.com." "Early Netherlandish Paintings" "Grove art online" ) ;
+        sh:maxCount        1 ;
+        sh:minCount        1 ;
+        sh:name            "name"@en ;
+        sh:nodeKind        sh:Literal ;
+        sh:path            <http://schema.org/name> .
+
+shape:ProductModel_additionalType
+        sh:maxCount  1 ;
+        sh:name      "additionalType"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:ProductModel_additionalType_class_0 shape:ProductModel_additionalType_class_1 shape:ProductModel_additionalType_class_2 shape:ProductModel_additionalType_class_3 ) ;
+        sh:path      <http://schema.org/additionalType> .
+
+shape:ProductModel_url
+        sh:maxCount  1 ;
+        sh:name      "url"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/url> .
+
+shape:ArchiveComponent_additionalType_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:CreativeWork_subjectOf_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:WebSite_workExample
+        sh:in        ( [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                     ) ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "workExample"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:WebSite_workExample_class_0 shape:WebSite_workExample_class_1 shape:WebSite_workExample_class_2 shape:WebSite_workExample_class_3 ) ;
+        sh:path      <http://schema.org/workExample> .
+
+shape:Article_publication_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:ArchiveComponent_subjectOf
+        sh:name      "subjectOf"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:ArchiveComponent_subjectOf_class_0 shape:ArchiveComponent_subjectOf_class_1 shape:ArchiveComponent_subjectOf_class_2 shape:ArchiveComponent_subjectOf_class_3 ) ;
+        sh:path      <http://schema.org/subjectOf> .
+
+shape:CreativeWork_materialExtent_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:CreativeWorkSeries_additionalType_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:CreativeWorkSeries_publication_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:Place_publishedBy_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:CreativeWork_size_datatype_1
+        sh:datatype  xsd:string .
+
+shape:ProductModel_subjectOf_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:ProductModel_subjectOf
+        sh:name      "subjectOf"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:ProductModel_subjectOf_class_0 shape:ProductModel_subjectOf_class_1 shape:ProductModel_subjectOf_class_2 shape:ProductModel_subjectOf_class_3 ) ;
+        sh:path      <http://schema.org/subjectOf> .
+
+shape:VideoObject_url
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "url"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/url> .
+
+shape:ProductModel_name_datatype_1
+        sh:datatype  xsd:string .
+
+shape:WebSite_workExample_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:VideoObject_materialExtent
+        sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "materialExtent"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/materialExtent> .
+
+shape:Article_subjectOf_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:Book_publication_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:ProductModel_size_datatype_1
+        sh:datatype  xsd:string .
+
+shape:Article_size  sh:datatype  xsd:string ;
+        sh:maxCount  1 ;
+        sh:name      "size"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/size> .
+
+shape:Statement_location_class_3
+        sh:class  <http://schema.org/Statement> .
+
+shape:ProductModel_isPartOf_class_1
+        sh:class  <http://schema.org/ProductModel> .
+
+shape:Place_location_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:PublicationEvent
+        rdf:type        sh:NodeShape ;
+        rdfs:label      "PublicationEvent"@en ;
+        sh:property     shape:PublicationEvent_sameAs , shape:PublicationEvent_text , shape:PublicationEvent_additionalType , shape:PublicationEvent_publishedBy , shape:PublicationEvent_location , shape:PublicationEvent_endDate , shape:PublicationEvent_startDate , shape:PublicationEvent_name ;
+        sh:targetClass  <http://schema.org/PublicationEvent> .
+
+shape:Book_name_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:VideoObject_subjectOf_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:CreativeWork_alternateName
+        sh:datatype  xsd:string ;
+        sh:name      "alternateName"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/alternateName> .
+
+shape:Book_size_datatype_0
+        sh:datatype  rdf:langString .
+
+shape:DefinedTerm_publishedBy_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:ProductModel_publication_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:DigitalDocument_additionalType_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:ArchiveComponent_name
+        dash:propertyRole  dash:LabelRole ;
+        sh:datatype        xsd:string ;
+        sh:maxCount        1 ;
+        sh:minCount        1 ;
+        sh:name            "name"@en ;
+        sh:nodeKind        sh:Literal ;
+        sh:path            <http://schema.org/name> .
+
+shape:WebSite_additionalType
+        sh:in        ( [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                       [] 
+                     ) ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "additionalType"@en ;
+        sh:nodeKind  sh:BlankNode ;
+        sh:or        ( shape:WebSite_additionalType_class_0 shape:WebSite_additionalType_class_1 shape:WebSite_additionalType_class_2 shape:WebSite_additionalType_class_3 ) ;
+        sh:path      <http://schema.org/additionalType> .
+
+shape:VideoObject_size
+        sh:datatype  xsd:string ;
+        sh:name      "size"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://schema.org/size> .
+
+shape:Statement_publishedBy_class_2
+        sh:class  <http://schema.org/PublicationEvent> .
+
+shape:Book_exampleOfWork
+        sh:class     <http://schema.org/CreativeWork> ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:name      "exampleOfWork"@en ;
+        sh:nodeKind  sh:IRI ;
+        sh:path      <http://schema.org/exampleOfWork> .
+
+shape:Book_subjectOf_class_0
+        sh:class  <http://schema.org/DefinedTerm> .
+
+shape:ArchiveComponent_publication_class_1
+        sh:class  <http://schema.org/Place> .
+
+shape:VideoObject_publication_class_1
+        sh:class  <http://schema.org/Place> .

@@ -1,0 +1,13 @@
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Optimizing for backing store: sparql
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 0/11
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 10/26
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 26/41
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Queries 40/41
+
+void-docker $ [main] INFO swiss.sib.swissprot.servicedescription.Generate - Ran 41 queries
+
+Void file generated and stored in /home/koen/shape-generation-clean/generated-output/void/rijksmuseum-images.ttl
