@@ -1,5 +1,11 @@
-db_*
-
+# shacl-play logs *a lot*
 play/*.log
 
 ntriples
+
+# qse
+qse/wikidata*
+db_*
+*.csv
+config.properties
+

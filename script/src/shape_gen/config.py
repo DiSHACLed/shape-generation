@@ -39,8 +39,3 @@ NAMESPACES={
     'lblod_org': 'http://lblod.data.gift/vocabularies/organisatie/',
     'lblod_ere': 'http://data.lblod.info/vocabularies/erediensten/',
 }
-
-VIRTUOSO_DIR = "/media/koen/big-ssd/data"
-RESULTS = "/home/koen/shape-generation-clean/generated-output"
-SAMPLE_DATA=Path('/media/koen/big-ssd/sample-data')
-INTERMEDIATE=Path('/media/koen/big-ssd/intermediate')
