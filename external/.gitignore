@@ -1,2 +1,5 @@
-*.jar
-qse
+*
+# *.jar
+# qse
+!download.sh
+!.gitignore
