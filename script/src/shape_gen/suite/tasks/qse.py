@@ -1,5 +1,5 @@
 from ..task import Task, Key
-from ...config import RESULTS, QSE_DIR, INTERMEDIATE, JAVA_BIN
+from ...config import JAVA_HEAP_SIZE, RESULTS, QSE_DIR, INTERMEDIATE, JAVA_BIN
 from pathlib import Path
 import subprocess
 
@@ -93,7 +93,7 @@ def meat(key : Key) :
     with open(config_file, "w") as f:
         f.write(config)   
 
-    command = [JAVA_BIN, "-jar", "-Xmx50g", str(QSE_JAR), str(config_file)] # 
+    command = [JAVA_BIN, "-jar", f"-Xmx{JAVA_HEAP_SIZE}g", str(QSE_JAR), str(config_file)] # 
 
     with open(log_file, "w") as log_file:
         try:
