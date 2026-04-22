@@ -87,8 +87,8 @@ def stats(key : Key) :
        for compliant in (False, True) :
             path = Path(f"{output_dir}/shacl-{threshold}-{"compl" if compliant else "non_compl"}.ttl")
             if path.exists():
-                (a, b) = _stats(path)
-                report_add('info', f'shexer-{'sound' if compliant else 'unsound'}-{threshold}', key, f'{a} / {b}')
+                (a, b, c) = _stats(path)
+                report_add('info', f'shexer-{'sound' if compliant else 'unsound'}-{threshold}', key, f'{a} / {b} / {c}')
 
 from ..validate import validate as _validate
 

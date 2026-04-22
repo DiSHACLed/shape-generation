@@ -11,17 +11,20 @@ if ROOTLESS :
     # If so; change this
     SOCKET = "unix:///run/user/1000/docker.sock"
 
-HOME_DIR = f"{os.path.expanduser("~")}"
-
-# make sure these folders exists
-_BASE = "shape-gen"
-VIRTUOSO_DIR = Path(f"{HOME_DIR}/{_BASE}/virtuoso-dbs")
-RESULTS = Path(f"{HOME_DIR}/{_BASE}/results")
-SAMPLE_DATA = Path(f"{HOME_DIR}/{_BASE}/samples-input")
-INTERMEDIATE = Path(f"{HOME_DIR}/{_BASE}/intermediate")
+# HOME_DIR = f"{os.path.expanduser("~")}"
+# _BASE = "shape-gen"
 
 # Note this will be broken if you install without --editable
 SCRIPT_FOLDER = Path(__file__).resolve().parent.parent.parent.parent 
+
+# make sure these folders exists
+VIRTUOSO_DIR = Path(f"{SCRIPT_FOLDER}/virtuoso-dbs")
+RESULTS = Path(f"{SCRIPT_FOLDER}/generated-output")
+SAMPLE_DATA = Path(f"{SCRIPT_FOLDER}/samples-input")
+INTERMEDIATE = Path(f"{SCRIPT_FOLDER}/intermediate")
+
+JAVA_HEAP_SIZE = 32
+
 # make sure these exist
 PLAY_JAR=Path(f'{SCRIPT_FOLDER}/external/shacl-play-app-0.12.0-onejar.jar')
 QSE_DIR=Path(f'{SCRIPT_FOLDER}/external/qse')

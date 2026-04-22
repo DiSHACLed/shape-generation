@@ -1,5 +1,5 @@
 from ..task import Task, Key
-from ...config import RESULTS, PLAY_JAR
+from ...config import RESULTS, PLAY_JAR, JAVA_HEAP_SIZE
 # from rdf_tools.prelude import docker_connect
 from pathlib import Path
 import subprocess
@@ -7,8 +7,6 @@ from ...config import RESULTS
 from ...virtuoso.cli import init, stop
 from ...virtuoso.virtuoso import ENDPOINT
 from . import virtuoso
-
-JAVA_HEAP_SIZE = 32
 
 CODE = 'play'
 

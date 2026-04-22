@@ -119,8 +119,8 @@ def stats(key : Key) :
     for threshold in ('0.0', '0.5', '0.9', '1.0'):
         path = Path(f"{output_dir}/DATASET_QSE_{threshold}_0_SHACL.ttl")
         if path.exists() :
-            (a, b) = _stats(path)
-            report_add('info', f'{CODE}-{threshold}', key, f'{a} / {b}')
+            (a, b, c) = _stats(path)
+            report_add('info', f'{CODE}-{threshold}', key, f'{a} / {b} / {c}')
 
 from ...config import SAMPLE_DATA
 

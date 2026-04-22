@@ -1,9 +1,7 @@
-from ..config import RESULTS, PLAY_JAR, SAMPLE_DATA
+from ..config import RESULTS, PLAY_JAR, SAMPLE_DATA, JAVA_HEAP_SIZE
 from pathlib import Path
 import subprocess
 from rdflib import Graph
-
-JAVA_HEAP_SIZE = 32
 
 CODE = 'play'
 
