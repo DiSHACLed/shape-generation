@@ -9,6 +9,8 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "docker>=7.1.0",
+    "memray>=1.19.3",
+    "openpyxl>=3.1.5",
     "rdflib>=7.6.0",
     "shexer>=2.7.2.1",
     "six>=1.17.0",
