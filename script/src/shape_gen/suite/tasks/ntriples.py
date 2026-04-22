@@ -10,6 +10,13 @@ CODE = 'ntriples'
 def meat(key : Key) :
     client = docker_connect(time_out=60*60)
 
+    result_path = Path(f"{INTERMEDIATE}/{CODE}/")
+    result_path.mkdir(parents=False, exist_ok=True)
+
+    log_path = Path(f"{RESULTS}/{CODE}/")
+    log_path.mkdir(parents=False, exist_ok=True)
+    print(log_path)
+
     try :
         container = client.containers.run(
                         image = 'stain/jena',

@@ -17,14 +17,15 @@ HOME_DIR = f"{os.path.expanduser("~")}"
 _BASE = "shape-gen"
 VIRTUOSO_DIR = Path(f"{HOME_DIR}/{_BASE}/virtuoso-dbs")
 RESULTS = Path(f"{HOME_DIR}/{_BASE}/results")
-SAMPLE_DATA = Path(f"{HOME_DIR}/{_BASE}/sample-data")
+SAMPLE_DATA = Path(f"{HOME_DIR}/{_BASE}/sample-input")
 INTERMEDIATE = Path(f"{HOME_DIR}/{_BASE}/intermediate")
 
 # Note this will be broken if you install without --editable
 SCRIPT_FOLDER = Path(__file__).resolve().parent.parent.parent.parent 
 # make sure these exist
-PLAY_JAR=Path(f'{SCRIPT_FOLDER}/external/shacl-play-app-0.11.7-onejar.jar')
+PLAY_JAR=Path(f'{SCRIPT_FOLDER}/external/shacl-play-app-0.12.0-onejar.jar')
 QSE_DIR=Path(f'{SCRIPT_FOLDER}/external/qse')
+JAVA_BIN=Path(f'{SCRIPT_FOLDER}/external/jdk-17.0.18+8-jre/bin/java')
 
 NAMESPACES={
     'sh': 'http://www.w3.org/ns/shacl#',

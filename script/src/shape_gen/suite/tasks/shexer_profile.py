@@ -20,7 +20,8 @@ def meat(key : Key) :
 
     log_file = Path(f'{RESULTS}/{CODE}/{key}.log')
 
-    private = key.startswith('lblod')
+    # private = key.startswith('lblod')
+    private = True
 
     shaper = Shaper(
         all_classes_mode=True,
@@ -47,9 +48,12 @@ def meat(key : Key) :
         with open(f"{output_path}/class_min_iris.json", "w") as out_stream:
             json.dump(shaper._class_min_iris._base_dict, out_stream, indent=2)
 
+import memray
+import subprocess
+
 task = Task(
     description = "instance tracker+class profile shexer; all saved in json files",
     done = (lambda key : (RESULTS/Path(f"{CODE}/{key}/profile.json")).is_file()),
     code = CODE,
-    meat = meat
+    meat = meat,
     )

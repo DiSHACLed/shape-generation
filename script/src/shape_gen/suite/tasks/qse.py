@@ -1,5 +1,5 @@
 from ..task import Task, Key
-from ...config import RESULTS, QSE_DIR, INTERMEDIATE
+from ...config import RESULTS, QSE_DIR, INTERMEDIATE, JAVA_BIN
 from pathlib import Path
 import subprocess
 
@@ -25,7 +25,8 @@ def meat(key : Key) :
 
     log_file = Path(f"{RESULTS}/{CODE}/{key}.log")
 
-    private = key.startswith('lblod')
+    private = True # examples inflate..
+    # private = key.startswith('lblod')
 
     config = f"""\
         # ---------------------------------- QSE Config -----------------------------
@@ -84,14 +85,15 @@ def meat(key : Key) :
         # ---------------------------------- Pruning Thresholds (Support and Confidence) -----------------------------
 
         # 1st parameter is confidence and 2nd is support. So for more parameters, you can append the list with more pairs lie (0.25,150) etc. Please do not use spaces in this list.
-        pruning_thresholds={{(0,0),(0.1,20),(0.2,20),(0.3,20),(0.4,20),(0.5,20),(0.6,20),(0.7,20),(0.8,20),(0.9,20),(0.9,50),(0.95,50),(0.95,100),(0.95,200)}}
+        pruning_thresholds={{(0,0),(0.5,0),(0.9,0),(1,0)}}
+        # pruning_thresholds={{(0,0),(0.1,20),(0.2,20),(0.3,20),(0.4,20),(0.5,20),(0.6,20),(0.7,20),(0.8,20),(0.9,20),(0.9,50),(0.95,50),(0.95,100),(0.95,200)}}
     """
 
     config_file = Path(f"{RESULTS}/{CODE}/{key}/config.properties")
     with open(config_file, "w") as f:
         f.write(config)   
 
-    command = ["java", "-jar", "-Xmx50g", str(QSE_JAR), str(config_file)] # 
+    command = [JAVA_BIN, "-jar", "-Xmx50g", str(QSE_JAR), str(config_file)] # 
 
     with open(log_file, "w") as log_file:
         try:
@@ -108,11 +110,39 @@ def meat(key : Key) :
             # You can add more info if you want
             raise RuntimeError(f"Command {command} failed with exit code {e.returncode}. See {log_file} for details.") from e
 
+from ..report import report_add
+from ..statistics import statistics as _stats
+from ..validate import validate as _validate
+
+def stats(key : Key) :
+    output_dir = f'{RESULTS}/{CODE}/{key}/'
+    for threshold in ('0.0', '0.5', '0.9', '1.0'):
+        path = Path(f"{output_dir}/DATASET_QSE_{threshold}_0_SHACL.ttl")
+        if path.exists() :
+            (a, b) = _stats(path)
+            report_add('info', f'{CODE}-{threshold}', key, f'{a} / {b}')
+
+from ...config import SAMPLE_DATA
+
+def validate(key : Key, overwrite : bool) :
+    input_file = Path(f'{SAMPLE_DATA}/{key}.ttl')
+
+    output_dir = f'{RESULTS}/{CODE}/{key}/'
+
+    for threshold in ('0.0', '0.5', '0.9', '1.0'):
+            shacl_path = Path(f"{output_dir}/DATASET_QSE_{threshold}_0_SHACL.ttl")
+            if shacl_path.exists() :
+                (a , b) = (_validate(input_file, shacl_path, bl, overwrite) for bl in [False, True])
+                report_add('violations', f'{CODE}-{threshold}', key, f'{a} / {b}')
+
+
 task = Task(
     description = f"generate SHACL from nt (depends on {ntriples.CODE})",
     done = (lambda key : (RESULTS/Path(f"{CODE}/{key}/DATASET_QSE_FULL_SHACL.ttl")).is_file()),
     code = CODE,
-    meat = meat
+    meat = meat,
+    stats = stats,
+    validate = validate
     )
 
 

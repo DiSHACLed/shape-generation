@@ -7,6 +7,7 @@ from pathlib import Path
 Key = str
 
 Command = Callable[[Key], None]
+CommandRW = Callable[[Key,bool], None]
 
 skip : Command = (lambda _ : None)
 
@@ -18,6 +19,10 @@ class Task():
     meat : Command
     prep : Optional[Command] = None
     post : Optional[Command] = None
+    stats : Optional[Command] = None
+    validate : Optional[CommandRW] = None
+
+from .report import report_add
 
 def execute(task : Task, key : Key, repeat : bool) :
     if not repeat and task.done(key) :
@@ -37,9 +42,15 @@ def execute(task : Task, key : Key, repeat : bool) :
         with open(f"{RESULTS}/{task.code}/{key}.error", 'w') as f :
             f.write(str(e))
     t_f = time.time()
+    total = str(t_f - t_i)
+    report_add('time', task.code, key, total)
     with open(f"{RESULTS}/{task.code}/{key}.time", 'w') as f :
         # f.write(struct.pack("d", (t_f - t_i))) "wb"
-        f.write(str(t_f - t_i))
+        f.write(total)
     if task.post is not None :
         print(f"Cleaning {task.code} on {key}...")
         task.post(key)
+    # if task.stats is not None :
+    #     task.stats(key)
+    # else :
+    #     _generic_stats(task.code, key)

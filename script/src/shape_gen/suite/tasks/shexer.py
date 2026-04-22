@@ -13,11 +13,13 @@ CODE = 'shexer'
 
 def meat(key : Key) :
     input_file = Path(f'{SAMPLE_DATA}/{key}.ttl')
-    output_file = Path(f'{RESULTS}/{CODE}/{key}.ttl')
+    output_file = Path(f'{RESULTS}/{CODE}/{key}.shex')
     log_file = Path(f'{RESULTS}/{CODE}/{key}.log')
     threshold = 0
 
-    private = key.startswith('lblod')
+    private = True
+    # private = key.startswith('lblod')
+
 
     shaper = Shaper(
         all_classes_mode = True,
@@ -46,7 +48,7 @@ def meat(key : Key) :
 
 task = Task(
     description = "generate SHACL from ttl",
-    done = (lambda key : (RESULTS/Path(f"{CODE}/{key}.ttl")).is_file()),
+    done = (lambda key : (RESULTS/Path(f"{CODE}/{key}.shex")).is_file()),
     code = CODE,
-    meat = meat
+    meat = meat,
     )

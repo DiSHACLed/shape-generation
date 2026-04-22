@@ -16,7 +16,8 @@ from shexer.utils.structures.dicts import ShapeExampleFeaturesDict
 CODE = 'shexer-bunch'
 
 def meat(key : Key) :
-    private = key.startswith('lblod')
+    private = True #
+    # private = key.startswith('lblod')
 
     input_dir = f'{RESULTS}/{shexer_profile.CODE}/{key}'
     
@@ -64,20 +65,51 @@ def meat(key : Key) :
         shaper._shape_names = shape_names
 
         shaper.shex_graph(
-            output_file=f"{output_dir}/{'shex' if format == SHEXC else 'shacl'}-{threshold}-{"compl" if compliant else "non_compl"}.ttl",
+            output_file=f"{output_dir}/{'shex' if format == SHEXC else 'shacl'}-{threshold}-{"compl" if compliant else "non_compl"}.{"ttl" if format == SHACL_TURTLE else "shex" }",
             output_format=format,
             verbose=True,
             acceptance_threshold=threshold,
         )
 
-    for threshold in (0, 0.25, 0.5, 0.75, 1):
+    for threshold in (0, 0.5, 0.9, 1):
+    # for threshold in (0, 0.25, 0.5, 0.75, 1):
        for compliant in (False, True) :
             for format in [SHEXC, SHACL_TURTLE] :
                 shex_graph(compliant,format,threshold)               
 
+from ..report import report_add
+from ..statistics import statistics as _stats
+
+def stats(key : Key) :
+    output_dir = f'{RESULTS}/{CODE}/{key}/'
+
+    for threshold in (0, 0.5, 0.9, 1):
+       for compliant in (False, True) :
+            path = Path(f"{output_dir}/shacl-{threshold}-{"compl" if compliant else "non_compl"}.ttl")
+            if path.exists():
+                (a, b) = _stats(path)
+                report_add('info', f'shexer-{'sound' if compliant else 'unsound'}-{threshold}', key, f'{a} / {b}')
+
+from ..validate import validate as _validate
+
+def validate(key : Key, overwrite : bool) :
+    input_file = Path(f'{SAMPLE_DATA}/{key}.ttl')
+
+    output_dir = f'{RESULTS}/{CODE}/{key}/'
+
+    for threshold in (0, 0.5, 0.9, 1):
+       for compliant in (False, True) :
+            shacl_path = Path(f"{output_dir}/shacl-{threshold}-{"compl" if compliant else "non_compl"}.ttl")
+            if shacl_path.exists():
+                (a , b) = (_validate(input_file, shacl_path, bl, overwrite) for bl in [False, True])
+                report_add('violations', f'shexer-{'sound' if compliant else 'unsound'}-{threshold}', key, f'{a} / {b}')
+
 task = Task(
     description = "generate SHACL from previously generated profile (depends on shexer-profile)",
     done = (lambda key : (RESULTS/Path(f"{CODE}/{key}/shacl-0-compl.ttl")).is_file()),
+    # post = post,
     code = CODE,
-    meat = meat
+    meat = meat,
+    stats = stats,
+    validate = validate
     )

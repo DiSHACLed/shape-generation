@@ -2,13 +2,15 @@ from ..prelude import Typer
 from typing import Annotated
 from pathlib import Path
 import typer
+import json
+from rdflib import Graph
 
 from ..config import SAMPLE_DATA, RESULTS
 
 from .task import Task, execute
 
 from .tasks import play, qse
-from .tasks import qse, ntriples, shexer, shexer_profile, shexer_bunch, virtuoso, void, play, voicl
+from .tasks import qse, ntriples, shexer, shexer_profile, shexer_bunch, shexer_memory, virtuoso, void, play, voicl
 
 tasks : list[Task] = [
     ntriples.task, 
@@ -16,6 +18,7 @@ tasks : list[Task] = [
     shexer.task,
     shexer_profile.task,
     shexer_bunch.task,
+    shexer_memory.task,
     virtuoso.task,
     void.task,
     play.task,
@@ -29,26 +32,20 @@ keys : list[str] = [ file.stem for file in SAMPLE_DATA.iterdir() if file.suffix 
 for key in keys :
     assert (SAMPLE_DATA/Path(f"{key}.ttl")).exists()
 
-def valid_keys(candidates : list[str]) :
-    for candidate in candidates :
-        if candidate not in keys :
-            raise typer.BadParameter(f"{candidate} not in {keys}")
-    return candidates
-
-def valid_codes(candidates : list[str]) :
-    valid_codes = lookup.keys()
-    if all (candidate in valid_codes for candidate in candidates) :
+def valid(all : list[str]) :
+    def _valid(candidates : list[str]) :
+        for candidate in candidates :
+            if candidate not in all :
+                raise typer.BadParameter(f"{candidate} not in {keys}")
         return candidates
-    else :
-        raise typer.BadParameter(f"{candidates} must all be in {valid_codes}")
+    return _valid
 
 suite_typer = Typer()
 
-
 @suite_typer.command()
-def run(sources : Annotated[list[str], typer.Argument(callback=valid_keys)] = keys,
-            codes : list[str] = typer.Option([ task.code for task in tasks ], "--tasks", "-t", callback=valid_codes),
-            exclude_codes : list[str] = typer.Option([], "--exclude-tasks", "-e", callback=valid_codes),
+def run(sources : Annotated[list[str], typer.Argument(callback=valid(keys))] = keys,
+            codes : list[str] = typer.Option([ task.code for task in tasks ], "--tasks", "-t", callback=valid(list(lookup.keys()))),
+            exclude_codes : list[str] = typer.Option([], "--exclude-tasks", "-e", callback=valid(list(lookup.keys()))),
             overwrite : bool = False
             ) :
 
@@ -67,3 +64,81 @@ def info() :
     for task in tasks :
         print(f"- {task.code}")
         print(f"  description: {task.description}")
+
+shape_tasks : list[Task] = [
+    qse.task,
+    # shexer.task,
+    shexer_bunch.task,
+    play.task,
+    voicl.task,
+    ]
+
+from .validate import generic_vals, validate
+from .statistics import statistics as stats
+
+def _get_shacls(code : str, key : str) -> list[Path] :
+    candidate_dir = Path(f"{RESULTS}/{code}/{key}")
+    candidate_file = Path(f"{RESULTS}/{code}/{key}.ttl")
+    if candidate_dir.exists() :
+        shacl_files = list(Path(f"{RESULTS}/{code}/{key}").glob('**/*.ttl'))
+    elif candidate_file.exists() :
+        shacl_files = [ candidate_file ]
+    else :
+        shacl_files = []
+    return shacl_files
+
+@suite_typer.command()
+def validation(sources : Annotated[list[str], typer.Argument(callback=valid(keys))] = keys,
+               codes : list[str] = typer.Option([ task.code for task in shape_tasks ], "--tasks", "-t", callback=valid([shape_task.code for shape_task in shape_tasks])),
+               exclude_codes : list[str] = typer.Option([], "--exclude-tasks", "-e", callback=valid([shape_task.code for shape_task in shape_tasks])),
+               overwrite : bool = False
+            ) :
+    for code in (code for code in codes if code not in exclude_codes ) :
+        task = lookup[code]
+        for key in sources :
+            print(f"validation for {task.code} / {key}")
+            if task.validate == None :
+                generic_vals(code, key, overwrite)
+            else :
+                task.validate(key,overwrite)
+
+from .statistics import generic_stats
+
+@suite_typer.command()
+def stats(sources : Annotated[list[str], typer.Argument(callback=valid(keys))] = keys,
+               codes : list[str] = typer.Option([ task.code for task in shape_tasks ], "--tasks", "-t", callback=valid([shape_task.code for shape_task in shape_tasks])),
+               exclude_codes : list[str] = typer.Option([], "--exclude-tasks", "-e", callback=valid([shape_task.code for shape_task in shape_tasks])),
+               overwrite : bool = False,
+               both : bool = True
+            ) :
+    for code in (code for code in codes if code not in exclude_codes ) :
+        task = lookup[code]
+        for key in sources :
+            print(f"stats for {task.code} / {key}")
+            if task.stats == None :
+                generic_stats(code, key)
+            else :
+                task.stats(key)
+
+from .report import excel as excel_gen, REPORT_JSON, REPORT_EXCEL
+
+@suite_typer.command()
+def excel():
+    f"""make excel from push results of {REPORT_JSON} into {REPORT_EXCEL}"""
+    excel_gen()
+
+from .java_memory import derive_min_ram
+from . import java_memory
+from ..virtuoso.cli import init, stop
+from .report import report_add
+
+INITIAL_MB = 1024*8
+
+@suite_typer.command()
+def java_mem():
+    for key in ['mandaten-fix'] :
+        # init(key) # for things that need sparql endpoint
+        for func , code in [ (java_memory.qse, 'qse') ] :
+            mn_mb = derive_min_ram(func, key, INITIAL_MB, granularity=1)
+            report_add('memory', code, key, str(mn_mb))
+        # stop(key) # for things that need sparql endpoint
