@@ -10,7 +10,7 @@ from ..config import SAMPLE_DATA, RESULTS
 from .task import Task, execute
 
 from .tasks import play, qse
-from .tasks import qse, ntriples, shexer, shexer_profile, shexer_bunch, shexer_memory, virtuoso, void, play, voicl
+from .tasks import qse, ntriples, shexer, shexer_profile, shexer_bunch, virtuoso, void, play, voicl
 
 tasks : list[Task] = [
     ntriples.task, 
@@ -18,7 +18,7 @@ tasks : list[Task] = [
     shexer.task,
     shexer_profile.task,
     shexer_bunch.task,
-    shexer_memory.task,
+    # shexer_memory.task,
     virtuoso.task,
     void.task,
     play.task,
@@ -142,3 +142,13 @@ def java_mem():
             mn_mb = derive_min_ram(func, key, INITIAL_MB, granularity=1)
             report_add('memory', code, key, str(mn_mb))
         # stop(key) # for things that need sparql endpoint
+
+from .tasks import shexer_memory
+
+python_tasks : list[Task] = [ shexer_memory.task ]
+
+@suite_typer.command()
+def python_mem():
+    for task in python_tasks :
+        for key in ['mandaten-fix'] :
+            execute(task, key, True)

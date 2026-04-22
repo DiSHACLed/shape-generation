@@ -17,7 +17,7 @@ HOME_DIR = f"{os.path.expanduser("~")}"
 _BASE = "shape-gen"
 VIRTUOSO_DIR = Path(f"{HOME_DIR}/{_BASE}/virtuoso-dbs")
 RESULTS = Path(f"{HOME_DIR}/{_BASE}/results")
-SAMPLE_DATA = Path(f"{HOME_DIR}/{_BASE}/sample-input")
+SAMPLE_DATA = Path(f"{HOME_DIR}/{_BASE}/samples-input")
 INTERMEDIATE = Path(f"{HOME_DIR}/{_BASE}/intermediate")
 
 # Note this will be broken if you install without --editable

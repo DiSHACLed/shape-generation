@@ -5,7 +5,7 @@ from typing import Tuple
 from ..config import RESULTS
 # from .report import report_add
 
-def statistics(shacl_path : Path) -> Tuple[int,int] :
+def statistics(shacl_path : Path) -> Tuple[int,int,int] :
     """opens shacl file with rdflib and write some base statistics to a json file; 1. amount of nodeshapes, 2. amount of propertyshapes """
 
     stats_file = shacl_path.parent / Path(f"{shacl_path.stem}.json")
@@ -24,23 +24,30 @@ def statistics(shacl_path : Path) -> Tuple[int,int] :
     """)
         # SELECT (COUNT(?s) AS ?count) WHERE { ?s a sh:PropertyShape }
 
+    triple_count = g.query("""
+        SELECT (COUNT(*) AS ?tripleCount)
+        WHERE { ?s ?p ?o . }
+    """)
+
     node_shapes = int(next(iter(node_shapes))[0])
     property_shapes = int(next(iter(property_shapes))[0])
+    triple_count = int(next(iter(triple_count))[0])
 
     stats = {
         "node_shapes": node_shapes,
-        "property_shapes": property_shapes
+        "property_shapes": property_shapes,
+        "triple_count": triple_count
     }
    
     with open(stats_file, "w") as log_file:
         json.dump(stats, log_file, indent=2)
     
-    return(node_shapes, property_shapes)
+    return(node_shapes, property_shapes, triple_count)
     
 from .report import report_add
 
 def generic_stats(CODE : str, key : str) :
     output_file = Path(f"{RESULTS}/{CODE}/{key}.ttl")
     if output_file.exists():
-        (a, b) = statistics(output_file)
-        report_add('info', CODE, key, f'{a} / {b}')
+        (a, b, c) = statistics(output_file)
+        report_add('info', CODE, key, f'{a} / {b} / {c}')
