@@ -1,0 +1,22 @@
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX vl_besl: <http://data.vlaanderen.be/ns/besluit#>
+PREFIX vl_mand: <http://data.vlaanderen.be/ns/mandaat#>
+PREFIX vl_pers: <http://data.vlaanderen.be/ns/persoon#>
+PREFIX example: <http://example.com/>
+PREFIX mu_core: <http://mu.semte.ch/vocabularies/core/>
+PREFIX mu_ext: <http://mu.semte.ch/vocabularies/ext/>
+PREFIX lblod_org: <http://lblod.data.gift/vocabularies/organisatie/>
+PREFIX lblod_ere: <http://data.lblod.info/vocabularies/erediensten/>
+PREFIX : <http://weso.es/shapes/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ex: <http://example.org/people/>
+
+:Person   # 10 instances.
+{
+   foaf:birthday  xsd:date  ;                                  # 100.0 % (10 instances).
+   foaf:name  xsd:string  ;                                    # 100.0 % (10 instances).
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  [foaf:Person]            # 100.0 % (10 instances).
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 10
+
+

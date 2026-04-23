@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix : <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void_ext: <http://ldf.fi/void-ext#> .
+@prefix formats: <http://www.w3.org/ns/formats/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://localhost:8890/sparql> a :Service;
+  :defaultDataset <http://localhost:8890/sparql#sparql-default-dataset>;
+  :endpoint <http://localhost:8890/sparql>;
+  :resultFormat formats:SPARQL_Results_CSV, formats:SPARQL_Results_JSON, formats:N-Triples,
+    formats:RDF_XML, formats:SPARQL_Results_TSV, formats:Turtle, formats:SPARQL_Results_XML;
+  :supportedLanguage :SPARQL11Query;
+  :feature :UnionDefaultGraph, :BasicFederatedQuery;
+  :availableGraphs <http://example.com/void-description/people-schema#sparql-graph-collection> .
+
+<http://localhost:8890/sparql#sparql-default-dataset> a :Dataset;
+  :defaultGraph <http://example.com/void-description/people-schema#sparql-default-graph>;
+  :namedGraph <http://www.example.com/people-schema> .
+
+<http://example.com/void-description/people-schema#sparql-default-graph> a :Graph;
+  void:distinctObjects "2747"^^xsd:long;
+  void_ext:distinctLiterals "1201"^^xsd:long;
+  void_ext:distinctIRIReferenceObjects "1543"^^xsd:long;
+  void_ext:distinctBlankNodeObjects "3"^^xsd:long;
+  void:distinctSubjects "1126"^^xsd:long;
+  void_ext:distinctIRIReferenceSubjects "1123"^^xsd:long;
+  void_ext:distinctBlankNodeSubjects "3"^^xsd:long .
+
+<http://example.com/void-description/people-schema#sparql-graph-collection> :namedGraph
+    <http://www.example.com/people-schema> .
+
+<http://www.example.com/people-schema> a :NamedGraph;
+  :name <http://www.example.com/people-schema>;
+  :graph <http://example.com/void-description/people-schema#_graph_people-schema!a342a85d> .
+
+<http://example.com/void-description/people-schema#_graph_people-schema!a342a85d>
+  a :Graph;
+  void:triples "30"^^xsd:long;
+  void:classes "1"^^xsd:long;
+  void:classPartition <http://example.com/void-description/people-schema#people-schema!b146f253!Person>;
+  void:propertyPartition <http://example.com/void-description/people-schema#people-schema!c74e2b73!type>,
+    <http://example.com/void-description/people-schema#people-schema!babfcfb6!birthday>,
+    <http://example.com/void-description/people-schema#people-schema!893797ba!name>, <http://example.com/void-description/people-schema#people-schema!0943b8f0!birthDate>;
+  void:distinctObjects "41"^^xsd:long;
+  void_ext:distinctLiterals "20"^^xsd:long;
+  void_ext:distinctIRIReferenceObjects "21"^^xsd:long;
+  void:distinctSubjects "10"^^xsd:long;
+  void_ext:distinctIRIReferenceSubjects "10"^^xsd:long .
+
+<http://example.com/void-description/people-schema#people-schema!b146f253!Person>
+  a void:Dataset;
+  void:class <http://xmlns.com/foaf/0.1/Person>;
+  void:entities "10"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/people-schemapeople-schema!ab3ab7e5!-Person-birthday>,
+    <http://example.com/void-description/people-schemapeople-schema!24da33be!-Person-name>,
+    <http://example.com/void-description/people-schemapeople-schema!038474bf!-Person-birthDate> .
+
+<http://example.com/void-description/people-schemapeople-schema!ab3ab7e5!-Person-birthday>
+  a void:Dataset;
+  void:property <http://xmlns.com/foaf/0.1/birthday>;
+  void_ext:datatypePartition <http://example.com/void-description/people-schemapeople-schema!7e161b35!-birthday-date>;
+  void:triples "9"^^xsd:long .
+
+<http://example.com/void-description/people-schemapeople-schema!7e161b35!-birthday-date>
+  a void:Dataset;
+  void_ext:datatype xsd:date .
+
+<http://example.com/void-description/people-schemapeople-schema!24da33be!-Person-name>
+  a void:Dataset;
+  void:property <http://xmlns.com/foaf/0.1/name>;
+  void_ext:datatypePartition <http://example.com/void-description/people-schemapeople-schema!220dadcc!-name-string>;
+  void:triples "10"^^xsd:long .
+
+<http://example.com/void-description/people-schemapeople-schema!220dadcc!-name-string>
+  a void:Dataset;
+  void_ext:datatype xsd:string .
+
+<http://example.com/void-description/people-schemapeople-schema!038474bf!-Person-birthDate>
+  a void:Dataset;
+  void:property <https://schema.org/birthDate>;
+  void:triples "1"^^xsd:long .
+
+<http://example.com/void-description/people-schema#people-schema!c74e2b73!type> void:property
+    rdf:type;
+  void:triples "10"^^xsd:long .
+
+<http://example.com/void-description/people-schema#people-schema!babfcfb6!birthday>
+  void:property <http://xmlns.com/foaf/0.1/birthday>;
+  void:triples "9"^^xsd:long .
+
+<http://example.com/void-description/people-schema#people-schema!893797ba!name> void:property
+    <http://xmlns.com/foaf/0.1/name>;
+  void:triples "10"^^xsd:long .
+
+<http://example.com/void-description/people-schema#people-schema!0943b8f0!birthDate>
+  void:property <https://schema.org/birthDate>;
+  void:triples "1"^^xsd:long .

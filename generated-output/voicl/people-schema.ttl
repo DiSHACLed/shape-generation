@@ -1,0 +1,17 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/shapes/58ad959e-375f-493e-91fb-ed2bc4ea74fd> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path foaf:name ],
+        [ sh:maxCount 1 ;
+            sh:path schema:birthDate ],
+        [ sh:datatype xsd:date ;
+            sh:maxCount 1 ;
+            sh:path foaf:birthday ] ;
+    sh:targetClass foaf:Person .
+

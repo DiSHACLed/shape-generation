@@ -1,0 +1,14 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/shapes/e708bda3-2d29-484e-9056-83000d48761c> a sh:NodeShape ;
+    sh:property [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path foaf:birthday ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path foaf:name ] ;
+    sh:targetClass foaf:Person .
+

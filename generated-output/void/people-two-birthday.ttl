@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix : <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void_ext: <http://ldf.fi/void-ext#> .
+@prefix formats: <http://www.w3.org/ns/formats/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://localhost:8890/sparql> a :Service;
+  :defaultDataset <http://localhost:8890/sparql#sparql-default-dataset>;
+  :endpoint <http://localhost:8890/sparql>;
+  :resultFormat formats:SPARQL_Results_CSV, formats:SPARQL_Results_JSON, formats:N-Triples,
+    formats:RDF_XML, formats:SPARQL_Results_TSV, formats:Turtle, formats:SPARQL_Results_XML;
+  :supportedLanguage :SPARQL11Query;
+  :feature :UnionDefaultGraph, :BasicFederatedQuery;
+  :availableGraphs <http://example.com/void-description/people-two-birthday#sparql-graph-collection> .
+
+<http://localhost:8890/sparql#sparql-default-dataset> a :Dataset;
+  :defaultGraph <http://example.com/void-description/people-two-birthday#sparql-default-graph>;
+  :namedGraph <http://www.example.com/people-two-birthday> .
+
+<http://example.com/void-description/people-two-birthday#sparql-default-graph> a :Graph;
+  void:distinctObjects "2749"^^xsd:long;
+  void_ext:distinctLiterals "1202"^^xsd:long;
+  void_ext:distinctIRIReferenceObjects "1544"^^xsd:long;
+  void_ext:distinctBlankNodeObjects "3"^^xsd:long;
+  void:distinctSubjects "1126"^^xsd:long;
+  void_ext:distinctIRIReferenceSubjects "1123"^^xsd:long;
+  void_ext:distinctBlankNodeSubjects "3"^^xsd:long .
+
+<http://example.com/void-description/people-two-birthday#sparql-graph-collection>
+  :namedGraph <http://www.example.com/people-two-birthday> .
+
+<http://www.example.com/people-two-birthday> a :NamedGraph;
+  :name <http://www.example.com/people-two-birthday>;
+  :graph <http://example.com/void-description/people-two-birthday#_graph_people-two-birthday!42bc9ecf> .
+
+<http://example.com/void-description/people-two-birthday#_graph_people-two-birthday!42bc9ecf>
+  a :Graph;
+  void:triples "31"^^xsd:long;
+  void:classes "1"^^xsd:long;
+  void:classPartition <http://example.com/void-description/people-two-birthday#people-two-birthday!b146f253!Person>;
+  void:propertyPartition <http://example.com/void-description/people-two-birthday#people-two-birthday!c74e2b73!type>,
+    <http://example.com/void-description/people-two-birthday#people-two-birthday!babfcfb6!birthday>,
+    <http://example.com/void-description/people-two-birthday#people-two-birthday!893797ba!name>;
+  void:distinctObjects "43"^^xsd:long;
+  void_ext:distinctLiterals "21"^^xsd:long;
+  void_ext:distinctIRIReferenceObjects "22"^^xsd:long;
+  void:distinctSubjects "10"^^xsd:long;
+  void_ext:distinctIRIReferenceSubjects "10"^^xsd:long .
+
+<http://example.com/void-description/people-two-birthday#people-two-birthday!b146f253!Person>
+  a void:Dataset;
+  void:class <http://xmlns.com/foaf/0.1/Person>;
+  void:entities "10"^^xsd:long;
+  void:propertyPartition <http://example.com/void-description/people-two-birthdaypeople-two-birthday!d2ab7d71!-Person-birthday>,
+    <http://example.com/void-description/people-two-birthdaypeople-two-birthday!575fce4a!-Person-name> .
+
+<http://example.com/void-description/people-two-birthdaypeople-two-birthday!d2ab7d71!-Person-birthday>
+  a void:Dataset;
+  void:property <http://xmlns.com/foaf/0.1/birthday>;
+  void:triples "11"^^xsd:long .
+
+<http://example.com/void-description/people-two-birthdaypeople-two-birthday!575fce4a!-Person-name>
+  a void:Dataset;
+  void:property <http://xmlns.com/foaf/0.1/name>;
+  void:triples "10"^^xsd:long .
+
+<http://example.com/void-description/people-two-birthday#people-two-birthday!c74e2b73!type>
+  void:property rdf:type;
+  void:triples "10"^^xsd:long .
+
+<http://example.com/void-description/people-two-birthday#people-two-birthday!babfcfb6!birthday>
+  void:property <http://xmlns.com/foaf/0.1/birthday>;
+  void:triples "11"^^xsd:long .
+
+<http://example.com/void-description/people-two-birthday#people-two-birthday!893797ba!name>
+  void:property <http://xmlns.com/foaf/0.1/name>;
+  void:triples "10"^^xsd:long .

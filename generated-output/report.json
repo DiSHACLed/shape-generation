@@ -5,80 +5,164 @@
       "lblod-small-fix": "272.44913601875305",
       "mandaten-fix": "19.890093564987183",
       "rijksmuseum-images": "67.05784344673157",
-      "rijksmuseum-instances": "106.16696190834045"
+      "rijksmuseum-instances": "106.16696190834045",
+      "people-datetime": "0.010528802871704102",
+      "people-schema": "0.009587526321411133",
+      "people-without-birthday": "0.01152944564819336",
+      "people-two-birthday": "0.010699748992919922",
+      "people-string": "0.011316061019897461",
+      "people-all": "0.010876893997192383",
+      "people": "0.010093212127685547"
     },
     "qse": {
       "lblod-big-fix": "376.04753017425537",
       "lblod-small-fix": "139.1715452671051",
       "mandaten-fix": "8.672609090805054",
       "rijksmuseum-images": "20.75239062309265",
-      "rijksmuseum-instances": "32.06506824493408"
+      "rijksmuseum-instances": "32.06506824493408",
+      "people-datetime": "1.68180251121521",
+      "people-schema": "1.5670602321624756",
+      "people-without-birthday": "1.5222032070159912",
+      "people-two-birthday": "1.5390124320983887",
+      "people-string": "1.5603344440460205",
+      "people-all": "1.5504202842712402",
+      "people": "1.5598204135894775"
     },
     "virtuoso": {
       "lblod-big-fix": "1063.409628868103",
       "lblod-small-fix": "543.549031496048",
       "mandaten-fix": "7.030818700790405",
       "rijksmuseum-images": "18.470687866210938",
-      "rijksmuseum-instances": "30.488207578659058"
+      "rijksmuseum-instances": "30.488207578659058",
+      "people-datetime": "0.24953961372375488",
+      "people-schema": "0.2536604404449463",
+      "people-without-birthday": "0.2336874008178711",
+      "people-two-birthday": "0.27974629402160645",
+      "people-string": "0.25327253341674805",
+      "people-all": "0.2362232208251953",
+      "people": "0.2410411834716797"
     },
     "shexer": {
       "lblod-big-fix": "1334.9158041477203",
       "lblod-small-fix": "463.21001958847046",
       "mandaten-fix": "32.08458161354065",
       "rijksmuseum-images": "140.42652702331543",
-      "rijksmuseum-instances": "208.94540286064148"
+      "rijksmuseum-instances": "208.94540286064148",
+      "people-datetime": "0.0013616085052490234",
+      "people-schema": "0.0013275146484375",
+      "people-without-birthday": "0.001291036605834961",
+      "people-two-birthday": "0.0009171962738037109",
+      "people-string": "0.000843048095703125",
+      "people-all": "0.0009315013885498047",
+      "people": "0.0015382766723632812"
     },
     "shexer-profile": {
       "lblod-big-fix": "1250.0778386592865",
       "lblod-small-fix": "434.4359233379364",
       "mandaten-fix": "21.261061429977417",
       "rijksmuseum-images": "130.2806408405304",
-      "rijksmuseum-instances": "178.51529216766357"
+      "rijksmuseum-instances": "178.51529216766357",
+      "people-datetime": "0.0011496543884277344",
+      "people-schema": "0.000885009765625",
+      "people-without-birthday": "0.0008130073547363281",
+      "people-two-birthday": "0.0009844303131103516",
+      "people-string": "0.0008919239044189453",
+      "people-all": "0.0008373260498046875",
+      "people": "0.0008952617645263672"
     },
     "shexer-bunch": {
       "lblod-big-fix": "0.3916909694671631",
       "lblod-small-fix": "0.2541840076446533",
       "mandaten-fix": "0.29328250885009766",
       "rijksmuseum-images": "0.023075580596923828",
-      "rijksmuseum-instances": "0.6076803207397461"
+      "rijksmuseum-instances": "0.6076803207397461",
+      "people-datetime": "0.013881206512451172",
+      "people-schema": "0.012601852416992188",
+      "people-without-birthday": "0.011617183685302734",
+      "people-two-birthday": "0.012475013732910156",
+      "people-string": "0.012450695037841797",
+      "people-all": "0.011644363403320312",
+      "people": "0.013713598251342773"
     },
     "void": {
       "lblod-big-fix": "311.55016899108887",
       "lblod-small-fix": "207.9873969554901",
       "mandaten-fix": "7.655786514282227",
       "rijksmuseum-images": "8.013665676116943",
-      "rijksmuseum-instances": "35.67750883102417"
+      "rijksmuseum-instances": "35.67750883102417",
+      "people-datetime": "0.9864077568054199",
+      "people-schema": "0.8835644721984863",
+      "people-without-birthday": "0.8745737075805664",
+      "people-two-birthday": "0.8883116245269775",
+      "people-string": "0.7819859981536865",
+      "people-all": "0.7774233818054199",
+      "people": "0.7601454257965088"
     },
     "play": {
       "lblod-big-fix": "185.89231300354004",
       "lblod-small-fix": "156.31631731987",
       "mandaten-fix": "8.168487071990967",
       "rijksmuseum-images": "3.0667335987091064",
-      "rijksmuseum-instances": "41.351815938949585"
+      "rijksmuseum-instances": "41.351815938949585",
+      "people-datetime": "1.328620433807373",
+      "people-schema": "1.280660629272461",
+      "people-without-birthday": "1.451195478439331",
+      "people-two-birthday": "1.329697608947754",
+      "people-string": "1.3230433464050293",
+      "people-all": "1.360605001449585",
+      "people": "1.2535128593444824"
     },
     "voicl": {
       "lblod-big-fix": "105.70434737205505",
       "lblod-small-fix": "38.9286208152771",
       "mandaten-fix": "2.5375115871429443",
       "rijksmuseum-images": "1.356877326965332",
-      "rijksmuseum-instances": "11.590965509414673"
+      "rijksmuseum-instances": "11.590965509414673",
+      "people-datetime": "0.12390255928039551",
+      "people-schema": "0.0612945556640625",
+      "people-without-birthday": "0.05122947692871094",
+      "people-two-birthday": "0.05410051345825195",
+      "people-string": "0.058045387268066406",
+      "people-all": "0.05853557586669922",
+      "people": "0.05317544937133789"
     },
     "shexer-memory": {
       "rijksmuseum-instances": "391.6119759082794",
       "mandaten-fix": "55.10558342933655",
-      "rijksmuseum-images": "268.1524052619934"
+      "rijksmuseum-images": "268.1524052619934",
+      "people-datetime": "0.011106491088867188",
+      "people-schema": "0.010264158248901367",
+      "people-without-birthday": "0.010216712951660156",
+      "people-two-birthday": "0.010514974594116211",
+      "people-string": "0.01023244857788086",
+      "people-all": "0.010779619216918945",
+      "people": "0.011074066162109375"
     }
   },
   "memory": {
     "qse": {
       "rijksmuseum-instances": "1600",
       "mandaten-fix": "600",
-      "rijksmuseum-images": "1600"
+      "rijksmuseum-images": "1600",
+      "people-datetime": "100",
+      "people-schema": "100",
+      "people-without-birthday": "100",
+      "people-two-birthday": "100",
+      "people-string": "100",
+      "people-all": "100",
+      "people": "100"
     },
     "shexer": {
       "rijksmuseum-instances": "2990.3726320266724",
       "mandaten-fix": "820.4280433654785",
-      "rijksmuseum-images": "2952.67094039917"
+      "rijksmuseum-images": "2952.67094039917",
+      "people-datetime": "0.0",
+      "people-schema": "0.0",
+      "people-without-birthday": "0.0",
+      "people-two-birthday": "0.0",
+      "people-string": "0.0",
+      "people-all": "0.0",
+      "people": "0.0"
     }
   },
   "info": {
@@ -87,82 +171,180 @@
       "rijksmuseum-instances": "14 / 162 / 2565",
       "lblod-small-fix": "107 / 1425 / 15289",
       "mandaten-fix": "21 / 108 / 1231",
-      "rijksmuseum-images": "3 / 8 / 68"
+      "rijksmuseum-images": "3 / 8 / 68",
+      "people-datetime": "1 / 3 / 34",
+      "people-schema": "1 / 4 / 32",
+      "people-without-birthday": "1 / 3 / 25",
+      "people-two-birthday": "1 / 3 / 26",
+      "people-string": "1 / 3 / 34",
+      "people-all": "1 / 4 / 47",
+      "people": "1 / 3 / 26"
     },
     "qse-0.5": {
       "lblod-big-fix": "69 / 909 / 8294",
       "rijksmuseum-instances": "14 / 88 / 1219",
       "lblod-small-fix": "107 / 1015 / 8280",
       "mandaten-fix": "21 / 48 / 429",
-      "rijksmuseum-images": "3 / 3 / 28"
+      "rijksmuseum-images": "3 / 3 / 28",
+      "people-datetime": "1 / 3 / 25",
+      "people-schema": "1 / 3 / 25",
+      "people-without-birthday": "1 / 3 / 25",
+      "people-two-birthday": "1 / 3 / 26",
+      "people-string": "1 / 3 / 25",
+      "people-all": "1 / 3 / 25",
+      "people": "1 / 3 / 26"
     },
     "qse-0.9": {
       "lblod-big-fix": "69 / 723 / 6218",
       "rijksmuseum-instances": "14 / 72 / 1017",
       "lblod-small-fix": "107 / 825 / 6842",
       "mandaten-fix": "21 / 38 / 348",
-      "rijksmuseum-images": "3 / 3 / 28"
+      "rijksmuseum-images": "3 / 3 / 28",
+      "people-datetime": "1 / 2 / 18",
+      "people-schema": "1 / 2 / 18",
+      "people-without-birthday": "1 / 2 / 18",
+      "people-two-birthday": "1 / 3 / 26",
+      "people-string": "1 / 2 / 18",
+      "people-all": "1 / 2 / 18",
+      "people": "1 / 3 / 26"
     },
     "qse-1.0": {
       "lblod-big-fix": "69 / 69 / 568",
       "rijksmuseum-instances": "14 / 14 / 112",
       "lblod-small-fix": "107 / 107 / 860",
       "mandaten-fix": "21 / 21 / 184",
-      "rijksmuseum-images": "3 / 3 / 24"
+      "rijksmuseum-images": "3 / 3 / 24",
+      "people-datetime": "1 / 1 / 8",
+      "people-schema": "1 / 1 / 8",
+      "people-without-birthday": "1 / 1 / 8",
+      "people-two-birthday": "1 / 1 / 8",
+      "people-string": "1 / 1 / 8",
+      "people-all": "1 / 1 / 8",
+      "people": "1 / 1 / 8"
     },
     "shexer-unsound-0": {
       "rijksmuseum-instances": "14 / 194 / 1182",
       "mandaten-fix": "25 / 173 / 1194",
-      "rijksmuseum-images": "3 / 8 / 55"
+      "rijksmuseum-images": "3 / 8 / 55",
+      "people-datetime": "1 / 4 / 28",
+      "people-schema": "1 / 4 / 28",
+      "people-without-birthday": "1 / 3 / 22",
+      "people-two-birthday": "1 / 3 / 21",
+      "people-string": "1 / 4 / 28",
+      "people-all": "1 / 6 / 40",
+      "people": "1 / 3 / 22"
     },
     "shexer-sound-0": {
       "rijksmuseum-instances": "14 / 194 / 1047",
       "mandaten-fix": "25 / 173 / 1125",
-      "rijksmuseum-images": "3 / 8 / 52"
+      "rijksmuseum-images": "3 / 8 / 52",
+      "people-datetime": "1 / 4 / 24",
+      "people-schema": "1 / 4 / 24",
+      "people-without-birthday": "1 / 3 / 20",
+      "people-two-birthday": "1 / 3 / 21",
+      "people-string": "1 / 4 / 24",
+      "people-all": "1 / 6 / 32",
+      "people": "1 / 3 / 22"
     },
     "shexer-unsound-0.5": {
       "rijksmuseum-instances": "14 / 136 / 837",
       "mandaten-fix": "25 / 127 / 879",
-      "rijksmuseum-images": "3 / 7 / 50"
+      "rijksmuseum-images": "3 / 7 / 50",
+      "people-datetime": "1 / 3 / 22",
+      "people-schema": "1 / 3 / 22",
+      "people-without-birthday": "1 / 3 / 22",
+      "people-two-birthday": "1 / 3 / 21",
+      "people-string": "1 / 3 / 22",
+      "people-all": "1 / 3 / 22",
+      "people": "1 / 3 / 22"
     },
     "shexer-sound-0.5": {
       "rijksmuseum-instances": "14 / 136 / 768",
       "mandaten-fix": "25 / 127 / 849",
-      "rijksmuseum-images": "3 / 7 / 48"
+      "rijksmuseum-images": "3 / 7 / 48",
+      "people-datetime": "1 / 3 / 20",
+      "people-schema": "1 / 3 / 20",
+      "people-without-birthday": "1 / 3 / 20",
+      "people-two-birthday": "1 / 3 / 21",
+      "people-string": "1 / 3 / 20",
+      "people-all": "1 / 3 / 20",
+      "people": "1 / 3 / 22"
     },
     "shexer-unsound-0.9": {
       "rijksmuseum-instances": "14 / 128 / 793",
       "mandaten-fix": "25 / 113 / 790",
-      "rijksmuseum-images": "3 / 5 / 40"
+      "rijksmuseum-images": "3 / 5 / 40",
+      "people-datetime": "1 / 3 / 22",
+      "people-schema": "1 / 3 / 22",
+      "people-without-birthday": "1 / 3 / 22",
+      "people-two-birthday": "1 / 3 / 21",
+      "people-string": "1 / 3 / 22",
+      "people-all": "1 / 2 / 16",
+      "people": "1 / 3 / 22"
     },
     "shexer-sound-0.9": {
       "rijksmuseum-instances": "14 / 128 / 732",
       "mandaten-fix": "25 / 113 / 773",
-      "rijksmuseum-images": "3 / 5 / 40"
+      "rijksmuseum-images": "3 / 5 / 40",
+      "people-datetime": "1 / 3 / 20",
+      "people-schema": "1 / 3 / 20",
+      "people-without-birthday": "1 / 3 / 20",
+      "people-two-birthday": "1 / 3 / 21",
+      "people-string": "1 / 3 / 20",
+      "people-all": "1 / 2 / 16",
+      "people": "1 / 3 / 22"
     },
     "shexer-unsound-1": {
       "rijksmuseum-instances": "14 / 61 / 419",
       "mandaten-fix": "25 / 95 / 685",
-      "rijksmuseum-images": "3 / 5 / 40"
+      "rijksmuseum-images": "3 / 5 / 40",
+      "people-datetime": "1 / 2 / 16",
+      "people-schema": "1 / 2 / 16",
+      "people-without-birthday": "1 / 2 / 16",
+      "people-two-birthday": "1 / 3 / 21",
+      "people-string": "1 / 2 / 16",
+      "people-all": "1 / 2 / 16",
+      "people": "1 / 3 / 22"
     },
     "shexer-sound-1": {
       "rijksmuseum-instances": "14 / 61 / 419",
       "mandaten-fix": "25 / 95 / 685",
-      "rijksmuseum-images": "3 / 5 / 40"
+      "rijksmuseum-images": "3 / 5 / 40",
+      "people-datetime": "1 / 2 / 16",
+      "people-schema": "1 / 2 / 16",
+      "people-without-birthday": "1 / 2 / 16",
+      "people-two-birthday": "1 / 3 / 21",
+      "people-string": "1 / 2 / 16",
+      "people-all": "1 / 2 / 16",
+      "people": "1 / 3 / 22"
     },
     "play": {
       "lblod-big-fix": "73 / 1194 / 12343",
       "rijksmuseum-instances": "14 / 148 / 1624",
       "lblod-small-fix": "108 / 1325 / 11328",
       "mandaten-fix": "25 / 95 / 935",
-      "rijksmuseum-images": "3 / 5 / 44"
+      "rijksmuseum-images": "3 / 5 / 44",
+      "people-datetime": "1 / 2 / 70",
+      "people-schema": "1 / 3 / 48",
+      "people-without-birthday": "1 / 2 / 42",
+      "people-two-birthday": "1 / 2 / 42",
+      "people-string": "1 / 2 / 70",
+      "people-all": "1 / 3 / 57",
+      "people": "1 / 2 / 64"
     },
     "voicl": {
       "lblod-big-fix": "73 / 2053 / 7970",
       "rijksmuseum-instances": "13 / 274 / 972",
       "lblod-small-fix": "108 / 1541 / 5868",
       "mandaten-fix": "25 / 124 / 575",
-      "rijksmuseum-images": "2 / 5 / 22"
+      "rijksmuseum-images": "2 / 5 / 22",
+      "people-datetime": "1 / 2 / 10",
+      "people-schema": "1 / 3 / 14",
+      "people-without-birthday": "1 / 2 / 10",
+      "people-two-birthday": "1 / 2 / 9",
+      "people-string": "1 / 2 / 11",
+      "people-all": "1 / 3 / 14",
+      "people": "1 / 2 / 10"
     }
   }
 }
