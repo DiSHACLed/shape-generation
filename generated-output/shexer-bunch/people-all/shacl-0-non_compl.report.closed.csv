@@ -1,0 +1,16 @@
+Shape,Constraint,Severity,Path,Component,Focus Node,Value,Message
+ac4eb6f835ab72b9d6ba815ddef94e24,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:david,,Property needs to have at least 1 value
+ac4eb6f835ab72b9d6ba815ddef94e24,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:grace,,Property needs to have at least 1 value
+ac4eb6f835ab72b9d6ba815ddef94e24,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:frank,,Property needs to have at least 1 value
+2a4e68a3d86c53e07d03863cd5164c15,sh:Violation,foaf:birthday,sh:MinCountConstraintComponent,ex:henry,,Property needs to have at least 1 value
+ac4eb6f835ab72b9d6ba815ddef94e24,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:bob,,Property needs to have at least 1 value
+2a4e68a3d86c53e07d03863cd5164c15,sh:Violation,foaf:birthday,sh:MinCountConstraintComponent,ex:grace,,Property needs to have at least 1 value
+b763dc95f9714678e9c70f1760ad6ff8,sh:Violation,foaf:birthday,sh:MinCountConstraintComponent,ex:henry,,Property needs to have at least 1 value
+0a4723e81aae551ff8803cee7d61751b,sh:Violation,foaf:birthday,sh:MinCountConstraintComponent,ex:henry,,Property needs to have at least 1 value
+ac4eb6f835ab72b9d6ba815ddef94e24,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:carol,,Property needs to have at least 1 value
+ac4eb6f835ab72b9d6ba815ddef94e24,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:iris,,Property needs to have at least 1 value
+ac4eb6f835ab72b9d6ba815ddef94e24,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:alice,,Property needs to have at least 1 value
+ac4eb6f835ab72b9d6ba815ddef94e24,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:jack,,Property needs to have at least 1 value
+ac4eb6f835ab72b9d6ba815ddef94e24,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:eve,,Property needs to have at least 1 value
+b763dc95f9714678e9c70f1760ad6ff8,sh:Violation,foaf:birthday,sh:MinCountConstraintComponent,ex:grace,,Property needs to have at least 1 value
+0a4723e81aae551ff8803cee7d61751b,sh:Violation,foaf:birthday,sh:MinCountConstraintComponent,ex:grace,,Property needs to have at least 1 value

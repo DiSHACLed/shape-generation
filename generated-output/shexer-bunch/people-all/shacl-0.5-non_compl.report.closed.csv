@@ -1,0 +1,4 @@
+Shape,Constraint,Severity,Path,Component,Focus Node,Value,Message
+f47feb2be1f11370e735f71e73ae4c82,sh:Violation,foaf:birthday,sh:MinCountConstraintComponent,ex:henry,,Property needs to have at least 1 value
+:Person,sh:Violation,schema:birthDate,sh:ClosedConstraintComponent,ex:henry,1961-04-10^^http://www.w3.org/2001/XMLSchema#date,Predicate schema:birthDate is not allowed (closed shape)
+f47feb2be1f11370e735f71e73ae4c82,sh:Violation,foaf:birthday,sh:MinCountConstraintComponent,ex:grace,,Property needs to have at least 1 value

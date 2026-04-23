@@ -1,0 +1,2 @@
+Shape,Constraint,Severity,Path,Component,Focus Node,Value,Message
+ns1:PersonShape,sh:Violation,schema:birthDate,sh:ClosedConstraintComponent,ex:jack,1998-02-28^^http://www.w3.org/2001/XMLSchema#date,Predicate schema:birthDate is not allowed (closed shape)

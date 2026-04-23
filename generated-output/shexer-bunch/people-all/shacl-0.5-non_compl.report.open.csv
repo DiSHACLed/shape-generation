@@ -1,0 +1,3 @@
+Shape,Constraint,Severity,Path,Component,Focus Node,Value,Message
+a39bf52e69c1344c2518d3abae8b82e0,sh:Violation,foaf:birthday,sh:MinCountConstraintComponent,ex:henry,,Property needs to have at least 1 value
+a39bf52e69c1344c2518d3abae8b82e0,sh:Violation,foaf:birthday,sh:MinCountConstraintComponent,ex:grace,,Property needs to have at least 1 value

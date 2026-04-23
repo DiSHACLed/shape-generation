@@ -1,0 +1,11 @@
+Shape,Constraint,Severity,Path,Component,Focus Node,Value,Message
+d2e378d61919c6422c427d018ffad694,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:bob,,Property needs to have at least 1 value
+d2e378d61919c6422c427d018ffad694,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:frank,,Property needs to have at least 1 value
+d2e378d61919c6422c427d018ffad694,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:carol,,Property needs to have at least 1 value
+d2e378d61919c6422c427d018ffad694,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:henry,,Property needs to have at least 1 value
+d2e378d61919c6422c427d018ffad694,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:eve,,Property needs to have at least 1 value
+d2e378d61919c6422c427d018ffad694,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:alice,,Property needs to have at least 1 value
+d2e378d61919c6422c427d018ffad694,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:grace,,Property needs to have at least 1 value
+dfea5d2232c4b5c353baa827c0c4fb50,sh:Violation,foaf:birthday,sh:MinCountConstraintComponent,ex:jack,,Property needs to have at least 1 value
+d2e378d61919c6422c427d018ffad694,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:iris,,Property needs to have at least 1 value
+d2e378d61919c6422c427d018ffad694,sh:Violation,schema:birthDate,sh:MinCountConstraintComponent,ex:david,,Property needs to have at least 1 value

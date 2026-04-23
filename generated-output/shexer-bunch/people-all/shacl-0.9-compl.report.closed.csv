@@ -1,0 +1,10 @@
+Shape,Constraint,Severity,Path,Component,Focus Node,Value,Message
+:Person,sh:Violation,schema:birthDate,sh:ClosedConstraintComponent,ex:henry,1961-04-10^^http://www.w3.org/2001/XMLSchema#date,Predicate schema:birthDate is not allowed (closed shape)
+:Person,sh:Violation,foaf:birthday,sh:ClosedConstraintComponent,ex:carol,1979-11-05^^http://www.w3.org/2001/XMLSchema#date,Predicate foaf:birthday is not allowed (closed shape)
+:Person,sh:Violation,foaf:birthday,sh:ClosedConstraintComponent,ex:jack,28th of february,Predicate foaf:birthday is not allowed (closed shape)
+:Person,sh:Violation,foaf:birthday,sh:ClosedConstraintComponent,ex:bob,1990-07-22^^http://www.w3.org/2001/XMLSchema#date,Predicate foaf:birthday is not allowed (closed shape)
+:Person,sh:Violation,foaf:birthday,sh:ClosedConstraintComponent,ex:eve,1993-06-18^^http://www.w3.org/2001/XMLSchema#date,Predicate foaf:birthday is not allowed (closed shape)
+:Person,sh:Violation,foaf:birthday,sh:ClosedConstraintComponent,ex:alice,1996-03-14^^http://www.w3.org/2001/XMLSchema#date,Predicate foaf:birthday is not allowed (closed shape)
+:Person,sh:Violation,foaf:birthday,sh:ClosedConstraintComponent,ex:frank,1967-09-02^^http://www.w3.org/2001/XMLSchema#date,Predicate foaf:birthday is not allowed (closed shape)
+:Person,sh:Violation,foaf:birthday,sh:ClosedConstraintComponent,ex:david,2002-01-30^^http://www.w3.org/2001/XMLSchema#date,Predicate foaf:birthday is not allowed (closed shape)
+:Person,sh:Violation,foaf:birthday,sh:ClosedConstraintComponent,ex:iris,1984-08-17T00:00:00Z^^http://www.w3.org/2001/XMLSchema#dateTime,Predicate foaf:birthday is not allowed (closed shape)

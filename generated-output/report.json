@@ -346,5 +346,133 @@
       "people-all": "1 / 3 / 14",
       "people": "1 / 2 / 10"
     }
+  },
+  "violations": {
+    "qse-0.0": {
+      "people-datetime": "0 / 0",
+      "people-schema": "0 / 0",
+      "people-without-birthday": "0 / 0",
+      "people-two-birthday": "0 / 0",
+      "people-string": "0 / 0",
+      "people-all": "0 / 0",
+      "people": "0 / 0"
+    },
+    "qse-0.5": {
+      "people-datetime": "1 / 1",
+      "people-schema": "0 / 1",
+      "people-without-birthday": "0 / 0",
+      "people-two-birthday": "0 / 0",
+      "people-string": "1 / 1",
+      "people-all": "2 / 3",
+      "people": "0 / 0"
+    },
+    "qse-0.9": {
+      "people-datetime": "0 / 10",
+      "people-schema": "0 / 10",
+      "people-without-birthday": "0 / 9",
+      "people-two-birthday": "0 / 0",
+      "people-string": "0 / 10",
+      "people-all": "0 / 9",
+      "people": "0 / 0"
+    },
+    "qse-1.0": {
+      "people-datetime": "0 / 20",
+      "people-schema": "0 / 20",
+      "people-without-birthday": "0 / 19",
+      "people-two-birthday": "0 / 21",
+      "people-string": "0 / 20",
+      "people-all": "0 / 19",
+      "people": "0 / 20"
+    },
+    "shexer-unsound-0": {
+      "people-datetime": "0 / 0",
+      "people-schema": "10 / 10",
+      "people-without-birthday": "1 / 1",
+      "people-two-birthday": "0 / 0",
+      "people-string": "0 / 0",
+      "people-all": "15 / 15",
+      "people": "0 / 0"
+    },
+    "shexer-sound-0": {
+      "people-datetime": "0 / 0",
+      "people-schema": "0 / 0",
+      "people-without-birthday": "0 / 0",
+      "people-two-birthday": "0 / 0",
+      "people-string": "0 / 0",
+      "people-all": "0 / 0",
+      "people": "0 / 0"
+    },
+    "shexer-unsound-0.5": {
+      "people-datetime": "0 / 0",
+      "people-schema": "1 / 2",
+      "people-without-birthday": "1 / 1",
+      "people-two-birthday": "0 / 0",
+      "people-string": "0 / 0",
+      "people-all": "2 / 3",
+      "people": "0 / 0"
+    },
+    "shexer-sound-0.5": {
+      "people-datetime": "0 / 0",
+      "people-schema": "0 / 1",
+      "people-without-birthday": "0 / 0",
+      "people-two-birthday": "0 / 0",
+      "people-string": "0 / 0",
+      "people-all": "0 / 1",
+      "people": "0 / 0"
+    },
+    "shexer-unsound-0.9": {
+      "people-datetime": "0 / 0",
+      "people-schema": "1 / 2",
+      "people-without-birthday": "1 / 1",
+      "people-two-birthday": "0 / 0",
+      "people-string": "0 / 0",
+      "people-all": "0 / 9",
+      "people": "0 / 0"
+    },
+    "shexer-sound-0.9": {
+      "people-datetime": "0 / 0",
+      "people-schema": "0 / 1",
+      "people-without-birthday": "0 / 0",
+      "people-two-birthday": "0 / 0",
+      "people-string": "0 / 0",
+      "people-all": "0 / 9",
+      "people": "0 / 0"
+    },
+    "shexer-unsound-1": {
+      "people-datetime": "0 / 10",
+      "people-schema": "0 / 10",
+      "people-without-birthday": "0 / 9",
+      "people-two-birthday": "0 / 0",
+      "people-string": "0 / 10",
+      "people-all": "0 / 9",
+      "people": "0 / 0"
+    },
+    "shexer-sound-1": {
+      "people-datetime": "0 / 10",
+      "people-schema": "0 / 10",
+      "people-without-birthday": "0 / 9",
+      "people-two-birthday": "0 / 0",
+      "people-string": "0 / 10",
+      "people-all": "0 / 9",
+      "people": "0 / 0"
+    },
+    "play": {
+      "people-datetime": "0 / 1",
+      "people-schema": "0 / 0",
+      "people-without-birthday": "0 / 0",
+      "people-two-birthday": "0 / 0",
+      "people-string": "0 / 0",
+      "people-all": "0 / 0",
+      "people": "0 / 0"
+    },
+    "voicl": {
+      "people-datetime": "0 / 0",
+      "people-schema": "0 / 0",
+      "people-without-birthday": "0 / 0",
+      "people-two-birthday": "0 / 0",
+      "people-string": "0 / 0",
+      "people-all": "0 / 0",
+      "people": "0 / 0"
+    }
   }
 }

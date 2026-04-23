@@ -8,21 +8,29 @@ play/*
 !play/*.ttl
 
 qse/*
-!qse/*/*.csv
+!qse/*/
+qse/*/*
+!qse/*/*.open.csv
+!qse/*/*.closed.csv
 !qse/*/*.ttl
 
 shexer/*
 !shexer/*.shex
 
 shexer-bunch/*
-!shexer-bunch/*/*.csv
+!shexer-bunch/*/
+shexer-bunch/*/*
+!shexer-bunch/*/*.open.csv
+!shexer-bunch/*/*.closed.csv
 !shexer-bunch/*/*.ttl
 
 shexer-memory/*
 !shexer-memory/*.html
 
 shexer-profile/*
-!shexer-profile/*.json
+!shexer-profile/*/
+shexer-bunch/*/*
+!shexer-profile/*/*.json
 
 virtuoso
 
