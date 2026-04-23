@@ -80,17 +80,17 @@ WHERE {
 }
 """
 
-def node_shapes(graph : Graph) -> Generator[tuple[URIRef, URIRef]] :
+def node_shapes(graph : Graph) -> Generator[tuple[URIRef, URIRef], None, None] :
     """Immediately start working with resutls"""
     ns = graph.query(NODE_SHAPE_QUERY)
     # TODO; technically classes could be blank nodes?
-    ns = cast(Generator[tuple[URIRef,URIRef]], ns) # we are selecting subjects and objects
+    ns = cast(Generator[tuple[URIRef,URIRef], None, None], ns) # we are selecting subjects and objects
 
     for node_shape, target_class in ns:
         yield node_shape, target_class
 
 # TODO technically; object types could be blank nodes?
-def property_shapes(graph : Graph, node_shape : URIRef) -> Generator[tuple[URIRef,URIRef,Optional[URIRef],Optional[URIRef]]]: 
+def property_shapes(graph : Graph, node_shape : URIRef) -> Generator[tuple[URIRef,URIRef,Optional[URIRef],Optional[URIRef]], None, None]: 
     qr = property_shape_query(node_shape)
     ps = graph.query(qr)
     for binding in ps.bindings:

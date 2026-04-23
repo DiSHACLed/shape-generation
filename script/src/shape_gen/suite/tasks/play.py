@@ -1,5 +1,5 @@
 from ..task import Task, Key
-from ...config import RESULTS, PLAY_JAR, JAVA_HEAP_SIZE
+from ...config import RESULTS, PLAY_JAR, JAVA_HEAP_SIZE, JAVA_BIN
 # from rdf_tools.prelude import docker_connect
 from pathlib import Path
 import subprocess
@@ -28,7 +28,7 @@ def meat(key : Key) :
     log_file = Path(f"{RESULTS}/{CODE}/{key}.log")
 
     # TODO namespaces are supported
-    command = ["java", "-jar", f"-Xmx{JAVA_HEAP_SIZE}g", str(PLAY_JAR), "generate", "--endpoint", ENDPOINT, "-o", str(output_file) ]
+    command = [JAVA_BIN, "-jar", f"-Xmx{JAVA_HEAP_SIZE}g", str(PLAY_JAR), "generate", "--endpoint", ENDPOINT, "-o", str(output_file) ]
 
     with open(log_file, "w") as log_file:
         try:

@@ -1,4 +1,4 @@
-from ..config import RESULTS, PLAY_JAR, SAMPLE_DATA, JAVA_HEAP_SIZE
+from ..config import JAVA_BIN, RESULTS, PLAY_JAR, SAMPLE_DATA, JAVA_HEAP_SIZE
 from pathlib import Path
 import subprocess
 from rdflib import Graph
@@ -61,7 +61,7 @@ def validate(input_file : Path, shacl_path : Path, closed : bool, overwrite : bo
         print(tmp_path)
         shacl_path = tmp_path
 
-    command = ["java", "-jar", f"-Xmx{JAVA_HEAP_SIZE}g", str(PLAY_JAR), "validate", "-i", str(input_file), "-o", str(report_html_path), "-o", str(report_csv_path), "-s", str(shacl_path) ]
+    command = [JAVA_BIN, "-jar", f"-Xmx{JAVA_HEAP_SIZE}g", str(PLAY_JAR), "validate", "-i", str(input_file), "-o", str(report_html_path), "-o", str(report_csv_path), "-s", str(shacl_path) ]
 
     # docker run --volume ./:/rdf stain/jena shacl validate --shapes shacl-for-shacl.ttl --data shacl.ttl --text
 
