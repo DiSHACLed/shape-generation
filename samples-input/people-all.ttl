@@ -1,0 +1,43 @@
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:     <http://example.org/people/> .
+@prefix schema: <https://schema.org/> .
+
+ex:alice a foaf:Person ;
+    foaf:name "Alice Johnson" ;
+    foaf:birthday "1996-03-14"^^xsd:date .
+
+ex:bob a foaf:Person ;
+    foaf:name "Bob Smith" ;
+    foaf:birthday "1990-07-22"^^xsd:date .
+
+ex:carol a foaf:Person ;
+    foaf:name "Carol White" ;
+    foaf:birthday "1979-11-05"^^xsd:date .
+
+ex:david a foaf:Person ;
+    foaf:name "David Brown" ;
+    foaf:birthday "2002-01-30"^^xsd:date .
+
+ex:eve a foaf:Person ;
+    foaf:name "Eve Davis" ;
+    foaf:birthday "1993-06-18"^^xsd:date .
+
+ex:frank a foaf:Person ;
+    foaf:name "Frank Miller" ;
+    foaf:birthday "1967-09-02"^^xsd:date .
+
+ex:grace a foaf:Person ;
+    foaf:name "Grace Wilson" .
+
+ex:henry a foaf:Person ;
+    foaf:name "Henry Moore" ;
+    schema:birthDate "1961-04-10"^^xsd:date .
+
+ex:iris a foaf:Person ;
+    foaf:name "Iris Taylor" ;
+    foaf:birthday "1984-08-17T00:00:00Z"^^xsd:dateTime .
+
+ex:jack a foaf:Person ;
+    foaf:name "Jack Anderson" ;
+    foaf:birthday "28th of february" .
