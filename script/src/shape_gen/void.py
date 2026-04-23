@@ -18,7 +18,7 @@ def generate(endpoint : str, graph : str, key : str, output : Path) -> None :
             },
         network='host',
         command = [
-            JAVA_BIN, "-jar", "void-generator.jar",
+            "java", "-jar", "void-generator.jar",
             "-r", endpoint,
             "--void-file", f"/output/{key}-void.ttl",
             "--iri-of-void", f"http://example.com/void-description/{key}",

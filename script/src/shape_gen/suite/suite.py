@@ -1,3 +1,4 @@
+from os import mkdir
 from ..prelude import Typer
 from typing import Annotated
 from pathlib import Path
@@ -5,7 +6,7 @@ import typer
 import json
 from rdflib import Graph
 
-from ..config import SAMPLE_DATA, RESULTS
+from ..config import JAVA_HEAP_SIZE, SAMPLE_DATA, RESULTS
 
 from .task import Task, execute
 
@@ -132,14 +133,15 @@ from . import java_memory
 from ..virtuoso.cli import init, stop
 from .report import report_add
 
-INITIAL_MB = 1024*8
+INITIAL_MB = 1024*JAVA_HEAP_SIZE
 
 @suite_typer.command()
-def java_mem():
-    for key in ['mandaten-fix'] :
+def java_mem(sources : Annotated[list[str], typer.Argument(callback=valid(keys))] = keys):
+    Path('/tmp/java-memory').mkdir(exist_ok=True)
+    for key in sources :
         # init(key) # for things that need sparql endpoint
         for func , code in [ (java_memory.qse, 'qse') ] :
-            mn_mb = derive_min_ram(func, key, INITIAL_MB, granularity=1)
+            mn_mb = derive_min_ram(func, key, INITIAL_MB, granularity=100)
             report_add('memory', code, key, str(mn_mb))
         # stop(key) # for things that need sparql endpoint
 
@@ -148,7 +150,7 @@ from .tasks import shexer_memory
 python_tasks : list[Task] = [ shexer_memory.task ]
 
 @suite_typer.command()
-def python_mem():
+def python_mem(sources : Annotated[list[str], typer.Argument(callback=valid(keys))] = keys):
     for task in python_tasks :
-        for key in ['mandaten-fix'] :
+        for key in sources :
             execute(task, key, True)
