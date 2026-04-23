@@ -80,5 +80,89 @@
       "mandaten-fix": "820.4280433654785",
       "rijksmuseum-images": "2952.67094039917"
     }
+  },
+  "info": {
+    "qse-0.0": {
+      "lblod-big-fix": "69 / 1234 / 16767",
+      "rijksmuseum-instances": "14 / 162 / 2565",
+      "lblod-small-fix": "107 / 1425 / 15289",
+      "mandaten-fix": "21 / 108 / 1231",
+      "rijksmuseum-images": "3 / 8 / 68"
+    },
+    "qse-0.5": {
+      "lblod-big-fix": "69 / 909 / 8294",
+      "rijksmuseum-instances": "14 / 88 / 1219",
+      "lblod-small-fix": "107 / 1015 / 8280",
+      "mandaten-fix": "21 / 48 / 429",
+      "rijksmuseum-images": "3 / 3 / 28"
+    },
+    "qse-0.9": {
+      "lblod-big-fix": "69 / 723 / 6218",
+      "rijksmuseum-instances": "14 / 72 / 1017",
+      "lblod-small-fix": "107 / 825 / 6842",
+      "mandaten-fix": "21 / 38 / 348",
+      "rijksmuseum-images": "3 / 3 / 28"
+    },
+    "qse-1.0": {
+      "lblod-big-fix": "69 / 69 / 568",
+      "rijksmuseum-instances": "14 / 14 / 112",
+      "lblod-small-fix": "107 / 107 / 860",
+      "mandaten-fix": "21 / 21 / 184",
+      "rijksmuseum-images": "3 / 3 / 24"
+    },
+    "shexer-unsound-0": {
+      "rijksmuseum-instances": "14 / 194 / 1182",
+      "mandaten-fix": "25 / 173 / 1194",
+      "rijksmuseum-images": "3 / 8 / 55"
+    },
+    "shexer-sound-0": {
+      "rijksmuseum-instances": "14 / 194 / 1047",
+      "mandaten-fix": "25 / 173 / 1125",
+      "rijksmuseum-images": "3 / 8 / 52"
+    },
+    "shexer-unsound-0.5": {
+      "rijksmuseum-instances": "14 / 136 / 837",
+      "mandaten-fix": "25 / 127 / 879",
+      "rijksmuseum-images": "3 / 7 / 50"
+    },
+    "shexer-sound-0.5": {
+      "rijksmuseum-instances": "14 / 136 / 768",
+      "mandaten-fix": "25 / 127 / 849",
+      "rijksmuseum-images": "3 / 7 / 48"
+    },
+    "shexer-unsound-0.9": {
+      "rijksmuseum-instances": "14 / 128 / 793",
+      "mandaten-fix": "25 / 113 / 790",
+      "rijksmuseum-images": "3 / 5 / 40"
+    },
+    "shexer-sound-0.9": {
+      "rijksmuseum-instances": "14 / 128 / 732",
+      "mandaten-fix": "25 / 113 / 773",
+      "rijksmuseum-images": "3 / 5 / 40"
+    },
+    "shexer-unsound-1": {
+      "rijksmuseum-instances": "14 / 61 / 419",
+      "mandaten-fix": "25 / 95 / 685",
+      "rijksmuseum-images": "3 / 5 / 40"
+    },
+    "shexer-sound-1": {
+      "rijksmuseum-instances": "14 / 61 / 419",
+      "mandaten-fix": "25 / 95 / 685",
+      "rijksmuseum-images": "3 / 5 / 40"
+    },
+    "play": {
+      "lblod-big-fix": "73 / 1194 / 12343",
+      "rijksmuseum-instances": "14 / 148 / 1624",
+      "lblod-small-fix": "108 / 1325 / 11328",
+      "mandaten-fix": "25 / 95 / 935",
+      "rijksmuseum-images": "3 / 5 / 44"
+    },
+    "voicl": {
+      "lblod-big-fix": "73 / 2053 / 7970",
+      "rijksmuseum-instances": "13 / 274 / 972",
+      "lblod-small-fix": "108 / 1541 / 5868",
+      "mandaten-fix": "25 / 124 / 575",
+      "rijksmuseum-images": "2 / 5 / 22"
+    }
   }
 }
