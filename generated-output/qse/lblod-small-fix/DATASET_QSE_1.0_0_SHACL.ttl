@@ -1,0 +1,945 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://shaclshapes.org/00527d30-e60b-4fa5-9152-f42dddd10ff6Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType00527d30-e60b-4fa5-9152-f42dddd10ff6ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/00527d30-e60b-4fa5-9152-f42dddd10ff6> .
+
+<http://shaclshapes.org/0fc2c27d-a03c-4e3f-9db1-f10f026f76f8Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType0fc2c27d-a03c-4e3f-9db1-f10f026f76f8ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/0fc2c27d-a03c-4e3f-9db1-f10f026f76f8> .
+
+<http://shaclshapes.org/1105564e-30c7-4371-a864-6b7329cdae6fShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType1105564e-30c7-4371-a864-6b7329cdae6fShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/1105564e-30c7-4371-a864-6b7329cdae6f> .
+
+<http://shaclshapes.org/13fefad6-a9d6-4025-83b5-e4cbee3a8965Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType13fefad6-a9d6-4025-83b5-e4cbee3a8965ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitDocumentType/13fefad6-a9d6-4025-83b5-e4cbee3a8965> .
+
+<http://shaclshapes.org/1869e152-e724-4dd7-927c-a11e7d832858Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType1869e152-e724-4dd7-927c-a11e7d832858ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/1869e152-e724-4dd7-927c-a11e7d832858> .
+
+<http://shaclshapes.org/23735395-a487-4f0b-9ffa-f8ee1d3cd84fShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType23735395-a487-4f0b-9ffa-f8ee1d3cd84fShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/23735395-a487-4f0b-9ffa-f8ee1d3cd84f> .
+
+<http://shaclshapes.org/256bd04a-b74b-4f2a-8f5d-14dda4765af9Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType256bd04a-b74b-4f2a-8f5d-14dda4765af9ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/256bd04a-b74b-4f2a-8f5d-14dda4765af9> .
+
+<http://shaclshapes.org/25deb453-ae3e-4d40-8027-36cdb48ab738Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType25deb453-ae3e-4d40-8027-36cdb48ab738ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/25deb453-ae3e-4d40-8027-36cdb48ab738> .
+
+<http://shaclshapes.org/2b12630f-8c4e-40a4-8a61-a0c45621a1e6Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType2b12630f-8c4e-40a4-8a61-a0c45621a1e6ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/2b12630f-8c4e-40a4-8a61-a0c45621a1e6> .
+
+<http://shaclshapes.org/2c2f5e3c-827f-4ad7-906a-176f3bda08ceShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType2c2f5e3c-827f-4ad7-906a-176f3bda08ceShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/2c2f5e3c-827f-4ad7-906a-176f3bda08ce> .
+
+<http://shaclshapes.org/2f189152-1786-4b55-a3a9-d7f06de63f1cShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType2f189152-1786-4b55-a3a9-d7f06de63f1cShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/2f189152-1786-4b55-a3a9-d7f06de63f1c> .
+
+<http://shaclshapes.org/35c15ea0-d0c3-4ba7-b91f-b1c6264800b1Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType35c15ea0-d0c3-4ba7-b91f-b1c6264800b1ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/35c15ea0-d0c3-4ba7-b91f-b1c6264800b1> .
+
+<http://shaclshapes.org/35d9d01c-015c-4fb9-8ec1-8227f9f4d28cShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType35d9d01c-015c-4fb9-8ec1-8227f9f4d28cShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/35d9d01c-015c-4fb9-8ec1-8227f9f4d28c> .
+
+<http://shaclshapes.org/3fa67785-ffdc-4b30-8880-2b99d97b4deeShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType3fa67785-ffdc-4b30-8880-2b99d97b4deeShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitDocumentType/3fa67785-ffdc-4b30-8880-2b99d97b4dee> .
+
+<http://shaclshapes.org/3fcf7dba-2e5b-4955-a489-6dd8285c013bShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType3fcf7dba-2e5b-4955-a489-6dd8285c013bShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/3fcf7dba-2e5b-4955-a489-6dd8285c013b> .
+
+<http://shaclshapes.org/40831a2c-771d-4b41-9720-0399998f1873Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType40831a2c-771d-4b41-9720-0399998f1873ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/40831a2c-771d-4b41-9720-0399998f1873> .
+
+<http://shaclshapes.org/4350cdda-8291-4055-9026-5c7429357fceShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType4350cdda-8291-4055-9026-5c7429357fceShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/4350cdda-8291-4055-9026-5c7429357fce> .
+
+<http://shaclshapes.org/4673d472-8dbc-4cea-b3ab-f92df3807eb3Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType4673d472-8dbc-4cea-b3ab-f92df3807eb3ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/4673d472-8dbc-4cea-b3ab-f92df3807eb3> .
+
+<http://shaclshapes.org/48c3290d-d9e3-4a38-b14e-e7c417e3a13aShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType48c3290d-d9e3-4a38-b14e-e7c417e3a13aShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/48c3290d-d9e3-4a38-b14e-e7c417e3a13a> .
+
+<http://shaclshapes.org/4c22ef0a-f808-41dd-9c9f-2aff17fd851fShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType4c22ef0a-f808-41dd-9c9f-2aff17fd851fShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/4c22ef0a-f808-41dd-9c9f-2aff17fd851f> .
+
+<http://shaclshapes.org/4d8f678a-6fa4-4d5f-a2a1-80974e43bf34Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType4d8f678a-6fa4-4d5f-a2a1-80974e43bf34ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/4d8f678a-6fa4-4d5f-a2a1-80974e43bf34> .
+
+<http://shaclshapes.org/4efa4632-efc6-40d5-815a-dec785fbceacShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType4efa4632-efc6-40d5-815a-dec785fbceacShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/4efa4632-efc6-40d5-815a-dec785fbceac> .
+
+<http://shaclshapes.org/51982214-0d8b-4cd9-87cf-c46570cd1ed3Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType51982214-0d8b-4cd9-87cf-c46570cd1ed3ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/51982214-0d8b-4cd9-87cf-c46570cd1ed3> .
+
+<http://shaclshapes.org/5226e23d-617d-48b9-9c00-3d679ae88fecShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType5226e23d-617d-48b9-9c00-3d679ae88fecShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/5226e23d-617d-48b9-9c00-3d679ae88fec> .
+
+<http://shaclshapes.org/5ee63f84-2fa0-4758-8820-99dca2bdce7cShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType5ee63f84-2fa0-4758-8820-99dca2bdce7cShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/5ee63f84-2fa0-4758-8820-99dca2bdce7c> .
+
+<http://shaclshapes.org/6199a44b-0d6c-407c-833a-73abb104efceShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType6199a44b-0d6c-407c-833a-73abb104efceShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/6199a44b-0d6c-407c-833a-73abb104efce> .
+
+<http://shaclshapes.org/67378dd0-5413-474b-8996-d992ef81637aShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType67378dd0-5413-474b-8996-d992ef81637aShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/67378dd0-5413-474b-8996-d992ef81637a> .
+
+<http://shaclshapes.org/70ae4d36-de0c-425d-9dbe-3b6deef8343cShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType70ae4d36-de0c-425d-9dbe-3b6deef8343cShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/70ae4d36-de0c-425d-9dbe-3b6deef8343c> .
+
+<http://shaclshapes.org/73d5d79f-3f70-4ca9-9512-e216300cd3acShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType73d5d79f-3f70-4ca9-9512-e216300cd3acShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/73d5d79f-3f70-4ca9-9512-e216300cd3ac> .
+
+<http://shaclshapes.org/7927f4f4-ad4c-4460-9207-2a4b5d21a9d7Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType7927f4f4-ad4c-4460-9207-2a4b5d21a9d7ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/7927f4f4-ad4c-4460-9207-2a4b5d21a9d7> .
+
+<http://shaclshapes.org/79414af4-4f57-4ca3-aaa4-f8f1e015e71cShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType79414af4-4f57-4ca3-aaa4-f8f1e015e71cShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/79414af4-4f57-4ca3-aaa4-f8f1e015e71c> .
+
+<http://shaclshapes.org/7d95fd2e-3cc9-4a4c-a58e-0fbc408c2f9bShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType7d95fd2e-3cc9-4a4c-a58e-0fbc408c2f9bShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/7d95fd2e-3cc9-4a4c-a58e-0fbc408c2f9b> .
+
+<http://shaclshapes.org/84121221-4217-40e3-ada2-cd1379b168e1Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType84121221-4217-40e3-ada2-cd1379b168e1ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/84121221-4217-40e3-ada2-cd1379b168e1> .
+
+<http://shaclshapes.org/849c66c2-ba33-4ac1-a693-be48d8ac7bc7Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType849c66c2-ba33-4ac1-a693-be48d8ac7bc7ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/849c66c2-ba33-4ac1-a693-be48d8ac7bc7> .
+
+<http://shaclshapes.org/8597e056-b96d-4213-ad4c-37338f2aaf35Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType8597e056-b96d-4213-ad4c-37338f2aaf35ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/8597e056-b96d-4213-ad4c-37338f2aaf35> .
+
+<http://shaclshapes.org/8bdc614a-d2f2-44c0-8cb1-447b1017d312Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType8bdc614a-d2f2-44c0-8cb1-447b1017d312ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/8bdc614a-d2f2-44c0-8cb1-447b1017d312> .
+
+<http://shaclshapes.org/8d8a75bf-f639-44ae-bcce-50b8f760cc3cShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType8d8a75bf-f639-44ae-bcce-50b8f760cc3cShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/8d8a75bf-f639-44ae-bcce-50b8f760cc3c> .
+
+<http://shaclshapes.org/8e791b27-7600-4577-b24e-c7c29e0eb773Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType8e791b27-7600-4577-b24e-c7c29e0eb773ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitDocumentType/8e791b27-7600-4577-b24e-c7c29e0eb773> .
+
+<http://shaclshapes.org/94657ec2-e8a1-411f-bb96-d0ea517d7051Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType94657ec2-e8a1-411f-bb96-d0ea517d7051ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/94657ec2-e8a1-411f-bb96-d0ea517d7051> .
+
+<http://shaclshapes.org/9a02d21f-fdc4-455e-8892-c2ae1d33759aShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType9a02d21f-fdc4-455e-8892-c2ae1d33759aShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/9a02d21f-fdc4-455e-8892-c2ae1d33759a> .
+
+<http://shaclshapes.org/9d5bfaca-bbf2-49dd-a830-769f91a6377bShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType9d5bfaca-bbf2-49dd-a830-769f91a6377bShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitDocumentType/9d5bfaca-bbf2-49dd-a830-769f91a6377b> .
+
+<http://shaclshapes.org/9f12dc58-18ba-4a1f-9e7a-cf73d0b4f025Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceType9f12dc58-18ba-4a1f-9e7a-cf73d0b4f025ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/9f12dc58-18ba-4a1f-9e7a-cf73d0b4f025> .
+
+<http://shaclshapes.org/AanstellingsbesluitShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeAanstellingsbesluitShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/mandaat#Aanstellingsbesluit> .
+
+<http://shaclshapes.org/AgendapuntShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeAgendapuntShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/besluit#Agendapunt> .
+
+<http://shaclshapes.org/ArtikelShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeArtikelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/besluit#Artikel> .
+
+<http://shaclshapes.org/BehandelingVanAgendapuntShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBehandelingVanAgendapuntShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/besluit#BehandelingVanAgendapunt> .
+
+<http://shaclshapes.org/BesluitKlassiekeStijlShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBesluitKlassiekeStijlShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BesluitKlassiekeStijl> .
+
+<http://shaclshapes.org/BesluitNieuweStijlShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBesluitNieuweStijlShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BesluitNieuweStijl> .
+
+<http://shaclshapes.org/BesluitPolitieraadNieuweStijlShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBesluitPolitieraadNieuweStijlShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BesluitPolitieraadNieuweStijl> .
+
+<http://shaclshapes.org/BesluitPolitieraadShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBesluitPolitieraadShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BesluitPolitieraad> .
+
+<http://shaclshapes.org/BesluitSchepenenNieuweStijlShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBesluitSchepenenNieuweStijlShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BesluitSchepenenNieuweStijl> .
+
+<http://shaclshapes.org/BesluitSchepenenShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBesluitSchepenenShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BesluitSchepenen> .
+
+<http://shaclshapes.org/BesluitShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBesluitShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/besluit#Besluit> .
+
+<http://shaclshapes.org/BesluitVerkiezingVoorzitterNieuweStijlShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBesluitVerkiezingVoorzitterNieuweStijlShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BesluitVerkiezingVoorzitterNieuweStijl> .
+
+<http://shaclshapes.org/BesluitVerkiezingVoorzitterShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBesluitVerkiezingVoorzitterShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BesluitVerkiezingVoorzitter> .
+
+<http://shaclshapes.org/BesluitVoorzitterBCSDNieuweStijlShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBesluitVoorzitterBCSDNieuweStijlShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BesluitVoorzitterBCSDNieuweStijl> .
+
+<http://shaclshapes.org/BesluitVoorzitterBCSDShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBesluitVoorzitterBCSDShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BesluitVoorzitterBCSD> .
+
+<http://shaclshapes.org/BestuurseenheidShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBestuurseenheidShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/besluit#Bestuurseenheid> .
+
+<http://shaclshapes.org/BestuursorgaanShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBestuursorgaanShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/besluit#Bestuursorgaan> .
+
+<http://shaclshapes.org/ConceptShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeConceptShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://shaclshapes.org/DocumentShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://xmlns.com/foaf/0.1/Document> .
+
+<http://shaclshapes.org/FunctionarisShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeFunctionarisShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.lblod.info/vocabularies/leidinggevenden/Functionaris> .
+
+<http://shaclshapes.org/GeometryShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeGeometryShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/locn#Geometry> .
+
+<http://shaclshapes.org/LegalExpressionShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeLegalExpressionShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.europa.eu/eli/ontology#LegalExpression> .
+
+<http://shaclshapes.org/MandaatShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeMandaatShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/mandaat#Mandaat> .
+
+<http://shaclshapes.org/MandatarisShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeMandatarisShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/mandaat#Mandataris> .
+
+<http://shaclshapes.org/MappingShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeMappingShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/Mapping> .
+
+<http://shaclshapes.org/PersonShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypePersonShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/person#Person> .
+
+<http://shaclshapes.org/PublishedResourceShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypePublishedResourceShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://example.com/sign/PublishedResource> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/signing/PublishedResource> .
+
+<http://shaclshapes.org/StemmingShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeStemmingShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/besluit#Stemming> .
+
+<http://shaclshapes.org/ZittingShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeZittingShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/besluit#Zitting> .
+
+<http://shaclshapes.org/a0a709a7-ac07-4457-8d40-de4aea9b1432Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypea0a709a7-ac07-4457-8d40-de4aea9b1432ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/a0a709a7-ac07-4457-8d40-de4aea9b1432> .
+
+<http://shaclshapes.org/a8486fa3-6375-494d-aa48-e34289b87d5bShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypea8486fa3-6375-494d-aa48-e34289b87d5bShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/a8486fa3-6375-494d-aa48-e34289b87d5b> .
+
+<http://shaclshapes.org/a8cdb80d-d409-40ed-bb8b-ddfd0acb28dfShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypea8cdb80d-d409-40ed-bb8b-ddfd0acb28dfShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/a8cdb80d-d409-40ed-bb8b-ddfd0acb28df> .
+
+<http://shaclshapes.org/afdb7387-da47-4dc4-bbbe-e86ea5c3df28Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeafdb7387-da47-4dc4-bbbe-e86ea5c3df28ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/afdb7387-da47-4dc4-bbbe-e86ea5c3df28> .
+
+<http://shaclshapes.org/b04bc642-c892-4aae-ac1f-f6ff21362704Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeb04bc642-c892-4aae-ac1f-f6ff21362704ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/b04bc642-c892-4aae-ac1f-f6ff21362704> .
+
+<http://shaclshapes.org/b0fcc0c3-bb33-427f-8da2-4ef3833c9060Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeb0fcc0c3-bb33-427f-8da2-4ef3833c9060ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/b0fcc0c3-bb33-427f-8da2-4ef3833c9060> .
+
+<http://shaclshapes.org/b25faa84-3ab5-47ae-98c0-1b389c77b827Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeb25faa84-3ab5-47ae-98c0-1b389c77b827ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/b25faa84-3ab5-47ae-98c0-1b389c77b827> .
+
+<http://shaclshapes.org/b2d0734d-13d0-44b4-9af8-1722933c5288Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeb2d0734d-13d0-44b4-9af8-1722933c5288ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/b2d0734d-13d0-44b4-9af8-1722933c5288> .
+
+<http://shaclshapes.org/b4c828e4-bcb8-46ff-8abf-5fde227d2459Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeb4c828e4-bcb8-46ff-8abf-5fde227d2459ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/b4c828e4-bcb8-46ff-8abf-5fde227d2459> .
+
+<http://shaclshapes.org/ba5922c9-cfad-4b2e-b203-36479219ba56Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeba5922c9-cfad-4b2e-b203-36479219ba56ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/ba5922c9-cfad-4b2e-b203-36479219ba56> .
+
+<http://shaclshapes.org/c417f3da-a3bd-47c5-84bf-29007323a362Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypec417f3da-a3bd-47c5-84bf-29007323a362ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/c417f3da-a3bd-47c5-84bf-29007323a362> .
+
+<http://shaclshapes.org/c6b696c0-26f8-4e87-b7e8-071b81471ddcShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypec6b696c0-26f8-4e87-b7e8-071b81471ddcShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/c6b696c0-26f8-4e87-b7e8-071b81471ddc> .
+
+<http://shaclshapes.org/c945b531-4742-43fe-af55-b13da6ecc6feShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypec945b531-4742-43fe-af55-b13da6ecc6feShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/c945b531-4742-43fe-af55-b13da6ecc6fe> .
+
+<http://shaclshapes.org/cb361927-1aab-4016-bd8a-1a84841391baShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypecb361927-1aab-4016-bd8a-1a84841391baShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/cb361927-1aab-4016-bd8a-1a84841391ba> .
+
+<http://shaclshapes.org/d7060f97-c417-474c-abc6-ef006cb61f41Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTyped7060f97-c417-474c-abc6-ef006cb61f41ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/d7060f97-c417-474c-abc6-ef006cb61f41> .
+
+<http://shaclshapes.org/d85218e2-a75f-4a30-9182-512b5c9dd1b2Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTyped85218e2-a75f-4a30-9182-512b5c9dd1b2ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/d85218e2-a75f-4a30-9182-512b5c9dd1b2> .
+
+<http://shaclshapes.org/d9c3d177-6dc6-4775-8c6a-1055a9cbdcc6Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTyped9c3d177-6dc6-4775-8c6a-1055a9cbdcc6ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/d9c3d177-6dc6-4775-8c6a-1055a9cbdcc6> .
+
+<http://shaclshapes.org/dbc58656-b0a5-4e43-8e9e-701acb75f9b0Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypedbc58656-b0a5-4e43-8e9e-701acb75f9b0ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/dbc58656-b0a5-4e43-8e9e-701acb75f9b0> .
+
+<http://shaclshapes.org/df261490-cc74-4f80-b783-41c35e720b46Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypedf261490-cc74-4f80-b783-41c35e720b46ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/df261490-cc74-4f80-b783-41c35e720b46> .
+
+<http://shaclshapes.org/e27ef237-29de-49b8-be22-4ee2ab2d4e5bShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypee27ef237-29de-49b8-be22-4ee2ab2d4e5bShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/e27ef237-29de-49b8-be22-4ee2ab2d4e5b> .
+
+<http://shaclshapes.org/e2928231-d377-48c7-98b4-3bb2f7de65dbShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypee2928231-d377-48c7-98b4-3bb2f7de65dbShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/e2928231-d377-48c7-98b4-3bb2f7de65db> .
+
+<http://shaclshapes.org/e44c535d-4339-4d15-bdbf-d4be6046de2cShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypee44c535d-4339-4d15-bdbf-d4be6046de2cShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/e44c535d-4339-4d15-bdbf-d4be6046de2c> .
+
+<http://shaclshapes.org/e6425cd1-26f2-4cd8-aa0f-1e9b65619c3aShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypee6425cd1-26f2-4cd8-aa0f-1e9b65619c3aShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/e6425cd1-26f2-4cd8-aa0f-1e9b65619c3a> .
+
+<http://shaclshapes.org/e8aee49e-8762-4db2-acfe-2d5dd3c37619Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypee8aee49e-8762-4db2-acfe-2d5dd3c37619ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/e8aee49e-8762-4db2-acfe-2d5dd3c37619> .
+
+<http://shaclshapes.org/e8afe7c5-9640-4db8-8f74-3f023bec3241Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypee8afe7c5-9640-4db8-8f74-3f023bec3241ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/e8afe7c5-9640-4db8-8f74-3f023bec3241> .
+
+<http://shaclshapes.org/e96ec8af-6480-4b32-876a-fefe5f0a3793Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypee96ec8af-6480-4b32-876a-fefe5f0a3793ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/e96ec8af-6480-4b32-876a-fefe5f0a3793> .
+
+<http://shaclshapes.org/ec8652a6-2c49-4955-8d59-fd08c8c0a6e1Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeec8652a6-2c49-4955-8d59-fd08c8c0a6e1ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/ec8652a6-2c49-4955-8d59-fd08c8c0a6e1> .
+
+<http://shaclshapes.org/efa4ec5a-b006-453f-985f-f986ebae11bcShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeefa4ec5a-b006-453f-985f-f986ebae11bcShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/efa4ec5a-b006-453f-985f-f986ebae11bc> .
+
+<http://shaclshapes.org/f1d16307-164c-4278-87b9-1d3b1d968f67Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypef1d16307-164c-4278-87b9-1d3b1d968f67ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/f1d16307-164c-4278-87b9-1d3b1d968f67> .
+
+<http://shaclshapes.org/f1fd8f88-95b0-4085-b766-008b5867d992Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypef1fd8f88-95b0-4085-b766-008b5867d992ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/f1fd8f88-95b0-4085-b766-008b5867d992> .
+
+<http://shaclshapes.org/f276bc3b-2d79-4c55-81b8-092e05619676Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypef276bc3b-2d79-4c55-81b8-092e05619676ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/f276bc3b-2d79-4c55-81b8-092e05619676> .
+
+<http://shaclshapes.org/f4ba730e-3f12-4c2f-81cf-31922b6da166Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypef4ba730e-3f12-4c2f-81cf-31922b6da166ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/f4ba730e-3f12-4c2f-81cf-31922b6da166> .
+
+<http://shaclshapes.org/f56c645d-b8e1-4066-813d-e213f5bc529fShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypef56c645d-b8e1-4066-813d-e213f5bc529fShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/f56c645d-b8e1-4066-813d-e213f5bc529f> .
+
+<http://shaclshapes.org/f8c070bd-96e4-43a1-8c6e-532bcd771251Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypef8c070bd-96e4-43a1-8c6e-532bcd771251ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/f8c070bd-96e4-43a1-8c6e-532bcd771251> .
+
+<http://shaclshapes.org/fb21d14b-734b-48f4-bd4e-888163fd08e8Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypefb21d14b-734b-48f4-bd4e-888163fd08e8ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/fb21d14b-734b-48f4-bd4e-888163fd08e8> .
+
+<http://shaclshapes.org/fb92601a-d189-4482-9922-ab0efc6bc935Shape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypefb92601a-d189-4482-9922-ab0efc6bc935ShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <https://data.vlaanderen.be/id/concept/BesluitType/fb92601a-d189-4482-9922-ab0efc6bc935> .
+
+<http://shaclshapes.org/instanceType00527d30-e60b-4fa5-9152-f42dddd10ff6ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/00527d30-e60b-4fa5-9152-f42dddd10ff6> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType0fc2c27d-a03c-4e3f-9db1-f10f026f76f8ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/0fc2c27d-a03c-4e3f-9db1-f10f026f76f8> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType1105564e-30c7-4371-a864-6b7329cdae6fShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/1105564e-30c7-4371-a864-6b7329cdae6f> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType13fefad6-a9d6-4025-83b5-e4cbee3a8965ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitDocumentType/13fefad6-a9d6-4025-83b5-e4cbee3a8965> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType1869e152-e724-4dd7-927c-a11e7d832858ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/1869e152-e724-4dd7-927c-a11e7d832858> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType23735395-a487-4f0b-9ffa-f8ee1d3cd84fShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/23735395-a487-4f0b-9ffa-f8ee1d3cd84f> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType256bd04a-b74b-4f2a-8f5d-14dda4765af9ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/256bd04a-b74b-4f2a-8f5d-14dda4765af9> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType25deb453-ae3e-4d40-8027-36cdb48ab738ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/25deb453-ae3e-4d40-8027-36cdb48ab738> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType2b12630f-8c4e-40a4-8a61-a0c45621a1e6ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/2b12630f-8c4e-40a4-8a61-a0c45621a1e6> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType2c2f5e3c-827f-4ad7-906a-176f3bda08ceShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/2c2f5e3c-827f-4ad7-906a-176f3bda08ce> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType2f189152-1786-4b55-a3a9-d7f06de63f1cShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/2f189152-1786-4b55-a3a9-d7f06de63f1c> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType35c15ea0-d0c3-4ba7-b91f-b1c6264800b1ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/35c15ea0-d0c3-4ba7-b91f-b1c6264800b1> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType35d9d01c-015c-4fb9-8ec1-8227f9f4d28cShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/35d9d01c-015c-4fb9-8ec1-8227f9f4d28c> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType3fa67785-ffdc-4b30-8880-2b99d97b4deeShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitDocumentType/3fa67785-ffdc-4b30-8880-2b99d97b4dee> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType3fcf7dba-2e5b-4955-a489-6dd8285c013bShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/3fcf7dba-2e5b-4955-a489-6dd8285c013b> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType40831a2c-771d-4b41-9720-0399998f1873ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/40831a2c-771d-4b41-9720-0399998f1873> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType4350cdda-8291-4055-9026-5c7429357fceShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/4350cdda-8291-4055-9026-5c7429357fce> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType4673d472-8dbc-4cea-b3ab-f92df3807eb3ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/4673d472-8dbc-4cea-b3ab-f92df3807eb3> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType48c3290d-d9e3-4a38-b14e-e7c417e3a13aShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/48c3290d-d9e3-4a38-b14e-e7c417e3a13a> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType4c22ef0a-f808-41dd-9c9f-2aff17fd851fShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/4c22ef0a-f808-41dd-9c9f-2aff17fd851f> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType4d8f678a-6fa4-4d5f-a2a1-80974e43bf34ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/4d8f678a-6fa4-4d5f-a2a1-80974e43bf34> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType4efa4632-efc6-40d5-815a-dec785fbceacShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/4efa4632-efc6-40d5-815a-dec785fbceac> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType51982214-0d8b-4cd9-87cf-c46570cd1ed3ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/51982214-0d8b-4cd9-87cf-c46570cd1ed3> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType5226e23d-617d-48b9-9c00-3d679ae88fecShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/5226e23d-617d-48b9-9c00-3d679ae88fec> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType5ee63f84-2fa0-4758-8820-99dca2bdce7cShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/5ee63f84-2fa0-4758-8820-99dca2bdce7c> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType6199a44b-0d6c-407c-833a-73abb104efceShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/6199a44b-0d6c-407c-833a-73abb104efce> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType67378dd0-5413-474b-8996-d992ef81637aShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/67378dd0-5413-474b-8996-d992ef81637a> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType70ae4d36-de0c-425d-9dbe-3b6deef8343cShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/70ae4d36-de0c-425d-9dbe-3b6deef8343c> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType73d5d79f-3f70-4ca9-9512-e216300cd3acShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/73d5d79f-3f70-4ca9-9512-e216300cd3ac> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType7927f4f4-ad4c-4460-9207-2a4b5d21a9d7ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/7927f4f4-ad4c-4460-9207-2a4b5d21a9d7> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType79414af4-4f57-4ca3-aaa4-f8f1e015e71cShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/79414af4-4f57-4ca3-aaa4-f8f1e015e71c> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType7d95fd2e-3cc9-4a4c-a58e-0fbc408c2f9bShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/7d95fd2e-3cc9-4a4c-a58e-0fbc408c2f9b> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType84121221-4217-40e3-ada2-cd1379b168e1ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/84121221-4217-40e3-ada2-cd1379b168e1> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType849c66c2-ba33-4ac1-a693-be48d8ac7bc7ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/849c66c2-ba33-4ac1-a693-be48d8ac7bc7> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType8597e056-b96d-4213-ad4c-37338f2aaf35ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/8597e056-b96d-4213-ad4c-37338f2aaf35> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType8bdc614a-d2f2-44c0-8cb1-447b1017d312ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/8bdc614a-d2f2-44c0-8cb1-447b1017d312> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType8d8a75bf-f639-44ae-bcce-50b8f760cc3cShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/8d8a75bf-f639-44ae-bcce-50b8f760cc3c> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType8e791b27-7600-4577-b24e-c7c29e0eb773ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitDocumentType/8e791b27-7600-4577-b24e-c7c29e0eb773> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType94657ec2-e8a1-411f-bb96-d0ea517d7051ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/94657ec2-e8a1-411f-bb96-d0ea517d7051> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType9a02d21f-fdc4-455e-8892-c2ae1d33759aShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/9a02d21f-fdc4-455e-8892-c2ae1d33759a> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType9d5bfaca-bbf2-49dd-a830-769f91a6377bShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitDocumentType/9d5bfaca-bbf2-49dd-a830-769f91a6377b> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceType9f12dc58-18ba-4a1f-9e7a-cf73d0b4f025ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/9f12dc58-18ba-4a1f-9e7a-cf73d0b4f025> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeAanstellingsbesluitShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/mandaat#Aanstellingsbesluit> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeAgendapuntShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/besluit#Agendapunt> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeArtikelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/besluit#Artikel> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBehandelingVanAgendapuntShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/besluit#BehandelingVanAgendapunt> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBesluitKlassiekeStijlShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://mu.semte.ch/vocabularies/ext/BesluitKlassiekeStijl> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBesluitNieuweStijlShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://mu.semte.ch/vocabularies/ext/BesluitNieuweStijl> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBesluitPolitieraadNieuweStijlShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://mu.semte.ch/vocabularies/ext/BesluitPolitieraadNieuweStijl> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBesluitPolitieraadShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://mu.semte.ch/vocabularies/ext/BesluitPolitieraad> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBesluitSchepenenNieuweStijlShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://mu.semte.ch/vocabularies/ext/BesluitSchepenenNieuweStijl> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBesluitSchepenenShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://mu.semte.ch/vocabularies/ext/BesluitSchepenen> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBesluitShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/besluit#Besluit> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBesluitVerkiezingVoorzitterNieuweStijlShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://mu.semte.ch/vocabularies/ext/BesluitVerkiezingVoorzitterNieuweStijl> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBesluitVerkiezingVoorzitterShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://mu.semte.ch/vocabularies/ext/BesluitVerkiezingVoorzitter> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBesluitVoorzitterBCSDNieuweStijlShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://mu.semte.ch/vocabularies/ext/BesluitVoorzitterBCSDNieuweStijl> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBesluitVoorzitterBCSDShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://mu.semte.ch/vocabularies/ext/BesluitVoorzitterBCSD> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBestuurseenheidShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/besluit#Bestuurseenheid> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBestuursorgaanShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/besluit#Bestuursorgaan> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeConceptShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/2004/02/skos/core#Concept> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://xmlns.com/foaf/0.1/Document> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeFunctionarisShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://data.lblod.info/vocabularies/leidinggevenden/Functionaris> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeGeometryShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/ns/locn#Geometry> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeLegalExpressionShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.europa.eu/eli/ontology#LegalExpression> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeMandaatShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/mandaat#Mandaat> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeMandatarisShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/mandaat#Mandataris> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeMappingShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://mu.semte.ch/vocabularies/ext/Mapping> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypePersonShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/ns/person#Person> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypePublishedResourceShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://mu.semte.ch/vocabularies/ext/signing/PublishedResource> ) ;
+  <http://www.w3.org/ns/shacl#in> ( <http://example.com/sign/PublishedResource> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeStemmingShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/besluit#Stemming> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeZittingShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/besluit#Zitting> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypea0a709a7-ac07-4457-8d40-de4aea9b1432ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/a0a709a7-ac07-4457-8d40-de4aea9b1432> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypea8486fa3-6375-494d-aa48-e34289b87d5bShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/a8486fa3-6375-494d-aa48-e34289b87d5b> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypea8cdb80d-d409-40ed-bb8b-ddfd0acb28dfShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/a8cdb80d-d409-40ed-bb8b-ddfd0acb28df> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeafdb7387-da47-4dc4-bbbe-e86ea5c3df28ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/afdb7387-da47-4dc4-bbbe-e86ea5c3df28> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeb04bc642-c892-4aae-ac1f-f6ff21362704ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/b04bc642-c892-4aae-ac1f-f6ff21362704> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeb0fcc0c3-bb33-427f-8da2-4ef3833c9060ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/b0fcc0c3-bb33-427f-8da2-4ef3833c9060> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeb25faa84-3ab5-47ae-98c0-1b389c77b827ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/b25faa84-3ab5-47ae-98c0-1b389c77b827> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeb2d0734d-13d0-44b4-9af8-1722933c5288ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/b2d0734d-13d0-44b4-9af8-1722933c5288> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeb4c828e4-bcb8-46ff-8abf-5fde227d2459ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/b4c828e4-bcb8-46ff-8abf-5fde227d2459> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeba5922c9-cfad-4b2e-b203-36479219ba56ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/ba5922c9-cfad-4b2e-b203-36479219ba56> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypec417f3da-a3bd-47c5-84bf-29007323a362ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/c417f3da-a3bd-47c5-84bf-29007323a362> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypec6b696c0-26f8-4e87-b7e8-071b81471ddcShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/c6b696c0-26f8-4e87-b7e8-071b81471ddc> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypec945b531-4742-43fe-af55-b13da6ecc6feShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/c945b531-4742-43fe-af55-b13da6ecc6fe> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypecb361927-1aab-4016-bd8a-1a84841391baShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/cb361927-1aab-4016-bd8a-1a84841391ba> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTyped7060f97-c417-474c-abc6-ef006cb61f41ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/d7060f97-c417-474c-abc6-ef006cb61f41> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTyped85218e2-a75f-4a30-9182-512b5c9dd1b2ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/d85218e2-a75f-4a30-9182-512b5c9dd1b2> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTyped9c3d177-6dc6-4775-8c6a-1055a9cbdcc6ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/d9c3d177-6dc6-4775-8c6a-1055a9cbdcc6> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypedbc58656-b0a5-4e43-8e9e-701acb75f9b0ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/dbc58656-b0a5-4e43-8e9e-701acb75f9b0> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypedf261490-cc74-4f80-b783-41c35e720b46ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/df261490-cc74-4f80-b783-41c35e720b46> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypee27ef237-29de-49b8-be22-4ee2ab2d4e5bShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/e27ef237-29de-49b8-be22-4ee2ab2d4e5b> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypee2928231-d377-48c7-98b4-3bb2f7de65dbShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/e2928231-d377-48c7-98b4-3bb2f7de65db> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypee44c535d-4339-4d15-bdbf-d4be6046de2cShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/e44c535d-4339-4d15-bdbf-d4be6046de2c> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypee6425cd1-26f2-4cd8-aa0f-1e9b65619c3aShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/e6425cd1-26f2-4cd8-aa0f-1e9b65619c3a> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypee8aee49e-8762-4db2-acfe-2d5dd3c37619ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/e8aee49e-8762-4db2-acfe-2d5dd3c37619> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypee8afe7c5-9640-4db8-8f74-3f023bec3241ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/e8afe7c5-9640-4db8-8f74-3f023bec3241> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypee96ec8af-6480-4b32-876a-fefe5f0a3793ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/e96ec8af-6480-4b32-876a-fefe5f0a3793> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeec8652a6-2c49-4955-8d59-fd08c8c0a6e1ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/ec8652a6-2c49-4955-8d59-fd08c8c0a6e1> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeefa4ec5a-b006-453f-985f-f986ebae11bcShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/efa4ec5a-b006-453f-985f-f986ebae11bc> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypef1d16307-164c-4278-87b9-1d3b1d968f67ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/f1d16307-164c-4278-87b9-1d3b1d968f67> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypef1fd8f88-95b0-4085-b766-008b5867d992ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/f1fd8f88-95b0-4085-b766-008b5867d992> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypef276bc3b-2d79-4c55-81b8-092e05619676ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/f276bc3b-2d79-4c55-81b8-092e05619676> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypef4ba730e-3f12-4c2f-81cf-31922b6da166ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/f4ba730e-3f12-4c2f-81cf-31922b6da166> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypef56c645d-b8e1-4066-813d-e213f5bc529fShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/f56c645d-b8e1-4066-813d-e213f5bc529f> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypef8c070bd-96e4-43a1-8c6e-532bcd771251ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/f8c070bd-96e4-43a1-8c6e-532bcd771251> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypefb21d14b-734b-48f4-bd4e-888163fd08e8ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/fb21d14b-734b-48f4-bd4e-888163fd08e8> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypefb92601a-d189-4482-9922-ab0efc6bc935ShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <https://data.vlaanderen.be/id/concept/BesluitType/fb92601a-d189-4482-9922-ab0efc6bc935> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+

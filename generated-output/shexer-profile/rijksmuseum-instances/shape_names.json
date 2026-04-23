@@ -1,0 +1,16 @@
+{
+  "http://schema.org/CreativeWork": "http://weso.es/shapes/CreativeWork",
+  "http://schema.org/PublicationEvent": "http://weso.es/shapes/PublicationEvent",
+  "http://schema.org/Statement": "http://weso.es/shapes/Statement",
+  "http://schema.org/Place": "http://weso.es/shapes/Place",
+  "http://schema.org/DefinedTerm": "http://weso.es/shapes/DefinedTerm",
+  "http://schema.org/Book": "http://weso.es/shapes/Book",
+  "http://schema.org/ProductModel": "http://weso.es/shapes/ProductModel",
+  "http://schema.org/VisualArtwork": "http://weso.es/shapes/VisualArtwork",
+  "http://schema.org/CreativeWorkSeries": "http://weso.es/shapes/CreativeWorkSeries",
+  "http://schema.org/Article": "http://weso.es/shapes/Article",
+  "http://schema.org/VideoObject": "http://weso.es/shapes/VideoObject",
+  "http://schema.org/ArchiveComponent": "http://weso.es/shapes/ArchiveComponent",
+  "http://schema.org/DigitalDocument": "http://weso.es/shapes/DigitalDocument",
+  "http://schema.org/WebSite": "http://weso.es/shapes/WebSite"
+}

@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://shaclshapes.org/D1_Digital_ObjectShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeD1_Digital_ObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object> .
+
+<http://shaclshapes.org/E33_Linguistic_ObjectShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeE33_Linguistic_ObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> .
+
+<http://shaclshapes.org/E36_Visual_ItemShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeE36_Visual_ItemShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> .
+
+<http://shaclshapes.org/instanceTypeD1_Digital_ObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeE33_Linguistic_ObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeE36_Visual_ItemShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+

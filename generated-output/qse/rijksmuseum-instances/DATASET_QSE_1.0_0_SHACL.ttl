@@ -1,0 +1,115 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://shaclshapes.org/ArchiveComponentShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeArchiveComponentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/ArchiveComponent> .
+
+<http://shaclshapes.org/ArticleShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeArticleShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/Article> .
+
+<http://shaclshapes.org/BookShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBookShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/Book> .
+
+<http://shaclshapes.org/CreativeWorkSeriesShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeCreativeWorkSeriesShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/CreativeWorkSeries> .
+
+<http://shaclshapes.org/CreativeWorkShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeCreativeWorkShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/CreativeWork> .
+
+<http://shaclshapes.org/DefinedTermShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeDefinedTermShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/DefinedTerm> .
+
+<http://shaclshapes.org/DigitalDocumentShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeDigitalDocumentShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/DigitalDocument> .
+
+<http://shaclshapes.org/PlaceShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypePlaceShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/Place> .
+
+<http://shaclshapes.org/ProductModelShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeProductModelShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/ProductModel> .
+
+<http://shaclshapes.org/PublicationEventShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypePublicationEventShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/PublicationEvent> .
+
+<http://shaclshapes.org/StatementShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeStatementShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/Statement> .
+
+<http://shaclshapes.org/VideoObjectShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeVideoObjectShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/VideoObject> .
+
+<http://shaclshapes.org/VisualArtworkShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeVisualArtworkShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/VisualArtwork> .
+
+<http://shaclshapes.org/WebSiteShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeWebSiteShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://schema.org/WebSite> .
+
+<http://shaclshapes.org/instanceTypeArchiveComponentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/ArchiveComponent> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeArticleShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/Article> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBookShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/Book> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeCreativeWorkSeriesShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/CreativeWorkSeries> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeCreativeWorkShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/CreativeWork> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeDefinedTermShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/DefinedTerm> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeDigitalDocumentShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/DigitalDocument> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypePlaceShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/Place> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeProductModelShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/ProductModel> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypePublicationEventShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/PublicationEvent> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeStatementShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/Statement> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeVideoObjectShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/VideoObject> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeVisualArtworkShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/VisualArtwork> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeWebSiteShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://schema.org/WebSite> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+

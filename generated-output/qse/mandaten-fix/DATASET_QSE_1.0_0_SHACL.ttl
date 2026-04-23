@@ -1,0 +1,189 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://shaclshapes.org/AgentInPositieShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeAgentInPositieShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.lblod.info/vocabularies/contacthub/AgentInPositie> .
+
+<http://shaclshapes.org/BeleidsdomeinCodeShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBeleidsdomeinCodeShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode> .
+
+<http://shaclshapes.org/BestuurVanDeEredienstShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBestuurVanDeEredienstShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst> .
+
+<http://shaclshapes.org/BestuurseenheidClassificatieCodeShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBestuurseenheidClassificatieCodeShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://lblod.data.gift/vocabularies/organisatie/BestuurseenheidClassificatieCode> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BestuurseenheidClassificatieCode> .
+
+<http://shaclshapes.org/BestuurseenheidShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBestuurseenheidShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/besluit#Bestuurseenheid> .
+
+<http://shaclshapes.org/BestuursfunctieCodeShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBestuursfunctieCodeShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://lblod.data.gift/vocabularies/organisatie/BestuursfunctieCode> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BestuursfunctieCode> .
+
+<http://shaclshapes.org/BestuursorgaanClassificatieCodeShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBestuursorgaanClassificatieCodeShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://lblod.data.gift/vocabularies/organisatie/BestuursorgaanClassificatieCode> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/BestuursorgaanClassificatieCode> .
+
+<http://shaclshapes.org/BestuursorgaanShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeBestuursorgaanShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/besluit#Bestuursorgaan> .
+
+<http://shaclshapes.org/CentraalBestuurVanDeEredienstShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeCentraalBestuurVanDeEredienstShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst> .
+
+<http://shaclshapes.org/ConceptShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeConceptShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://shaclshapes.org/FractieShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeFractieShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/mandaat#Fractie> .
+
+<http://shaclshapes.org/LocationShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeLocationShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/prov#Location> .
+
+<http://shaclshapes.org/MandaatShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeMandaatShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/mandaat#Mandaat> .
+
+<http://shaclshapes.org/MandatarisShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeMandatarisShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://data.vlaanderen.be/ns/mandaat#Mandataris> .
+
+<http://shaclshapes.org/MandatarisStatusCodeShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeMandatarisStatusCodeShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://lblod.data.gift/vocabularies/organisatie/MandatarisStatusCode> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/MandatarisStatusCode> .
+
+<http://shaclshapes.org/MembershipShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeMembershipShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/org#Membership> .
+
+<http://shaclshapes.org/OrganizationClassificationCodeShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeOrganizationClassificationCodeShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/OrganizationClassificationCode> .
+
+<http://shaclshapes.org/PersonShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypePersonShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/person#Person> .
+
+<http://shaclshapes.org/PostShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypePostShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/org#Post> .
+
+<http://shaclshapes.org/RepresentatiefOrgaanClassificatieCodeShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeRepresentatiefOrgaanClassificatieCodeShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://mu.semte.ch/vocabularies/ext/RepresentatiefOrgaanClassificatieCode> .
+
+<http://shaclshapes.org/TombstoneShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeTombstoneShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/activitystreams#Tombstone> .
+
+<http://shaclshapes.org/instanceTypeAgentInPositieShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.lblod.info/vocabularies/contacthub/AgentInPositie> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBeleidsdomeinCodeShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://mu.semte.ch/vocabularies/ext/BeleidsdomeinCode> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBestuurVanDeEredienstShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://data.lblod.info/vocabularies/erediensten/BestuurVanDeEredienst> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBestuurseenheidClassificatieCodeShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://lblod.data.gift/vocabularies/organisatie/BestuurseenheidClassificatieCode> ) ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://mu.semte.ch/vocabularies/ext/BestuurseenheidClassificatieCode> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBestuurseenheidShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/besluit#Bestuurseenheid> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBestuursfunctieCodeShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://mu.semte.ch/vocabularies/ext/BestuursfunctieCode> ) ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://lblod.data.gift/vocabularies/organisatie/BestuursfunctieCode> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBestuursorgaanClassificatieCodeShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://mu.semte.ch/vocabularies/ext/BestuursorgaanClassificatieCode> ) ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://lblod.data.gift/vocabularies/organisatie/BestuursorgaanClassificatieCode> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeBestuursorgaanShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/besluit#Bestuursorgaan> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeCentraalBestuurVanDeEredienstShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://data.lblod.info/vocabularies/erediensten/CentraalBestuurVanDeEredienst> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeConceptShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/2004/02/skos/core#Concept> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeFractieShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/mandaat#Fractie> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeLocationShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/ns/prov#Location> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeMandaatShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/mandaat#Mandaat> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeMandatarisShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://data.vlaanderen.be/ns/mandaat#Mandataris> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeMandatarisStatusCodeShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://mu.semte.ch/vocabularies/ext/MandatarisStatusCode> ) ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://lblod.data.gift/vocabularies/organisatie/MandatarisStatusCode> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeMembershipShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/ns/org#Membership> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeOrganizationClassificationCodeShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://mu.semte.ch/vocabularies/ext/OrganizationClassificationCode> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypePersonShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/ns/person#Person> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypePostShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/ns/org#Post> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeRepresentatiefOrgaanClassificatieCodeShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( 
+    <http://mu.semte.ch/vocabularies/ext/RepresentatiefOrgaanClassificatieCode> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeTombstoneShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#in> ( <http://www.w3.org/ns/activitystreams#Tombstone> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+

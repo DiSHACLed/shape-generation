@@ -1,0 +1,2 @@
+Shape,Constraint,Severity,Path,Component,Focus Node,Value,Message
+shape:Person_birthday,sh:Violation,foaf:birthday,sh:InConstraintComponent,ex:jack,1998-02-28T00:00:00Z^^http://www.w3.org/2001/XMLSchema#dateTime,Not a value from the sh:in enumeration
