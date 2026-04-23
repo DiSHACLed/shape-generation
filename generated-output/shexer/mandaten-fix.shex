@@ -1,0 +1,1465 @@
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX vl_besl: <http://data.vlaanderen.be/ns/besluit#>
+PREFIX vl_mand: <http://data.vlaanderen.be/ns/mandaat#>
+PREFIX vl_pers: <http://data.vlaanderen.be/ns/persoon#>
+PREFIX example: <http://example.com/>
+PREFIX mu_core: <http://mu.semte.ch/vocabularies/core/>
+PREFIX mu_ext: <http://mu.semte.ch/vocabularies/ext/>
+PREFIX lblod_org: <http://lblod.data.gift/vocabularies/organisatie/>
+PREFIX lblod_ere: <http://data.lblod.info/vocabularies/erediensten/>
+PREFIX : <http://weso.es/shapes/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+:Mandataris   # 154386 instances.
+{
+   rdf:type  [vl_mand:Mandataris]  ;                           # 100.0 % (154386 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (154386 instances).
+   vl_mand:isBestuurlijkeAliasVan  @:Person  *;
+            # 99.99611363724689 % (154380 instances). obj: @:Person. Cardinality: +
+            # 99.9922272744938 % (154374 instances). obj: @:Person. Cardinality: {2}
+            # 0.0038863627530993745 % (6 instances). obj: @:Person. Cardinality: {4}
+   <http://www.w3.org/ns/org#holds>  @:Post  *;
+            # 99.99611363724689 % (154380 instances). obj: @:Post. Cardinality: +
+            # 99.98963636599173 % (154370 instances). obj: @:Post. Cardinality: {1}
+            # 0.006477271255165624 % (10 instances). obj: @:Post. Cardinality: {2}
+            # 99.99611363724689 % (154380 instances). obj: @:Mandaat. Cardinality: +
+   vl_mand:start  <http://www.w3.org/2001/XMLSchema#dateTime>  *;
+            # 99.95336364696281 % (154314 instances). obj: <http://www.w3.org/2001/XMLSchema#dateTime>. Cardinality: +
+            # 99.95206819271178 % (154312 instances). obj: <http://www.w3.org/2001/XMLSchema#dateTime>. Cardinality: {1}
+            # 0.0012954542510331248 % (2 instances). obj: <http://www.w3.org/2001/XMLSchema#dateTime>. Cardinality: {2}
+   vl_mand:einde  <http://www.w3.org/2001/XMLSchema#dateTime>  *;
+            # 76.73364165144508 % (118466 instances). obj: <http://www.w3.org/2001/XMLSchema#dateTime>. Cardinality: +
+            # 76.73105074294301 % (118462 instances). obj: <http://www.w3.org/2001/XMLSchema#dateTime>. Cardinality: {1}
+            # 0.0025909085020662495 % (4 instances). obj: <http://www.w3.org/2001/XMLSchema#dateTime>. Cardinality: {2}
+   <http://www.w3.org/ns/org#hasMembership>  IRI  *;
+            # 74.35518764654826 % (114794 instances). obj: IRI. Cardinality: +
+            # 74.24248312670838 % (114620 instances). obj: IRI. Cardinality: {1}
+            # 0.11140906558884872 % (172 instances). obj: IRI. Cardinality: {2}
+            # 0.0012954542510331248 % (2 instances). obj: IRI. Cardinality: {4}
+            # 71.57514282383117 % (110502 instances). obj: @:Membership. Cardinality: +
+            # 0.023318176518596245 % (36 instances). obj: @:Tombstone. Cardinality: {1}
+   vl_mand:status  @:Concept  *;
+            # 69.65009780679596 % (107530 instances). obj: @:Concept. Cardinality: {2}
+            # 69.65009780679596 % (107530 instances). obj: @:MandatarisStatusCode. Cardinality: {2}
+            # 69.65009780679596 % (107530 instances). obj: @:MandatarisStatusCode_mu_ext. Cardinality: {2}
+   vl_mand:rangorde  <http://www.w3.org/2001/XMLSchema#string>  *;
+            # 19.361859235941083 % (29892 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: +
+            # 19.25822289585843 % (29732 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 0.09456816032541811 % (146 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+            # 0.009068179757231874 % (14 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {3}
+   vl_mand:beleidsdomein  @:BeleidsdomeinCode  *;
+            # 8.711929838197765 % (13450 instances). obj: @:BeleidsdomeinCode. Cardinality: +
+            # 1.079113391110593 % (1666 instances). obj: @:BeleidsdomeinCode. Cardinality: {8}
+            # 1.0661588486002616 % (1646 instances). obj: @:BeleidsdomeinCode. Cardinality: {10}
+            # 0.8912725247107898 % (1376 instances). obj: @:BeleidsdomeinCode. Cardinality: {6}
+            # 0.8096589068957031 % (1250 instances). obj: @:BeleidsdomeinCode. Cardinality: {12}
+            # 0.550568056689078 % (850 instances). obj: @:BeleidsdomeinCode. Cardinality: {14}
+            # 0.5233635174173824 % (808 instances). obj: @:BeleidsdomeinCode. Cardinality: {7}
+            # 0.46636353037192496 % (720 instances). obj: @:BeleidsdomeinCode. Cardinality: {4}
+            # 0.44693171660642805 % (690 instances). obj: @:BeleidsdomeinCode. Cardinality: {5}
+            # 0.44174989960229555 % (682 instances). obj: @:BeleidsdomeinCode. Cardinality: {1}
+            # 0.41324990607956685 % (638 instances). obj: @:BeleidsdomeinCode. Cardinality: {9}
+            # 0.34847719352791057 % (538 instances). obj: @:BeleidsdomeinCode. Cardinality: {16}
+            # 0.2552044874535256 % (394 instances). obj: @:BeleidsdomeinCode. Cardinality: {11}
+            # 0.24484085344526058 % (378 instances). obj: @:BeleidsdomeinCode. Cardinality: {18}
+            # 0.23447721943699557 % (362 instances). obj: @:BeleidsdomeinCode. Cardinality: {2}
+            # 0.2085681344163331 % (322 instances). obj: @:BeleidsdomeinCode. Cardinality: {3}
+            # 0.15804541862604124 % (244 instances). obj: @:BeleidsdomeinCode. Cardinality: {20}
+            # 0.1528636016219087 % (236 instances). obj: @:BeleidsdomeinCode. Cardinality: {13}
+            # 0.09456816032541811 % (146 instances). obj: @:BeleidsdomeinCode. Cardinality: {22}
+            # 0.07513634655992124 % (116 instances). obj: @:BeleidsdomeinCode. Cardinality: {15}
+            # 0.05829544129649062 % (90 instances). obj: @:BeleidsdomeinCode. Cardinality: {24}
+            # 0.036272719028927494 % (56 instances). obj: @:BeleidsdomeinCode. Cardinality: {26}
+            # 0.03497726477789437 % (54 instances). obj: @:BeleidsdomeinCode. Cardinality: {17}
+            # 0.031090902024794996 % (48 instances). obj: @:BeleidsdomeinCode. Cardinality: {28}
+            # 0.018136359514463747 % (28 instances). obj: @:BeleidsdomeinCode. Cardinality: {30}
+            # 0.014249996761364373 % (22 instances). obj: @:BeleidsdomeinCode. Cardinality: {19}
+            # 0.014249996761364373 % (22 instances). obj: @:BeleidsdomeinCode. Cardinality: {21}
+            # 0.009068179757231874 % (14 instances). obj: @:BeleidsdomeinCode. Cardinality: {32}
+            # 0.007772725506198749 % (12 instances). obj: @:BeleidsdomeinCode. Cardinality: {40}
+            # 0.005181817004132499 % (8 instances). obj: @:BeleidsdomeinCode. Cardinality: {42}
+            # 0.005181817004132499 % (8 instances). obj: @:BeleidsdomeinCode. Cardinality: {34}
+            # 0.005181817004132499 % (8 instances). obj: @:BeleidsdomeinCode. Cardinality: {36}
+            # 0.0025909085020662495 % (4 instances). obj: @:BeleidsdomeinCode. Cardinality: {46}
+            # 0.0025909085020662495 % (4 instances). obj: @:BeleidsdomeinCode. Cardinality: {25}
+            # 0.0012954542510331248 % (2 instances). obj: @:BeleidsdomeinCode. Cardinality: {38}
+            # 0.0012954542510331248 % (2 instances). obj: @:BeleidsdomeinCode. Cardinality: {31}
+            # 0.0012954542510331248 % (2 instances). obj: @:BeleidsdomeinCode. Cardinality: {29}
+            # 0.0012954542510331248 % (2 instances). obj: @:BeleidsdomeinCode. Cardinality: {23}
+            # 0.0012954542510331248 % (2 instances). obj: @:BeleidsdomeinCode. Cardinality: {54}
+            # 7.555089192025184 % (11664 instances). obj: @:Concept. Cardinality: +
+   rdf:type  [<http://data.lblod.info/vocabularies/contacthub/AgentInPositie>]  ?;
+            # 4.105294521523972 % (6338 instances). obj: <http://data.lblod.info/vocabularies/contacthub/AgentInPositie>. Cardinality: {1}
+   vl_mand:isTijdelijkVervangenDoor  @:Mandataris  *;
+            # 0.28629538947832056 % (442 instances). obj: @:Mandataris. Cardinality: +
+            # 0.28499993522728745 % (440 instances). obj: @:Mandataris. Cardinality: {2}
+            # 0.0012954542510331248 % (2 instances). obj: @:Mandataris. Cardinality: {4}
+   ^  vl_mand:isTijdelijkVervangenDoor  @:Mandataris  *;
+            # 0.21504540567149874 % (332 instances). obj: @:Mandataris. Cardinality: +
+            # 0.1528636016219087 % (236 instances). obj: @:Mandataris. Cardinality: {2}
+            # 0.05181817004132499 % (80 instances). obj: @:Mandataris. Cardinality: {4}
+            # 0.010363634008264998 % (16 instances). obj: @:Mandataris. Cardinality: {6}
+   vl_mand:start  <http://www.w3.org/2001/XMLSchema#date>  ?;
+            # 0.011659088259298123 % (18 instances). obj: <http://www.w3.org/2001/XMLSchema#date>. Cardinality: {1}
+   vl_mand:einde  <http://www.w3.org/2001/XMLSchema#date>  ?;
+            # 0.005181817004132499 % (8 instances). obj: <http://www.w3.org/2001/XMLSchema#date>. Cardinality: {1}
+   vl_mand:start  <http://www.w3.org/2001/XMLSchema#string>  ?
+            # 0.0012954542510331248 % (2 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 154386
+
+
+:AgentInPositie   # 6338 instances.
+{
+   rdf:type  [vl_mand:Mandataris]  ;                           # 100.0 % (6338 instances).
+   rdf:type  [<http://data.lblod.info/vocabularies/contacthub/AgentInPositie>]  ;          # 100.0 % (6338 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (6338 instances).
+   vl_mand:status  @:Concept  {2};                             # 100.0 % (6338 instances).
+            # 100.0 % (6338 instances). obj: @:MandatarisStatusCode. Cardinality: {2}
+            # 100.0 % (6338 instances). obj: @:MandatarisStatusCode_mu_ext. Cardinality: {2}
+   vl_mand:einde  <http://www.w3.org/2001/XMLSchema#dateTime>  ;          # 100.0 % (6338 instances).
+   vl_mand:isBestuurlijkeAliasVan  @:Person  {2};              # 100.0 % (6338 instances).
+   <http://www.w3.org/ns/org#holds>  @:Mandaat  ;              # 100.0 % (6338 instances).
+            # 100.0 % (6338 instances). obj: @:Post. Cardinality: {1}
+   vl_mand:start  <http://www.w3.org/2001/XMLSchema#dateTime>  ?;
+            # 99.27421899652887 % (6292 instances). obj: <http://www.w3.org/2001/XMLSchema#dateTime>. Cardinality: {1}
+   <http://www.w3.org/ns/org#hasMembership>  IRI  ?;
+            # 79.4887977279899 % (5038 instances). obj: IRI. Cardinality: {1}
+            # 79.45724203218681 % (5036 instances). obj: @:Membership. Cardinality: {1}
+   vl_mand:rangorde  <http://www.w3.org/2001/XMLSchema#string>  ?;
+            # 15.146733985484378 % (960 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   vl_mand:beleidsdomein  @:BeleidsdomeinCode  *
+            # 11.644051751341117 % (738 instances). obj: @:BeleidsdomeinCode. Cardinality: +
+            # 3.6604607131587255 % (232 instances). obj: @:BeleidsdomeinCode. Cardinality: {1}
+            # 1.0097822656989588 % (64 instances). obj: @:BeleidsdomeinCode. Cardinality: {5}
+            # 0.9151151782896814 % (58 instances). obj: @:BeleidsdomeinCode. Cardinality: {10}
+            # 0.7888923950773113 % (50 instances). obj: @:BeleidsdomeinCode. Cardinality: {7}
+            # 0.757336699274219 % (48 instances). obj: @:BeleidsdomeinCode. Cardinality: {9}
+            # 0.7257810034711265 % (46 instances). obj: @:BeleidsdomeinCode. Cardinality: {3}
+            # 0.7257810034711265 % (46 instances). obj: @:BeleidsdomeinCode. Cardinality: {2}
+            # 0.6311139160618492 % (40 instances). obj: @:BeleidsdomeinCode. Cardinality: {6}
+            # 0.6311139160618492 % (40 instances). obj: @:BeleidsdomeinCode. Cardinality: {8}
+            # 0.5048911328494794 % (32 instances). obj: @:BeleidsdomeinCode. Cardinality: {11}
+            # 0.4417797412432944 % (28 instances). obj: @:BeleidsdomeinCode. Cardinality: {4}
+            # 0.2840012622278321 % (18 instances). obj: @:BeleidsdomeinCode. Cardinality: {12}
+            # 0.2208898706216472 % (14 instances). obj: @:BeleidsdomeinCode. Cardinality: {13}
+            # 0.09466708740927737 % (6 instances). obj: @:BeleidsdomeinCode. Cardinality: {15}
+            # 0.06311139160618492 % (4 instances). obj: @:BeleidsdomeinCode. Cardinality: {14}
+            # 0.06311139160618492 % (4 instances). obj: @:BeleidsdomeinCode. Cardinality: {17}
+            # 0.06311139160618492 % (4 instances). obj: @:BeleidsdomeinCode. Cardinality: {16}
+            # 0.03155569580309246 % (2 instances). obj: @:BeleidsdomeinCode. Cardinality: {22}
+            # 0.03155569580309246 % (2 instances). obj: @:BeleidsdomeinCode. Cardinality: {18}
+            # 5.743136636162827 % (364 instances). obj: @:Concept. Cardinality: +
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 6338
+
+
+:Person   # 159966 instances.
+{
+   rdf:type  [<http://www.w3.org/ns/person#Person>]  ;          # 100.0 % (159966 instances).
+   <http://xmlns.com/foaf/0.1/familyName>  <http://www.w3.org/2001/XMLSchema#string>  ;          # 100.0 % (159966 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (159966 instances).
+            # 99.99874973431854 % (159964 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+            # 0.0012502656814573098 % (2 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {4}
+   vl_pers:gebruikteVoornaam  <http://www.w3.org/2001/XMLSchema#string>  *;
+            # 99.9912481402298 % (159952 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: +
+            # 99.98749734318542 % (159946 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 0.003750797044371929 % (6 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   ^  vl_mand:isBestuurlijkeAliasVan  @:Mandataris  *;
+            # 26.834452321118235 % (42926 instances). obj: @:Mandataris. Cardinality: +
+            # 7.839165822737332 % (12540 instances). obj: @:Mandataris. Cardinality: {2}
+            # 6.4901291524448945 % (10382 instances). obj: @:Mandataris. Cardinality: {4}
+            # 2.6405611192378378 % (4224 instances). obj: @:Mandataris. Cardinality: {6}
+            # 2.619306602653064 % (4190 instances). obj: @:Mandataris. Cardinality: {8}
+            # 1.5653326331845518 % (2504 instances). obj: @:Mandataris. Cardinality: {10}
+            # 1.494067489341485 % (2390 instances). obj: @:Mandataris. Cardinality: {12}
+            # 0.8651838515684583 % (1384 instances). obj: @:Mandataris. Cardinality: {14}
+            # 0.8526811947538852 % (1364 instances). obj: @:Mandataris. Cardinality: {16}
+            # 0.6776439993498619 % (1084 instances). obj: @:Mandataris. Cardinality: {20}
+            # 0.5538676968855882 % (886 instances). obj: @:Mandataris. Cardinality: {18}
+            # 0.42884112873985725 % (686 instances). obj: @:Mandataris. Cardinality: {22}
+            # 0.2813097783278947 % (450 instances). obj: @:Mandataris. Cardinality: {24}
+            # 0.17378692972256604 % (278 instances). obj: @:Mandataris. Cardinality: {26}
+            # 0.14002975632321868 % (224 instances). obj: @:Mandataris. Cardinality: {28}
+            # 0.06751434679869472 % (108 instances). obj: @:Mandataris. Cardinality: {32}
+            # 0.06251328407286548 % (100 instances). obj: @:Mandataris. Cardinality: {30}
+            # 0.03125664203643274 % (50 instances). obj: @:Mandataris. Cardinality: {34}
+            # 0.022504782266231572 % (36 instances). obj: @:Mandataris. Cardinality: {36}
+            # 0.008751859770201167 % (14 instances). obj: @:Mandataris. Cardinality: {38}
+            # 0.006251328407286548 % (10 instances). obj: @:Mandataris. Cardinality: {42}
+            # 0.006251328407286548 % (10 instances). obj: @:Mandataris. Cardinality: {40}
+            # 0.003750797044371929 % (6 instances). obj: @:Mandataris. Cardinality: {44}
+            # 0.0012502656814573098 % (2 instances). obj: @:Mandataris. Cardinality: {52}
+            # 0.0012502656814573098 % (2 instances). obj: @:Mandataris. Cardinality: {48}
+            # 0.0012502656814573098 % (2 instances). obj: @:Mandataris. Cardinality: {46}
+            # 2.06793943713039 % (3308 instances). obj: @:AgentInPositie. Cardinality: +
+   <http://xmlns.com/foaf/0.1/name>  <http://www.w3.org/2001/XMLSchema#string>  ?;
+            # 0.4175887376067415 % (668 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   <http://www.w3.org/2002/07/owl#sameAs>  IRI  *;
+            # 0.0637635497543228 % (102 instances). obj: IRI. Cardinality: +
+            # 0.05876248702849355 % (94 instances). obj: IRI. Cardinality: {1}
+            # 0.005001062725829239 % (8 instances). obj: IRI. Cardinality: {2}
+            # 0.052511158621207005 % (84 instances). obj: @:Person. Cardinality: +
+   ^  <http://www.w3.org/2002/07/owl#sameAs>  @:Person  *
+            # 0.052511158621207005 % (84 instances). obj: @:Person. Cardinality: +
+            # 0.051260892939749704 % (82 instances). obj: @:Person. Cardinality: {2}
+            # 0.0012502656814573098 % (2 instances). obj: @:Person. Cardinality: {4}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 159966
+
+
+:Fractie   # 7607 instances.
+{
+   rdf:type  [vl_mand:Fractie]  ;                              # 100.0 % (7607 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  ;          # 100.0 % (7607 instances).
+   <https://www.w3.org/ns/regorg#legalName>  <http://www.w3.org/2001/XMLSchema#string>  *;
+            # 99.98685421322466 % (7606 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: +
+            # 99.9342710661233 % (7602 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 0.05258314710135402 % (4 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/ns/org#memberOf>  @:Bestuursorgaan  *;
+            # 99.42158538188511 % (7563 instances). obj: @:Bestuursorgaan. Cardinality: +
+            # 43.19705534376232 % (3286 instances). obj: @:Bestuursorgaan. Cardinality: {2}
+            # 23.031418430393057 % (1752 instances). obj: @:Bestuursorgaan. Cardinality: {6}
+            # 16.61627448402787 % (1264 instances). obj: @:Bestuursorgaan. Cardinality: {12}
+            # 15.64348626265282 % (1190 instances). obj: @:Bestuursorgaan. Cardinality: {8}
+            # 0.47324832391218613 % (36 instances). obj: @:Bestuursorgaan. Cardinality: {14}
+            # 0.2760615222821086 % (21 instances). obj: @:Bestuursorgaan. Cardinality: {10}
+            # 0.18404101485473906 % (14 instances). obj: @:Bestuursorgaan. Cardinality: {4}
+   <http://www.w3.org/ns/org#linkedTo>  @:Bestuurseenheid  *;
+            # 92.4543183909557 % (7033 instances). obj: @:Bestuurseenheid. Cardinality: +
+            # 85.78940449585907 % (6526 instances). obj: @:Bestuurseenheid. Cardinality: {2}
+            # 6.664913895096622 % (507 instances). obj: @:Bestuurseenheid. Cardinality: {4}
+   ^  <http://www.w3.org/ns/org#organisation>  @:Membership  *;
+            # 78.36203496779282 % (5961 instances). obj: @:Membership. Cardinality: +
+            # 14.696989614828448 % (1118 instances). obj: @:Membership. Cardinality: {1}
+            # 8.163533587485212 % (621 instances). obj: @:Membership. Cardinality: {2}
+            # 6.204811357959774 % (472 instances). obj: @:Membership. Cardinality: {4}
+            # 6.020770343105035 % (458 instances). obj: @:Membership. Cardinality: {3}
+            # 4.666754305245169 % (355 instances). obj: @:Membership. Cardinality: {6}
+            # 4.114631260680952 % (313 instances). obj: @:Membership. Cardinality: {5}
+            # 3.4573419219140265 % (263 instances). obj: @:Membership. Cardinality: {8}
+            # 2.7606152228210856 % (210 instances). obj: @:Membership. Cardinality: {7}
+            # 2.589719994741685 % (197 instances). obj: @:Membership. Cardinality: {10}
+            # 2.353095832785592 % (179 instances). obj: @:Membership. Cardinality: {9}
+            # 2.0507427369528064 % (156 instances). obj: @:Membership. Cardinality: {12}
+            # 1.8667017220980675 % (142 instances). obj: @:Membership. Cardinality: {11}
+            # 1.7220980675693438 % (131 instances). obj: @:Membership. Cardinality: {14}
+            # 1.459182332062574 % (111 instances). obj: @:Membership. Cardinality: {13}
+            # 1.3014328907585118 % (99 instances). obj: @:Membership. Cardinality: {16}
+            # 1.248849743657158 % (95 instances). obj: @:Membership. Cardinality: {15}
+            # 1.0385171552517418 % (79 instances). obj: @:Membership. Cardinality: {18}
+            # 1.0253713684764032 % (78 instances). obj: @:Membership. Cardinality: {17}
+            # 0.7756014197449718 % (59 instances). obj: @:Membership. Cardinality: {20}
+            # 0.7624556329696333 % (58 instances). obj: @:Membership. Cardinality: {22}
+            # 0.6309977652162482 % (48 instances). obj: @:Membership. Cardinality: {19}
+            # 0.6309977652162482 % (48 instances). obj: @:Membership. Cardinality: {23}
+            # 0.6047061916655712 % (46 instances). obj: @:Membership. Cardinality: {24}
+            # 0.5652688313395556 % (43 instances). obj: @:Membership. Cardinality: {30}
+            # 0.5258314710135402 % (40 instances). obj: @:Membership. Cardinality: {21}
+            # 0.48639411068752464 % (37 instances). obj: @:Membership. Cardinality: {26}
+            # 0.47324832391218613 % (36 instances). obj: @:Membership. Cardinality: {25}
+            # 0.42066517681083215 % (32 instances). obj: @:Membership. Cardinality: {28}
+            # 0.4075193900354936 % (31 instances). obj: @:Membership. Cardinality: {32}
+            # 0.39437360326015514 % (30 instances). obj: @:Membership. Cardinality: {27}
+            # 0.3023530958327856 % (23 instances). obj: @:Membership. Cardinality: {29}
+            # 0.2629157355067701 % (20 instances). obj: @:Membership. Cardinality: {34}
+            # 0.2629157355067701 % (20 instances). obj: @:Membership. Cardinality: {31}
+            # 0.24976994873143155 % (19 instances). obj: @:Membership. Cardinality: {40}
+            # 0.24976994873143155 % (19 instances). obj: @:Membership. Cardinality: {36}
+            # 0.19718680163007757 % (15 instances). obj: @:Membership. Cardinality: {33}
+            # 0.19718680163007757 % (15 instances). obj: @:Membership. Cardinality: {39}
+            # 0.18404101485473906 % (14 instances). obj: @:Membership. Cardinality: {48}
+            # 0.17089522807940055 % (13 instances). obj: @:Membership. Cardinality: {44}
+            # 0.15774944130406204 % (12 instances). obj: @:Membership. Cardinality: {35}
+            # 0.15774944130406204 % (12 instances). obj: @:Membership. Cardinality: {42}
+            # 0.14460365452872354 % (11 instances). obj: @:Membership. Cardinality: {37}
+            # 0.14460365452872354 % (11 instances). obj: @:Membership. Cardinality: {38}
+            # 0.13145786775338505 % (10 instances). obj: @:Membership. Cardinality: {50}
+            # 0.13145786775338505 % (10 instances). obj: @:Membership. Cardinality: {46}
+            # 0.11831208097804653 % (9 instances). obj: @:Membership. Cardinality: {43}
+            # 0.11831208097804653 % (9 instances). obj: @:Membership. Cardinality: {45}
+            # 0.11831208097804653 % (9 instances). obj: @:Membership. Cardinality: {41}
+            # 0.10516629420270804 % (8 instances). obj: @:Membership. Cardinality: {56}
+            # 0.10516629420270804 % (8 instances). obj: @:Membership. Cardinality: {60}
+            # 0.09202050742736953 % (7 instances). obj: @:Membership. Cardinality: {52}
+            # 0.09202050742736953 % (7 instances). obj: @:Membership. Cardinality: {47}
+            # 0.09202050742736953 % (7 instances). obj: @:Membership. Cardinality: {51}
+            # 0.07887472065203102 % (6 instances). obj: @:Membership. Cardinality: {49}
+            # 0.06572893387669253 % (5 instances). obj: @:Membership. Cardinality: {53}
+            # 0.06572893387669253 % (5 instances). obj: @:Membership. Cardinality: {54}
+            # 0.06572893387669253 % (5 instances). obj: @:Membership. Cardinality: {58}
+            # 0.06572893387669253 % (5 instances). obj: @:Membership. Cardinality: {59}
+            # 0.05258314710135402 % (4 instances). obj: @:Membership. Cardinality: {62}
+            # 0.05258314710135402 % (4 instances). obj: @:Membership. Cardinality: {69}
+            # 0.03943736032601551 % (3 instances). obj: @:Membership. Cardinality: {72}
+            # 0.03943736032601551 % (3 instances). obj: @:Membership. Cardinality: {78}
+            # 0.03943736032601551 % (3 instances). obj: @:Membership. Cardinality: {57}
+            # 0.03943736032601551 % (3 instances). obj: @:Membership. Cardinality: {88}
+            # 0.03943736032601551 % (3 instances). obj: @:Membership. Cardinality: {71}
+            # 0.03943736032601551 % (3 instances). obj: @:Membership. Cardinality: {64}
+            # 0.02629157355067701 % (2 instances). obj: @:Membership. Cardinality: {113}
+            # 0.02629157355067701 % (2 instances). obj: @:Membership. Cardinality: {82}
+            # 0.02629157355067701 % (2 instances). obj: @:Membership. Cardinality: {75}
+            # 0.02629157355067701 % (2 instances). obj: @:Membership. Cardinality: {76}
+            # 0.02629157355067701 % (2 instances). obj: @:Membership. Cardinality: {66}
+            # 0.02629157355067701 % (2 instances). obj: @:Membership. Cardinality: {70}
+            # 0.02629157355067701 % (2 instances). obj: @:Membership. Cardinality: {73}
+            # 0.02629157355067701 % (2 instances). obj: @:Membership. Cardinality: {68}
+            # 0.02629157355067701 % (2 instances). obj: @:Membership. Cardinality: {98}
+            # 0.02629157355067701 % (2 instances). obj: @:Membership. Cardinality: {93}
+            # 0.02629157355067701 % (2 instances). obj: @:Membership. Cardinality: {61}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {74}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {63}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {125}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {86}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {115}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {116}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {85}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {94}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {118}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {126}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {55}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {89}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {95}
+            # 0.013145786775338505 % (1 instance). obj: @:Membership. Cardinality: {67}
+   rdf:type  [<http://www.w3.org/ns/activitystreams#Tombstone>]  ?
+            # 0.02629157355067701 % (2 instances). obj: <http://www.w3.org/ns/activitystreams#Tombstone>. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 7607
+
+
+:Tombstone   # 173 instances.
+{
+   rdf:type  [<http://www.w3.org/ns/activitystreams#Tombstone>]  ;          # 100.0 % (173 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  ;          # 100.0 % (173 instances).
+   rdf:type  [<http://www.w3.org/ns/org#Membership>]  ?;
+            # 98.84393063583815 % (171 instances). obj: <http://www.w3.org/ns/org#Membership>. Cardinality: {1}
+   ^  <http://www.w3.org/ns/org#hasMembership>  @:Mandataris  *;
+            # 10.404624277456648 % (18 instances). obj: @:Mandataris. Cardinality: {2}
+   rdf:type  [vl_mand:Fractie]  ?;
+            # 1.1560693641618496 % (2 instances). obj: vl_mand:Fractie. Cardinality: {1}
+   <https://www.w3.org/ns/regorg#legalName>  <http://www.w3.org/2001/XMLSchema#string>  ?;
+            # 1.1560693641618496 % (2 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   <http://www.w3.org/ns/org#memberOf>  @:Bestuursorgaan  *;
+            # 1.1560693641618496 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {12}
+   <http://www.w3.org/ns/org#linkedTo>  @:Bestuurseenheid  *;
+            # 1.1560693641618496 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {2}
+   ^  <http://www.w3.org/ns/org#organisation>  @:Membership  ?
+            # 1.1560693641618496 % (2 instances). obj: @:Membership. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 173
+
+
+:Bestuurseenheid   # 7440 instances.
+{
+   rdf:type  [vl_besl:Bestuurseenheid]  ;                      # 100.0 % (7440 instances).
+   vl_besl:classificatie  @:BestuurseenheidClassificatieCode_lblod_org  +;          # 100.0 % (7440 instances).
+            # 92.28494623655914 % (6866 instances). obj: @:BestuurseenheidClassificatieCode_lblod_org. Cardinality: {1}
+            # 7.71505376344086 % (574 instances). obj: @:BestuurseenheidClassificatieCode_lblod_org. Cardinality: {2}
+            # 100.0 % (7440 instances). obj: @:OrganizationClassificationCode. Cardinality: +
+            # 100.0 % (7440 instances). obj: @:BestuurseenheidClassificatieCode. Cardinality: +
+            # 7.71505376344086 % (574 instances). obj: @:Concept. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  ;          # 100.0 % (7440 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (7440 instances).
+   <http://www.w3.org/ns/org#hasPrimarySite>  IRI  ?;
+            # 99.91935483870968 % (7434 instances). obj: IRI. Cardinality: {1}
+   ^  vl_besl:bestuurt  @:Bestuursorgaan  *;
+            # 99.2741935483871 % (7386 instances). obj: @:Bestuursorgaan. Cardinality: +
+            # 66.53225806451613 % (4950 instances). obj: @:Bestuursorgaan. Cardinality: {2}
+            # 8.60215053763441 % (640 instances). obj: @:Bestuursorgaan. Cardinality: {14}
+            # 8.413978494623656 % (626 instances). obj: @:Bestuursorgaan. Cardinality: {16}
+            # 6.344086021505377 % (472 instances). obj: @:Bestuursorgaan. Cardinality: {8}
+            # 4.543010752688172 % (338 instances). obj: @:Bestuursorgaan. Cardinality: {10}
+            # 3.924731182795699 % (292 instances). obj: @:Bestuursorgaan. Cardinality: {6}
+            # 0.6989247311827957 % (52 instances). obj: @:Bestuursorgaan. Cardinality: {12}
+            # 0.16129032258064516 % (12 instances). obj: @:Bestuursorgaan. Cardinality: {24}
+            # 0.053763440860215055 % (4 instances). obj: @:Bestuursorgaan. Cardinality: {4}
+   vl_besl:werkingsgebied  IRI  ?;
+            # 94.43548387096774 % (7026 instances). obj: IRI. Cardinality: {1}
+            # 93.09139784946237 % (6926 instances). obj: @:Location. Cardinality: +
+            # 1.1021505376344085 % (82 instances). obj: @:Concept. Cardinality: {2}
+   rdf:type  [lblod_ere:BestuurVanDeEredienst]  ?;
+            # 54.03225806451613 % (4020 instances). obj: lblod_ere:BestuurVanDeEredienst. Cardinality: {1}
+   <http://www.w3.org/2004/02/skos/core#altLabel>  <http://www.w3.org/2001/XMLSchema#string>  *;
+            # 50.86021505376343 % (3784 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: +
+            # 50.7258064516129 % (3774 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 0.13440860215053765 % (10 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   ^  <http://www.w3.org/ns/org#linkedTo>  IRI  *;
+            # 17.580645161290324 % (1308 instances). obj: IRI. Cardinality: +
+            # 1.2096774193548387 % (90 instances). obj: IRI. Cardinality: {11}
+            # 1.1827956989247312 % (88 instances). obj: IRI. Cardinality: {13}
+            # 1.129032258064516 % (84 instances). obj: IRI. Cardinality: {18}
+            # 1.129032258064516 % (84 instances). obj: IRI. Cardinality: {9}
+            # 1.1021505376344085 % (82 instances). obj: IRI. Cardinality: {14}
+            # 1.1021505376344085 % (82 instances). obj: IRI. Cardinality: {10}
+            # 1.0752688172043012 % (80 instances). obj: IRI. Cardinality: {5}
+            # 1.021505376344086 % (76 instances). obj: IRI. Cardinality: {15}
+            # 0.967741935483871 % (72 instances). obj: IRI. Cardinality: {12}
+            # 0.967741935483871 % (72 instances). obj: IRI. Cardinality: {6}
+            # 0.913978494623656 % (68 instances). obj: IRI. Cardinality: {16}
+            # 0.8602150537634409 % (64 instances). obj: IRI. Cardinality: {8}
+            # 0.8064516129032258 % (60 instances). obj: IRI. Cardinality: {19}
+            # 0.7526881720430108 % (56 instances). obj: IRI. Cardinality: {20}
+            # 0.6989247311827957 % (52 instances). obj: IRI. Cardinality: {7}
+            # 0.6720430107526881 % (50 instances). obj: IRI. Cardinality: {17}
+            # 0.5376344086021506 % (40 instances). obj: IRI. Cardinality: {4}
+            # 0.456989247311828 % (34 instances). obj: IRI. Cardinality: {21}
+            # 0.34946236559139787 % (26 instances). obj: IRI. Cardinality: {23}
+            # 0.21505376344086022 % (16 instances). obj: IRI. Cardinality: {22}
+            # 0.13440860215053765 % (10 instances). obj: IRI. Cardinality: {1}
+            # 0.13440860215053765 % (10 instances). obj: IRI. Cardinality: {3}
+            # 0.053763440860215055 % (4 instances). obj: IRI. Cardinality: {2}
+            # 0.053763440860215055 % (4 instances). obj: IRI. Cardinality: {26}
+            # 0.026881720430107527 % (2 instances). obj: IRI. Cardinality: {24}
+            # 0.026881720430107527 % (2 instances). obj: IRI. Cardinality: {28}
+            # 17.419354838709676 % (1296 instances). obj: @:Fractie. Cardinality: +
+            # 17.17741935483871 % (1278 instances). obj: @:Bestuurseenheid. Cardinality: +
+            # 0.026881720430107527 % (2 instances). obj: @:Tombstone. Cardinality: {2}
+   <http://www.w3.org/ns/org#linkedTo>  @:Bestuurseenheid  *;
+            # 17.20430107526882 % (1280 instances). obj: @:Bestuurseenheid. Cardinality: {2}
+   rdf:type  [lblod_ere:CentraalBestuurVanDeEredienst]  ?
+            # 8.521505376344086 % (634 instances). obj: lblod_ere:CentraalBestuurVanDeEredienst. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 7440
+
+
+:BestuurVanDeEredienst   # 4020 instances.
+{
+   rdf:type  [vl_besl:Bestuurseenheid]  ;                      # 100.0 % (4020 instances).
+   rdf:type  [lblod_ere:BestuurVanDeEredienst]  ;              # 100.0 % (4020 instances).
+   vl_besl:classificatie  @:BestuurseenheidClassificatieCode_lblod_org  ;          # 100.0 % (4020 instances).
+            # 100.0 % (4020 instances). obj: @:OrganizationClassificationCode. Cardinality: {1}
+            # 100.0 % (4020 instances). obj: @:BestuurseenheidClassificatieCode. Cardinality: {1}
+   <http://www.w3.org/ns/org#hasPrimarySite>  IRI  ;           # 100.0 % (4020 instances).
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  ;          # 100.0 % (4020 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (4020 instances).
+   ^  vl_besl:bestuurt  @:Bestuursorgaan  *;
+            # 99.75124378109453 % (4010 instances). obj: @:Bestuursorgaan. Cardinality: +
+            # 99.70149253731343 % (4008 instances). obj: @:Bestuursorgaan. Cardinality: {2}
+            # 0.04975124378109452 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {4}
+   vl_besl:werkingsgebied  @:Location  *;
+            # 99.60199004975124 % (4004 instances). obj: @:Location. Cardinality: +
+            # 99.35323383084577 % (3994 instances). obj: @:Location. Cardinality: {1}
+            # 0.24875621890547264 % (10 instances). obj: @:Location. Cardinality: {2}
+            # 0.24875621890547264 % (10 instances). obj: @:Concept. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#altLabel>  <http://www.w3.org/2001/XMLSchema#string>  *
+            # 78.2089552238806 % (3144 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: +
+            # 78.1094527363184 % (3140 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 0.09950248756218905 % (4 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 4020
+
+
+:CentraalBestuurVanDeEredienst   # 634 instances.
+{
+   rdf:type  [vl_besl:Bestuurseenheid]  ;                      # 100.0 % (634 instances).
+   rdf:type  [lblod_ere:CentraalBestuurVanDeEredienst]  ;          # 100.0 % (634 instances).
+   <http://www.w3.org/ns/org#hasPrimarySite>  IRI  ;           # 100.0 % (634 instances).
+   vl_besl:classificatie  @:OrganizationClassificationCode  ;          # 100.0 % (634 instances).
+            # 100.0 % (634 instances). obj: @:BestuurseenheidClassificatieCode_lblod_org. Cardinality: {1}
+            # 100.0 % (634 instances). obj: @:BestuurseenheidClassificatieCode. Cardinality: {1}
+   vl_besl:werkingsgebied  @:Location  ;                       # 100.0 % (634 instances).
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  ;          # 100.0 % (634 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (634 instances).
+   ^  vl_besl:bestuurt  @:Bestuursorgaan  {2}                  # 100.0 % (634 instances).
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 634
+
+
+:Bestuursorgaan   # 60100 instances.
+{
+   rdf:type  [vl_besl:Bestuursorgaan]  ;                       # 100.0 % (60100 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (60100 instances).
+   vl_mand:isTijdspecialisatieVan  @:Bestuursorgaan  *;
+            # 67.52412645590682 % (40582 instances). obj: @:Bestuursorgaan. Cardinality: {2}
+   vl_mand:bindingStart  <http://www.w3.org/2001/XMLSchema#dateTime>  ?;
+            # 67.04492512479202 % (40294 instances). obj: <http://www.w3.org/2001/XMLSchema#dateTime>. Cardinality: {1}
+   <http://www.w3.org/ns/org#hasPost>  IRI  *;
+            # 48.901830282861894 % (29390 instances). obj: IRI. Cardinality: +
+            # 15.264559068219635 % (9174 instances). obj: IRI. Cardinality: {6}
+            # 15.254575707154741 % (9168 instances). obj: IRI. Cardinality: {2}
+            # 8.795341098169718 % (5286 instances). obj: IRI. Cardinality: {7}
+            # 3.8136439267886852 % (2292 instances). obj: IRI. Cardinality: {5}
+            # 3.2479201331114806 % (1952 instances). obj: IRI. Cardinality: {1}
+            # 2.2728785357737107 % (1366 instances). obj: IRI. Cardinality: {4}
+            # 0.15973377703826955 % (96 instances). obj: IRI. Cardinality: {3}
+            # 0.053244592346089845 % (32 instances). obj: IRI. Cardinality: {8}
+            # 0.016638935108153077 % (10 instances). obj: IRI. Cardinality: {9}
+            # 0.013311148086522461 % (8 instances). obj: IRI. Cardinality: {11}
+            # 0.009983361064891847 % (6 instances). obj: IRI. Cardinality: {10}
+            # 48.89517470881864 % (29386 instances). obj: @:Mandaat. Cardinality: +
+            # 48.848585690515804 % (29358 instances). obj: @:Post. Cardinality: +
+   vl_mand:bindingEinde  <http://www.w3.org/2001/XMLSchema#dateTime>  ?;
+            # 45.03161397670549 % (27064 instances). obj: <http://www.w3.org/2001/XMLSchema#dateTime>. Cardinality: {1}
+   vl_besl:classificatie  @:BestuursorgaanClassificatieCode  *;
+            # 32.475873544093176 % (19518 instances). obj: @:BestuursorgaanClassificatieCode. Cardinality: +
+            # 24.69883527454243 % (14844 instances). obj: @:BestuursorgaanClassificatieCode. Cardinality: {2}
+            # 7.777038269550748 % (4674 instances). obj: @:BestuursorgaanClassificatieCode. Cardinality: {1}
+            # 32.475873544093176 % (19518 instances). obj: @:BestuursorgaanClassificatieCode_mu_ext. Cardinality: +
+            # 24.69883527454243 % (14844 instances). obj: @:Concept. Cardinality: {2}
+   vl_besl:bestuurt  IRI  ?;
+            # 32.455906821963396 % (19506 instances). obj: IRI. Cardinality: {1}
+            # 32.206322795341094 % (19356 instances). obj: @:Bestuurseenheid. Cardinality: {2}
+            # 6.675540765391015 % (4012 instances). obj: @:BestuurVanDeEredienst. Cardinality: {2}
+            # 1.054908485856905 % (634 instances). obj: @:CentraalBestuurVanDeEredienst. Cardinality: {2}
+   ^  vl_mand:isTijdspecialisatieVan  @:Bestuursorgaan  *;
+            # 32.45257903494176 % (19504 instances). obj: @:Bestuursorgaan. Cardinality: +
+            # 16.139767054908486 % (9700 instances). obj: @:Bestuursorgaan. Cardinality: {2}
+            # 6.3394342762063225 % (3810 instances). obj: @:Bestuursorgaan. Cardinality: {6}
+            # 6.209650582362729 % (3732 instances). obj: @:Bestuursorgaan. Cardinality: {8}
+            # 3.763727121464226 % (2262 instances). obj: @:Bestuursorgaan. Cardinality: {4}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  ?;
+            # 32.316139767054906 % (19422 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   ^  <http://www.w3.org/ns/org#memberOf>  @:Fractie  *
+            # 14.602329450915141 % (8776 instances). obj: @:Fractie. Cardinality: +
+            # 2.9584026622296173 % (1778 instances). obj: @:Fractie. Cardinality: {5}
+            # 2.7753743760399336 % (1668 instances). obj: @:Fractie. Cardinality: {4}
+            # 2.425956738768719 % (1458 instances). obj: @:Fractie. Cardinality: {6}
+            # 1.6439267886855242 % (988 instances). obj: @:Fractie. Cardinality: {3}
+            # 1.3710482529118135 % (824 instances). obj: @:Fractie. Cardinality: {7}
+            # 1.1148086522462564 % (670 instances). obj: @:Fractie. Cardinality: {2}
+            # 0.9417637271214643 % (566 instances). obj: @:Fractie. Cardinality: {1}
+            # 0.718801996672213 % (432 instances). obj: @:Fractie. Cardinality: {8}
+            # 0.2961730449251248 % (178 instances). obj: @:Fractie. Cardinality: {9}
+            # 0.10648918469217969 % (64 instances). obj: @:Fractie. Cardinality: {11}
+            # 0.09983361064891848 % (60 instances). obj: @:Fractie. Cardinality: {10}
+            # 0.053244592346089845 % (32 instances). obj: @:Fractie. Cardinality: {12}
+            # 0.033277870216306155 % (20 instances). obj: @:Fractie. Cardinality: {13}
+            # 0.029950083194675542 % (18 instances). obj: @:Fractie. Cardinality: {14}
+            # 0.013311148086522461 % (8 instances). obj: @:Fractie. Cardinality: {18}
+            # 0.009983361064891847 % (6 instances). obj: @:Fractie. Cardinality: {17}
+            # 0.009983361064891847 % (6 instances). obj: @:Fractie. Cardinality: {15}
+            # 0.019966722129783693 % (12 instances). obj: @:Tombstone. Cardinality: {2}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 60100
+
+
+:Membership   # 67587 instances.
+{
+   rdf:type  [<http://www.w3.org/ns/org#Membership>]  ;          # 100.0 % (67587 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (67587 instances).
+            # 99.99852042552561 % (67586 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 0.001479574474381168 % (1 instance). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/ns/org#organisation>  IRI  *;
+            # 87.44876973382455 % (59104 instances). obj: IRI. Cardinality: +
+            # 77.78714841611553 % (52574 instances). obj: IRI. Cardinality: {1}
+            # 9.636468551644548 % (6513 instances). obj: IRI. Cardinality: {2}
+            # 0.025152766064479855 % (17 instances). obj: IRI. Cardinality: {3}
+            # 87.40438249959311 % (59074 instances). obj: @:Fractie. Cardinality: +
+            # 0.002959148948762336 % (2 instances). obj: @:Tombstone. Cardinality: {1}
+   ^  <http://www.w3.org/ns/org#hasMembership>  @:Mandataris  *;
+            # 81.54822672999245 % (55116 instances). obj: @:Mandataris. Cardinality: +
+            # 81.23307736694927 % (54903 instances). obj: @:Mandataris. Cardinality: {2}
+            # 0.31514936304318875 % (213 instances). obj: @:Mandataris. Cardinality: {4}
+            # 3.725568526491781 % (2518 instances). obj: @:AgentInPositie. Cardinality: {2}
+   rdf:type  [<http://www.w3.org/ns/activitystreams#Tombstone>]  ?
+            # 0.2530072351191797 % (171 instances). obj: <http://www.w3.org/ns/activitystreams#Tombstone>. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 67587
+
+
+:Post   # 52189 instances.
+{
+   rdf:type  [<http://www.w3.org/ns/org#Post>]  ;              # 100.0 % (52189 instances).
+   rdf:type  [vl_mand:Mandaat]  ;                              # 100.0 % (52189 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  ;          # 100.0 % (52189 instances).
+   ^  <http://www.w3.org/ns/org#hasPost>  @:Bestuursorgaan  +;          # 100.0 % (52189 instances).
+            # 82.14183065396922 % (42869 instances). obj: @:Bestuursorgaan. Cardinality: {2}
+            # 14.658261319435132 % (7650 instances). obj: @:Bestuursorgaan. Cardinality: {4}
+            # 2.9814711912471976 % (1556 instances). obj: @:Bestuursorgaan. Cardinality: {8}
+            # 0.21843683534844507 % (114 instances). obj: @:Bestuursorgaan. Cardinality: {6}
+   <http://www.w3.org/ns/org#role>  IRI  *;
+            # 99.98850332445535 % (52183 instances). obj: IRI. Cardinality: +
+            # 99.39259230872406 % (51872 instances). obj: IRI. Cardinality: {1}
+            # 0.5959110157312844 % (311 instances). obj: IRI. Cardinality: {2}
+            # 99.39259230872406 % (51872 instances). obj: @:BestuursfunctieCode. Cardinality: {1}
+            # 99.39259230872406 % (51872 instances). obj: @:BestuursfunctieCode_mu_ext. Cardinality: {1}
+   ^  <http://www.w3.org/ns/org#holds>  @:Mandataris  *;
+            # 17.46345015233095 % (9114 instances). obj: @:Mandataris. Cardinality: +
+            # 6.942075916380847 % (3623 instances). obj: @:Mandataris. Cardinality: {2}
+            # 1.743662457606009 % (910 instances). obj: @:Mandataris. Cardinality: {4}
+            # 0.7721933740826611 % (403 instances). obj: @:Mandataris. Cardinality: {8}
+            # 0.7702772614918852 % (402 instances). obj: @:Mandataris. Cardinality: {12}
+            # 0.7032133208147311 % (367 instances). obj: @:Mandataris. Cardinality: {10}
+            # 0.6342332675468011 % (331 instances). obj: @:Mandataris. Cardinality: {6}
+            # 0.6304010423652494 % (329 instances). obj: @:Mandataris. Cardinality: {16}
+            # 0.5480082009618885 % (286 instances). obj: @:Mandataris. Cardinality: {14}
+            # 0.3947191936998218 % (206 instances). obj: @:Mandataris. Cardinality: {18}
+            # 0.33531970338577094 % (175 instances). obj: @:Mandataris. Cardinality: {20}
+            # 0.2797524382532718 % (146 instances). obj: @:Mandataris. Cardinality: {22}
+            # 0.23951407384697923 % (125 instances). obj: @:Mandataris. Cardinality: {24}
+            # 0.1973595968499109 % (103 instances). obj: @:Mandataris. Cardinality: {50}
+            # 0.16670179539749758 % (87 instances). obj: @:Mandataris. Cardinality: {26}
+            # 0.1628695702159459 % (85 instances). obj: @:Mandataris. Cardinality: {54}
+            # 0.14370844430818755 % (75 instances). obj: @:Mandataris. Cardinality: {58}
+            # 0.1398762191266359 % (73 instances). obj: @:Mandataris. Cardinality: {52}
+            # 0.1398762191266359 % (73 instances). obj: @:Mandataris. Cardinality: {28}
+            # 0.1360439939450842 % (71 instances). obj: @:Mandataris. Cardinality: {56}
+            # 0.13221176876353255 % (69 instances). obj: @:Mandataris. Cardinality: {46}
+            # 0.12071509321887754 % (63 instances). obj: @:Mandataris. Cardinality: {38}
+            # 0.1187989806281017 % (62 instances). obj: @:Mandataris. Cardinality: {60}
+            # 0.1187989806281017 % (62 instances). obj: @:Mandataris. Cardinality: {48}
+            # 0.10538619249267087 % (55 instances). obj: @:Mandataris. Cardinality: {66}
+            # 0.10538619249267087 % (55 instances). obj: @:Mandataris. Cardinality: {62}
+            # 0.10347007990189504 % (54 instances). obj: @:Mandataris. Cardinality: {32}
+            # 0.1015539673111192 % (53 instances). obj: @:Mandataris. Cardinality: {42}
+            # 0.09388951694801587 % (49 instances). obj: @:Mandataris. Cardinality: {64}
+            # 0.09388951694801587 % (49 instances). obj: @:Mandataris. Cardinality: {30}
+            # 0.09197340435724004 % (48 instances). obj: @:Mandataris. Cardinality: {34}
+            # 0.09197340435724004 % (48 instances). obj: @:Mandataris. Cardinality: {72}
+            # 0.0900572917664642 % (47 instances). obj: @:Mandataris. Cardinality: {74}
+            # 0.0843089539941367 % (44 instances). obj: @:Mandataris. Cardinality: {68}
+            # 0.08239284140336087 % (43 instances). obj: @:Mandataris. Cardinality: {44}
+            # 0.08047672881258502 % (42 instances). obj: @:Mandataris. Cardinality: {70}
+            # 0.05556726513249919 % (29 instances). obj: @:Mandataris. Cardinality: {86}
+            # 0.05556726513249919 % (29 instances). obj: @:Mandataris. Cardinality: {36}
+            # 0.053651152541723354 % (28 instances). obj: @:Mandataris. Cardinality: {40}
+            # 0.053651152541723354 % (28 instances). obj: @:Mandataris. Cardinality: {76}
+            # 0.05173503995094752 % (27 instances). obj: @:Mandataris. Cardinality: {78}
+            # 0.04598670217862002 % (24 instances). obj: @:Mandataris. Cardinality: {82}
+            # 0.04407058958784418 % (23 instances). obj: @:Mandataris. Cardinality: {88}
+            # 0.04407058958784418 % (23 instances). obj: @:Mandataris. Cardinality: {80}
+            # 0.04215447699706835 % (22 instances). obj: @:Mandataris. Cardinality: {92}
+            # 0.03449002663396501 % (18 instances). obj: @:Mandataris. Cardinality: {100}
+            # 0.03257391404318918 % (17 instances). obj: @:Mandataris. Cardinality: {90}
+            # 0.026825576270861677 % (14 instances). obj: @:Mandataris. Cardinality: {84}
+            # 0.01916112590775834 % (10 instances). obj: @:Mandataris. Cardinality: {94}
+            # 0.01532890072620667 % (8 instances). obj: @:Mandataris. Cardinality: {108}
+            # 0.01532890072620667 % (8 instances). obj: @:Mandataris. Cardinality: {112}
+            # 0.013412788135430839 % (7 instances). obj: @:Mandataris. Cardinality: {122}
+            # 0.011496675544655005 % (6 instances). obj: @:Mandataris. Cardinality: {116}
+            # 0.011496675544655005 % (6 instances). obj: @:Mandataris. Cardinality: {110}
+            # 0.011496675544655005 % (6 instances). obj: @:Mandataris. Cardinality: {104}
+            # 0.00958056295387917 % (5 instances). obj: @:Mandataris. Cardinality: {114}
+            # 0.00958056295387917 % (5 instances). obj: @:Mandataris. Cardinality: {106}
+            # 0.00958056295387917 % (5 instances). obj: @:Mandataris. Cardinality: {120}
+            # 0.005748337772327502 % (3 instances). obj: @:Mandataris. Cardinality: {96}
+            # 0.005748337772327502 % (3 instances). obj: @:Mandataris. Cardinality: {140}
+            # 0.005748337772327502 % (3 instances). obj: @:Mandataris. Cardinality: {146}
+            # 0.005748337772327502 % (3 instances). obj: @:Mandataris. Cardinality: {182}
+            # 0.005748337772327502 % (3 instances). obj: @:Mandataris. Cardinality: {184}
+            # 0.005748337772327502 % (3 instances). obj: @:Mandataris. Cardinality: {138}
+            # 0.005748337772327502 % (3 instances). obj: @:Mandataris. Cardinality: {126}
+            # 0.005748337772327502 % (3 instances). obj: @:Mandataris. Cardinality: {102}
+            # 0.0038322251815516677 % (2 instances). obj: @:Mandataris. Cardinality: {150}
+            # 0.0038322251815516677 % (2 instances). obj: @:Mandataris. Cardinality: {170}
+            # 0.0038322251815516677 % (2 instances). obj: @:Mandataris. Cardinality: {156}
+            # 0.0038322251815516677 % (2 instances). obj: @:Mandataris. Cardinality: {130}
+            # 0.0038322251815516677 % (2 instances). obj: @:Mandataris. Cardinality: {142}
+            # 0.0038322251815516677 % (2 instances). obj: @:Mandataris. Cardinality: {198}
+            # 0.0038322251815516677 % (2 instances). obj: @:Mandataris. Cardinality: {174}
+            # 0.0038322251815516677 % (2 instances). obj: @:Mandataris. Cardinality: {162}
+            # 0.0038322251815516677 % (2 instances). obj: @:Mandataris. Cardinality: {164}
+            # 0.0038322251815516677 % (2 instances). obj: @:Mandataris. Cardinality: {136}
+            # 0.0019161125907758338 % (1 instance). obj: @:Mandataris. Cardinality: {254}
+            # 0.0019161125907758338 % (1 instance). obj: @:Mandataris. Cardinality: {148}
+            # 0.0019161125907758338 % (1 instance). obj: @:Mandataris. Cardinality: {252}
+            # 0.0019161125907758338 % (1 instance). obj: @:Mandataris. Cardinality: {124}
+            # 0.0019161125907758338 % (1 instance). obj: @:Mandataris. Cardinality: {176}
+            # 0.0019161125907758338 % (1 instance). obj: @:Mandataris. Cardinality: {206}
+            # 0.0019161125907758338 % (1 instance). obj: @:Mandataris. Cardinality: {160}
+            # 0.0019161125907758338 % (1 instance). obj: @:Mandataris. Cardinality: {204}
+            # 0.0019161125907758338 % (1 instance). obj: @:Mandataris. Cardinality: {172}
+            # 2.297418996340225 % (1199 instances). obj: @:AgentInPositie. Cardinality: +
+   vl_mand:aantalHouders  <http://www.w3.org/2001/XMLSchema#integer>  ?
+            # 12.318687846097836 % (6429 instances). obj: <http://www.w3.org/2001/XMLSchema#integer>. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 52189
+
+
+:Mandaat   # 52267 instances.
+{
+   rdf:type  [vl_mand:Mandaat]  ;                              # 100.0 % (52267 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  ;          # 100.0 % (52267 instances).
+   ^  <http://www.w3.org/ns/org#hasPost>  @:Bestuursorgaan  +;          # 100.0 % (52267 instances).
+            # 82.16848106836053 % (42947 instances). obj: @:Bestuursorgaan. Cardinality: {2}
+            # 14.636386247536686 % (7650 instances). obj: @:Bestuursorgaan. Cardinality: {4}
+            # 2.9770218302179194 % (1556 instances). obj: @:Bestuursorgaan. Cardinality: {8}
+            # 0.21811085388486043 % (114 instances). obj: @:Bestuursorgaan. Cardinality: {6}
+   <http://www.w3.org/ns/org#role>  IRI  *;
+            # 99.98852048137448 % (52261 instances). obj: IRI. Cardinality: +
+            # 99.39349876595175 % (51950 instances). obj: IRI. Cardinality: {1}
+            # 0.5950217154227333 % (311 instances). obj: IRI. Cardinality: {2}
+            # 99.39349876595175 % (51950 instances). obj: @:BestuursfunctieCode. Cardinality: {1}
+            # 99.39349876595175 % (51950 instances). obj: @:BestuursfunctieCode_mu_ext. Cardinality: {1}
+   rdf:type  [<http://www.w3.org/ns/org#Post>]  ?;
+            # 99.85076625786824 % (52189 instances). obj: <http://www.w3.org/ns/org#Post>. Cardinality: {1}
+   ^  <http://www.w3.org/ns/org#holds>  @:Mandataris  *;
+            # 17.437388792163315 % (9114 instances). obj: @:Mandataris. Cardinality: +
+            # 6.931715996709205 % (3623 instances). obj: @:Mandataris. Cardinality: {2}
+            # 1.7410603248703769 % (910 instances). obj: @:Mandataris. Cardinality: {4}
+            # 0.7710410010140241 % (403 instances). obj: @:Mandataris. Cardinality: {8}
+            # 0.769127747909771 % (402 instances). obj: @:Mandataris. Cardinality: {12}
+            # 0.7021638892609103 % (367 instances). obj: @:Mandataris. Cardinality: {10}
+            # 0.6332867775077965 % (331 instances). obj: @:Mandataris. Cardinality: {6}
+            # 0.6294602712992902 % (329 instances). obj: @:Mandataris. Cardinality: {16}
+            # 0.5471903878164043 % (286 instances). obj: @:Mandataris. Cardinality: {14}
+            # 0.3941301394761513 % (206 instances). obj: @:Mandataris. Cardinality: {18}
+            # 0.33481929324430326 % (175 instances). obj: @:Mandataris. Cardinality: {20}
+            # 0.2793349532209616 % (146 instances). obj: @:Mandataris. Cardinality: {22}
+            # 0.2391566380316452 % (125 instances). obj: @:Mandataris. Cardinality: {24}
+            # 0.19706506973807564 % (103 instances). obj: @:Mandataris. Cardinality: {50}
+            # 0.16645302007002508 % (87 instances). obj: @:Mandataris. Cardinality: {26}
+            # 0.16262651386151875 % (85 instances). obj: @:Mandataris. Cardinality: {54}
+            # 0.14349398281898712 % (75 instances). obj: @:Mandataris. Cardinality: {58}
+            # 0.1396674766104808 % (73 instances). obj: @:Mandataris. Cardinality: {52}
+            # 0.1396674766104808 % (73 instances). obj: @:Mandataris. Cardinality: {28}
+            # 0.13584097040197446 % (71 instances). obj: @:Mandataris. Cardinality: {56}
+            # 0.13201446419346816 % (69 instances). obj: @:Mandataris. Cardinality: {46}
+            # 0.12053494556794918 % (63 instances). obj: @:Mandataris. Cardinality: {38}
+            # 0.11862169246369603 % (62 instances). obj: @:Mandataris. Cardinality: {60}
+            # 0.11862169246369603 % (62 instances). obj: @:Mandataris. Cardinality: {48}
+            # 0.1052289207339239 % (55 instances). obj: @:Mandataris. Cardinality: {66}
+            # 0.1052289207339239 % (55 instances). obj: @:Mandataris. Cardinality: {62}
+            # 0.10331566762967073 % (54 instances). obj: @:Mandataris. Cardinality: {32}
+            # 0.10140241452541758 % (53 instances). obj: @:Mandataris. Cardinality: {42}
+            # 0.09374940210840492 % (49 instances). obj: @:Mandataris. Cardinality: {64}
+            # 0.09374940210840492 % (49 instances). obj: @:Mandataris. Cardinality: {30}
+            # 0.09183614900415175 % (48 instances). obj: @:Mandataris. Cardinality: {34}
+            # 0.09183614900415175 % (48 instances). obj: @:Mandataris. Cardinality: {72}
+            # 0.0899228958998986 % (47 instances). obj: @:Mandataris. Cardinality: {74}
+            # 0.08418313658713912 % (44 instances). obj: @:Mandataris. Cardinality: {68}
+            # 0.08226988348288596 % (43 instances). obj: @:Mandataris. Cardinality: {44}
+            # 0.08035663037863279 % (42 instances). obj: @:Mandataris. Cardinality: {70}
+            # 0.05548434002334169 % (29 instances). obj: @:Mandataris. Cardinality: {86}
+            # 0.05548434002334169 % (29 instances). obj: @:Mandataris. Cardinality: {36}
+            # 0.05357108691908853 % (28 instances). obj: @:Mandataris. Cardinality: {40}
+            # 0.05357108691908853 % (28 instances). obj: @:Mandataris. Cardinality: {76}
+            # 0.051657833814835366 % (27 instances). obj: @:Mandataris. Cardinality: {78}
+            # 0.04591807450207588 % (24 instances). obj: @:Mandataris. Cardinality: {82}
+            # 0.04400482139782272 % (23 instances). obj: @:Mandataris. Cardinality: {88}
+            # 0.04400482139782272 % (23 instances). obj: @:Mandataris. Cardinality: {80}
+            # 0.04209156829356956 % (22 instances). obj: @:Mandataris. Cardinality: {92}
+            # 0.034438555876556906 % (18 instances). obj: @:Mandataris. Cardinality: {100}
+            # 0.03252530277230375 % (17 instances). obj: @:Mandataris. Cardinality: {90}
+            # 0.026785543459544266 % (14 instances). obj: @:Mandataris. Cardinality: {84}
+            # 0.01913253104253162 % (10 instances). obj: @:Mandataris. Cardinality: {94}
+            # 0.015306024834025293 % (8 instances). obj: @:Mandataris. Cardinality: {108}
+            # 0.015306024834025293 % (8 instances). obj: @:Mandataris. Cardinality: {112}
+            # 0.013392771729772133 % (7 instances). obj: @:Mandataris. Cardinality: {122}
+            # 0.01147951862551897 % (6 instances). obj: @:Mandataris. Cardinality: {116}
+            # 0.01147951862551897 % (6 instances). obj: @:Mandataris. Cardinality: {110}
+            # 0.01147951862551897 % (6 instances). obj: @:Mandataris. Cardinality: {104}
+            # 0.00956626552126581 % (5 instances). obj: @:Mandataris. Cardinality: {114}
+            # 0.00956626552126581 % (5 instances). obj: @:Mandataris. Cardinality: {106}
+            # 0.00956626552126581 % (5 instances). obj: @:Mandataris. Cardinality: {120}
+            # 0.005739759312759485 % (3 instances). obj: @:Mandataris. Cardinality: {96}
+            # 0.005739759312759485 % (3 instances). obj: @:Mandataris. Cardinality: {140}
+            # 0.005739759312759485 % (3 instances). obj: @:Mandataris. Cardinality: {146}
+            # 0.005739759312759485 % (3 instances). obj: @:Mandataris. Cardinality: {182}
+            # 0.005739759312759485 % (3 instances). obj: @:Mandataris. Cardinality: {184}
+            # 0.005739759312759485 % (3 instances). obj: @:Mandataris. Cardinality: {138}
+            # 0.005739759312759485 % (3 instances). obj: @:Mandataris. Cardinality: {126}
+            # 0.005739759312759485 % (3 instances). obj: @:Mandataris. Cardinality: {102}
+            # 0.0038265062085063232 % (2 instances). obj: @:Mandataris. Cardinality: {150}
+            # 0.0038265062085063232 % (2 instances). obj: @:Mandataris. Cardinality: {170}
+            # 0.0038265062085063232 % (2 instances). obj: @:Mandataris. Cardinality: {156}
+            # 0.0038265062085063232 % (2 instances). obj: @:Mandataris. Cardinality: {130}
+            # 0.0038265062085063232 % (2 instances). obj: @:Mandataris. Cardinality: {142}
+            # 0.0038265062085063232 % (2 instances). obj: @:Mandataris. Cardinality: {198}
+            # 0.0038265062085063232 % (2 instances). obj: @:Mandataris. Cardinality: {174}
+            # 0.0038265062085063232 % (2 instances). obj: @:Mandataris. Cardinality: {162}
+            # 0.0038265062085063232 % (2 instances). obj: @:Mandataris. Cardinality: {164}
+            # 0.0038265062085063232 % (2 instances). obj: @:Mandataris. Cardinality: {136}
+            # 0.0019132531042531616 % (1 instance). obj: @:Mandataris. Cardinality: {254}
+            # 0.0019132531042531616 % (1 instance). obj: @:Mandataris. Cardinality: {148}
+            # 0.0019132531042531616 % (1 instance). obj: @:Mandataris. Cardinality: {252}
+            # 0.0019132531042531616 % (1 instance). obj: @:Mandataris. Cardinality: {124}
+            # 0.0019132531042531616 % (1 instance). obj: @:Mandataris. Cardinality: {176}
+            # 0.0019132531042531616 % (1 instance). obj: @:Mandataris. Cardinality: {206}
+            # 0.0019132531042531616 % (1 instance). obj: @:Mandataris. Cardinality: {160}
+            # 0.0019132531042531616 % (1 instance). obj: @:Mandataris. Cardinality: {204}
+            # 0.0019132531042531616 % (1 instance). obj: @:Mandataris. Cardinality: {172}
+            # 2.2939904719995408 % (1199 instances). obj: @:AgentInPositie. Cardinality: +
+   vl_mand:aantalHouders  <http://www.w3.org/2001/XMLSchema#integer>  ?
+            # 12.300304207243576 % (6429 instances). obj: <http://www.w3.org/2001/XMLSchema#integer>. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 52267
+
+
+:Location   # 670 instances.
+{
+   rdf:type  [<http://www.w3.org/ns/prov#Location>]  ;          # 100.0 % (670 instances).
+   <http://www.w3.org/2000/01/rdf-schema#label>  <http://www.w3.org/2001/XMLSchema#string>  ;          # 100.0 % (670 instances).
+   mu_ext:werkingsgebiedNiveau  <http://www.w3.org/2001/XMLSchema#string>  ;          # 100.0 % (670 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (670 instances).
+            # 98.50746268656717 % (660 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 1.4925373134328357 % (10 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   ^  vl_besl:werkingsgebied  @:Bestuurseenheid  *;
+            # 93.5820895522388 % (627 instances). obj: @:Bestuurseenheid. Cardinality: +
+            # 41.940298507462686 % (281 instances). obj: @:Bestuurseenheid. Cardinality: {2}
+            # 7.313432835820896 % (49 instances). obj: @:Bestuurseenheid. Cardinality: {14}
+            # 5.223880597014925 % (35 instances). obj: @:Bestuurseenheid. Cardinality: {12}
+            # 5.074626865671641 % (34 instances). obj: @:Bestuurseenheid. Cardinality: {16}
+            # 4.626865671641791 % (31 instances). obj: @:Bestuurseenheid. Cardinality: {10}
+            # 4.029850746268656 % (27 instances). obj: @:Bestuurseenheid. Cardinality: {18}
+            # 3.4328358208955225 % (23 instances). obj: @:Bestuurseenheid. Cardinality: {8}
+            # 3.2835820895522385 % (22 instances). obj: @:Bestuurseenheid. Cardinality: {4}
+            # 3.134328358208955 % (21 instances). obj: @:Bestuurseenheid. Cardinality: {6}
+            # 2.5373134328358207 % (17 instances). obj: @:Bestuurseenheid. Cardinality: {20}
+            # 2.2388059701492535 % (15 instances). obj: @:Bestuurseenheid. Cardinality: {22}
+            # 1.791044776119403 % (12 instances). obj: @:Bestuurseenheid. Cardinality: {26}
+            # 1.4925373134328357 % (10 instances). obj: @:Bestuurseenheid. Cardinality: {24}
+            # 1.0447761194029852 % (7 instances). obj: @:Bestuurseenheid. Cardinality: {30}
+            # 1.0447761194029852 % (7 instances). obj: @:Bestuurseenheid. Cardinality: {28}
+            # 1.0447761194029852 % (7 instances). obj: @:Bestuurseenheid. Cardinality: {40}
+            # 0.5970149253731344 % (4 instances). obj: @:Bestuurseenheid. Cardinality: {36}
+            # 0.44776119402985076 % (3 instances). obj: @:Bestuurseenheid. Cardinality: {34}
+            # 0.44776119402985076 % (3 instances). obj: @:Bestuurseenheid. Cardinality: {54}
+            # 0.44776119402985076 % (3 instances). obj: @:Bestuurseenheid. Cardinality: {52}
+            # 0.2985074626865672 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {32}
+            # 0.2985074626865672 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {58}
+            # 0.2985074626865672 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {60}
+            # 0.2985074626865672 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {38}
+            # 0.2985074626865672 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {46}
+            # 0.1492537313432836 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {248}
+            # 0.1492537313432836 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {42}
+            # 0.1492537313432836 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {148}
+            # 0.1492537313432836 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {84}
+            # 0.1492537313432836 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {66}
+            # 0.1492537313432836 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {74}
+            # 68.05970149253731 % (456 instances). obj: @:BestuurVanDeEredienst. Cardinality: +
+            # 42.83582089552239 % (287 instances). obj: @:CentraalBestuurVanDeEredienst. Cardinality: +
+   rdf:type  [<http://www.w3.org/2004/02/skos/core#Concept>]  ?
+            # 1.4925373134328357 % (10 instances). obj: <http://www.w3.org/2004/02/skos/core#Concept>. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 670
+
+
+:Concept   # 8909 instances.
+{
+   rdf:type  [<http://www.w3.org/2004/02/skos/core#Concept>]  ;          # 100.0 % (8909 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (8909 instances).
+            # 85.82332472780334 % (7646 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+            # 14.176675272196654 % (1263 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  *;
+            # 99.88775395667304 % (8899 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: +
+            # 85.71107868447638 % (7636 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+            # 14.165450667863958 % (1262 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {3}
+            # 0.011224604332697273 % (1 instance). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   rdf:type  [mu_ext:BeleidsdomeinCode]  ?;
+            # 84.90290717252216 % (7564 instances). obj: mu_ext:BeleidsdomeinCode. Cardinality: {1}
+   ^  vl_mand:beleidsdomein  @:Mandataris  *;
+            # 76.86609047031092 % (6848 instances). obj: @:Mandataris. Cardinality: +
+            # 58.21079806936805 % (5186 instances). obj: @:Mandataris. Cardinality: {2}
+            # 13.716466494556068 % (1222 instances). obj: @:Mandataris. Cardinality: {4}
+            # 1.5040969805814346 % (134 instances). obj: @:Mandataris. Cardinality: {6}
+            # 0.31428892131552366 % (28 instances). obj: @:Mandataris. Cardinality: {8}
+            # 0.17959366932315637 % (16 instances). obj: @:Mandataris. Cardinality: {10}
+            # 0.11224604332697272 % (10 instances). obj: @:Mandataris. Cardinality: {32}
+            # 0.11224604332697272 % (10 instances). obj: @:Mandataris. Cardinality: {104}
+            # 0.08979683466157819 % (8 instances). obj: @:Mandataris. Cardinality: {18}
+            # 0.06734762599618363 % (6 instances). obj: @:Mandataris. Cardinality: {26}
+            # 0.06734762599618363 % (6 instances). obj: @:Mandataris. Cardinality: {28}
+            # 0.06734762599618363 % (6 instances). obj: @:Mandataris. Cardinality: {42}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {788}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {12}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {60}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {52}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {36}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {232}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {66}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {70}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {272}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {20}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {96}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {44}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {80}
+            # 0.044898417330789094 % (4 instances). obj: @:Mandataris. Cardinality: {198}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {134}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {356}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {190}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {358}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {770}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {386}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {434}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {86}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {676}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {246}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {728}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {260}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {962}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {154}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {1192}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {68}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {774}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {166}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {102}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {408}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {456}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {216}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {188}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {432}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {568}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {16}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {150}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {542}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {362}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {1070}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {14}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {284}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {360}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {224}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {168}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {382}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {834}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {266}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {156}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {24}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {1396}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {124}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {274}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {508}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {814}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {968}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {722}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {40}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {262}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {420}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {1252}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {84}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {290}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {256}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {322}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {1060}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {902}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {106}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {1370}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {88}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {1170}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {908}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {162}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {74}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {94}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {1040}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {50}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {1024}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {648}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {78}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {1430}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {192}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {22}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {288}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {978}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {778}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {76}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {202}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {540}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {582}
+            # 1.5938938152430127 % (142 instances). obj: @:AgentInPositie. Cardinality: +
+   ^  vl_besl:classificatie  IRI  *;
+            # 0.6959254686272309 % (62 instances). obj: IRI. Cardinality: +
+            # 0.13469525199236726 % (12 instances). obj: IRI. Cardinality: {319}
+            # 0.11224604332697272 % (10 instances). obj: IRI. Cardinality: {5}
+            # 0.08979683466157819 % (8 instances). obj: IRI. Cardinality: {10}
+            # 0.08979683466157819 % (8 instances). obj: IRI. Cardinality: {644}
+            # 0.044898417330789094 % (4 instances). obj: IRI. Cardinality: {583}
+            # 0.022449208665394547 % (2 instances). obj: IRI. Cardinality: {40}
+            # 0.022449208665394547 % (2 instances). obj: IRI. Cardinality: {207}
+            # 0.022449208665394547 % (2 instances). obj: IRI. Cardinality: {30}
+            # 0.022449208665394547 % (2 instances). obj: IRI. Cardinality: {264}
+            # 0.022449208665394547 % (2 instances). obj: IRI. Cardinality: {172}
+            # 0.022449208665394547 % (2 instances). obj: IRI. Cardinality: {128}
+            # 0.022449208665394547 % (2 instances). obj: IRI. Cardinality: {611}
+            # 0.022449208665394547 % (2 instances). obj: IRI. Cardinality: {192}
+            # 0.022449208665394547 % (2 instances). obj: IRI. Cardinality: {318}
+            # 0.022449208665394547 % (2 instances). obj: IRI. Cardinality: {26}
+            # 0.6061286339656526 % (54 instances). obj: @:Bestuursorgaan. Cardinality: +
+            # 0.08979683466157819 % (8 instances). obj: @:Bestuurseenheid. Cardinality: +
+   rdf:type  [lblod_org:BestuursorgaanClassificatieCode]  ?;
+            # 0.6061286339656526 % (54 instances). obj: lblod_org:BestuursorgaanClassificatieCode. Cardinality: {1}
+   rdf:type  [mu_ext:BestuursorgaanClassificatieCode]  ?;
+            # 0.6061286339656526 % (54 instances). obj: mu_ext:BestuursorgaanClassificatieCode. Cardinality: {1}
+   rdf:type  [<http://www.w3.org/ns/prov#Location>]  ?;
+            # 0.11224604332697272 % (10 instances). obj: <http://www.w3.org/ns/prov#Location>. Cardinality: {1}
+   mu_ext:werkingsgebiedNiveau  <http://www.w3.org/2001/XMLSchema#string>  ?;
+            # 0.11224604332697272 % (10 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#label>  <http://www.w3.org/2001/XMLSchema#string>  ?;
+            # 0.11224604332697272 % (10 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   ^  vl_besl:werkingsgebied  @:Bestuurseenheid  *;
+            # 0.11224604332697272 % (10 instances). obj: @:Bestuurseenheid. Cardinality: +
+            # 0.044898417330789094 % (4 instances). obj: @:Bestuurseenheid. Cardinality: {8}
+            # 0.022449208665394547 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {10}
+            # 0.022449208665394547 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {4}
+            # 0.022449208665394547 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {52}
+            # 0.08979683466157819 % (8 instances). obj: @:BestuurVanDeEredienst. Cardinality: +
+   rdf:type  [mu_ext:OrganizationClassificationCode]  ?;
+            # 0.10102143899427544 % (9 instances). obj: mu_ext:OrganizationClassificationCode. Cardinality: {1}
+   rdf:type  [mu_ext:BestuurseenheidClassificatieCode]  ?;
+            # 0.08979683466157819 % (8 instances). obj: mu_ext:BestuurseenheidClassificatieCode. Cardinality: {1}
+   rdf:type  [lblod_org:BestuurseenheidClassificatieCode]  ?;
+            # 0.08979683466157819 % (8 instances). obj: lblod_org:BestuurseenheidClassificatieCode. Cardinality: {1}
+   rdf:type  [lblod_org:MandatarisStatusCode]  ?;
+            # 0.08979683466157819 % (8 instances). obj: lblod_org:MandatarisStatusCode. Cardinality: {1}
+   rdf:type  [mu_ext:MandatarisStatusCode]  ?;
+            # 0.08979683466157819 % (8 instances). obj: mu_ext:MandatarisStatusCode. Cardinality: {1}
+   ^  vl_mand:status  @:Mandataris  *;
+            # 0.08979683466157819 % (8 instances). obj: @:Mandataris. Cardinality: +
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {104586}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {330}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {1276}
+            # 0.022449208665394547 % (2 instances). obj: @:Mandataris. Cardinality: {1338}
+            # 0.08979683466157819 % (8 instances). obj: @:AgentInPositie. Cardinality: +
+   rdf:type  [lblod_org:BestuursfunctieCode]  ?;
+            # 0.022449208665394547 % (2 instances). obj: lblod_org:BestuursfunctieCode. Cardinality: {1}
+   rdf:type  [mu_ext:BestuursfunctieCode]  ?;
+            # 0.022449208665394547 % (2 instances). obj: mu_ext:BestuursfunctieCode. Cardinality: {1}
+   rdf:type  [mu_ext:RepresentatiefOrgaanClassificatieCode]  ?
+            # 0.011224604332697273 % (1 instance). obj: mu_ext:RepresentatiefOrgaanClassificatieCode. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 8909
+
+
+:BeleidsdomeinCode   # 11032 instances.
+{
+   rdf:type  [mu_ext:BeleidsdomeinCode]  ;                     # 100.0 % (11032 instances).
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (11032 instances).
+            # 68.56417693981146 % (7564 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+            # 31.435823060188543 % (3468 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (11032 instances).
+            # 68.56417693981146 % (7564 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+            # 31.435823060188543 % (3468 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   ^  vl_mand:beleidsdomein  @:Mandataris  *;
+            # 93.5097897026831 % (10316 instances). obj: @:Mandataris. Cardinality: +
+            # 64.65736040609137 % (7133 instances). obj: @:Mandataris. Cardinality: {2}
+            # 16.479332849891225 % (1818 instances). obj: @:Mandataris. Cardinality: {4}
+            # 3.6348803480783176 % (401 instances). obj: @:Mandataris. Cardinality: {6}
+            # 1.6044234952864396 % (177 instances). obj: @:Mandataris. Cardinality: {8}
+            # 1.069615663524293 % (118 instances). obj: @:Mandataris. Cardinality: {10}
+            # 0.6798404641044236 % (75 instances). obj: @:Mandataris. Cardinality: {12}
+            # 0.3807106598984772 % (42 instances). obj: @:Mandataris. Cardinality: {18}
+            # 0.36258158085569253 % (40 instances). obj: @:Mandataris. Cardinality: {14}
+            # 0.31725888324873097 % (35 instances). obj: @:Mandataris. Cardinality: {20}
+            # 0.290065264684554 % (32 instances). obj: @:Mandataris. Cardinality: {16}
+            # 0.17222625090645394 % (19 instances). obj: @:Mandataris. Cardinality: {26}
+            # 0.17222625090645394 % (19 instances). obj: @:Mandataris. Cardinality: {32}
+            # 0.15409717186366934 % (17 instances). obj: @:Mandataris. Cardinality: {36}
+            # 0.15409717186366934 % (17 instances). obj: @:Mandataris. Cardinality: {22}
+            # 0.11783901377810006 % (13 instances). obj: @:Mandataris. Cardinality: {24}
+            # 0.11783901377810006 % (13 instances). obj: @:Mandataris. Cardinality: {34}
+            # 0.09970993473531545 % (11 instances). obj: @:Mandataris. Cardinality: {104}
+            # 0.09970993473531545 % (11 instances). obj: @:Mandataris. Cardinality: {44}
+            # 0.09970993473531545 % (11 instances). obj: @:Mandataris. Cardinality: {30}
+            # 0.09064539521392313 % (10 instances). obj: @:Mandataris. Cardinality: {52}
+            # 0.09064539521392313 % (10 instances). obj: @:Mandataris. Cardinality: {66}
+            # 0.08158085569253082 % (9 instances). obj: @:Mandataris. Cardinality: {40}
+            # 0.08158085569253082 % (9 instances). obj: @:Mandataris. Cardinality: {42}
+            # 0.0725163161711385 % (8 instances). obj: @:Mandataris. Cardinality: {28}
+            # 0.05438723712835388 % (6 instances). obj: @:Mandataris. Cardinality: {60}
+            # 0.045322697606961566 % (5 instances). obj: @:Mandataris. Cardinality: {134}
+            # 0.045322697606961566 % (5 instances). obj: @:Mandataris. Cardinality: {96}
+            # 0.045322697606961566 % (5 instances). obj: @:Mandataris. Cardinality: {80}
+            # 0.045322697606961566 % (5 instances). obj: @:Mandataris. Cardinality: {162}
+            # 0.045322697606961566 % (5 instances). obj: @:Mandataris. Cardinality: {76}
+            # 0.045322697606961566 % (5 instances). obj: @:Mandataris. Cardinality: {38}
+            # 0.045322697606961566 % (5 instances). obj: @:Mandataris. Cardinality: {54}
+            # 0.045322697606961566 % (5 instances). obj: @:Mandataris. Cardinality: {64}
+            # 0.03625815808556925 % (4 instances). obj: @:Mandataris. Cardinality: {788}
+            # 0.03625815808556925 % (4 instances). obj: @:Mandataris. Cardinality: {86}
+            # 0.03625815808556925 % (4 instances). obj: @:Mandataris. Cardinality: {232}
+            # 0.03625815808556925 % (4 instances). obj: @:Mandataris. Cardinality: {70}
+            # 0.03625815808556925 % (4 instances). obj: @:Mandataris. Cardinality: {272}
+            # 0.03625815808556925 % (4 instances). obj: @:Mandataris. Cardinality: {88}
+            # 0.03625815808556925 % (4 instances). obj: @:Mandataris. Cardinality: {94}
+            # 0.03625815808556925 % (4 instances). obj: @:Mandataris. Cardinality: {50}
+            # 0.03625815808556925 % (4 instances). obj: @:Mandataris. Cardinality: {198}
+            # 0.03625815808556925 % (4 instances). obj: @:Mandataris. Cardinality: {82}
+            # 0.03625815808556925 % (4 instances). obj: @:Mandataris. Cardinality: {72}
+            # 0.02719361856417694 % (3 instances). obj: @:Mandataris. Cardinality: {190}
+            # 0.02719361856417694 % (3 instances). obj: @:Mandataris. Cardinality: {102}
+            # 0.02719361856417694 % (3 instances). obj: @:Mandataris. Cardinality: {188}
+            # 0.02719361856417694 % (3 instances). obj: @:Mandataris. Cardinality: {432}
+            # 0.02719361856417694 % (3 instances). obj: @:Mandataris. Cardinality: {150}
+            # 0.02719361856417694 % (3 instances). obj: @:Mandataris. Cardinality: {124}
+            # 0.02719361856417694 % (3 instances). obj: @:Mandataris. Cardinality: {274}
+            # 0.02719361856417694 % (3 instances). obj: @:Mandataris. Cardinality: {48}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {356}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {358}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {770}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {386}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {434}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {676}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {246}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {728}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {260}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {962}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {154}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {1192}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {68}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {774}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {166}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {408}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {456}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {216}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {568}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {542}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {362}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {1070}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {284}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {360}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {224}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {168}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {382}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {834}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {266}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {156}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {1396}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {508}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {814}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {968}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {722}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {262}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {420}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {1252}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {84}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {290}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {256}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {322}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {1060}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {902}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {106}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {1370}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {1170}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {908}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {74}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {1040}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {1024}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {648}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {78}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {1430}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {192}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {288}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {978}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {778}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {202}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {540}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {582}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {56}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {112}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {98}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {234}
+            # 0.018129079042784626 % (2 instances). obj: @:Mandataris. Cardinality: {116}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {206}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {136}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {312}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {486}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {58}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {294}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {108}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {222}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {128}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {90}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {62}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {300}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {268}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {174}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {122}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {138}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {210}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {114}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {250}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {248}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {46}
+            # 0.009064539521392313 % (1 instance). obj: @:Mandataris. Cardinality: {120}
+            # 7.40572878897752 % (817 instances). obj: @:AgentInPositie. Cardinality: +
+   rdf:type  [<http://www.w3.org/2004/02/skos/core#Concept>]  ?
+            # 68.56417693981146 % (7564 instances). obj: <http://www.w3.org/2004/02/skos/core#Concept>. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 11032
+
+
+:BestuurseenheidClassificatieCode   # 27 instances.
+{
+   rdf:type  [mu_ext:BestuurseenheidClassificatieCode]  ;          # 100.0 % (27 instances).
+   rdf:type  [mu_ext:OrganizationClassificationCode]  ;          # 100.0 % (27 instances).
+   rdf:type  [lblod_org:BestuurseenheidClassificatieCode]  ;          # 100.0 % (27 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (27 instances).
+            # 70.37037037037037 % (19 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 29.629629629629626 % (8 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (27 instances).
+            # 70.37037037037037 % (19 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 29.629629629629626 % (8 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   ^  vl_besl:classificatie  @:Bestuurseenheid  *;
+            # 88.88888888888889 % (24 instances). obj: @:Bestuurseenheid. Cardinality: +
+            # 11.11111111111111 % (3 instances). obj: @:Bestuurseenheid. Cardinality: {20}
+            # 7.4074074074074066 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {80}
+            # 7.4074074074074066 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {414}
+            # 7.4074074074074066 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {60}
+            # 7.4074074074074066 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {2}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {30}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {6}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {10}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {676}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {638}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {4020}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {268}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {178}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {134}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {66}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {142}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {40}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {634}
+            # 3.7037037037037033 % (1 instance). obj: @:BestuurVanDeEredienst. Cardinality: {4020}
+            # 3.7037037037037033 % (1 instance). obj: @:CentraalBestuurVanDeEredienst. Cardinality: {634}
+   rdf:type  [<http://www.w3.org/2004/02/skos/core#Concept>]  ?
+            # 29.629629629629626 % (8 instances). obj: <http://www.w3.org/2004/02/skos/core#Concept>. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 27
+
+
+:OrganizationClassificationCode   # 28 instances.
+{
+   rdf:type  [mu_ext:OrganizationClassificationCode]  ;          # 100.0 % (28 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (28 instances).
+            # 71.42857142857143 % (20 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 28.57142857142857 % (8 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (28 instances).
+            # 71.42857142857143 % (20 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 28.57142857142857 % (8 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   rdf:type  [mu_ext:BestuurseenheidClassificatieCode]  ?;
+            # 96.42857142857143 % (27 instances). obj: mu_ext:BestuurseenheidClassificatieCode. Cardinality: {1}
+   rdf:type  [lblod_org:BestuurseenheidClassificatieCode]  ?;
+            # 96.42857142857143 % (27 instances). obj: lblod_org:BestuurseenheidClassificatieCode. Cardinality: {1}
+   ^  vl_besl:classificatie  @:Bestuurseenheid  *;
+            # 85.71428571428571 % (24 instances). obj: @:Bestuurseenheid. Cardinality: +
+            # 10.714285714285714 % (3 instances). obj: @:Bestuurseenheid. Cardinality: {20}
+            # 7.142857142857142 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {80}
+            # 7.142857142857142 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {414}
+            # 7.142857142857142 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {60}
+            # 7.142857142857142 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {2}
+            # 3.571428571428571 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {30}
+            # 3.571428571428571 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {6}
+            # 3.571428571428571 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {10}
+            # 3.571428571428571 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {676}
+            # 3.571428571428571 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {638}
+            # 3.571428571428571 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {4020}
+            # 3.571428571428571 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {268}
+            # 3.571428571428571 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {178}
+            # 3.571428571428571 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {134}
+            # 3.571428571428571 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {66}
+            # 3.571428571428571 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {142}
+            # 3.571428571428571 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {40}
+            # 3.571428571428571 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {634}
+            # 3.571428571428571 % (1 instance). obj: @:BestuurVanDeEredienst. Cardinality: {4020}
+            # 3.571428571428571 % (1 instance). obj: @:CentraalBestuurVanDeEredienst. Cardinality: {634}
+   rdf:type  [<http://www.w3.org/2004/02/skos/core#Concept>]  ?;
+            # 32.142857142857146 % (9 instances). obj: <http://www.w3.org/2004/02/skos/core#Concept>. Cardinality: {1}
+   rdf:type  [mu_ext:RepresentatiefOrgaanClassificatieCode]  ?
+            # 3.571428571428571 % (1 instance). obj: mu_ext:RepresentatiefOrgaanClassificatieCode. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 28
+
+
+:BestuurseenheidClassificatieCode_lblod_org   # 27 instances.
+{
+   rdf:type  [mu_ext:BestuurseenheidClassificatieCode]  ;          # 100.0 % (27 instances).
+   rdf:type  [mu_ext:OrganizationClassificationCode]  ;          # 100.0 % (27 instances).
+   rdf:type  [lblod_org:BestuurseenheidClassificatieCode]  ;          # 100.0 % (27 instances).
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (27 instances).
+            # 70.37037037037037 % (19 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 29.629629629629626 % (8 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (27 instances).
+            # 70.37037037037037 % (19 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 29.629629629629626 % (8 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   ^  vl_besl:classificatie  @:Bestuurseenheid  *;
+            # 88.88888888888889 % (24 instances). obj: @:Bestuurseenheid. Cardinality: +
+            # 11.11111111111111 % (3 instances). obj: @:Bestuurseenheid. Cardinality: {20}
+            # 7.4074074074074066 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {80}
+            # 7.4074074074074066 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {414}
+            # 7.4074074074074066 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {60}
+            # 7.4074074074074066 % (2 instances). obj: @:Bestuurseenheid. Cardinality: {2}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {30}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {6}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {10}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {676}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {638}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {4020}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {268}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {178}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {134}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {66}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {142}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {40}
+            # 3.7037037037037033 % (1 instance). obj: @:Bestuurseenheid. Cardinality: {634}
+            # 3.7037037037037033 % (1 instance). obj: @:BestuurVanDeEredienst. Cardinality: {4020}
+            # 3.7037037037037033 % (1 instance). obj: @:CentraalBestuurVanDeEredienst. Cardinality: {634}
+   rdf:type  [<http://www.w3.org/2004/02/skos/core#Concept>]  ?
+            # 29.629629629629626 % (8 instances). obj: <http://www.w3.org/2004/02/skos/core#Concept>. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 27
+
+
+:BestuursfunctieCode   # 44 instances.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (44 instances).
+            # 95.45454545454545 % (42 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 4.545454545454546 % (2 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (44 instances).
+            # 95.45454545454545 % (42 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 4.545454545454546 % (2 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   rdf:type  [lblod_org:BestuursfunctieCode]  ;                # 100.0 % (44 instances).
+   rdf:type  [mu_ext:BestuursfunctieCode]  ;                   # 100.0 % (44 instances).
+   ^  <http://www.w3.org/ns/org#role>  @:Post  *;
+            # 79.54545454545455 % (35 instances). obj: @:Post. Cardinality: +
+            # 9.090909090909092 % (4 instances). obj: @:Post. Cardinality: {907}
+            # 9.090909090909092 % (4 instances). obj: @:Post. Cardinality: {15}
+            # 4.545454545454546 % (2 instances). obj: @:Post. Cardinality: {599}
+            # 4.545454545454546 % (2 instances). obj: @:Post. Cardinality: {901}
+            # 4.545454545454546 % (2 instances). obj: @:Post. Cardinality: {28}
+            # 4.545454545454546 % (2 instances). obj: @:Post. Cardinality: {19}
+            # 4.545454545454546 % (2 instances). obj: @:Post. Cardinality: {9}
+            # 4.545454545454546 % (2 instances). obj: @:Post. Cardinality: {1156}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {7352}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {3744}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {2822}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {1169}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {2014}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {895}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {906}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {891}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {695}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {25}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {7350}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {7360}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {5513}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {867}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {1157}
+            # 79.54545454545455 % (35 instances). obj: @:Mandaat. Cardinality: +
+   rdf:type  [<http://www.w3.org/2004/02/skos/core#Concept>]  ?
+            # 4.545454545454546 % (2 instances). obj: <http://www.w3.org/2004/02/skos/core#Concept>. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 44
+
+
+:BestuursfunctieCode_mu_ext   # 44 instances.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (44 instances).
+            # 95.45454545454545 % (42 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 4.545454545454546 % (2 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (44 instances).
+            # 95.45454545454545 % (42 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+            # 4.545454545454546 % (2 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+   rdf:type  [lblod_org:BestuursfunctieCode]  ;                # 100.0 % (44 instances).
+   rdf:type  [mu_ext:BestuursfunctieCode]  ;                   # 100.0 % (44 instances).
+   ^  <http://www.w3.org/ns/org#role>  @:Post  *;
+            # 79.54545454545455 % (35 instances). obj: @:Post. Cardinality: +
+            # 9.090909090909092 % (4 instances). obj: @:Post. Cardinality: {907}
+            # 9.090909090909092 % (4 instances). obj: @:Post. Cardinality: {15}
+            # 4.545454545454546 % (2 instances). obj: @:Post. Cardinality: {599}
+            # 4.545454545454546 % (2 instances). obj: @:Post. Cardinality: {901}
+            # 4.545454545454546 % (2 instances). obj: @:Post. Cardinality: {28}
+            # 4.545454545454546 % (2 instances). obj: @:Post. Cardinality: {19}
+            # 4.545454545454546 % (2 instances). obj: @:Post. Cardinality: {9}
+            # 4.545454545454546 % (2 instances). obj: @:Post. Cardinality: {1156}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {7352}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {3744}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {2822}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {1169}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {2014}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {895}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {906}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {891}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {695}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {25}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {7350}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {7360}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {5513}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {867}
+            # 2.272727272727273 % (1 instance). obj: @:Post. Cardinality: {1157}
+            # 79.54545454545455 % (35 instances). obj: @:Mandaat. Cardinality: +
+   rdf:type  [<http://www.w3.org/2004/02/skos/core#Concept>]  ?
+            # 4.545454545454546 % (2 instances). obj: <http://www.w3.org/2004/02/skos/core#Concept>. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 44
+
+
+:BestuursorgaanClassificatieCode   # 63 instances.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (63 instances).
+            # 85.71428571428571 % (54 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+            # 14.285714285714285 % (9 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (63 instances).
+            # 85.71428571428571 % (54 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+            # 14.285714285714285 % (9 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   rdf:type  [lblod_org:BestuursorgaanClassificatieCode]  ;          # 100.0 % (63 instances).
+   rdf:type  [mu_ext:BestuursorgaanClassificatieCode]  ;          # 100.0 % (63 instances).
+   ^  vl_besl:classificatie  @:Bestuursorgaan  +;              # 100.0 % (63 instances).
+            # 19.047619047619047 % (12 instances). obj: @:Bestuursorgaan. Cardinality: {638}
+            # 17.46031746031746 % (11 instances). obj: @:Bestuursorgaan. Cardinality: {10}
+            # 12.698412698412698 % (8 instances). obj: @:Bestuursorgaan. Cardinality: {1288}
+            # 9.523809523809524 % (6 instances). obj: @:Bestuursorgaan. Cardinality: {20}
+            # 6.349206349206349 % (4 instances). obj: @:Bestuursorgaan. Cardinality: {1166}
+            # 4.761904761904762 % (3 instances). obj: @:Bestuursorgaan. Cardinality: {2}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {528}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {344}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {256}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {1222}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {384}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {636}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {52}
+            # 1.5873015873015872 % (1 instance). obj: @:Bestuursorgaan. Cardinality: {3598}
+            # 1.5873015873015872 % (1 instance). obj: @:Bestuursorgaan. Cardinality: {632}
+            # 1.5873015873015872 % (1 instance). obj: @:Bestuursorgaan. Cardinality: {142}
+            # 1.5873015873015872 % (1 instance). obj: @:Bestuursorgaan. Cardinality: {60}
+            # 1.5873015873015872 % (1 instance). obj: @:Bestuursorgaan. Cardinality: {226}
+   rdf:type  [<http://www.w3.org/2004/02/skos/core#Concept>]  ?
+            # 85.71428571428571 % (54 instances). obj: <http://www.w3.org/2004/02/skos/core#Concept>. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 63
+
+
+:BestuursorgaanClassificatieCode_mu_ext   # 63 instances.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (63 instances).
+            # 85.71428571428571 % (54 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+            # 14.285714285714285 % (9 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  +;          # 100.0 % (63 instances).
+            # 85.71428571428571 % (54 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {2}
+            # 14.285714285714285 % (9 instances). obj: <http://www.w3.org/2001/XMLSchema#string>. Cardinality: {1}
+   rdf:type  [lblod_org:BestuursorgaanClassificatieCode]  ;          # 100.0 % (63 instances).
+   rdf:type  [mu_ext:BestuursorgaanClassificatieCode]  ;          # 100.0 % (63 instances).
+   ^  vl_besl:classificatie  @:Bestuursorgaan  +;              # 100.0 % (63 instances).
+            # 19.047619047619047 % (12 instances). obj: @:Bestuursorgaan. Cardinality: {638}
+            # 17.46031746031746 % (11 instances). obj: @:Bestuursorgaan. Cardinality: {10}
+            # 12.698412698412698 % (8 instances). obj: @:Bestuursorgaan. Cardinality: {1288}
+            # 9.523809523809524 % (6 instances). obj: @:Bestuursorgaan. Cardinality: {20}
+            # 6.349206349206349 % (4 instances). obj: @:Bestuursorgaan. Cardinality: {1166}
+            # 4.761904761904762 % (3 instances). obj: @:Bestuursorgaan. Cardinality: {2}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {528}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {344}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {256}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {1222}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {384}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {636}
+            # 3.1746031746031744 % (2 instances). obj: @:Bestuursorgaan. Cardinality: {52}
+            # 1.5873015873015872 % (1 instance). obj: @:Bestuursorgaan. Cardinality: {3598}
+            # 1.5873015873015872 % (1 instance). obj: @:Bestuursorgaan. Cardinality: {632}
+            # 1.5873015873015872 % (1 instance). obj: @:Bestuursorgaan. Cardinality: {142}
+            # 1.5873015873015872 % (1 instance). obj: @:Bestuursorgaan. Cardinality: {60}
+            # 1.5873015873015872 % (1 instance). obj: @:Bestuursorgaan. Cardinality: {226}
+   rdf:type  [<http://www.w3.org/2004/02/skos/core#Concept>]  ?
+            # 85.71428571428571 % (54 instances). obj: <http://www.w3.org/2004/02/skos/core#Concept>. Cardinality: {1}
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 63
+
+
+:MandatarisStatusCode   # 8 instances.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (8 instances).
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (8 instances).
+   rdf:type  [<http://www.w3.org/2004/02/skos/core#Concept>]  ;          # 100.0 % (8 instances).
+   rdf:type  [lblod_org:MandatarisStatusCode]  ;               # 100.0 % (8 instances).
+   rdf:type  [mu_ext:MandatarisStatusCode]  ;                  # 100.0 % (8 instances).
+   ^  vl_mand:status  @:Mandataris  +                          # 100.0 % (8 instances).
+            # 25.0 % (2 instances). obj: @:Mandataris. Cardinality: {104586}
+            # 25.0 % (2 instances). obj: @:Mandataris. Cardinality: {330}
+            # 25.0 % (2 instances). obj: @:Mandataris. Cardinality: {1276}
+            # 25.0 % (2 instances). obj: @:Mandataris. Cardinality: {1338}
+            # 100.0 % (8 instances). obj: @:AgentInPositie. Cardinality: +
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 8
+
+
+:MandatarisStatusCode_mu_ext   # 8 instances.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (8 instances).
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  {2};          # 100.0 % (8 instances).
+   rdf:type  [<http://www.w3.org/2004/02/skos/core#Concept>]  ;          # 100.0 % (8 instances).
+   rdf:type  [lblod_org:MandatarisStatusCode]  ;               # 100.0 % (8 instances).
+   rdf:type  [mu_ext:MandatarisStatusCode]  ;                  # 100.0 % (8 instances).
+   ^  vl_mand:status  @:Mandataris  +                          # 100.0 % (8 instances).
+            # 25.0 % (2 instances). obj: @:Mandataris. Cardinality: {104586}
+            # 25.0 % (2 instances). obj: @:Mandataris. Cardinality: {330}
+            # 25.0 % (2 instances). obj: @:Mandataris. Cardinality: {1276}
+            # 25.0 % (2 instances). obj: @:Mandataris. Cardinality: {1338}
+            # 100.0 % (8 instances). obj: @:AgentInPositie. Cardinality: +
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 8
+
+
+:RepresentatiefOrgaanClassificatieCode   # 1 instance.
+{
+   mu_core:uuid  <http://www.w3.org/2001/XMLSchema#string>  ;          # 100.0 % (1 instance).
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  <http://www.w3.org/2001/XMLSchema#string>  ;          # 100.0 % (1 instance).
+   rdf:type  [<http://www.w3.org/2004/02/skos/core#Concept>]  ;          # 100.0 % (1 instance).
+   rdf:type  [mu_ext:RepresentatiefOrgaanClassificatieCode]  ;          # 100.0 % (1 instance).
+   rdf:type  [mu_ext:OrganizationClassificationCode]            # 100.0 % (1 instance).
+}   // <http://weso.es/shexer/ontology/total_conforming_instances> 1
+
+

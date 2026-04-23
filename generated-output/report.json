@@ -1,0 +1,84 @@
+{
+  "time": {
+    "ntriples": {
+      "lblod-big-fix": "840.4721302986145",
+      "lblod-small-fix": "272.44913601875305",
+      "mandaten-fix": "19.890093564987183",
+      "rijksmuseum-images": "67.05784344673157",
+      "rijksmuseum-instances": "106.16696190834045"
+    },
+    "qse": {
+      "lblod-big-fix": "376.04753017425537",
+      "lblod-small-fix": "139.1715452671051",
+      "mandaten-fix": "8.672609090805054",
+      "rijksmuseum-images": "20.75239062309265",
+      "rijksmuseum-instances": "32.06506824493408"
+    },
+    "virtuoso": {
+      "lblod-big-fix": "1063.409628868103",
+      "lblod-small-fix": "543.549031496048",
+      "mandaten-fix": "7.030818700790405",
+      "rijksmuseum-images": "18.470687866210938",
+      "rijksmuseum-instances": "30.488207578659058"
+    },
+    "shexer": {
+      "lblod-big-fix": "1334.9158041477203",
+      "lblod-small-fix": "463.21001958847046",
+      "mandaten-fix": "32.08458161354065",
+      "rijksmuseum-images": "140.42652702331543",
+      "rijksmuseum-instances": "208.94540286064148"
+    },
+    "shexer-profile": {
+      "lblod-big-fix": "1250.0778386592865",
+      "lblod-small-fix": "434.4359233379364",
+      "mandaten-fix": "21.261061429977417",
+      "rijksmuseum-images": "130.2806408405304",
+      "rijksmuseum-instances": "178.51529216766357"
+    },
+    "shexer-bunch": {
+      "lblod-big-fix": "0.3916909694671631",
+      "lblod-small-fix": "0.2541840076446533",
+      "mandaten-fix": "0.29328250885009766",
+      "rijksmuseum-images": "0.023075580596923828",
+      "rijksmuseum-instances": "0.6076803207397461"
+    },
+    "void": {
+      "lblod-big-fix": "311.55016899108887",
+      "lblod-small-fix": "207.9873969554901",
+      "mandaten-fix": "7.655786514282227",
+      "rijksmuseum-images": "8.013665676116943",
+      "rijksmuseum-instances": "35.67750883102417"
+    },
+    "play": {
+      "lblod-big-fix": "185.89231300354004",
+      "lblod-small-fix": "156.31631731987",
+      "mandaten-fix": "8.168487071990967",
+      "rijksmuseum-images": "3.0667335987091064",
+      "rijksmuseum-instances": "41.351815938949585"
+    },
+    "voicl": {
+      "lblod-big-fix": "105.70434737205505",
+      "lblod-small-fix": "38.9286208152771",
+      "mandaten-fix": "2.5375115871429443",
+      "rijksmuseum-images": "1.356877326965332",
+      "rijksmuseum-instances": "11.590965509414673"
+    },
+    "shexer-memory": {
+      "rijksmuseum-instances": "391.6119759082794",
+      "mandaten-fix": "55.10558342933655",
+      "rijksmuseum-images": "268.1524052619934"
+    }
+  },
+  "memory": {
+    "qse": {
+      "rijksmuseum-instances": "1600",
+      "mandaten-fix": "600",
+      "rijksmuseum-images": "1600"
+    },
+    "shexer": {
+      "rijksmuseum-instances": "2990.3726320266724",
+      "mandaten-fix": "820.4280433654785",
+      "rijksmuseum-images": "2952.67094039917"
+    }
+  }
+}

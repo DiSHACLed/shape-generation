@@ -1,0 +1,492 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lblod_ere: <http://data.lblod.info/vocabularies/erediensten/> .
+@prefix lblod_org: <http://lblod.data.gift/vocabularies/organisatie/> .
+@prefix mu_core: <http://mu.semte.ch/vocabularies/core/> .
+@prefix mu_ext: <http://mu.semte.ch/vocabularies/ext/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vl_besl: <http://data.vlaanderen.be/ns/besluit#> .
+@prefix vl_mand: <http://data.vlaanderen.be/ns/mandaat#> .
+@prefix vl_pers: <http://data.vlaanderen.be/ns/persoon#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/shapes/0b51fc2f-9303-4cd5-8b40-c68e7957a95d> a sh:NodeShape ;
+    sh:property [ sh:class <http://www.w3.org/ns/activitystreams#Tombstone> ;
+            sh:maxCount 1 ;
+            sh:path org:organisation ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:class vl_mand:Fractie ;
+            sh:path org:organisation ] ;
+    sh:targetClass org:Membership .
+
+<http://example.com/shapes/19178e92-cafa-4f78-b37c-98da22b2e8f0> a sh:NodeShape ;
+    sh:property [ sh:class mu_ext:BestuursorgaanClassificatieCode ;
+            sh:maxCount 1 ;
+            sh:path vl_besl:classificatie ],
+        [ sh:class skos:Concept ;
+            sh:maxCount 1 ;
+            sh:path vl_besl:classificatie ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:class lblod_org:BestuursorgaanClassificatieCode ;
+            sh:maxCount 1 ;
+            sh:path vl_besl:classificatie ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:path vl_mand:bindingEinde ],
+        [ sh:class vl_besl:Bestuursorgaan ;
+            sh:maxCount 1 ;
+            sh:path vl_mand:isTijdspecialisatieVan ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:path vl_mand:bindingStart ],
+        [ sh:class vl_mand:Mandaat ;
+            sh:path org:hasPost ],
+        [ sh:class lblod_ere:BestuurVanDeEredienst ;
+            sh:maxCount 1 ;
+            sh:path vl_besl:bestuurt ],
+        [ sh:class org:Post ;
+            sh:path org:hasPost ],
+        [ sh:class lblod_ere:CentraalBestuurVanDeEredienst ;
+            sh:maxCount 1 ;
+            sh:path vl_besl:bestuurt ],
+        [ sh:class vl_besl:Bestuurseenheid ;
+            sh:maxCount 1 ;
+            sh:path vl_besl:bestuurt ] ;
+    sh:targetClass vl_besl:Bestuursorgaan .
+
+<http://example.com/shapes/1ab37aa1-2064-4984-8b00-108015cb552a> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:path skos:altLabel ],
+        [ sh:class mu_ext:OrganizationClassificationCode ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_besl:classificatie ],
+        [ sh:class mu_ext:BestuurseenheidClassificatieCode ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_besl:classificatie ],
+        [ sh:class skos:Concept ;
+            sh:maxCount 1 ;
+            sh:path vl_besl:werkingsgebied ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path org:hasPrimarySite ],
+        [ sh:class lblod_org:BestuurseenheidClassificatieCode ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_besl:classificatie ],
+        [ sh:class prov:Location ;
+            sh:maxCount 1 ;
+            sh:path vl_besl:werkingsgebied ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ] ;
+    sh:targetClass lblod_ere:BestuurVanDeEredienst .
+
+<http://example.com/shapes/1b14e8f9-26ad-42ed-980c-b4888ba61322> a sh:NodeShape ;
+    sh:property [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path org:hasPrimarySite ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:class mu_ext:OrganizationClassificationCode ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_besl:classificatie ],
+        [ sh:class mu_ext:BestuurseenheidClassificatieCode ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_besl:classificatie ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:class prov:Location ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_besl:werkingsgebied ],
+        [ sh:class lblod_org:BestuurseenheidClassificatieCode ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_besl:classificatie ] ;
+    sh:targetClass lblod_ere:CentraalBestuurVanDeEredienst .
+
+<http://example.com/shapes/2b2673f3-9c0d-482b-bd68-c2be82247cf0> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:path skos:altLabel ],
+        [ sh:class mu_ext:BestuurseenheidClassificatieCode ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_besl:classificatie ],
+        [ sh:class mu_ext:OrganizationClassificationCode ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_besl:classificatie ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:class skos:Concept ;
+            sh:maxCount 1 ;
+            sh:path vl_besl:classificatie ],
+        [ sh:class lblod_org:BestuurseenheidClassificatieCode ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_besl:classificatie ],
+        [ sh:class prov:Location ;
+            sh:maxCount 1 ;
+            sh:path vl_besl:werkingsgebied ],
+        [ sh:maxCount 1 ;
+            sh:path org:hasPrimarySite ],
+        [ sh:class vl_besl:Bestuurseenheid ;
+            sh:maxCount 1 ;
+            sh:path org:linkedTo ],
+        [ sh:class skos:Concept ;
+            sh:maxCount 1 ;
+            sh:path vl_besl:werkingsgebied ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ] ;
+    sh:targetClass vl_besl:Bestuurseenheid .
+
+<http://example.com/shapes/2fb95bcd-2e2e-4e71-b3cd-5a22bc69c345> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ] ;
+    sh:targetClass lblod_org:BestuursfunctieCode .
+
+<http://example.com/shapes/303045fe-1c16-444a-86ad-a979f93bb0e7> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ] ;
+    sh:targetClass mu_ext:BestuursorgaanClassificatieCode .
+
+<http://example.com/shapes/3694f8c0-4934-4b20-baf7-039dfb228121> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path vl_mand:rangorde ],
+        [ sh:class vl_mand:Mandaat ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path org:holds ],
+        [ sh:class mu_ext:MandatarisStatusCode ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_mand:status ],
+        [ sh:class skos:Concept ;
+            sh:path vl_mand:beleidsdomein ],
+        [ sh:class skos:Concept ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_mand:status ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:class org:Post ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path org:holds ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_mand:einde ],
+        [ sh:class lblod_org:MandatarisStatusCode ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_mand:status ],
+        [ sh:class <http://www.w3.org/ns/person#Person> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path vl_mand:isBestuurlijkeAliasVan ],
+        [ sh:class org:Membership ;
+            sh:maxCount 1 ;
+            sh:path org:hasMembership ],
+        [ sh:class mu_ext:BeleidsdomeinCode ;
+            sh:path vl_mand:beleidsdomein ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:path vl_mand:start ] ;
+    sh:targetClass <http://data.lblod.info/vocabularies/contacthub/AgentInPositie> .
+
+<http://example.com/shapes/50aab506-92ef-4a4b-889f-83915c5ce112> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ] ;
+    sh:targetClass mu_ext:BestuurseenheidClassificatieCode .
+
+<http://example.com/shapes/627741aa-096e-44fd-8533-f192813f0c51> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdfs:label ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_ext:werkingsgebiedNiveau ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ] ;
+    sh:targetClass prov:Location .
+
+<http://example.com/shapes/65f7b4f2-ab8e-46d2-a55b-42ef60e897ae> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ] ;
+    sh:targetClass mu_ext:MandatarisStatusCode .
+
+<http://example.com/shapes/670abcbf-cbb4-419e-8f6a-0a2c0454c1a1> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path rdfs:label ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path mu_ext:werkingsgebiedNiveau ],
+        [ sh:datatype xsd:string ;
+            sh:path skos:prefLabel ] ;
+    sh:targetClass skos:Concept .
+
+<http://example.com/shapes/72a10ca9-099f-45e1-88e0-63a1ebbe8f8f> a sh:NodeShape ;
+    sh:property [ sh:class vl_besl:Bestuursorgaan ;
+            sh:path org:memberOf ],
+        [ sh:class vl_besl:Bestuurseenheid ;
+            sh:maxCount 1 ;
+            sh:path org:linkedTo ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <https://www.w3.org/ns/regorg#legalName> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ] ;
+    sh:targetClass <http://www.w3.org/ns/activitystreams#Tombstone> .
+
+<http://example.com/shapes/7462dcd9-40f4-444e-bcc0-ad08307464c6> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ] ;
+    sh:targetClass lblod_org:BestuurseenheidClassificatieCode .
+
+<http://example.com/shapes/7856284a-92ef-474a-bd94-0f54f0a4e79f> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ] ;
+    sh:targetClass mu_ext:BestuursfunctieCode .
+
+<http://example.com/shapes/7e1c6995-f6ee-4337-8d98-04e1480759c9> a sh:NodeShape ;
+    sh:property [ sh:class vl_besl:Bestuursorgaan ;
+            sh:path org:memberOf ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:class vl_besl:Bestuurseenheid ;
+            sh:path org:linkedTo ],
+        [ sh:datatype xsd:string ;
+            sh:path <https://www.w3.org/ns/regorg#legalName> ] ;
+    sh:targetClass vl_mand:Fractie .
+
+<http://example.com/shapes/8245b739-06bb-4686-a134-59f4829a7e50> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ] ;
+    sh:targetClass mu_ext:OrganizationClassificationCode .
+
+<http://example.com/shapes/972f8a67-593b-41fe-bf30-1427819c899a> a sh:NodeShape ;
+    sh:property [ sh:class lblod_org:MandatarisStatusCode ;
+            sh:maxCount 1 ;
+            sh:path vl_mand:status ],
+        [ sh:datatype xsd:dateTime ;
+            sh:path vl_mand:einde ],
+        [ sh:class skos:Concept ;
+            sh:maxCount 1 ;
+            sh:path vl_mand:status ],
+        [ sh:class <http://www.w3.org/ns/activitystreams#Tombstone> ;
+            sh:maxCount 1 ;
+            sh:path org:hasMembership ],
+        [ sh:class <http://www.w3.org/ns/person#Person> ;
+            sh:path vl_mand:isBestuurlijkeAliasVan ],
+        [ sh:datatype xsd:string ;
+            sh:path vl_mand:start ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:class skos:Concept ;
+            sh:path vl_mand:beleidsdomein ],
+        [ sh:class mu_ext:MandatarisStatusCode ;
+            sh:maxCount 1 ;
+            sh:path vl_mand:status ],
+        [ sh:datatype xsd:dateTime ;
+            sh:path vl_mand:start ],
+        [ sh:datatype xsd:string ;
+            sh:path vl_mand:rangorde ],
+        [ sh:class vl_mand:Mandataris ;
+            sh:path vl_mand:isTijdelijkVervangenDoor ],
+        [ sh:datatype xsd:date ;
+            sh:path vl_mand:einde ],
+        [ sh:class org:Post ;
+            sh:path org:holds ],
+        [ sh:class org:Membership ;
+            sh:path org:hasMembership ],
+        [ sh:class vl_mand:Mandaat ;
+            sh:path org:holds ],
+        [ sh:class mu_ext:BeleidsdomeinCode ;
+            sh:path vl_mand:beleidsdomein ],
+        [ sh:datatype xsd:date ;
+            sh:path vl_mand:start ] ;
+    sh:targetClass vl_mand:Mandataris .
+
+<http://example.com/shapes/977139bb-bd83-4fc2-97b6-60c34476c382> a sh:NodeShape ;
+    sh:property [ sh:class mu_ext:BestuursfunctieCode ;
+            sh:maxCount 1 ;
+            sh:path org:role ],
+        [ sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:path vl_mand:aantalHouders ],
+        [ sh:class lblod_org:BestuursfunctieCode ;
+            sh:maxCount 1 ;
+            sh:path org:role ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ] ;
+    sh:targetClass org:Post .
+
+<http://example.com/shapes/a6428297-5191-4838-9dcb-16047ef1394c> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ] ;
+    sh:targetClass lblod_org:BestuursorgaanClassificatieCode .
+
+<http://example.com/shapes/aa95f6a5-da76-400f-9ce4-17017113f70c> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path foaf:name ],
+        [ sh:datatype xsd:string ;
+            sh:path vl_pers:gebruikteVoornaam ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path foaf:familyName ],
+        [ sh:class <http://www.w3.org/ns/person#Person> ;
+            sh:path owl:sameAs ] ;
+    sh:targetClass <http://www.w3.org/ns/person#Person> .
+
+<http://example.com/shapes/acc9aa10-bc4e-4fb3-9836-1030667f6d38> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ] ;
+    sh:targetClass mu_ext:BeleidsdomeinCode .
+
+<http://example.com/shapes/ae113555-cf23-48fe-977a-4ef36cf5c13e> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ] ;
+    sh:targetClass mu_ext:RepresentatiefOrgaanClassificatieCode .
+
+<http://example.com/shapes/b29c934f-a976-4c53-abc1-356708c991c4> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ] ;
+    sh:targetClass lblod_org:MandatarisStatusCode .
+
+<http://example.com/shapes/e70a2b54-df93-4511-9590-4e65f7421edf> a sh:NodeShape ;
+    sh:property [ sh:class lblod_org:BestuursfunctieCode ;
+            sh:maxCount 1 ;
+            sh:path org:role ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path mu_core:uuid ],
+        [ sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:path vl_mand:aantalHouders ],
+        [ sh:class mu_ext:BestuursfunctieCode ;
+            sh:maxCount 1 ;
+            sh:path org:role ] ;
+    sh:targetClass vl_mand:Mandaat .
+

@@ -1,0 +1,714 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/shapes/20bc660b-e1a9-4496-9e20-5dc6c20f0189> a sh:NodeShape ;
+    sh:property [ sh:maxCount 1 ;
+            sh:path <http://schema.org/url> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/size> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:path <http://schema.org/sameAs> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/alternateName> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/materialExtent> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/name> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/CreativeWork> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/exampleOfWork> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/isbn> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/bookEdition> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/VisualArtwork> ;
+            sh:path <http://schema.org/about> ] ;
+    sh:targetClass <http://schema.org/CreativeWork> .
+
+<http://example.com/shapes/22011107-700c-4911-8055-25e467fb61ea> a sh:NodeShape ;
+    sh:property [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/CreativeWork> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/isPartOf> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/CreativeWork> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/exampleOfWork> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Book> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/isPartOf> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/size> ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/url> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/CreativeWorkSeries> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/isPartOf> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/pagination> ],
+        [ sh:maxCount 1 ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/ProductModel> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/isPartOf> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/sameAs> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/VisualArtwork> ;
+            sh:path <http://schema.org/about> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/materialExtent> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/name> ] ;
+    sh:targetClass <http://schema.org/Article> .
+
+<http://example.com/shapes/2c5ed0a0-e888-48ef-aac9-1fb964f05eef> a sh:NodeShape ;
+    sh:property [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:path <http://schema.org/sameAs> ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/url> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/materialExtent> ],
+        [ sh:class <http://schema.org/CreativeWork> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/exampleOfWork> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/name> ] ;
+    sh:targetClass <http://schema.org/WebSite> .
+
+<http://example.com/shapes/2ef18224-1167-44c8-be1c-0c016dcc5a31> a sh:NodeShape ;
+    sh:property [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/materialExtent> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/size> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/url> ],
+        [ sh:minCount 1 ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:maxCount 1 ;
+            sh:path <http://schema.org/sameAs> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/name> ],
+        [ sh:class <http://schema.org/CreativeWork> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/exampleOfWork> ] ;
+    sh:targetClass <http://schema.org/ArchiveComponent> .
+
+<http://example.com/shapes/64bab0c8-6be0-45ed-9c6e-227a6d23c959> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/bookEdition> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/url> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/VisualArtwork> ;
+            sh:path <http://schema.org/about> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/isbn> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/alternateName> ],
+        [ sh:class <http://schema.org/CreativeWork> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/exampleOfWork> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/name> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/materialExtent> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/size> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:path <http://schema.org/sameAs> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/workExample> ] ;
+    sh:targetClass <http://schema.org/Book> .
+
+<http://example.com/shapes/8464c51e-7861-40cb-b863-e91949dfe568> a sh:NodeShape ;
+    sh:property [ sh:class <http://schema.org/VisualArtwork> ;
+            sh:path <http://schema.org/about> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/url> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:path <http://schema.org/sameAs> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/materialExtent> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/CreativeWork> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/exampleOfWork> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/size> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/isbn> ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/name> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/bookEdition> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/alternateName> ] ;
+    sh:targetClass <http://schema.org/CreativeWorkSeries> .
+
+<http://example.com/shapes/94130424-a8cc-4380-a07b-3ea0281201a7> a sh:NodeShape ;
+    sh:property [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 2 ;
+            sh:path <http://schema.org/name> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:path <http://schema.org/additionalType> ],
+        [ sh:datatype <http://schema.org/Date> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/endDate> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:datatype <http://schema.org/Date> ;
+            sh:path <http://schema.org/startDate> ],
+        [ sh:path <http://schema.org/sameAs> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/text> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/location> ] ;
+    sh:targetClass <http://schema.org/DefinedTerm> .
+
+<http://example.com/shapes/bbc3e5ac-87d5-400f-8cfe-1ef80997d1c6> a sh:NodeShape ;
+    sh:property [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/text> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:path <http://schema.org/sameAs> ],
+        [ sh:datatype <http://schema.org/Date> ;
+            sh:path <http://schema.org/startDate> ],
+        [ sh:datatype <http://schema.org/Date> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/endDate> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/name> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/location> ] ;
+    sh:targetClass <http://schema.org/Place> .
+
+<http://example.com/shapes/c4c2159c-54cc-41e2-b757-a702d0c110ec> a sh:NodeShape ;
+    sh:property [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/url> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/sameAs> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/materialExtent> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/isbn> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/size> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/CreativeWork> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/exampleOfWork> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/VisualArtwork> ;
+            sh:path <http://schema.org/about> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/bookEdition> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/name> ] ;
+    sh:targetClass <http://schema.org/DigitalDocument> .
+
+<http://example.com/shapes/d5712e9e-a08c-4d3d-a68f-8345d48c1129> a sh:NodeShape ;
+    sh:property [ sh:datatype <http://schema.org/Date> ;
+            sh:path <http://schema.org/startDate> ],
+        [ sh:path <http://schema.org/sameAs> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/text> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/name> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:datatype <http://schema.org/Date> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/endDate> ] ;
+    sh:targetClass <http://schema.org/PublicationEvent> .
+
+<http://example.com/shapes/e3748a43-1f42-41b2-a0f3-3c6c5268a1a2> a sh:NodeShape ;
+    sh:property [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:datatype <http://schema.org/Date> ;
+            sh:path <http://schema.org/startDate> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/name> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/location> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/publishedBy> ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/text> ],
+        [ sh:datatype <http://schema.org/Date> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/endDate> ],
+        [ sh:path <http://schema.org/sameAs> ],
+        [ sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ] ;
+    sh:targetClass <http://schema.org/Statement> .
+
+<http://example.com/shapes/ed514f51-e21a-4f3e-b3cd-ea163a2c40c9> a sh:NodeShape ;
+    sh:property [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/url> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/size> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:minCount 1 ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/name> ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/sameAs> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/bookEdition> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/materialExtent> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/isbn> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/VisualArtwork> ;
+            sh:path <http://schema.org/about> ],
+        [ sh:class <http://schema.org/CreativeWork> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://schema.org/exampleOfWork> ] ;
+    sh:targetClass <http://schema.org/VideoObject> .
+
+<http://example.com/shapes/f5f212a5-d0c3-47f7-8be9-794234ac1e82> a sh:NodeShape ;
+    sh:property [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/bookEdition> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/name> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/size> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/CreativeWork> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/exampleOfWork> ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/pagination> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/alternateName> ],
+        [ sh:class <http://schema.org/CreativeWork> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/isPartOf> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/CreativeWorkSeries> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/isPartOf> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/ProductModel> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/isPartOf> ],
+        [ sh:class <http://schema.org/Book> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/isPartOf> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/materialExtent> ],
+        [ sh:class <http://schema.org/PublicationEvent> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:class <http://schema.org/VisualArtwork> ;
+            sh:path <http://schema.org/about> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/subjectOf> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:path <http://schema.org/sameAs> ],
+        [ sh:class <http://schema.org/DefinedTerm> ;
+            sh:path <http://schema.org/workExample> ],
+        [ sh:class <http://schema.org/Place> ;
+            sh:maxCount 1 ;
+            sh:path <http://schema.org/additionalType> ],
+        [ sh:maxCount 1 ;
+            sh:path <http://schema.org/url> ],
+        [ sh:class <http://schema.org/Statement> ;
+            sh:path <http://schema.org/publication> ],
+        [ sh:datatype xsd:string ;
+            sh:path <http://schema.org/isbn> ] ;
+    sh:targetClass <http://schema.org/ProductModel> .
+

@@ -1,0 +1,22 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/shapes/9cfa435e-36cc-42df-b5a1-a7e9ae4cb64d> a sh:NodeShape ;
+    sh:property [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:path <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> ] ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> .
+
+<http://example.com/shapes/b947f947-4224-483d-a64a-38fa41eef400> a sh:NodeShape ;
+    sh:property [ sh:class <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object> ;
+            sh:maxCount 1 ;
+            sh:path <https://linked.art/ns/terms/access_point> ],
+        [ sh:class <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> ;
+            sh:path <http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by> ],
+        [ sh:class <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ;
+            sh:path <https://linked.art/ns/terms/digitally_shows> ] ;
+    sh:targetClass <http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object> .
+
